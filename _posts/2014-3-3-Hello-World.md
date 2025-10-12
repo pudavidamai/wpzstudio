@@ -1,10 +1,12 @@
 ---
 layout: post
-title: You're up and running!
+title: "欢迎来到我的博客！"
+date: 2025-10-12
+categories: 测试
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+这是我的第一篇博客文章，用于测试 GitHub Pages 是否成功部署。
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+如果你能看到这篇文章，说明站点已经配置成功 🎉
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+下一步我会继续完善内容，敬请期待！

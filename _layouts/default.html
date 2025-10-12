@@ -1,51 +1,109 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WPZ Studio | 学习应用开发工作室</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    section {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .product {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+    }
+    .product h2 {
+      margin-top: 0;
+      color: #0078d7;
+    }
+    .product img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin: 1rem 0;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .features li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>WPZ Studio</h1>
+    <p>Master New Skills, Effortlessly.</p>
+  </header>
 
-    {% include meta.html %}
+  <section>
+    <p>欢迎来到 <strong>WPZ Studio</strong>，我们是一家专注于打造高效学习应用的独立开发工作室。我们相信，掌握新技能应该是一段有趣、直观且充满成就感的旅程。</p>
+    <p>我们的重点是开发触控打字、语言学习等领域的专业应用，将复杂知识拆解为简单、互动、有趣的课程。</p>
+  </section>
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <section class="product">
+    <h2>📘 宝贝识字 WPZ</h2>
+    <a href="https://apps.microsoft.com/detail/9NNG75DPJV00" target="_blank">点击查看应用商店页面</a>
+    <img src="images/babywords.jpg" alt="宝贝识字应用截图" />
+    <ul class="features">
+      <li>🌟 五大核心学习模块，全面启蒙</li>
+      <li>🔤 看图识字：通过生动图片理解汉字</li>
+      <li>📝 简单生字：基础汉字配笔画练习</li>
+      <li>🌍 英文单词：双语发音培养语感</li>
+      <li>📜 玩转古诗：经典诗词优美朗诵</li>
+      <li>✍️ 识字测试：趣味互动巩固知识</li>
+    </ul>
+  </section>
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <section class="product">
+    <h2>⌨️ Typing Adventure</h2>
+    <a href="https://apps.microsoft.com/detail/9NST4V4GGDTX" target="_blank">点击查看应用商店页面</a>
+    <img src="images/typingadventure.jpg" alt="Typing Adventure 应用截图" />
+    <ul class="features">
+      <li>🎮 键盘练习变身海底冒险</li>
+      <li>🧠 渐进式学习：从字母到词汇</li>
+      <li>🌊 海洋主题关卡：50+ 精美关卡</li>
+      <li>🏆 奖励系统：连击、积分、排行榜</li>
+      <li>💰 一次性购买，无广告无订阅</li>
+    </ul>
+  </section>
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+  <section>
+    <h3>📬 联系我们</h3>
+    <p>如需合作或了解更多，请联系：<a href="mailto:wuping2004@msn.com">wuping2004@msn.com</a></p>
+  </section>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
-  </body>
+  <footer>
+    &copy; 2025 WPZ Studio. All rights reserved.
+  </footer>
+</body>
 </html>

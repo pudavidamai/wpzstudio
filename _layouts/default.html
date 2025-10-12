@@ -28,6 +28,20 @@
       font-size: 1.3rem;
       margin-top: 0.5rem;
     }
+    .lang-switch {
+      text-align: center;
+      margin: 1rem;
+    }
+    .lang-switch button {
+      margin: 0 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #0078d7;
+      color: white;
+    }
     section {
       max-width: 960px;
       margin: 2rem auto;
@@ -74,6 +88,15 @@
       text-decoration: underline;
     }
   </style>
+  <script>
+    function switchLang(lang) {
+      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('zh').style.display = lang === 'zh' ? 'block' : 'none';
+    }
+    window.onload = function() {
+      switchLang('en'); // 默认英文
+    };
+  </script>
 </head>
 <body>
   <header>
@@ -81,42 +104,90 @@
     <p>Master New Skills, Effortlessly.</p>
   </header>
 
-  <section>
-    <p>Welcome to <strong>WPZ Studio</strong>, an independent development studio dedicated to crafting engaging and effective learning applications. We believe that mastering a new skill should be a fun, intuitive, and rewarding experience for everyone.</p>
-    <p>Our focus is on creating specialized apps for skills like touch typing and language learning, breaking down complex subjects into simple, interactive, and enjoyable lessons. We transform the learning journey from a chore into a delight.</p>
-  </section>
+  <div class="lang-switch">
+    <button onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('zh')">中文</button>
+  </div>
 
-  <section class="product">
-    <h2>📘 Baby Words WPZ</h2>
-    <a href="https://apps.microsoft.com/detail/9NNG75DPJV00" target="_blank">View on Microsoft Store</a>
-    <img src="images/babywords.jpg" alt="Baby Words WPZ Screenshot" />
-    <ul class="features">
-      <li>🌟 Five Core Learning Modules for Early Childhood Education</li>
-      <li>🔤 Picture-Based Chinese Characters: Visual learning that makes memorization intuitive and fun</li>
-      <li>📝 Basic Characters with Stroke Practice: Build a strong foundation in Mandarin</li>
-      <li>🌍 English Vocabulary: Bilingual pronunciation to develop language sense</li>
-      <li>📜 Classical Poetry: Beautiful recitations of timeless Chinese poems</li>
-      <li>✍️ Interactive Quizzes: Reinforce learning through playful testing</li>
-    </ul>
-  </section>
+  <!-- English Content -->
+  <div id="en">
+    <section>
+      <p>Welcome to <strong>WPZ Studio</strong>, an independent development studio dedicated to crafting engaging and effective learning applications. We believe that mastering a new skill should be a fun, intuitive, and rewarding experience for everyone.</p>
+      <p>Our focus is on creating specialized apps for skills like touch typing and language learning, breaking down complex subjects into simple, interactive, and enjoyable lessons.</p>
+    </section>
 
-  <section class="product">
-    <h2>⌨️ Typing Adventure</h2>
-    <a href="https://apps.microsoft.com/detail/9NST4V4GGDTX" target="_blank">View on Microsoft Store</a>
-    <img src="images/typingadventure.jpg" alt="Typing Adventure Screenshot" />
-    <ul class="features">
-      <li>🎮 Transform Keyboard Practice into an Epic Underwater Battle</li>
-      <li>🧠 Progressive Learning: From letters to full vocabulary</li>
-      <li>🌊 Ocean-Themed Levels: Explore 50+ beautifully designed stages</li>
-      <li>🏆 Smart Rewards: Combos, points, and leaderboards</li>
-      <li>💰 One-Time Purchase: No ads, no subscriptions, free 24-hour trial</li>
-    </ul>
-  </section>
+    <section class="product">
+      <h2>📘 Baby Words WPZ</h2>
+      <a href="https://apps.microsoft.com/detail/9NNG75DPJV00" target="_blank">View on Microsoft Store</a>
+      <img src="images/babywords.jpg" alt="Baby Words WPZ Screenshot" />
+      <ul class="features">
+        <li>🌟 Five Core Learning Modules for Early Childhood Education</li>
+        <li>🔤 Picture-Based Chinese Characters</li>
+        <li>📝 Basic Characters with Stroke Practice</li>
+        <li>🌍 English Vocabulary with Bilingual Pronunciation</li>
+        <li>📜 Classical Poetry Recitation</li>
+        <li>✍️ Interactive Quizzes</li>
+      </ul>
+    </section>
 
-  <section>
-    <h3>📬 Contact Us</h3>
-    <p>For collaboration or inquiries, please reach out to: <a href="mailto:wuping2004@msn.com">wuping2004@msn.com</a></p>
-  </section>
+    <section class="product">
+      <h2>⌨️ Typing Adventure</h2>
+      <a href="https://apps.microsoft.com/detail/9NST4V4GGDTX" target="_blank">View on Microsoft Store</a>
+      <img src="images/typingadventure.jpg" alt="Typing Adventure Screenshot" />
+      <ul class="features">
+        <li>🎮 Underwater Typing Combat</li>
+        <li>🧠 Progressive Learning</li>
+        <li>🌊 50+ Ocean-Themed Levels</li>
+        <li>🏆 Smart Rewards System</li>
+        <li>💰 Free Trial + One-Time Purchase</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>📬 Contact Us</h3>
+      <p>Email: <a href="mailto:wuping2004@msn.com">wuping2004@msn.com</a></p>
+    </section>
+  </div>
+
+  <!-- Chinese Content -->
+  <div id="zh" style="display:none;">
+    <section>
+      <p>欢迎来到 <strong>WPZ Studio</strong>，我们是一家专注于打造高效学习应用的独立开发工作室。我们相信，掌握新技能应该是一段有趣、直观且充满成就感的旅程。</p>
+      <p>我们的重点是开发触控打字、语言学习等领域的专业应用，将复杂知识拆解为简单、互动、有趣的课程。</p>
+    </section>
+
+    <section class="product">
+      <h2>📘 宝贝识字 WPZ</h2>
+      <a href="https://apps.microsoft.com/detail/9NNG75DPJV00" target="_blank">点击查看应用商店页面</a>
+      <img src="images/babywords.jpg" alt="宝贝识字应用截图" />
+      <ul class="features">
+        <li>🌟 五大核心学习模块，全面启蒙</li>
+        <li>🔤 看图识字：通过生动图片理解汉字</li>
+        <li>📝 简单生字：基础汉字配笔画练习</li>
+        <li>🌍 英文单词：双语发音培养语感</li>
+        <li>📜 玩转古诗：经典诗词优美朗诵</li>
+        <li>✍️ 识字测试：趣味互动巩固知识</li>
+      </ul>
+    </section>
+
+    <section class="product">
+      <h2>⌨️ Typing Adventure</h2>
+      <a href="https://apps.microsoft.com/detail/9NST4V4GGDTX" target="_blank">点击查看应用商店页面</a>
+      <img src="images/typingadventure.jpg" alt="Typing Adventure 应用截图" />
+      <ul class="features">
+        <li>🎮 键盘练习变身海底冒险</li>
+        <li>🧠 渐进式学习：从字母到词汇</li>
+        <li>🌊 海洋主题关卡：50+ 精美关卡</li>
+        <li>🏆 奖励系统：连击、积分、排行榜</li>
+        <li>💰 一次性购买，无广告无订阅</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>📬 联系我们</h3>
+      <p>如需合作或了解更多，请联系：<a href="mailto:wuping2004@msn.com">wuping2004@msn.com</a></p>
+    </section>
+  </div>
 
   <footer>
     &copy; 2025 WPZ Studio. All rights reserved.

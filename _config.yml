@@ -6,9 +6,7 @@
 name: WPZ Studio
 
 # Short bio or description (displayed in the header)
-description: Welcome to WPZ Studio, an independent development studio dedicated to crafting engaging and effective learning applications. We believe that mastering a new skill should be a fun, intuitive, and rewarding experience for everyone.
-
-Our focus is on creating specialized apps for skills like touch typing and language learning, breaking down complex subjects into simple, interactive, and enjoyable lessons. We transform the learning journey from a chore into a delight.
+description: Welcome to WPZ Studio, an independent development studio dedicated to crafting engaging and effective learning applications. We believe that mastering a new skill should be a fun, intuitive, and rewarding experience for everyone.Our focus is on creating specialized apps for skills like touch typing and language learning, breaking down complex subjects into simple, interactive, and enjoyable lessons. We transform the learning journey from a chore into a delight.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png

@@ -6,361 +6,492 @@
   <title>WPZ Studio | 学习应用开发工作室</title>
   <style>
     :root {
-      --primary-color: #0078d7;
-      --secondary-color: #4facfe;
-      --background-color: #f9f9f9;
-      --card-background: white;
-      --text-color: #333;
-      --light-text: #666;
+      --primary: #4facfe;
+      --secondary: #00f2fe;
+      --dark: #2c3e50;
+      --light: #ecf0f1;
+      --accent: #e74c3c;
+      --transition: all 0.3s ease;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
     
     body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: var(--background-color);
-      color: var(--text-color);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       line-height: 1.6;
+      color: var(--dark);
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+      min-height: 100vh;
+      padding-bottom: 3rem;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
     }
     
     header {
-      background: linear-gradient(to right, var(--secondary-color), #00f2fe);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
       color: white;
-      padding: 2rem;
+      padding: 4rem 0;
       text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+      opacity: 0.3;
+    }
+    
+    .header-content {
+      position: relative;
+      z-index: 2;
     }
     
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      letter-spacing: -0.5px;
+      font-weight: 800;
     }
     
     header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
+      font-size: 1.4rem;
+      max-width: 600px;
+      margin: 0 auto;
+      opacity: 0.9;
     }
     
-    main {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    
-    .intro {
+    .mission {
+      padding: 4rem 0;
+      text-align: center;
       background: white;
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     }
     
-    .controls {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-bottom: 2rem;
-      align-items: center;
-    }
-    
-    .search-box {
-      flex: 1;
-      min-width: 250px;
+    .mission h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
       position: relative;
+      display: inline-block;
     }
     
-    .search-box input {
-      width: 100%;
-      padding: 0.75rem 1rem;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      font-size: 1rem;
+    .mission h2::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      border-radius: 2px;
+    }
+    
+    .mission p {
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      font-size: 1.1rem;
+      color: #555;
+    }
+    
+    .category-map {
+      padding: 3rem 0;
+    }
+    
+    .category-map h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+      color: var(--dark);
     }
     
     .categories {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-    
-    .category-btn {
-      padding: 0.5rem 1rem;
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-    
-    .category-btn.active {
-      background: var(--primary-color);
-      color: white;
-      border-color: var(--primary-color);
-    }
-    
-    .apps-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
     }
     
-    .app-card {
-      background: var(--card-background);
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    .category-card {
+      background: white;
+      border-radius: 12px;
       overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: var(--transition);
+      cursor: pointer;
+      border: 1px solid rgba(0,0,0,0.03);
     }
     
-    .app-card:hover {
+    .category-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.12);
     }
     
-    .app-image {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
+    .category-header {
+      padding: 1.5rem;
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .category-header h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    
+    .toggle-btn {
+      background: rgba(255,255,255,0.2);
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+    
+    .toggle-btn:hover {
+      background: rgba(255,255,255,0.3);
+    }
+    
+    .apps-container {
+      padding: 1.5rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    
+    .apps-container.expanded {
+      max-height: 1000px;
+    }
+    
+    .app {
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .app:last-child {
+      border-bottom: none;
+    }
+    
+    .app h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+    }
+    
+    .app h4::before {
+      content: "▶";
+      display: inline-block;
+      margin-right: 0.7rem;
+      font-size: 0.8rem;
+      transition: var(--transition);
+    }
+    
+    .app.expanded h4::before {
+      transform: rotate(90deg);
     }
     
     .app-content {
-      padding: 1.5rem;
+      padding-left: 1.7rem;
+      max-height: 0;
+      overflow: hidden;
+      transition: var(--transition);
     }
     
-    .app-title {
-      margin: 0 0 0.5rem 0;
-      color: var(--primary-color);
-      font-size: 1.25rem;
+    .app.expanded .app-content {
+      max-height: 1000px;
     }
     
     .app-description {
-      color: var(--light-text);
-      margin-bottom: 1rem;
+      margin: 0.8rem 0;
+      color: #555;
+      line-height: 1.7;
+    }
+    
+    .app-link {
+      display: inline-block;
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1.2rem;
+      border-radius: 20px;
       font-size: 0.9rem;
+      transition: var(--transition);
+      margin-top: 0.5rem;
     }
     
-    .app-features {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 1rem 0;
+    .app-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(79, 172, 254, 0.4);
     }
     
-    .app-features li {
-      margin-bottom: 0.5rem;
-      padding-left: 1.5rem;
-      position: relative;
-    }
-    
-    .app-features li:before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: var(--primary-color);
-      font-weight: bold;
-    }
-    
-    .app-badge {
-      margin-top: 1rem;
-      display: flex;
-      justify-content: center;
-    }
-    
-    .contact-section {
+    .contact {
+      padding: 3rem 0;
+      text-align: center;
       background: white;
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin-top: 3rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 -5px 15px rgba(0,0,0,0.03);
+    }
+    
+    .contact h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    .contact p {
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+      color: #555;
+    }
+    
+    .contact a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    
+    .contact a:hover {
+      color: var(--accent);
+      text-decoration: underline;
     }
     
     footer {
-      background: #eee;
       text-align: center;
-      padding: 1.5rem;
-      margin-top: 3rem;
+      padding: 2rem 0;
+      color: #777;
       font-size: 0.9rem;
-      color: var(--light-text);
-    }
-    
-    .no-results {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 2rem;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 2rem;
     }
     
     @media (max-width: 768px) {
-      .apps-grid {
-        grid-template-columns: 1fr;
+      header h1 {
+        font-size: 2.5rem;
       }
       
-      .controls {
-        flex-direction: column;
-        align-items: stretch;
+      header p {
+        font-size: 1.1rem;
       }
       
-      .search-box {
-        min-width: 100%;
+      .mission h2 {
+        font-size: 1.8rem;
+      }
+      
+      .category-map h2 {
+        font-size: 1.6rem;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>WPZ Studio</h1>
-    <p>Master New Skills, Effortlessly.</p>
+    <div class="container">
+      <div class="header-content">
+        <h1>WPZ Studio</h1>
+        <p>Master New Skills, Effortlessly.</p>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section class="intro">
+  <section class="mission">
+    <div class="container">
+      <h2>我们的使命</h2>
       <p>欢迎来到 <strong>WPZ Studio</strong>，我们是一家专注于打造高效学习应用的独立开发工作室。我们相信，掌握新技能应该是一段有趣、直观且充满成就感的旅程。</p>
       <p>我们的重点是开发触控打字、语言学习等领域的专业应用，将复杂知识拆解为简单、互动、有趣的课程。</p>
-    </section>
-
-    <div class="controls">
-      <div class="search-box">
-        <input type="text" id="search-input" placeholder="搜索应用...">
-      </div>
-      <div class="categories" id="categories">
-        <button class="category-btn active" data-category="all">全部应用</button>
-        <button class="category-btn" data-category="education">教育</button>
-        <button class="category-btn" data-category="typing">打字</button>
-        <!-- 可以添加更多分类 -->
-      </div>
     </div>
+  </section>
 
-    <div class="apps-grid" id="apps-container">
-      <!-- 应用卡片将通过JavaScript动态生成 -->
-    </div>
-
-    <section class="contact-section">
-      <h3>📬 联系我们</h3>
-      <p>如需合作或了解更多，请联系：<a href="mailto:wuping2004@msn.com">wuping2004@msn.com</a></p>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 WPZ Studio. All rights reserved.
-  </footer>
-
-  <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
-  <script>
-    // 应用数据
-    const apps = [
-      {
-        id: "babywords",
-        name: "宝贝识字 WPZ",
-        category: "education",
-        description: "专为儿童设计的汉字学习应用，通过互动游戏和生动图片帮助孩子轻松学习汉字。",
-        image: "images/babywords.jpg",
-        storeUrl: "https://apps.microsoft.com/detail/9NNG75DPJV00",
-        productId: "9NNG75DPJV00",
-        features: [
-          "🌟 五大核心学习模块，全面启蒙",
-          "🔤 看图识字：通过生动图片理解汉字",
-          "📝 简单生字：基础汉字配笔画练习",
-          "🌍 英文单词：双语发音培养语感",
-          "📜 玩转古诗：经典诗词优美朗诵",
-          "✍️ 识字测试：趣味互动巩固知识"
-        ]
-      },
-      {
-        id: "typingadventure",
-        name: "Typing Adventure",
-        category: "typing",
-        description: "将键盘练习变为海底冒险的打字学习应用，通过游戏化学习提高打字速度和准确性。",
-        image: "images/typingadventure.jpg",
-        storeUrl: "https://apps.microsoft.com/detail/9NST4V4GGDTX",
-        productId: "9NST4V4GGDTX",
-        features: [
-          "🎮 键盘练习变身海底冒险",
-          "🧠 渐进式学习：从字母到词汇",
-          "🌊 海洋主题关卡：50+ 精美关卡",
-          "🏆 奖励系统：连击、积分、排行榜",
-          "💰 一次性购买，无广告无订阅"
-        ]
-      },
-      // 可以添加更多应用
-    ];
-
-    // DOM元素
-    const appsContainer = document.getElementById('apps-container');
-    const searchInput = document.getElementById('search-input');
-    const categoryButtons = document.querySelectorAll('.category-btn');
-
-    // 当前选中的分类
-    let currentCategory = 'all';
-    let currentSearch = '';
-
-    // 初始化应用展示
-    function renderApps() {
-      appsContainer.innerHTML = '';
-      
-      const filteredApps = apps.filter(app => {
-        const matchesCategory = currentCategory === 'all' || app.category === currentCategory;
-        const matchesSearch = app.name.toLowerCase().includes(currentSearch.toLowerCase()) || 
-                             app.description.toLowerCase().includes(currentSearch.toLowerCase());
-        return matchesCategory && matchesSearch;
-      });
-      
-      if (filteredApps.length === 0) {
-        appsContainer.innerHTML = `
-          <div class="no-results">
-            <h3>没有找到匹配的应用</h3>
-            <p>请尝试其他搜索词或分类</p>
+  <section class="category-map">
+    <div class="container">
+      <h2>应用分类地图</h2>
+      <div class="categories">
+        <!-- 语言学习类 -->
+        <div class="category-card">
+          <div class="category-header">
+            <h3>📚 语言学习</h3>
+            <button class="toggle-btn" onclick="toggleCategory(this)">+</button>
           </div>
-        `;
-        return;
-      }
-      
-      filteredApps.forEach(app => {
-        const appCard = document.createElement('div');
-        appCard.className = 'app-card';
-        appCard.innerHTML = `
-          <img src="${app.image}" alt="${app.name}应用截图" class="app-image">
-          <div class="app-content">
-            <h3 class="app-title">${app.name}</h3>
-            <p class="app-description">${app.description}</p>
-            <ul class="app-features">
-              ${app.features.map(feature => `<li>${feature}</li>`).join('')}
-            </ul>
-            <div class="app-badge">
-              <ms-store-badge
-                productid="${app.productId}"
-                productname="${app.name}"
-                window-mode="direct"
-                theme="light"
-                size="large"
-                language="en-us"
-                animation="on">
-              </ms-store-badge>
+          <div class="apps-container">
+            <div class="app">
+              <h4>宝贝识字 WPZ</h4>
+              <div class="app-content">
+                <p class="app-description">专为幼儿设计的识字应用，通过生动图片和趣味互动帮助孩子轻松学习汉字。</p>
+                <ul>
+                  <li>五大核心学习模块，全面启蒙</li>
+                  <li>看图识字：通过生动图片理解汉字</li>
+                  <li>简单生字：基础汉字配笔画练习</li>
+                  <li>英文单词：双语发音培养语感</li>
+                  <li>玩转古诗：经典诗词优美朗诵</li>
+                  <li>识字测试：趣味互动巩固知识</li>
+                </ul>
+                <a href="https://apps.microsoft.com/detail/9NNG75DPJV00" target="_blank" class="app-link">查看应用</a>
+              </div>
+            </div>
+            <div class="app">
+              <h4>English Vocabulary Builder</h4>
+              <div class="app-content">
+                <p class="app-description">通过游戏化方式帮助用户扩展英语词汇量，适合各个英语水平的学习者。</p>
+                <ul>
+                  <li>词汇分类学习：按主题分组记忆</li>
+                  <li>智能复习系统：基于遗忘曲线</li>
+                  <li>发音练习：真人发音示范</li>
+                  <li>进度跟踪：可视化学习成果</li>
+                </ul>
+                <a href="#" class="app-link">查看应用</a>
+              </div>
             </div>
           </div>
-        `;
-        appsContainer.appendChild(appCard);
-      });
+        </div>
+        
+        <!-- 打字练习类 -->
+        <div class="category-card">
+          <div class="category-header">
+            <h3>⌨️ 打字练习</h3>
+            <button class="toggle-btn" onclick="toggleCategory(this)">+</button>
+          </div>
+          <div class="apps-container">
+            <div class="app">
+              <h4>Typing Adventure</h4>
+              <div class="app-content">
+                <p class="app-description">键盘练习变身海底冒险，让打字学习变得有趣。从字母到词汇，循序渐进提升打字技能。</p>
+                <ul>
+                  <li>键盘练习变身海底冒险</li>
+                  <li>渐进式学习：从字母到词汇</li>
+                  <li>海洋主题关卡：50+ 精美关卡</li>
+                  <li>奖励系统：连击、积分、排行榜</li>
+                  <li>一次性购买，无广告无订阅</li>
+                </ul>
+                <a href="https://apps.microsoft.com/detail/9NST4V4GGDTX" target="_blank" class="app-link">查看应用</a>
+              </div>
+            </div>
+            <div class="app">
+              <h4>Speed Typer Pro</h4>
+              <div class="app-content">
+                <p class="app-description">专业打字速度提升工具，通过科学的训练方法帮助用户提高打字准确性和速度。</p>
+                <ul>
+                  <li>个性化训练计划</li>
+                  <li>实时速度与准确率统计</li>
+                  <li>多种练习模式</li>
+                  <li>错误分析与改进建议</li>
+                </ul>
+                <a href="#" class="app-link">查看应用</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 儿童教育类 -->
+        <div class="category-card">
+          <div class="category-header">
+            <h3>👶 儿童教育</h3>
+            <button class="toggle-btn" onclick="toggleCategory(this)">+</button>
+          </div>
+          <div class="apps-container">
+            <div class="app">
+              <h4>Math Fun for Kids</h4>
+              <div class="app-content">
+                <p class="app-description">通过趣味游戏帮助儿童学习数学基础概念，寓教于乐。</p>
+                <ul>
+                  <li>数字认知与计数</li>
+                  <li>基础加减法练习</li>
+                  <li>形状与颜色识别</li>
+                  <li>逻辑思维训练</li>
+                </ul>
+                <a href="#" class="app-link">查看应用</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 工具类 -->
+        <div class="category-card">
+          <div class="category-header">
+            <h3>🛠️ 实用工具</h3>
+            <button class="toggle-btn" onclick="toggleCategory(this)">+</button>
+          </div>
+          <div class="apps-container">
+            <div class="app">
+              <h4>Quick Notes Pro</h4>
+              <div class="app-content">
+                <p class="app-description">简洁高效的笔记应用，支持文本、图片、语音等多种输入方式。</p>
+                <ul>
+                  <li>多格式笔记支持</li>
+                  <li>云端同步功能</li>
+                  <li>标签分类管理</li>
+                  <li>密码保护隐私</li>
+                </ul>
+                <a href="#" class="app-link">查看应用</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h3>📬 联系我们</h3>
+      <p>如需合作或了解更多，请联系：<a href="mailto:wuping2004@msn.com">wuping2004@msn.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 WPZ Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleCategory(button) {
+      const categoryCard = button.closest('.category-card');
+      const appsContainer = categoryCard.querySelector('.apps-container');
+      const isExpanded = appsContainer.classList.contains('expanded');
+      
+      if (isExpanded) {
+        appsContainer.classList.remove('expanded');
+        button.textContent = '+';
+      } else {
+        appsContainer.classList.add('expanded');
+        button.textContent = '−';
+      }
     }
-
-    // 分类按钮事件
-    categoryButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        categoryButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-        currentCategory = button.getAttribute('data-category');
-        renderApps();
+    
+    // 为每个应用标题添加点击展开/收起功能
+    document.querySelectorAll('.app h4').forEach(header => {
+      header.addEventListener('click', function() {
+        const app = this.closest('.app');
+        const isExpanded = app.classList.contains('expanded');
+        
+        if (isExpanded) {
+          app.classList.remove('expanded');
+        } else {
+          app.classList.add('expanded');
+        }
       });
     });
-
-    // 搜索功能
-    searchInput.addEventListener('input', () => {
-      currentSearch = searchInput.value;
-      renderApps();
-    });
-
-    // 初始渲染
-    renderApps();
   </script>
 </body>
 </html>

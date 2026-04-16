@@ -1,18 +1,307 @@
 ---
 layout: default
+title: WPZ Studio 应用列表
+wide: true
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<section class="home-hero">
+  <h1>WPZ Studio 应用列表</h1>
+  <p>专注实用工具、学习教育与效率提升，持续发布面向全球用户的桌面应用。</p>
+</section>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<section class="home-intro" id="zhIntro">
+  <p>欢迎来到 WPZ Studio。我们是一家独立开发工作室，致力于打造好用、可靠、学习成本低的软件产品。</p>
+  <p>你可以在下方查看全部应用，并按分类快速筛选，点击卡片即可前往 Microsoft Store 查看详情。</p>
+</section>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+<section class="app-toolbar" aria-label="应用筛选工具栏">
+  <label for="categoryFilter">分类筛选</label>
+  <select id="categoryFilter">
+    <option value="all">全部分类</option>
+  </select>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+  <label for="keywordFilter">关键词</label>
+  <input id="keywordFilter" type="search" placeholder="输入应用名或描述" />
+
+  <label for="sortBy">排序</label>
+  <select id="sortBy">
+    <option value="name-asc">名称 A-Z</option>
+    <option value="name-desc">名称 Z-A</option>
+  </select>
+
+  <button id="resetFilter" type="button">清空筛选</button>
+  <span id="appCount" class="app-count">0 款应用</span>
+</section>
+
+<section id="appGrid" class="app-grid" aria-live="polite"></section>
+
+<script>
+  const apps = [
+    {
+      name: "AirBridge",
+      category: "高效工作",
+      price: "HK$15.00",
+      desc: "AirBridge 是一个在同一局域网内实现桌面与手机快速互传的工具。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "Color Lab",
+      category: "实用程序与工具",
+      price: "HK$9.00",
+      desc: "专业调色应用，模拟真实颜料混合，适合画师与设计师。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "Disk Space Cleaner Pro",
+      category: "高效工作",
+      price: "HK$12.00",
+      desc: "智能磁盘清理工具，一键释放 C 盘空间。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "Event Log Analyzer",
+      category: "开发人员工具",
+      price: "HK$8.00",
+      desc: "智能 Windows Event Log 分析工具。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "File Zen",
+      category: "实用程序与工具",
+      price: "HK$12.00",
+      desc: "智能文件整理工具，自动分类、规则引擎、重复文件查找。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "IIS Log Analyzer",
+      category: "实用程序与工具",
+      price: "HK$23.00",
+      desc: "专业 IIS 日志分析工具，支持可视化、威胁检测、性能监控。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "Image Utility",
+      category: "高效工作",
+      price: "HK$12.00",
+      desc: "专业级图片处理工具，适合设计师与内容创作者。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "KidsMathPro",
+      category: "教育",
+      price: "HK$15.00",
+      desc: "儿童数学学习应用，支持多语言与游戏化练习。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "NetDetectorPro",
+      category: "实用程序与工具",
+      price: "HK$19.00",
+      desc: "专业网络诊断工具，支持端口扫描、DNS、路由追踪等。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "NexZip",
+      category: "高效工作",
+      price: "HK$10.00",
+      desc: "简单易用的压缩解压工具。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "PDFUnifyDivide",
+      category: "高效工作",
+      price: "HK$8.00",
+      desc: "PDF 分割与合并工具。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "PetOClock",
+      category: "娱乐",
+      price: "HK$23.00",
+      desc: "桌面宠物应用，支持提醒与多语言。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "Phonics Master",
+      category: "教育",
+      price: "HK$19.00",
+      desc: "儿童英语自然拼读学习应用。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "Quick Paste Pro",
+      category: "高效工作",
+      price: "HK$18.00",
+      desc: "剪贴板历史管理器，支持文本、图片、文件。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "Rename Utility",
+      category: "高效工作",
+      price: "HK$8.00",
+      desc: "批量文件重命名工具。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "TerminalX",
+      category: "高效工作",
+      price: "HK$27.00",
+      desc: "现代化 SSH/SFTP 终端工具。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "Terraform Ops",
+      category: "实用程序与工具",
+      price: "HK$31.00（折后）",
+      desc: "Terraform 桌面工作台，支持可视化执行与日志。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "Tick Tock Learn",
+      category: "教育",
+      price: "HK$12.00",
+      desc: "儿童学习时钟应用。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "Typing Adventure",
+      category: "教育",
+      price: "HK$22.00",
+      desc: "打字冒险游戏，适合儿童与初学者。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    },
+    {
+      name: "XLSDiff",
+      category: "高效工作",
+      price: "HK$16.00",
+      desc: "Excel 对比工具，快速找出差异。",
+      link: "https://apps.microsoft.com/search/publisher?name=WPZStudio"
+    }
+  ];
+
+  const categoryFilter = document.getElementById("categoryFilter");
+  const keywordFilter = document.getElementById("keywordFilter");
+  const sortBy = document.getElementById("sortBy");
+  const resetFilter = document.getElementById("resetFilter");
+  const appGrid = document.getElementById("appGrid");
+  const appCount = document.getElementById("appCount");
+
+  function normalizeName(name) {
+    return String(name || "").trim().toLowerCase();
+  }
+
+  function isFreePrice(price) {
+    const text = String(price || "").trim().toLowerCase();
+
+    return text.includes("免费")
+      || text.includes("free")
+      || /^hk\$\s*0+(\.0+)?$/.test(text)
+      || /^\$\s*0+(\.0+)?$/.test(text)
+      || /^0+(\.0+)?$/.test(text);
+  }
+
+  function sanitizeApps(appList) {
+    const seenNames = new Set();
+    const result = [];
+
+    appList.forEach((app) => {
+      if (isFreePrice(app.price)) {
+        return;
+      }
+
+      const key = normalizeName(app.name);
+      if (!key || seenNames.has(key)) {
+        return;
+      }
+
+      seenNames.add(key);
+      result.push(app);
+    });
+
+    return result;
+  }
+
+  const visibleApps = sanitizeApps(apps);
+
+  const categories = [...new Set(visibleApps.map((app) => app.category))].sort();
+  categories.forEach((category) => {
+    const option = document.createElement("option");
+    option.value = category;
+    option.textContent = category;
+    categoryFilter.appendChild(option);
+  });
+
+  function sortApps(appList, sortType) {
+    const nextList = [...appList];
+
+    nextList.sort((a, b) => {
+      const left = a.name.toLowerCase();
+      const right = b.name.toLowerCase();
+
+      if (sortType === "name-desc") {
+        return right.localeCompare(left);
+      }
+
+      return left.localeCompare(right);
+    });
+
+    return nextList;
+  }
+
+  function renderApps() {
+    const selectedCategory = categoryFilter.value;
+    const keyword = keywordFilter.value.trim().toLowerCase();
+    const sortType = sortBy.value;
+
+    const filteredByCategory = selectedCategory === "all"
+      ? visibleApps
+      : visibleApps.filter((app) => app.category === selectedCategory);
+
+    const filteredApps = keyword.length === 0
+      ? filteredByCategory
+      : filteredByCategory.filter((app) => {
+        return app.name.toLowerCase().includes(keyword) || app.desc.toLowerCase().includes(keyword);
+      });
+
+    const sortedApps = sortApps(filteredApps, sortType);
+
+    appCount.textContent = sortedApps.length + " 款应用";
+
+    if (sortedApps.length === 0) {
+      appGrid.innerHTML = `
+        <article class="app-empty">
+          <h3>未找到匹配应用</h3>
+          <p>请尝试更换关键词或分类，或者点击“清空筛选”。</p>
+        </article>
+      `;
+      return;
+    }
+
+    appGrid.innerHTML = sortedApps
+      .map((app) => {
+        return `
+          <article class="app-card">
+            <h3>${app.name}</h3>
+            <p class="app-meta">${app.category}</p>
+            <p class="app-price">${app.price}</p>
+            <p class="app-desc">${app.desc}</p>
+            <a href="${app.link}" target="_blank" rel="noopener noreferrer">查看详情</a>
+          </article>
+        `;
+      })
+      .join("");
+  }
+
+  categoryFilter.addEventListener("change", renderApps);
+  keywordFilter.addEventListener("input", renderApps);
+  sortBy.addEventListener("change", renderApps);
+
+  resetFilter.addEventListener("click", () => {
+    categoryFilter.value = "all";
+    keywordFilter.value = "";
+    sortBy.value = "name-asc";
+    renderApps();
+  });
+
+  renderApps();
+</script>

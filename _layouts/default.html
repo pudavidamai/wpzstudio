@@ -1,196 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WPZ Studio | Learning App Development</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f6f8;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: white;
-      padding: 3rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
-      font-weight: 600;
-    }
-    header p {
-      font-size: 1.3rem;
-      margin-top: 0.5rem;
-    }
-    .lang-switch {
-      text-align: center;
-      margin: 1rem;
-    }
-    .lang-switch button {
-      margin: 0 0.5rem;
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-      background-color: #0078d7;
-      color: white;
-    }
-    section {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .product {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      margin-bottom: 2.5rem;
-      padding: 2rem;
-    }
-    .product h2 {
-      margin-top: 0;
-      color: #0078d7;
-      font-size: 1.8rem;
-    }
-    .product img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin: 1rem 0;
-    }
-    .features {
-      list-style: none;
-      padding-left: 0;
-    }
-    .features li::before {
-      content: "• ";
-      color: #00aaff;
-      font-weight: bold;
-    }
-    footer {
-      background: #e0e0e0;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.95rem;
-      color: #555;
-    }
-    a {
-      color: #0078d7;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-  <script>
-    function switchLang(lang) {
-      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
-      document.getElementById('zh').style.display = lang === 'zh' ? 'block' : 'none';
-    }
-    window.onload = function() {
-      switchLang('en'); // 默认英文
-    };
-  </script>
-</head>
-<body>
-  <header>
-    <h1>WPZ Studio</h1>
-    <p>Master New Skills, Effortlessly.</p>
-  </header>
+<html>
+  <head>
+    {% include meta.html %}
 
-  <div class="lang-switch">
-    <button onclick="switchLang('en')">English</button>
-    <button onclick="switchLang('zh')">中文</button>
-  </div>
+    <title>
+      {% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}
+    </title>
 
-  <!-- English Content -->
-  <div id="en">
-    <section>
-      <p>Welcome to <strong>WPZ Studio</strong>, an independent development studio dedicated to crafting engaging and effective learning applications. We believe that mastering a new skill should be a fun, intuitive, and rewarding experience for everyone.</p>
-      <p>Our focus is on creating specialized apps for skills like touch typing and language learning, breaking down complex subjects into simple, interactive, and enjoyable lessons.</p>
-    </section>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  </head>
 
-    <section class="product">
-      <h2>📘 Baby Words WPZ</h2>
-      <a href="https://apps.microsoft.com/detail/9NNG75DPJV00" target="_blank">View on Microsoft Store</a>
-      <img src="images/babywords.jpg" alt="Baby Words WPZ Screenshot" />
-      <ul class="features">
-        <li>🌟 Five Core Learning Modules for Early Childhood Education</li>
-        <li>🔤 Picture-Based Chinese Characters</li>
-        <li>📝 Basic Characters with Stroke Practice</li>
-        <li>🌍 English Vocabulary with Bilingual Pronunciation</li>
-        <li>📜 Classical Poetry Recitation</li>
-        <li>✍️ Interactive Quizzes</li>
-      </ul>
-    </section>
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.name }} avatar" /></a>
 
-    <section class="product">
-      <h2>⌨️ Typing Adventure</h2>
-      <a href="https://apps.microsoft.com/detail/9NST4V4GGDTX" target="_blank">View on Microsoft Store</a>
-      <img src="images/typingadventure.jpg" alt="Typing Adventure Screenshot" />
-      <ul class="features">
-        <li>🎮 Underwater Typing Combat</li>
-        <li>🧠 Progressive Learning</li>
-        <li>🌊 50+ Ocean-Themed Levels</li>
-        <li>🏆 Smart Rewards System</li>
-        <li>💰 Free Trial + One-Time Purchase</li>
-      </ul>
-    </section>
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
 
-    <section>
-      <h3>📬 Contact Us</h3>
-      <p>Email: <a href="mailto:wuping2004@msn.com">wuping2004@msn.com</a></p>
-    </section>
-  </div>
+          <nav>
+            <a href="{{ site.baseurl }}/">Home</a>
+            <a href="{{ site.baseurl }}/about/">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
 
-  <!-- Chinese Content -->
-  <div id="zh" style="display:none;">
-    <section>
-      <p>欢迎来到 <strong>WPZ Studio</strong>，我们是一家专注于打造高效学习应用的独立开发工作室。我们相信，掌握新技能应该是一段有趣、直观且充满成就感的旅程。</p>
-      <p>我们的重点是开发触控打字、语言学习等领域的专业应用，将复杂知识拆解为简单、互动、有趣的课程。</p>
-    </section>
+    <div id="main" role="main" class="container {% if page.wide %}container-wide{% endif %}">
+      {{ content }}
+    </div>
 
-    <section class="product">
-      <h2>📘 宝贝识字 WPZ</h2>
-      <a href="https://apps.microsoft.com/detail/9NNG75DPJV00" target="_blank">点击查看应用商店页面</a>
-      <img src="images/babywords.jpg" alt="宝贝识字应用截图" />
-      <ul class="features">
-        <li>🌟 五大核心学习模块，全面启蒙</li>
-        <li>🔤 看图识字：通过生动图片理解汉字</li>
-        <li>📝 简单生字：基础汉字配笔画练习</li>
-        <li>🌍 英文单词：双语发音培养语感</li>
-        <li>📜 玩转古诗：经典诗词优美朗诵</li>
-        <li>✍️ 识字测试：趣味互动巩固知识</li>
-      </ul>
-    </section>
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
 
-    <section class="product">
-      <h2>⌨️ Typing Adventure</h2>
-      <a href="https://apps.microsoft.com/detail/9NST4V4GGDTX" target="_blank">点击查看应用商店页面</a>
-      <img src="images/typingadventure.jpg" alt="Typing Adventure 应用截图" />
-      <ul class="features">
-        <li>🎮 键盘练习变身海底冒险</li>
-        <li>🧠 渐进式学习：从字母到词汇</li>
-        <li>🌊 海洋主题关卡：50+ 精美关卡</li>
-        <li>🏆 奖励系统：连击、积分、排行榜</li>
-        <li>💰 一次性购买，无广告无订阅</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>📬 联系我们</h3>
-      <p>如需合作或了解更多，请联系：<a href="mailto:wuping2004@msn.com">wuping2004@msn.com</a></p>
-    </section>
-  </div>
-
-  <footer>
-    &copy; 2025 WPZ Studio. All rights reserved.
-  </footer>
-</body>
+    {% include analytics.html %}
+  </body>
 </html>

@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+WPZ Studio 是一家独立开发工作室，坚信软件应该好用、可靠、学习成本低。
+在这里，你不必面对复杂繁琐的操作，只需专注真正重要的事。
 
-### More Information
+### 联系方式
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[wuping2004@msn.com](mailto:wuping2004@msn.com)

@@ -5,31 +5,31 @@ wide: true
 ---
 
 <section class="home-hero">
-  <h1>WPZ Studio 应用列表</h1>
-  <p>专注实用工具、学习教育与效率提升，持续发布面向全球用户的桌面应用。</p>
+  <h1 data-i18n-home="hero.title">WPZ Studio 应用列表</h1>
+  <p data-i18n-home="hero.subtitle">专注实用工具、学习教育与效率提升，持续发布面向全球用户的桌面应用。</p>
 </section>
 
 <section class="home-intro" id="zhIntro">
-  <p>欢迎来到 WPZ Studio。我们是一家独立开发工作室，致力于打造好用、可靠、学习成本低的软件产品。</p>
-  <p>你可以在下方查看全部应用，并按分类快速筛选，点击卡片即可前往 Microsoft Store 查看详情。</p>
+  <p data-i18n-home="intro.lead">欢迎来到 WPZ Studio。我们是一家独立开发工作室，致力于打造好用、可靠、学习成本低的软件产品。</p>
+  <p data-i18n-home="intro.detail">你可以在下方查看全部应用，并按分类快速筛选，点击卡片即可前往 Microsoft Store 查看详情。</p>
 </section>
 
-<section class="app-toolbar" aria-label="应用筛选工具栏">
-  <label for="categoryFilter">分类筛选</label>
+<section class="app-toolbar" id="appToolbar" aria-label="应用筛选工具栏">
+  <label id="categoryFilterLabel" for="categoryFilter" data-i18n-home="toolbar.category">分类筛选</label>
   <select id="categoryFilter">
     <option value="all">全部分类</option>
   </select>
 
-  <label for="keywordFilter">关键词</label>
+  <label id="keywordFilterLabel" for="keywordFilter" data-i18n-home="toolbar.keyword">关键词</label>
   <input id="keywordFilter" type="search" placeholder="输入应用名或描述" />
 
-  <label for="sortBy">排序</label>
+  <label id="sortByLabel" for="sortBy" data-i18n-home="toolbar.sort">排序</label>
   <select id="sortBy">
-    <option value="name-asc">名称 A-Z</option>
-    <option value="name-desc">名称 Z-A</option>
+    <option value="name-asc" data-i18n-home="toolbar.sortAsc">名称 A-Z</option>
+    <option value="name-desc" data-i18n-home="toolbar.sortDesc">名称 Z-A</option>
   </select>
 
-  <button id="resetFilter" type="button">清空筛选</button>
+  <button id="resetFilter" type="button" data-i18n-home="toolbar.reset">清空筛选</button>
   <span id="appCount" class="app-count">0 款应用</span>
 </section>
 
@@ -183,8 +183,207 @@ wide: true
   const keywordFilter = document.getElementById("keywordFilter");
   const sortBy = document.getElementById("sortBy");
   const resetFilter = document.getElementById("resetFilter");
+  const appToolbar = document.getElementById("appToolbar");
   const appGrid = document.getElementById("appGrid");
   const appCount = document.getElementById("appCount");
+  let currentLang = window.__wpzLang === "zh" ? "zh" : "en";
+
+  const homeText = {
+    zh: {
+      hero: {
+        title: "WPZ Studio 应用列表",
+        subtitle: "专注实用工具、学习教育与效率提升，持续发布面向全球用户的桌面应用。"
+      },
+      intro: {
+        lead: "欢迎来到 WPZ Studio。我们是一家独立开发工作室，致力于打造好用、可靠、学习成本低的软件产品。",
+        detail: "你可以在下方查看全部应用，并按分类快速筛选，点击卡片即可前往 Microsoft Store 查看详情。"
+      },
+      toolbar: {
+        category: "分类筛选",
+        keyword: "关键词",
+        sort: "排序",
+        sortAsc: "名称 A-Z",
+        sortDesc: "名称 Z-A",
+        reset: "清空筛选",
+        all: "全部分类",
+        searchPlaceholder: "输入应用名或描述",
+        countUnit: "款应用",
+        ariaLabel: "应用筛选工具栏"
+      },
+      empty: {
+        title: "未找到匹配应用",
+        detail: "请尝试更换关键词或分类，或者点击“清空筛选”。"
+      },
+      card: {
+        detail: "查看详情",
+        coverAltSuffix: "产品封面"
+      }
+    },
+    en: {
+      hero: {
+        title: "WPZ Studio App Catalog",
+        subtitle: "Focused on productivity, learning, and practical utilities for global desktop users."
+      },
+      intro: {
+        lead: "Welcome to WPZ Studio. We are an independent studio building reliable and easy-to-use software.",
+        detail: "Browse all apps below, filter by category, and open each card to view details on Microsoft Store."
+      },
+      toolbar: {
+        category: "Category",
+        keyword: "Keyword",
+        sort: "Sort",
+        sortAsc: "Name A-Z",
+        sortDesc: "Name Z-A",
+        reset: "Reset",
+        all: "All categories",
+        searchPlaceholder: "Search by app name or description",
+        countUnit: "apps",
+        ariaLabel: "App filter toolbar"
+      },
+      empty: {
+        title: "No matched apps",
+        detail: "Try another keyword or category, or click Reset."
+      },
+      card: {
+        detail: "View details",
+        coverAltSuffix: "app cover"
+      }
+    }
+  };
+
+  const categoryI18n = {
+    zh: {
+      "高效工作": "高效工作",
+      "实用程序与工具": "实用程序与工具",
+      "开发人员工具": "开发人员工具",
+      "教育": "教育",
+      "娱乐": "娱乐"
+    },
+    en: {
+      "高效工作": "Productivity",
+      "实用程序与工具": "Utilities & tools",
+      "开发人员工具": "Developer tools",
+      "教育": "Education",
+      "娱乐": "Entertainment"
+    }
+  };
+
+  function getByPath(obj, path) {
+    return path.split(".").reduce((acc, key) => {
+      if (!acc || typeof acc !== "object") {
+        return undefined;
+      }
+      return acc[key];
+    }, obj);
+  }
+
+  function t(path) {
+    return getByPath(homeText[currentLang], path) || getByPath(homeText.en, path) || path;
+  }
+
+  function categoryLabel(category) {
+    return categoryI18n[currentLang][category] || category;
+  }
+
+  function getAppDescription(app) {
+    if (currentLang === "en" && app.descEn) {
+      return app.descEn;
+    }
+
+    return app.desc;
+  }
+
+  function updateStaticText() {
+    const nodes = document.querySelectorAll("[data-i18n-home]");
+    nodes.forEach((node) => {
+      const key = node.getAttribute("data-i18n-home");
+      const text = t(key);
+      if (text) {
+        node.textContent = text;
+      }
+    });
+
+    keywordFilter.placeholder = t("toolbar.searchPlaceholder");
+    appToolbar.setAttribute("aria-label", t("toolbar.ariaLabel"));
+  }
+
+  function formatCount(value) {
+    if (currentLang === "en") {
+      return value + " " + t("toolbar.countUnit");
+    }
+
+    return value + " " + t("toolbar.countUnit");
+  }
+
+  function buildStoreSearchLink(name) {
+    return "https://apps.microsoft.com/search?query=" + encodeURIComponent(name + " WPZStudio");
+  }
+
+  function buildInitials(name) {
+    const compactName = String(name || "").trim();
+    const words = compactName.split(/\s+/).filter(Boolean);
+
+    if (words.length >= 2) {
+      return (words[0][0] + words[1][0]).toUpperCase();
+    }
+
+    return compactName.slice(0, 2).toUpperCase();
+  }
+
+  function escapeSvgText(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/\"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
+  function buildPalette(name) {
+    const palettes = [
+      ["#1d4ed8", "#0ea5e9"],
+      ["#0f766e", "#14b8a6"],
+      ["#7c3aed", "#ec4899"],
+      ["#b45309", "#f59e0b"],
+      ["#be123c", "#fb7185"],
+      ["#4338ca", "#22c55e"]
+    ];
+
+    const normalized = normalizeName(name);
+    let hash = 0;
+
+    for (let index = 0; index < normalized.length; index += 1) {
+      hash = normalized.charCodeAt(index) + ((hash << 5) - hash);
+    }
+
+    return palettes[Math.abs(hash) % palettes.length];
+  }
+
+  function buildCoverImage(app) {
+    const palette = buildPalette(app.name);
+    const name = escapeSvgText(app.name);
+    const category = escapeSvgText(categoryLabel(app.category));
+    const initials = escapeSvgText(buildInitials(app.name));
+    const svg = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="${name}">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="${palette[0]}"/>
+            <stop offset="100%" stop-color="${palette[1]}"/>
+          </linearGradient>
+        </defs>
+        <rect width="640" height="360" rx="28" fill="url(#g)"/>
+        <circle cx="540" cy="78" r="88" fill="rgba(255,255,255,0.12)"/>
+        <circle cx="112" cy="310" r="120" fill="rgba(255,255,255,0.08)"/>
+        <rect x="34" y="30" rx="18" ry="18" width="146" height="42" fill="rgba(255,255,255,0.16)"/>
+        <text x="52" y="58" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#ffffff">${category}</text>
+        <text x="42" y="210" font-family="Segoe UI, Arial, sans-serif" font-size="118" font-weight="700" letter-spacing="4" fill="#ffffff">${initials}</text>
+        <text x="42" y="296" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff">${name}</text>
+      </svg>
+    `.trim();
+
+    return "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(svg);
+  }
 
   function normalizeName(name) {
     return String(name || "").trim().toLowerCase();
@@ -215,7 +414,11 @@ wide: true
       }
 
       seenNames.add(key);
-      result.push(app);
+      result.push({
+        ...app,
+        image: String(app.image || "").trim(),
+        link: buildStoreSearchLink(app.name)
+      });
     });
 
     return result;
@@ -224,12 +427,26 @@ wide: true
   const visibleApps = sanitizeApps(apps);
 
   const categories = [...new Set(visibleApps.map((app) => app.category))].sort();
-  categories.forEach((category) => {
-    const option = document.createElement("option");
-    option.value = category;
-    option.textContent = category;
-    categoryFilter.appendChild(option);
-  });
+
+  function renderCategoryOptions() {
+    const selectedValue = categoryFilter.value || "all";
+
+    categoryFilter.innerHTML = "";
+
+    const allOption = document.createElement("option");
+    allOption.value = "all";
+    allOption.textContent = t("toolbar.all");
+    categoryFilter.appendChild(allOption);
+
+    categories.forEach((category) => {
+      const option = document.createElement("option");
+      option.value = category;
+      option.textContent = categoryLabel(category);
+      categoryFilter.appendChild(option);
+    });
+
+    categoryFilter.value = categories.includes(selectedValue) ? selectedValue : "all";
+  }
 
   function sortApps(appList, sortType) {
     const nextList = [...appList];
@@ -265,13 +482,13 @@ wide: true
 
     const sortedApps = sortApps(filteredApps, sortType);
 
-    appCount.textContent = sortedApps.length + " 款应用";
+    appCount.textContent = formatCount(sortedApps.length);
 
     if (sortedApps.length === 0) {
       appGrid.innerHTML = `
         <article class="app-empty">
-          <h3>未找到匹配应用</h3>
-          <p>请尝试更换关键词或分类，或者点击“清空筛选”。</p>
+          <h3>${t("empty.title")}</h3>
+          <p>${t("empty.detail")}</p>
         </article>
       `;
       return;
@@ -279,17 +496,30 @@ wide: true
 
     appGrid.innerHTML = sortedApps
       .map((app) => {
+        const fallbackCover = buildCoverImage(app);
+        const primaryCover = app.image || fallbackCover;
+
         return `
           <article class="app-card">
-            <h3>${app.name}</h3>
-            <p class="app-meta">${app.category}</p>
+            <a class="app-cover" href="${app.link}" target="_blank" rel="noopener noreferrer">
+              <img class="app-cover-image" src="${primaryCover}" data-fallback="${fallbackCover}" alt="${app.name} ${t("card.coverAltSuffix")}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=this.dataset.fallback;" />
+            </a>
+            <h3><a class="app-title-link" href="${app.link}" target="_blank" rel="noopener noreferrer">${app.name}</a></h3>
+            <p class="app-meta">${categoryLabel(app.category)}</p>
             <p class="app-price">${app.price}</p>
-            <p class="app-desc">${app.desc}</p>
-            <a href="${app.link}" target="_blank" rel="noopener noreferrer">查看详情</a>
+            <p class="app-desc">${getAppDescription(app)}</p>
+            <a href="${app.link}" target="_blank" rel="noopener noreferrer">${t("card.detail")}</a>
           </article>
         `;
       })
       .join("");
+  }
+
+  function applyHomeLanguage(lang) {
+    currentLang = lang === "zh" ? "zh" : "en";
+    updateStaticText();
+    renderCategoryOptions();
+    renderApps();
   }
 
   categoryFilter.addEventListener("change", renderApps);
@@ -303,5 +533,10 @@ wide: true
     renderApps();
   });
 
-  renderApps();
+  window.addEventListener("wpz:lang-change", (event) => {
+    const lang = event && event.detail ? event.detail.lang : "en";
+    applyHomeLanguage(lang);
+  });
+
+  applyHomeLanguage(currentLang);
 </script>

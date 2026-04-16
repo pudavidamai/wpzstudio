@@ -15,16 +15,20 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ '/' | relative_url }}" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.name }} avatar" /></a>
+          <a href="{{ '/' | relative_url }}" class="site-avatar"><img src="{{ site.avatar | relative_url }}" alt="{{ site.name }} avatar" /></a>
 
           <div class="site-info">
             <h1 class="site-name"><a href="{{ '/' | relative_url }}">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <p class="site-description" data-i18n-global="site.description">{{ site.description }}</p>
           </div>
 
           <nav>
-            <a href="{{ '/' | relative_url }}">Home</a>
-            <a href="{{ '/about/' | relative_url }}">About</a>
+            <a href="{{ '/' | relative_url }}" data-i18n-global="nav.home">Home</a>
+            <a href="{{ '/about/' | relative_url }}" data-i18n-global="nav.about">About</a>
+            <span class="lang-switch" aria-label="Language switcher">
+              <button type="button" class="lang-switch-btn" data-lang-option="zh">中</button>
+              <button type="button" class="lang-switch-btn" data-lang-option="en">EN</button>
+            </span>
           </nav>
         </header>
       </div>
@@ -43,5 +47,79 @@
     </div>
 
     {% include analytics.html %}
+    <script>
+      (function() {
+        const storageKey = "wpz-lang";
+        const globalText = {
+          zh: {
+            "nav.home": "首页",
+            "nav.about": "关于",
+            "site.description": "欢迎来到 WPZ Studio。我们是一家独立开发工作室，专注打造好用、可靠、学习成本低的软件产品。"
+          },
+          en: {
+            "nav.home": "Home",
+            "nav.about": "About",
+            "site.description": "Welcome to WPZ Studio, an independent development studio dedicated to crafting engaging and effective desktop applications."
+          }
+        };
+
+        function resolveInitialLang() {
+          const savedLang = window.localStorage.getItem(storageKey);
+          if (savedLang === "zh" || savedLang === "en") {
+            return savedLang;
+          }
+
+          return navigator.language && navigator.language.toLowerCase().startsWith("zh")
+            ? "zh"
+            : "en";
+        }
+
+        function applyGlobalI18n(lang) {
+          const dictionary = globalText[lang] || globalText.en;
+          const nodes = document.querySelectorAll("[data-i18n-global]");
+
+          nodes.forEach((node) => {
+            const key = node.getAttribute("data-i18n-global");
+            if (dictionary[key]) {
+              node.textContent = dictionary[key];
+            }
+          });
+        }
+
+        function updateButtons(lang) {
+          const buttons = document.querySelectorAll(".lang-switch-btn");
+          buttons.forEach((button) => {
+            const isActive = button.getAttribute("data-lang-option") === lang;
+            button.classList.toggle("is-active", isActive);
+            button.setAttribute("aria-pressed", isActive ? "true" : "false");
+          });
+        }
+
+        function setLang(lang) {
+          const nextLang = lang === "zh" ? "zh" : "en";
+          window.__wpzLang = nextLang;
+          document.documentElement.lang = nextLang === "zh" ? "zh-CN" : "en";
+          window.localStorage.setItem(storageKey, nextLang);
+          applyGlobalI18n(nextLang);
+          updateButtons(nextLang);
+          window.dispatchEvent(new CustomEvent("wpz:lang-change", { detail: { lang: nextLang } }));
+        }
+
+        document.addEventListener("click", (event) => {
+          const target = event.target;
+          if (!(target instanceof HTMLElement)) {
+            return;
+          }
+
+          if (!target.matches(".lang-switch-btn")) {
+            return;
+          }
+
+          setLang(target.getAttribute("data-lang-option"));
+        });
+
+        setLang(resolveInitialLang());
+      })();
+    </script>
   </body>
 </html>

@@ -1,5 +1,8 @@
 # WPZ Studio
 
+**Languages / 语言**:  
+[中文](./README.md) | [English](./README.en.md) | [한국어](./README.ko.md) | [日本語](./README.ja.md) | [Deutsch](./README.de.md) | [Français](./README.fr.md)
+
 这是 **WPZ Studio 的官方 GitHub 仓库**，用于维护官网与产品信息。  
 我们是一家独立开发工作室，专注于打造 **好用、可靠、学习成本低** 的桌面软件，覆盖效率工具、实用工具、教育学习与开发者场景。
 

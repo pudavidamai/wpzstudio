@@ -23,11 +23,12 @@ WPZ Studio 持续发布面向全球用户的桌面应用，核心方向包括：
 
 | 分类 | 产品 |
 |---|---|
-| 高效工作 | AirBridge, Disk Space Cleaner Pro, Image Utility, NexZip, PDFUnifyDivide, Quick Paste Pro, Rename Utility, TerminalX, XLSDiff |
-| 实用程序与工具 | Color Lab, File Zen, IIS Log Analyzer, NetDetectorPro, Terraform Ops |
+| 高效工作 | AirBridge, Disk Space Cleaner Pro, Image Utility, Nexzip, PDFUnifyDivide, Quick Paste Pro, Rename Utility, SortEase, TerminalX, XLSDiff |
+| 实用程序与工具 | Color Lab, DeskAssistor, File Zen, IIS Log Analyzer, NetDetectorPro, Terraform Ops, 证件照验证器 |
 | 开发人员工具 | Event Log Analyzer |
-| 教育 | KidsMathPro, Phonics Master, Tick Tock Learn, Typing Adventure |
+| 教育 | KidsMathPro, Phonics Master, Tick Tock Learn, Typing Adventure, 宝贝识字WPZ |
 | 娱乐 | PetOClock |
+| 照片与视频 | DeskFrame, MediaConverterPro |
 
 ## 这个仓库包含什么
 

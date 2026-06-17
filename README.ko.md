@@ -23,11 +23,12 @@ WPZ Studio는 전 세계 사용자를 위한 데스크톱 앱을 지속적으로
 
 | 분류 | 제품 |
 |---|---|
-| 생산성 | AirBridge, Disk Space Cleaner Pro, Image Utility, NexZip, PDFUnifyDivide, Quick Paste Pro, Rename Utility, TerminalX, XLSDiff |
-| 유틸리티 및 도구 | Color Lab, File Zen, IIS Log Analyzer, NetDetectorPro, Terraform Ops |
+| 생산성 | AirBridge, Disk Space Cleaner Pro, Image Utility, Nexzip, PDFUnifyDivide, Quick Paste Pro, Rename Utility, SortEase, TerminalX, XLSDiff |
+| 유틸리티 및 도구 | Color Lab, DeskAssistor, File Zen, IIS Log Analyzer, NetDetectorPro, Terraform Ops, 증명사진 검증기 |
 | 개발자 도구 | Event Log Analyzer |
-| 교육 | KidsMathPro, Phonics Master, Tick Tock Learn, Typing Adventure |
+| 교육 | KidsMathPro, Phonics Master, Tick Tock Learn, Typing Adventure, 빠오베이즈쯔리 WPZ |
 | 엔터테인먼트 | PetOClock |
+| 사진 및 비디오 | DeskFrame, MediaConverterPro |
 
 ## 이 저장소에 포함된 내용
 

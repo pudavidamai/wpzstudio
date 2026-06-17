@@ -36,11 +36,10 @@ wide: true
 <section id="appGrid" class="app-grid" aria-live="polite"></section>
 
 <script>
-  const apps = [
-    {
+  const apps = [{
       name: "AirBridge",
       category: "高效工作",
-      price: "HK$15.00",
+      price: "HK$14.00",
       desc: "同一局域网内桌面与手机快速互传工具，打开网址或扫描二维码即可自动连接。",
       descEn: "AirBridge is a same-LAN transfer tool for fast sharing between desktop and phone. Open the URL or scan the QR code to auto-connect instantly.",
       image: "https://store-images.s-microsoft.com/image/apps.48780.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.0c2ee24f-26e2-4b3e-928c-843ebf745b1e",
@@ -49,43 +48,79 @@ wide: true
     {
       name: "Color Lab",
       category: "实用程序与工具",
-      price: "HK$9.00",
+      price: "HK$8.00",
       desc: "专业调色应用，模拟真实颜料混合，支持色彩管理与配方保存。",
       descEn: "Color Lab is a professional color mixing app that simulates real pigment mixing and provides color management and recipe saving features.",
       image: "https://store-images.s-microsoft.com/image/apps.8299.14553363046121507.a15e2ea3-bc69-4c35-bed0-738d5f35d443.d3788399-d6f4-4f8d-bb3c-89aa484693d8",
       link: "https://apps.microsoft.com/detail/9p2q745tg8l8"
     },
     {
-      name: "English Vocabulary Builder",
-      category: "教育",
-      price: "See Store",
-      desc: "英语词汇学习应用，结合主题词库、复习机制与发音练习帮助提升词汇量。",
-      descEn: "English Vocabulary Builder improves vocabulary with topic-based word sets, review workflows, and pronunciation practice.",
-      image: "",
-      link: ""
-    },
-    {
       name: "DataKitPro",
       category: "高效工作",
-      price: "HK$9.00",
+      price: "HK$8.00",
       desc: "轻量级本地数据处理与分析工具，支持读取、检查、规范化并导出常见结构化数据。",
       descEn: "DataKitPro is a lightweight Windows desktop app for local data processing and analysis across common structured data formats.",
       image: "https://store-images.s-microsoft.com/image/apps.65448.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.d3e7b4b2-1565-4db3-a314-1ce7db5cfca6",
       link: "https://apps.microsoft.com/detail/9nl0qxn40f7c"
     },
     {
+      name: "DeskAssistor",
+      category: "实用程序与工具",
+      price: "HK$21.00",
+      desc: "Windows 桌面布局与工作区管理器，一键保存并恢复多应用窗口排列。",
+      descEn: "DeskAssistor is a Windows desktop layout and workspace manager that saves your current multi-app window arrangement and restores it in one click.",
+      image: "https://store-images.s-microsoft.com/image/apps.14000.13814166367109996.f6e01fd7-7a86-488c-84f2-dd1a5ebfcb1d.d2868a4b-f1f6-49a4-8353-1115acfe76b8",
+      link: "https://apps.microsoft.com/detail/9mtf9xk1s627"
+    },
+    {
+      name: "DeskFrame",
+      category: "照片与视频",
+      price: "HK$35.00",
+      desc: "轻量级桌面录屏工具，主打低延迟与精准捕捉控制，支持固定尺寸录制区域。",
+      descEn: "DeskFrame is a lightweight desktop screen recorder (Windows-first, cross-platform ready) focused on low latency and precise capture control. Enables fixed-size capture areas for production-ready recording workflows.",
+      image: "https://store-images.s-microsoft.com/image/apps.23929.14298137940792117.78f45817-89c0-4793-843e-380eab27c4d9.11b347c1-d86e-4f8e-b4de-d3570892749f",
+      link: "https://apps.microsoft.com/detail/9pm827x4q7j6"
+    },
+    {
+      name: "DiffMirror",
+      category: "实用程序与工具",
+      price: "HK$11.00",
+      desc: "快速比对两个文件差异的桌面工具，支持 CSV、TXT、JSON、XML、XLSX 等格式。",
+      descEn: "DiffMirror is a Windows desktop data comparison tool designed to detect differences between two files quickly. Supports CSV, TXT, JSON, XML, and XLSX — easily identify added, removed, and modified rows.",
+      image: "https://store-images.s-microsoft.com/image/apps.59031.13691747076275492.0f654220-cca0-45a7-a856-935bf17414cc.80bf3b07-d071-4bd3-aedb-29f7821327cb",
+      link: "https://apps.microsoft.com/detail/9nm8xm3sfh4r"
+    },
+    {
       name: "Disk Space Cleaner Pro",
       category: "高效工作",
-      price: "HK$12.00",
+      price: "HK$11.00",
       desc: "智能磁盘清理工具，可分析磁盘占用、清理缓存、定位大文件并提供存储优化建议。",
       descEn: "Disk Space Cleaner Pro analyzes disk usage, cleans temporary files and caches, locates large files, and provides storage optimization recommendations.",
       image: "https://store-images.s-microsoft.com/image/apps.62237.13693256489172012.f4799ca0-3f1d-49fd-b870-a4e8ea9566fd.a508079a-f8c3-4d8c-aaab-8d96d01df3bc",
       link: "https://apps.microsoft.com/detail/9nm72742fvd3"
     },
     {
+      name: "EasyGit",
+      category: "高效工作",
+      price: "HK$18.00",
+      desc: "面向 Windows 的可视化 Git 客户端，简化提交历史、暂存、远程同步与安全恢复操作。",
+      descEn: "EasyGit is a Windows-first visual Git client that streamlines commit history review, staging workflows, remote sync, and safe recovery operations.",
+      image: "https://store-images.s-microsoft.com/image/apps.4374.13991975057211079.d935d413-b23d-44f1-8c79-aa0221782ad8.6d50f097-04fb-4513-9fae-7b4a5205676c",
+      link: "https://apps.microsoft.com/detail/9n41rc0ddfx4"
+    },
+    {
+      name: "EasyMD",
+      category: "实用程序与工具",
+      price: "HK$12.00",
+      desc: "轻量级 Windows Markdown 编辑器，支持实时预览、文件管理、表格编辑与导出。",
+      descEn: "EaseMd is a lightweight Markdown editor for Windows with real-time preview, file management, table editing, and export capabilities, helping users efficiently edit and preview Markdown documents.",
+      image: "https://store-images.s-microsoft.com/image/apps.46854.14443982180150251.2bbf566e-198f-40b5-8b34-6257752743d7.265081ef-29ed-44e1-88a5-6c6750b2a750",
+      link: "https://apps.microsoft.com/detail/9nwk7bc2kkv4"
+    },
+    {
       name: "Event Log Analyzer",
       category: "开发人员工具",
-      price: "HK$8.00",
+      price: "HK$7.00",
       desc: "Windows 事件日志分析工具，帮助管理员与开发者快速定位、分析和排查系统问题。",
       descEn: "Event Log Analyzer helps IT professionals, administrators, and developers identify, analyze, and troubleshoot Windows Event Log issues.",
       image: "https://store-images.s-microsoft.com/image/apps.28062.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.870c7b63-e87b-40d9-b4f5-802bdce12f20",
@@ -94,70 +129,97 @@ wide: true
     {
       name: "File Zen",
       category: "实用程序与工具",
-      price: "HK$12.00",
+      price: "HK$11.00",
       desc: "智能文件整理工具，支持自动分类、监控规则、重复文件查找与批量重命名。",
       descEn: "File Zen is a file organization tool with auto classification, monitored rules, duplicate file detection, and batch renaming.",
       image: "https://store-images.s-microsoft.com/image/apps.11989.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.22ff04d1-b378-4476-94b9-b93dfdcea8f0",
       link: "https://apps.microsoft.com/detail/9plv5f2xbp02"
     },
     {
+      name: "Firewall Log Analyzer",
+      category: "高效工作",
+      price: "HK$14.00",
+      desc: "Windows 防火墙日志分析工具，流式读取并自动解析 #Fields 字段，支持多维筛选。",
+      descEn: "Firewall Insight is a Windows firewall log analyzer with streaming read, automatic `#Fields` parsing, and multi-dimensional filters to quickly understand ALLOW/DROP behavior, traffic sources, and risk trends.",
+      image: "https://store-images.s-microsoft.com/image/apps.49555.13536620826709790.9141fa88-2869-431d-b7c8-b609d180f418.c616bab8-52c9-40e5-9470-b6037459e1eb",
+      link: "https://apps.microsoft.com/detail/9n9jd6fjj4kc"
+    },
+    {
+      name: "Fun Mind Pro",
+      category: "高效工作",
+      price: "HK$20.00",
+      desc: "优雅强大的 Windows 思维导图工具，帮助可视化整理思路、记录笔记、规划项目并激发创意。",
+      descEn: "FunMind is an elegant and powerful mind mapping tool for Windows that helps users visually organize thoughts, take notes, plan projects, and spark creativity. Supports multiple professional layouts and rich visual styles.",
+      image: "https://store-images.s-microsoft.com/image/apps.59252.14477015747115128.6c14f1dd-fcfb-4b04-8394-718c68da2f86.78ce4b34-1bc3-4e90-9c3c-0fa3f6685bbb",
+      link: "https://apps.microsoft.com/detail/9nzncfkjq15p"
+    },
+    {
       name: "IIS Log Analyzer",
       category: "实用程序与工具",
-      price: "HK$23.00",
+      price: "HK$21.00",
       desc: "专业 IIS 日志分析工具，支持可视化分析、威胁检测、性能监控与运维洞察。",
       descEn: "IIS Log Analyzer provides visualization, threat detection, performance monitoring, and operational insights for IIS logs.",
-      image: "https://store-images.s-microsoft.com/image/apps.38043.13954392286658788.f123a090-446a-4b51-86d8-23d5a86c9e38.a61df246-0838-4131-a7a0-07d89f64f0d9",
+      image: "https://store-images.s-microsoft.com/image/apps.21902.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.6a146b07-6b35-4fc5-811d-cf3c2f5d85a9",
       link: "https://apps.microsoft.com/detail/9mtpwc2wvh8r"
     },
     {
       name: "Image Utility",
       category: "高效工作",
-      price: "HK$12.00",
+      price: "HK$11.00",
       desc: "专业级桌面图片处理工具，面向设计师、摄影师、内容创作者与商务用户。",
       descEn: "Image Utility is a professional-grade desktop image processing app for designers, photographers, content creators, and business users.",
-      image: "https://store-images.s-microsoft.com/image/apps.15320.14308529216914439.112f42d9-76b2-4843-a1e7-0517bb67dd33.84795cd5-e899-455c-989f-a92c78ee0448",
+      image: "https://store-images.s-microsoft.com/image/apps.52650.14282290831092529.0eee9266-2bc5-4656-a9d8-34e0e6dd41f1.40c79a52-fd6a-4509-a2f0-520cad7cc288",
       link: "https://apps.microsoft.com/detail/9pjhfdpph154"
+    },
+    {
+      name: "ImgToTxt",
+      category: "高效工作",
+      price: "HK$12.00",
+      desc: "Windows 桌面 OCR 应用，快速从图片中提取可编辑文本，支持拖放导入与多语言界面。",
+      descEn: "ImgToTxt is a Windows desktop OCR app that extracts editable text from images quickly and privately. Supports button-based and drag-and-drop image import, real-time 6-language UI switching, selectable-text overlay mode, and a classic OCR result view.",
+      image: "https://store-images.s-microsoft.com/image/apps.57089.14609124441104443.d772bac8-6c8a-4a95-bcf2-17de6c718dbd.bbfec068-e6d4-42d9-a2a0-5d96b73a41ad",
+      link: "https://apps.microsoft.com/detail/9p78h83x39d8"
     },
     {
       name: "KidsMathPro",
       category: "教育",
-      price: "HK$15.00",
+      price: "HK$14.00",
       desc: "儿童数学学习应用，结合游戏化算术、数感练习、数字比较与温度学习。",
       descEn: "KidsMathPro is a Windows math-learning app for children with game-style arithmetic, number-sense practice, comparisons, and temperature learning.",
-      image: "https://store-images.s-microsoft.com/image/apps.52668.13658778821688644.f738ac37-18b9-453d-9a6f-53836df42379.d68056e2-d9c7-4f63-8294-9a6972e24360",
+      image: "https://store-images.s-microsoft.com/image/apps.59706.13969365834373374.3f576597-3ca6-4095-8789-89674de3c197.3902ce33-1926-48d8-8833-c0191a8694cd",
       link: "https://apps.microsoft.com/detail/9n55sm71dz97"
-    },
-    {
-      name: "Math Fun for Kids",
-      category: "教育",
-      price: "See Store",
-      desc: "面向儿童的趣味数学启蒙应用，覆盖数字认知、基础运算与逻辑思维训练。",
-      descEn: "Math Fun for Kids introduces numbers, basic arithmetic, and logical thinking through playful learning activities.",
-      image: "",
-      link: ""
     },
     {
       name: "LogDigger",
       category: "高效工作",
-      price: "HK$20.00",
+      price: "HK$18.00",
       desc: "面向开发者、SRE 与 QA 团队的高性能日志分析工具，支持大文件筛选、标记与模式分析。",
       descEn: "LogDigger is a professional log analysis tool for developers, SRE, and QA teams with filtering, marking, and pattern analysis for huge log files.",
-      image: "https://store-images.s-microsoft.com/image/apps.13284.13535131168524069.e03d3bce-2fa3-4e11-90cf-c2df277ff17e.67612fb9-0532-419b-9746-6d91b7ea9f66",
+      image: "https://store-images.s-microsoft.com/image/apps.51667.13827302495581499.d33b3439-7c0f-4436-8f1f-a10c99766ea3.f4b3a6e0-773a-4bfc-8a04-3b907baf43a4",
       link: "https://apps.microsoft.com/detail/9msqvq43k9fb"
+    },
+    {
+      name: "MDConvertor",
+      category: "高效工作",
+      price: "HK$18.00",
+      desc: "面向内容创作与知识管理的文档转 Markdown 工具，将常见办公文件、图片、音频等转换为干净的 Markdown。",
+      descEn: "MDConvertor is a document to Markdown converter built for content creation and knowledge management. Transforms common office files, images, audio, and web-friendly formats into clean, reusable Markdown.",
+      image: "https://store-images.s-microsoft.com/image/apps.29955.14091895303786487.ed329044-78c9-4e28-be9b-3a59be806c9e.0e302ba7-8806-457d-a9f8-c51891223651",
+      link: "https://apps.microsoft.com/detail/9p88tgmgmw20"
     },
     {
       name: "MediaConverterPro",
       category: "照片与视频",
-      price: "HK$16.00",
+      price: "HK$15.00",
       desc: "桌面音视频格式转换工具，以简洁的队列式流程完成跨设备与播放环境转换。",
       descEn: "MediaConverterPro converts video and audio formats across devices and playback environments with a simple queue-driven workflow.",
-      image: "https://store-images.s-microsoft.com/image/apps.36526.14043192629842922.08762001-5b72-4e58-b4f8-006050ae642f.8e61942d-f740-45bf-a17e-2322f45504fc",
+      image: "https://store-images.s-microsoft.com/image/apps.53923.14261962286223945.5ae4d6a1-abd6-4637-be62-39ad6c688ff1.dcdbc911-c622-4144-a5b0-1071026472a2",
       link: "https://apps.microsoft.com/detail/9pkr5jpjxgjq"
     },
     {
       name: "NetDetectorPro",
       category: "实用程序与工具",
-      price: "HK$19.00",
+      price: "HK$18.00",
       desc: "专业网络诊断工具，集成端口扫描、DNS、路由追踪、TCP 握手、连通性与吞吐测试。",
       descEn: "NetDetectorPro combines port scanning, DNS diagnostics, traceroute, TCP handshake analysis, connectivity checks, and throughput testing.",
       image: "https://store-images.s-microsoft.com/image/apps.50916.13571672827200306.c4e3931b-3e41-4d5c-8acc-a53b8a7db7e7.49be8338-d76c-4dbf-aa17-6b908be42825",
@@ -166,7 +228,7 @@ wide: true
     {
       name: "Nexzip",
       category: "高效工作",
-      price: "HK$10.00",
+      price: "HK$9.00",
       desc: "简单强大的压缩与解压工具，支持多种主流压缩格式和直观拖放操作。",
       descEn: "NexZip is a simple yet powerful compression and extraction tool supporting multiple archive formats with an intuitive drag-and-drop interface.",
       image: "https://store-images.s-microsoft.com/image/apps.63514.13959056723315569.dcd75cbe-9c2e-4a67-9f42-86b172c1ec79.396e25e5-0483-4da4-b605-d180ad32e15a",
@@ -184,25 +246,16 @@ wide: true
     {
       name: "PetOClock",
       category: "娱乐",
-      price: "HK$23.00",
+      price: "HK$21.00",
       desc: "轻量级桌面宠物应用，结合动画互动、定时提醒、系统通知与多语言支持。",
       descEn: "PetOClock is a lightweight desktop pet app with animated interactions, scheduled reminders, system notifications, and multilingual support.",
       image: "https://store-images.s-microsoft.com/image/apps.3350.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.95b45407-e372-40b1-ae7a-1f8ddf6ff196",
       link: "https://apps.microsoft.com/detail/9n2g1lrxmcz4"
     },
     {
-      name: "Quick Notes Pro",
-      category: "高效工作",
-      price: "See Store",
-      desc: "轻量便签与速记工具，支持快速记录、分类整理与日常任务追踪。",
-      descEn: "Quick Notes Pro is a lightweight note-taking app for quick capture, organization, and daily task tracking.",
-      image: "",
-      link: ""
-    },
-    {
       name: "Phonics Master",
       category: "教育",
-      price: "HK$19.00",
+      price: "HK$18.00",
       desc: "面向 6-15 岁儿童与青少年的英语自然拼读学习应用，结合科学教学与游戏化体验。",
       descEn: "Phonics Master is an English phonics learning app for ages 6-15 with scientific teaching, gamified learning, and progress tracking.",
       image: "https://store-images.s-microsoft.com/image/apps.1542.14289137463972196.4669b448-07de-495a-8221-6ba15b44ba38.d88de922-bb8c-4f01-8032-a1137b10c179",
@@ -211,7 +264,7 @@ wide: true
     {
       name: "Quick Paste Pro",
       category: "高效工作",
-      price: "HK$18.00",
+      price: "HK$16.00",
       desc: "剪贴板历史管理器，自动记录复制的文本、图片与文件，便于随时快速访问。",
       descEn: "Quick Paste Pro is a clipboard history manager that records copied text, images, and files for quick access anytime.",
       image: "https://store-images.s-microsoft.com/image/apps.23597.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.ce1337a8-d464-42a2-b79b-ed727fc5c7c2",
@@ -229,52 +282,52 @@ wide: true
     {
       name: "SortEase",
       category: "高效工作",
-      price: "HK$21.00",
+      price: "HK$19.00",
       desc: "本地媒体与文档整理工具，围绕扫描、浏览、筛选与批量操作提供三栏工作区。",
       descEn: "SortEase organizes local media and documents with scan, browse, filter, and batch-action workflows in a three-pane workspace.",
       image: "https://store-images.s-microsoft.com/image/apps.50916.13588743790605220.39cb1228-ed93-4205-ba3c-ac7c9a72405c.922e3f7b-8d5b-4e21-97f8-e2b4804dd790",
       link: "https://apps.microsoft.com/detail/9ng19cfmj8mt"
     },
     {
-      name: "Speed Typer Pro",
-      category: "教育",
-      price: "See Store",
-      desc: "打字速度训练工具，提供分级练习、准确率统计与进度反馈。",
-      descEn: "Speed Typer Pro improves typing speed and accuracy with graded practice sessions and progress feedback.",
-      image: "",
-      link: ""
-    },
-    {
-      name: "Terraform Ops",
-      category: "实用程序与工具",
-      price: "See Store",
-      desc: "面向基础设施团队的 Terraform 辅助工具，帮助进行模板检查、执行流程管理与运维效率提升。",
-      descEn: "Terraform Ops is a utility for infrastructure teams to streamline template checks, execution workflows, and operations productivity.",
-      image: "",
-      link: ""
-    },
-    {
-      name: "Tick Tock Learn",
-      category: "教育",
-      price: "See Store",
-      desc: "儿童时钟认知学习应用，通过互动练习帮助理解整点、半点与日常时间表达。",
-      descEn: "Tick Tock Learn helps children understand clocks and everyday time expressions through interactive practice.",
-      image: "",
-      link: ""
-    },
-    {
       name: "TerminalX",
       category: "高效工作",
-      price: "HK$27.00",
+      price: "HK$25.00",
       desc: "现代化 SSH/SFTP 终端工具，支持分屏、智能连接管理与直观文件传输。",
       descEn: "TerminalX is a modern SSH/SFTP terminal app with split-screen support, intelligent connection management, and file transfer tools.",
       image: "https://store-images.s-microsoft.com/image/apps.21979.14214543539071194.2dc129c3-1de2-404d-b1a1-7cb664058c36.f47710ac-ef16-4c3a-b154-e1bc6f432687",
       link: "https://apps.microsoft.com/detail/9pjc2h3pxnfr"
     },
     {
+      name: "Terraform Ops",
+      category: "实用程序与工具",
+      price: "HK$35.00",
+      desc: "面向基础设施团队的桌面 Terraform 工作台，整合项目初始化、云认证、执行流程与变更可视化。",
+      descEn: "Terraform Ops is a desktop Terraform workspace for teams that want faster, safer, and more visible infrastructure delivery. Combines project setup, cloud authentication, Terraform execution, resource change visibility, and execution logs.",
+      image: "https://store-images.s-microsoft.com/image/apps.24176.14345464108170624.c8f42867-1e6f-41a0-bce6-870dc932868b.7aa4fbd6-6f65-479d-ba05-478e53e0a168",
+      link: "https://apps.microsoft.com/detail/9pnn03sk42b3"
+    },
+    {
+      name: "Tick Tock Learn",
+      category: "教育",
+      price: "HK$11.00",
+      desc: "面向 3-10 岁儿童的互动时钟学习应用，通过动画、生活场景与趣味测验掌握看表技能。",
+      descEn: "TickTockLearn is an interactive clock learning application for children aged 3-10. Through engaging animations, daily life scenarios, and fun quizzes, helps children master reading a clock in an educational and entertaining way.",
+      image: "https://store-images.s-microsoft.com/image/apps.8644.13527945267601751.74749bfc-6179-4a5a-a738-4ca2a3005da7.bc9e7224-1a6d-44df-81f6-99d3bea624f4",
+      link: "https://apps.microsoft.com/detail/9n9z4qzw389b"
+    },
+    {
+      name: "ToDoBell",
+      category: "高效工作",
+      price: "HK$28.00",
+      desc: "Windows 桌面宠物时钟，融合 Live2D 伙伴、翻页时钟、定时提醒与 Todo 提醒。",
+      descEn: "ToDoBell is a Windows desktop pet clock that combines a Live2D companion, flip clock, timed reminders, and Todo alerts. Keeps a lightweight companion on the desktop and shows detailed Todo reminders when scheduled items are due.",
+      image: "https://store-images.s-microsoft.com/image/apps.10729.14413081431091749.b9764a48-8056-4915-babb-dc6024f1af76.51e908d4-873d-4dae-91af-6b352e9ed4e0",
+      link: "https://apps.microsoft.com/detail/9ntjpm70zhps"
+    },
+    {
       name: "Typing Adventure",
       category: "教育",
-      price: "See Store",
+      price: "HK$20.00",
       desc: "海洋主题打字学习应用，以闯关方式训练键位记忆、准确率与输入速度。",
       descEn: "Typing Adventure is an ocean-themed typing app that improves key familiarity, accuracy, and speed through progressive levels.",
       image: "https://store-images.s-microsoft.com/image/apps.62466.14357132255105741.a5728cbc-6a9c-45b0-8aed-9d6478eb5631.b06401df-82c5-44a0-8d67-1faec653d6f3",
@@ -283,20 +336,47 @@ wide: true
     {
       name: "XLSDiff",
       category: "高效工作",
-      price: "See Store",
-      desc: "Excel 差异对比工具，支持快速定位工作簿与工作表中的数据变更。",
-      descEn: "XLSDiff is an Excel comparison tool for quickly locating data changes across workbooks and sheets.",
-      image: "",
-      link: ""
+      price: "HK$15.00",
+      desc: "办公与数据审查场景的 Excel 比对工具，快速定位工作表差异，减少人工核对成本。",
+      descEn: "XLSDiff is an Excel comparison tool for office and data review workflows. Quickly identify differences between worksheets, reduce manual checking, and improve version review efficiency.",
+      image: "https://store-images.s-microsoft.com/image/apps.30189.13523427922889625.76d26ca2-789c-4dbf-8bd9-dde566cb34f7.793afe78-4b55-471b-841f-865518135292",
+      link: "https://apps.microsoft.com/detail/9nb6hfvd647d"
     },
     {
-      name: "宝贝识字 WPZ",
+      name: "宝贝识字",
       category: "教育",
-      price: "See Store",
+      price: "Free",
+      desc: "看图识字， 一个简单易用的App,可以让小孩子轻松认识周边事物，学习汉字和英文。内容会不断更新和丰富。欢迎大家提供意见建议 QQ：2677915205",
+      descEn: "看图识字， 一个简单易用的App,可以让小孩子轻松认识周边事物，学习汉字和英文。内容会不断更新和丰富。欢迎大家提供意见建议 QQ：2677915205",
+      image: "https://store-images.s-microsoft.com/image/apps.61631.13510798887468410.8ac17986-346b-449e-bb3c-170a2d4d08d3.310b9152-2ea2-4ff8-a6f3-9060cfbec0b7",
+      link: "https://apps.microsoft.com/detail/9nblggh4nb61"
+    },
+    {
+      name: "宝贝识字WPZ",
+      category: "教育",
+      price: "HK$14.00",
       desc: "面向幼儿的识字学习应用，结合看图识字、古诗启蒙与互动测验。",
       descEn: "Baobei Literacy WPZ is an early-childhood Chinese literacy app with visual character learning, poem recitation, and interactive quizzes.",
-      image: "https://store-images.s-microsoft.com/image/apps.44582.13743467805288223.5fe1d946-5e82-4e74-bf9f-c50428df5cd2.b0a2045b-10f8-4ae5-9508-5f1cd8bf2880",
+      image: "https://store-images.s-microsoft.com/image/apps.3157.13743467805288223.5fe1d946-5e82-4e74-bf9f-c50428df5cd2.d55f7f78-3bc5-4057-ae08-e1e1f12e0210",
       link: "https://apps.microsoft.com/detail/9nng75dpjv00"
+    },
+    {
+      name: "证件照验证器",
+      category: "实用程序与工具",
+      price: "HK$10.00",
+      desc: "专业证件照验证与处理工具，快速检查照片是否符合身份证、护照、签证等官方规范。",
+      descEn: "ID Photo Validator is a professional ID photo verification and processing application that helps users quickly check whether their photos meet various national ID photo standards for ID cards, passports, visas, and professional certificates.",
+      image: "https://store-images.s-microsoft.com/image/apps.33266.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.aa1005f0-3646-4420-abaf-c5a990e5b3dc",
+      link: "https://apps.microsoft.com/detail/9nw9q3ngnvb3"
+    },
+    {
+      name: "车标 大全",
+      category: "实用程序与工具",
+      price: "Free",
+      desc: "收录主流汽车车标的识别参考应用，帮助用户快速认识各种汽车品牌。",
+      descEn: "This app lists most car brand, and it is cool and helpful to recognize car brand.",
+      image: "https://store-images.s-microsoft.com/image/apps.1793.13510798887473220.09530013-16d3-4ccc-8fbc-3b549b0da628.9d27d87e-b415-4317-a579-81ee9169a198",
+      link: "https://apps.microsoft.com/detail/9nblggh4nlfp"
     }
   ];
 

@@ -24,7 +24,7 @@ WPZ Studio continuously publishes desktop applications for global users, with ke
 | Category | Products |
 |---|---|
 | Productivity | AirBridge, Disk Space Cleaner Pro, Image Utility, Nexzip, PDFUnifyDivide, Quick Paste Pro, Rename Utility, SortEase, TerminalX, XLSDiff |
-| Utilities & tools | Color Lab, DeskAssistor, File Zen, IIS Log Analyzer, NetDetectorPro, Terraform Ops, ID Photo Validator |
+| Utilities & tools | Color Lab, DeskAssistor, File Zen, FlyRSS, IIS Log Analyzer, NetDetectorPro, Terraform Ops, ID Photo Validator |
 | Developer tools | Event Log Analyzer |
 | Education | KidsMathPro, Phonics Master, Tick Tock Learn, Typing Adventure, Baobei Literacy WPZ |
 | Entertainment | PetOClock |

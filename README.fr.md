@@ -23,8 +23,8 @@ WPZ Studio publie en continu des applications desktop pour des utilisateurs du m
 
 | Catégorie | Produits |
 |---|---|
-| Productivité | AirBridge, Disk Space Cleaner Pro, Image Utility, Nexzip, PDFUnifyDivide, Quick Paste Pro, Rename Utility, SortEase, TerminalX, XLSDiff |
-| Utilitaires et outils | Color Lab, DeskAssistor, File Zen, FlyRSS, IIS Log Analyzer, NetDetectorPro, Terraform Ops, Validateur Photo d'Identité |
+| Productivité | AirBridge, Disk Space Cleaner Pro, EasyProb, Image Utility, Nexzip, PDFUnifyDivide, Quick Paste Pro, Rename Utility, SortEase, TerminalX, XLSDiff |
+| Utilitaires et outils | ClassPrinter, Color Lab, DeskAssistor, File Zen, FlyRSS, Global Meeting Scheduler, IIS Log Analyzer, NetDetectorPro, Terraform Ops, Validateur Photo d'Identité |
 | Outils développeur | Event Log Analyzer |
 | Éducation | KidsMathPro, Phonics Master, Tick Tock Learn, Typing Adventure, Baobei Literacy WPZ |
 | Divertissement | PetOClock |

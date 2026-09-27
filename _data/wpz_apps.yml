@@ -1,0 +1,2230 @@
+- productId: "9PF1C6SGDNJ4"
+  slug: "airbridge"
+  name: "AirBridge"
+  title: "AirBridge"
+  category: "高效工作"
+  price: "HK$14.00"
+  description: |
+    AirBridge 是一个在同一局域网内实现桌面与手机快速互传的工具。用户打开网页或扫描二维码后即可自动连接，无需配对码，适合日常办公与跨设备协作。
+  descriptionEn: |
+    AirBridge is a same-LAN transfer tool for fast sharing between desktop and phone. Open the URL or scan the QR code to auto-connect instantly.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.AirBridge_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.33931.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.4580e4e9-febd-4284-9e1f-ae7f60584a41"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.16377.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.c3d30178-c723-466f-b0f3-c3b99037aca4"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.11228.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.1cddee8c-2ac5-4290-9b84-dbc8262f95fe"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.56043.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.e3c52572-54a9-4cb5-a3ec-e77dca0332e8"
+    - purpose: "Tile"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.55222.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.b1ee61d5-7b6d-46c8-b309-e539cfc911e3"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.44171.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.2aa5164d-1810-4edf-8cc9-7962147b805b"
+    - purpose: "Tile"
+      width: 620
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.16377.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.c3d30178-c723-466f-b0f3-c3b99037aca4"
+    - purpose: "Screenshot"
+      width: 1036
+      height: 1213
+      url: "https://store-images.s-microsoft.com/image/apps.11228.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.1cddee8c-2ac5-4290-9b84-dbc8262f95fe"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.33931.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.4580e4e9-febd-4284-9e1f-ae7f60584a41"
+
+- productId: "9PJK99TRWV5B"
+  slug: "classprinter"
+  name: "ClassPrinter"
+  title: "ClassPrinter"
+  category: "实用程序与工具"
+  price: "HK$16.00"
+  description: |
+    ClassPrinter 是一款本地优先的学生课表制作工具，专为 Windows 设计。录入课程、设置时间、一键导出高清 PNG / PDF 课表，方便直接打印、贴墙或分享给同学。所有数据保存在你的电脑，不上传任何信息。
+  descriptionEn: |
+    ClassPrinter 是一款本地优先的学生课表制作工具，专为 Windows 设计。录入课程、设置时间、一键导出高清 PNG / PDF 课表，方便直接打印、贴墙或分享给同学。所有数据保存在你的电脑，不上传任何信息。
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.ClassPrinter_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.65287.14280757702903719.9553ce3e-bf5e-40b2-a942-9ded9bc4bbb8.bd8e56ae-b00c-4963-8016-ae04a73f64cd"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.65287.14280757702903719.9553ce3e-bf5e-40b2-a942-9ded9bc4bbb8.bd8e56ae-b00c-4963-8016-ae04a73f64cd"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.42761.14280757702903719.9553ce3e-bf5e-40b2-a942-9ded9bc4bbb8.a253b7c2-65a1-478c-8368-f161a9adf35e"
+  images:
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.65287.14280757702903719.9553ce3e-bf5e-40b2-a942-9ded9bc4bbb8.bd8e56ae-b00c-4963-8016-ae04a73f64cd"
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.57771.14280757702903719.9553ce3e-bf5e-40b2-a942-9ded9bc4bbb8.d8565678-2392-454e-86e8-318b83b8ded6"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.63761.14280757702903719.9553ce3e-bf5e-40b2-a942-9ded9bc4bbb8.a6ebc0ea-2135-4c82-b2c0-9962388c8aff"
+    - purpose: "Screenshot"
+      width: 1876
+      height: 1071
+      url: "https://store-images.s-microsoft.com/image/apps.53393.14280757702903719.9553ce3e-bf5e-40b2-a942-9ded9bc4bbb8.126dafd1-8590-46e7-91b0-f8f1ab430d6d"
+    - purpose: "Screenshot"
+      width: 1878
+      height: 1079
+      url: "https://store-images.s-microsoft.com/image/apps.42761.14280757702903719.9553ce3e-bf5e-40b2-a942-9ded9bc4bbb8.a253b7c2-65a1-478c-8368-f161a9adf35e"
+    - purpose: "Screenshot"
+      width: 1877
+      height: 1073
+      url: "https://store-images.s-microsoft.com/image/apps.51427.14280757702903719.9553ce3e-bf5e-40b2-a942-9ded9bc4bbb8.4cfa3823-34d4-4b59-90c0-d3dc1a2fceb3"
+    - purpose: "Screenshot"
+      width: 1868
+      height: 1074
+      url: "https://store-images.s-microsoft.com/image/apps.37997.14280757702903719.9553ce3e-bf5e-40b2-a942-9ded9bc4bbb8.56e278ad-7516-4fb4-bcc2-e213c7f07c1a"
+
+- productId: "9P2Q745TG8L8"
+  slug: "color-lab"
+  name: "Color Lab"
+  title: "Color Lab"
+  category: "实用程序与工具"
+  price: "HK$8.00"
+  description: |
+    Color Lab 是一款专为美术专业人士和艺术爱好者设计的专业调色应用。通过模拟真实颜料混合的物理特性，帮助用户精确调配出理想的颜色，并提供完整的颜色管理和配方保存功能。无论您是专业画家、设计师、美术学生还是艺术爱好者，Color Lab 都能成为您创作过程中不可或缺的调色助手。
+  descriptionEn: |
+    Color Lab is a professional color mixing app that simulates real pigment mixing and provides color management and recipe saving features.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.ColorLab_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.8299.14553363046121507.a15e2ea3-bc69-4c35-bed0-738d5f35d443.d3788399-d6f4-4f8d-bb3c-89aa484693d8"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.49923.14553363046121507.a15e2ea3-bc69-4c35-bed0-738d5f35d443.916e6196-fa37-4f2d-a105-160f95076d40"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.13989.14553363046121507.a15e2ea3-bc69-4c35-bed0-738d5f35d443.8b67b633-9c52-4e81-93b6-c0a85a0afabf"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.23613.14553363046121507.a15e2ea3-bc69-4c35-bed0-738d5f35d443.fab72760-bb9e-4c12-aaed-d839c71fa763"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.60965.14553363046121507.a15e2ea3-bc69-4c35-bed0-738d5f35d443.8ae742e7-68f3-4886-a818-4f5e8a5586af"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.2778.14553363046121507.a15e2ea3-bc69-4c35-bed0-738d5f35d443.d0b97a06-7eb9-4fe6-b012-79c42c4cb7d6"
+    - purpose: "Tile"
+      width: 310
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.49923.14553363046121507.a15e2ea3-bc69-4c35-bed0-738d5f35d443.916e6196-fa37-4f2d-a105-160f95076d40"
+    - purpose: "Screenshot"
+      width: 1920
+      height: 1036
+      url: "https://store-images.s-microsoft.com/image/apps.13989.14553363046121507.a15e2ea3-bc69-4c35-bed0-738d5f35d443.8b67b633-9c52-4e81-93b6-c0a85a0afabf"
+    - purpose: "Screenshot"
+      width: 1914
+      height: 1028
+      url: "https://store-images.s-microsoft.com/image/apps.51741.14553363046121507.a15e2ea3-bc69-4c35-bed0-738d5f35d443.a4e49695-5536-4da4-80b0-55a749fedb7e"
+    - purpose: "Screenshot"
+      width: 1920
+      height: 1037
+      url: "https://store-images.s-microsoft.com/image/apps.16149.14553363046121507.a15e2ea3-bc69-4c35-bed0-738d5f35d443.87c6783f-d9b5-4b97-8a3a-e7f73b60ee59"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.8299.14553363046121507.a15e2ea3-bc69-4c35-bed0-738d5f35d443.d3788399-d6f4-4f8d-bb3c-89aa484693d8"
+
+- productId: "9NL0QXN40F7C"
+  slug: "datakitpro"
+  name: "DataKitPro"
+  title: "DataKitPro"
+  category: "高效工作"
+  price: "HK$8.00"
+  description: |
+    DataKitPro 是一款面向 Windows 的轻量级本地数据处理与分析工具，支持对常见结构化文件进行读取、检查、转换与导出。它适合日常办公数据处理、开发调试和批量数据整理场景，强调“本地运行、快速上手、格式兼容”
+  descriptionEn: |
+    DataKitPro is a lightweight Windows desktop app for local data processing and analysis across common structured data formats.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.DataKitPro_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.65448.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.d3e7b4b2-1565-4db3-a314-1ce7db5cfca6"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.65448.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.d3e7b4b2-1565-4db3-a314-1ce7db5cfca6"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.19311.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.39477094-cade-4de0-9d31-7a15b6331a77"
+  images:
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.23134.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.0c7908fa-e863-45c3-8ed5-d5bcae9023d5"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.65448.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.d3e7b4b2-1565-4db3-a314-1ce7db5cfca6"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.47555.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.ada57313-3e33-4da8-ab62-0ba6ae40d774"
+    - purpose: "Screenshot"
+      width: 2240
+      height: 1294
+      url: "https://store-images.s-microsoft.com/image/apps.19311.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.39477094-cade-4de0-9d31-7a15b6331a77"
+    - purpose: "Screenshot"
+      width: 2240
+      height: 1294
+      url: "https://store-images.s-microsoft.com/image/apps.64638.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.ea29564d-1f08-42e3-ab11-a7128ff5edbd"
+    - purpose: "Screenshot"
+      width: 2240
+      height: 1294
+      url: "https://store-images.s-microsoft.com/image/apps.50705.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.55f4f726-8886-45bc-b9f5-cc725f2bfbcc"
+    - purpose: "Screenshot"
+      width: 2240
+      height: 1294
+      url: "https://store-images.s-microsoft.com/image/apps.36472.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.56a7b217-dd12-4c40-8ff4-bff11f6f79e4"
+
+- productId: "9MTF9XK1S627"
+  slug: "deskassistor"
+  name: "DeskAssistor"
+  title: "DeskAssistor"
+  category: "实用程序与工具"
+  price: "HK$21.00"
+  description: |
+    DeskAssistor 是一款 Windows 桌面布局与工作区管理工具，可保存当前多应用窗口布局，并在需要时一键恢复与切换。
+  descriptionEn: |
+    DeskAssistor is a Windows desktop layout and workspace manager that saves your current multi-app window arrangement and restores it in one click.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.DeskAssistor_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.14000.13814166367109996.f6e01fd7-7a86-488c-84f2-dd1a5ebfcb1d.d2868a4b-f1f6-49a4-8353-1115acfe76b8"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.14000.13814166367109996.f6e01fd7-7a86-488c-84f2-dd1a5ebfcb1d.d2868a4b-f1f6-49a4-8353-1115acfe76b8"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.25206.13814166367109996.f6e01fd7-7a86-488c-84f2-dd1a5ebfcb1d.3719771f-f317-4154-9d81-d8c8895244bd"
+  images:
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.14957.13814166367109996.f6e01fd7-7a86-488c-84f2-dd1a5ebfcb1d.1e79eb82-0526-4fa5-8302-6e772a1bd423"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.14000.13814166367109996.f6e01fd7-7a86-488c-84f2-dd1a5ebfcb1d.d2868a4b-f1f6-49a4-8353-1115acfe76b8"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.137.13814166367109996.f6e01fd7-7a86-488c-84f2-dd1a5ebfcb1d.d55f13b2-f5d2-4c81-aedf-ab2106048c52"
+    - purpose: "Screenshot"
+      width: 2196
+      height: 1142
+      url: "https://store-images.s-microsoft.com/image/apps.25206.13814166367109996.f6e01fd7-7a86-488c-84f2-dd1a5ebfcb1d.3719771f-f317-4154-9d81-d8c8895244bd"
+    - purpose: "Screenshot"
+      width: 2178
+      height: 1246
+      url: "https://store-images.s-microsoft.com/image/apps.12677.13814166367109996.f6e01fd7-7a86-488c-84f2-dd1a5ebfcb1d.a4d41ac4-13a0-4dcd-85bf-554edf216d90"
+
+- productId: "9PM827X4Q7J6"
+  slug: "deskframe"
+  name: "DeskFrame"
+  title: "DeskFrame"
+  category: "照片与视频"
+  price: "HK$35.00"
+  description: |
+    DeskFrame 是一款面向 Windows 优先、支持跨平台扩展的轻量级桌面录屏应用。它聚焦于低延迟和高可控性，尤其支持固定宽高的区域捕获，帮助用户直接生成可发布的视频素材。
+  descriptionEn: |
+    DeskFrame is a lightweight desktop screen recorder (Windows-first, cross-platform ready) focused on low latency and precise capture control. Enables fixed-size capture areas for production-ready recording workflows.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.DeskFrame_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.23929.14298137940792117.78f45817-89c0-4793-843e-380eab27c4d9.11b347c1-d86e-4f8e-b4de-d3570892749f"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.23929.14298137940792117.78f45817-89c0-4793-843e-380eab27c4d9.11b347c1-d86e-4f8e-b4de-d3570892749f"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.44377.14298137940792117.78f45817-89c0-4793-843e-380eab27c4d9.02c97e0c-e9cf-45ab-b019-85017e1ab7fc"
+  images:
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.23929.14298137940792117.78f45817-89c0-4793-843e-380eab27c4d9.11b347c1-d86e-4f8e-b4de-d3570892749f"
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.37001.14298137940792117.78f45817-89c0-4793-843e-380eab27c4d9.016ff355-14e2-4bd9-9249-af5e9f7e6846"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.8961.14298137940792117.78f45817-89c0-4793-843e-380eab27c4d9.fa230ec7-2c81-40ad-a28b-eb30c1d1317e"
+    - purpose: "Screenshot"
+      width: 2234
+      height: 1401
+      url: "https://store-images.s-microsoft.com/image/apps.44377.14298137940792117.78f45817-89c0-4793-843e-380eab27c4d9.02c97e0c-e9cf-45ab-b019-85017e1ab7fc"
+    - purpose: "Screenshot"
+      width: 2063
+      height: 1333
+      url: "https://store-images.s-microsoft.com/image/apps.15983.14298137940792117.78f45817-89c0-4793-843e-380eab27c4d9.4c1d1441-f6bf-4c70-beb2-bb972c7125c8"
+    - purpose: "Screenshot"
+      width: 1925
+      height: 1336
+      url: "https://store-images.s-microsoft.com/image/apps.51822.14298137940792117.78f45817-89c0-4793-843e-380eab27c4d9.8cfa6757-b20f-47eb-890e-b30ba7f1fb14"
+    - purpose: "Screenshot"
+      width: 1854
+      height: 1219
+      url: "https://store-images.s-microsoft.com/image/apps.64404.14298137940792117.78f45817-89c0-4793-843e-380eab27c4d9.33ad6818-0ad5-4e2d-9944-424fc528af11"
+
+- productId: "9NM8XM3SFH4R"
+  slug: "diffmirror"
+  name: "DiffMirror"
+  title: "DiffMirror"
+  category: "实用程序与工具"
+  price: "HK$11.00"
+  description: |
+    DiffMirror 是一款面向 Windows 的数据差异对比工具，支持 CSV、TXT、JSON、XML、XLSX 等常见文件格式。它帮助你在两个数据源之间快速定位新增、删除和修改内容，适合需要高频核对数据的个人和团队。
+  descriptionEn: |
+    DiffMirror 是一款面向 Windows 的数据差异对比工具，支持 CSV、TXT、JSON、XML、XLSX 等常见文件格式。它帮助你在两个数据源之间快速定位新增、删除和修改内容，适合需要高频核对数据的个人和团队。
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.DiffMirror_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.59031.13691747076275492.0f654220-cca0-45a7-a856-935bf17414cc.80bf3b07-d071-4bd3-aedb-29f7821327cb"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.59031.13691747076275492.0f654220-cca0-45a7-a856-935bf17414cc.80bf3b07-d071-4bd3-aedb-29f7821327cb"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.12709.13691747076275492.0f654220-cca0-45a7-a856-935bf17414cc.6d13b1e3-7683-47e6-99a1-8a9e15ffc9e4"
+  images:
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.59031.13691747076275492.0f654220-cca0-45a7-a856-935bf17414cc.80bf3b07-d071-4bd3-aedb-29f7821327cb"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.37185.13691747076275492.0f654220-cca0-45a7-a856-935bf17414cc.5915135e-4944-4294-8fd9-a0f639094556"
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.51914.13691747076275492.0f654220-cca0-45a7-a856-935bf17414cc.7c20a4f4-10b9-422f-89de-1f07f27397a5"
+    - purpose: "Screenshot"
+      width: 2202
+      height: 1360
+      url: "https://store-images.s-microsoft.com/image/apps.12709.13691747076275492.0f654220-cca0-45a7-a856-935bf17414cc.6d13b1e3-7683-47e6-99a1-8a9e15ffc9e4"
+    - purpose: "Screenshot"
+      width: 2195
+      height: 1354
+      url: "https://store-images.s-microsoft.com/image/apps.56200.13691747076275492.0f654220-cca0-45a7-a856-935bf17414cc.414a3d79-c8b5-4a5b-9a2f-2959338b219a"
+
+- productId: "9NM72742FVD3"
+  slug: "disk-space-cleaner-pro"
+  name: "Disk Space Cleaner Pro"
+  title: "Disk Space Cleaner Pro"
+  category: "高效工作"
+  price: "HK$11.00"
+  description: |
+    SpaceCleaner 是一款专为 Windows 用户设计的智能磁盘清理工具。无需专业知识，一键即可安全释放 C 盘空间，让您的系统运行更流畅。通过智能分析和安全清理技术，帮助您轻松管理磁盘空间，优化系统性能。
+    
+    主要核心功能 
+    
+    - 智能磁盘分析
+    
+    - 安全清理中心
+    
+    - 大文件定位器
+    
+    - 智能优化建议
+    
+    - 文件夹迁移
+  descriptionEn: |
+    Disk Space Cleaner Pro analyzes disk usage, cleans temporary files and caches, locates large files, and provides storage optimization recommendations.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.DiskSpaceCleanerPro_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.62237.13693256489172012.f4799ca0-3f1d-49fd-b870-a4e8ea9566fd.a508079a-f8c3-4d8c-aaab-8d96d01df3bc"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.37521.13693256489172012.f4799ca0-3f1d-49fd-b870-a4e8ea9566fd.4a192a5b-a091-485c-9dad-5a426e7a8c32"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.56063.13693256489172012.f84e5540-4f5d-4731-9f5d-31a7e46e4e7a.a0a6d662-ca3e-4dbe-a557-23e35f9f1b61"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.46973.13693256489172012.f4799ca0-3f1d-49fd-b870-a4e8ea9566fd.2ae43bf9-2170-4868-9cd4-1ff39b8ccbe3"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.34457.13693256489172012.f4799ca0-3f1d-49fd-b870-a4e8ea9566fd.0dd696cc-e40f-41f1-9d68-315105d46d65"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.24056.13693256489172012.f4799ca0-3f1d-49fd-b870-a4e8ea9566fd.369c9b38-26d9-4028-8433-dbeab19ee967"
+    - purpose: "Tile"
+      width: 310
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.37521.13693256489172012.f4799ca0-3f1d-49fd-b870-a4e8ea9566fd.4a192a5b-a091-485c-9dad-5a426e7a8c32"
+    - purpose: "Screenshot"
+      width: 1903
+      height: 1028
+      url: "https://store-images.s-microsoft.com/image/apps.15633.13693256489172012.f4799ca0-3f1d-49fd-b870-a4e8ea9566fd.ca3aeea7-5bc6-4191-961b-c051903f4770"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.62237.13693256489172012.f4799ca0-3f1d-49fd-b870-a4e8ea9566fd.a508079a-f8c3-4d8c-aaab-8d96d01df3bc"
+    - purpose: "Screenshot"
+      width: 1904
+      height: 1021
+      url: "https://store-images.s-microsoft.com/image/apps.26497.13693256489172012.f4799ca0-3f1d-49fd-b870-a4e8ea9566fd.5c6d3794-6764-4cd7-9ff3-333bd4b2cfc9"
+    - purpose: "Screenshot"
+      width: 1907
+      height: 1027
+      url: "https://store-images.s-microsoft.com/image/apps.16872.13693256489172012.f4799ca0-3f1d-49fd-b870-a4e8ea9566fd.d2935a41-e370-425c-8fde-14638d091f71"
+
+- productId: "9N41RC0DDFX4"
+  slug: "easygit"
+  name: "EasyGit"
+  title: "EasyGit"
+  category: "高效工作"
+  price: "HK$18.00"
+  description: |
+    EasyGit 是一款面向 Windows 的 Git 可视化客户端，帮助开发者快速完成提交历史查看、暂存区管理、远端同步与恢复操作。
+  descriptionEn: |
+    EasyGit is a Windows-first visual Git client that streamlines commit history review, staging workflows, remote sync, and safe recovery operations.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.EasyGit_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.4374.13991975057211079.d935d413-b23d-44f1-8c79-aa0221782ad8.6d50f097-04fb-4513-9fae-7b4a5205676c"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.4374.13991975057211079.d935d413-b23d-44f1-8c79-aa0221782ad8.6d50f097-04fb-4513-9fae-7b4a5205676c"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.13113.13991975057211079.d935d413-b23d-44f1-8c79-aa0221782ad8.8a1c641f-c380-4baf-ba6a-09e521da719f"
+  images:
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.4374.13991975057211079.d935d413-b23d-44f1-8c79-aa0221782ad8.6d50f097-04fb-4513-9fae-7b4a5205676c"
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.61878.13991975057211079.d935d413-b23d-44f1-8c79-aa0221782ad8.1c5acdaf-33d1-4610-9d4c-1eb9f1f2c5f2"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.35648.13991975057211079.d935d413-b23d-44f1-8c79-aa0221782ad8.620ac9ca-df3b-491e-ab73-56cc13c3e10b"
+    - purpose: "Screenshot"
+      width: 2157
+      height: 1306
+      url: "https://store-images.s-microsoft.com/image/apps.13123.13991975057211079.d935d413-b23d-44f1-8c79-aa0221782ad8.8e6e5334-047d-46c6-9137-7564eb73f637"
+    - purpose: "Screenshot"
+      width: 2213
+      height: 1308
+      url: "https://store-images.s-microsoft.com/image/apps.13113.13991975057211079.d935d413-b23d-44f1-8c79-aa0221782ad8.8a1c641f-c380-4baf-ba6a-09e521da719f"
+
+- productId: "9NWK7BC2KKV4"
+  slug: "easymd"
+  name: "EasyMD"
+  title: "EasyMD"
+  category: "实用程序与工具"
+  price: "HK$12.00"
+  description: |
+    EaseMd 是一款面向 Windows 平台的轻量级 Markdown 编辑器，支持实时预览、文件管理、表格编辑和导出功能，帮助用户高效编辑和预览 Markdown 文档。
+  descriptionEn: |
+    EaseMd is a lightweight Markdown editor for Windows with real-time preview, file management, table editing, and export capabilities, helping users efficiently edit and preview Markdown documents.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.EasyMD_v810h3yyd8p76"
+  subCategory: "File managers"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.46854.14443982180150251.2bbf566e-198f-40b5-8b34-6257752743d7.265081ef-29ed-44e1-88a5-6c6750b2a750"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.46854.14443982180150251.2bbf566e-198f-40b5-8b34-6257752743d7.265081ef-29ed-44e1-88a5-6c6750b2a750"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.22778.14443982180150251.2bbf566e-198f-40b5-8b34-6257752743d7.15078a3e-1222-415b-8eeb-f827c4589646"
+  images:
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.46854.14443982180150251.2bbf566e-198f-40b5-8b34-6257752743d7.265081ef-29ed-44e1-88a5-6c6750b2a750"
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.61626.14443982180150251.2bbf566e-198f-40b5-8b34-6257752743d7.d893bdb6-84ce-4fa6-8658-4a90633dd64f"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.55265.14443982180150251.2bbf566e-198f-40b5-8b34-6257752743d7.e9dbfe6e-982a-4576-aee2-9604951dcacb"
+    - purpose: "Screenshot"
+      width: 2082
+      height: 1319
+      url: "https://store-images.s-microsoft.com/image/apps.22778.14443982180150251.2bbf566e-198f-40b5-8b34-6257752743d7.15078a3e-1222-415b-8eeb-f827c4589646"
+    - purpose: "Screenshot"
+      width: 1920
+      height: 1032
+      url: "https://store-images.s-microsoft.com/image/apps.19621.14443982180150251.2bbf566e-198f-40b5-8b34-6257752743d7.4914e1aa-bb51-4731-b409-5a3a083203a7"
+
+- productId: "9PN5HX4R298B"
+  slug: "easyprob"
+  name: "EasyProb"
+  title: "EasyProb"
+  category: "高效工作"
+  price: "HK$15.00"
+  description: |
+    EasyProb 是一款面向 Windows 平台的轻量级本地健康监控应用，让你随时掌握服务/API 的运行状态与可用率，无需注册、无需云端、完全离线。所有数据存在本机 SQLite。
+  descriptionEn: |
+    EasyProb 是一款面向 Windows 平台的轻量级本地健康监控应用，让你随时掌握服务/API 的运行状态与可用率，无需注册、无需云端、完全离线。所有数据存在本机 SQLite。
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.EasyProb_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.23820.14355199120139673.54409845-ac97-4976-ae45-b22a6c353451.a6aac5c8-8677-4764-8125-66124b618ea0"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.23820.14355199120139673.54409845-ac97-4976-ae45-b22a6c353451.a6aac5c8-8677-4764-8125-66124b618ea0"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.11288.14355199120139673.54409845-ac97-4976-ae45-b22a6c353451.c696d7e7-4b6c-40b1-9f79-db181c542592"
+  images:
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.23820.14355199120139673.54409845-ac97-4976-ae45-b22a6c353451.a6aac5c8-8677-4764-8125-66124b618ea0"
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.34309.14355199120139673.54409845-ac97-4976-ae45-b22a6c353451.426c407d-0390-41d2-a69c-caa80a6c138a"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.33719.14355199120139673.54409845-ac97-4976-ae45-b22a6c353451.29a7a198-f3d7-4421-b5c6-7a651971883a"
+    - purpose: "Screenshot"
+      width: 1878
+      height: 1063
+      url: "https://store-images.s-microsoft.com/image/apps.11288.14355199120139673.54409845-ac97-4976-ae45-b22a6c353451.c696d7e7-4b6c-40b1-9f79-db181c542592"
+    - purpose: "Screenshot"
+      width: 1877
+      height: 1070
+      url: "https://store-images.s-microsoft.com/image/apps.58361.14355199120139673.54409845-ac97-4976-ae45-b22a6c353451.20155903-ac12-41ca-8386-4a4b666b1228"
+    - purpose: "Screenshot"
+      width: 1878
+      height: 1070
+      url: "https://store-images.s-microsoft.com/image/apps.42324.14355199120139673.54409845-ac97-4976-ae45-b22a6c353451.38ed4115-3566-4faa-bff4-68e5f6324bc0"
+    - purpose: "Screenshot"
+      width: 1877
+      height: 869
+      url: "https://store-images.s-microsoft.com/image/apps.9133.14355199120139673.54409845-ac97-4976-ae45-b22a6c353451.c36509b1-c950-4097-be95-7a59e4f40fc7"
+
+- productId: "9PDG51WW56TB"
+  slug: "event-log-analyzer"
+  name: "Event Log Analyzer"
+  title: "Event Log Analyzer"
+  category: "开发人员工具"
+  price: "HK$7.00"
+  description: |
+    EventLog Analyzer is a powerful, intelligent Windows Event Log analysis tool designed to help IT professionals, system administrators, and developers quickly identify, analyze, and troubleshoot system issues. With advanced pattern recognition, interactive visualizations, and multi-language support, it transforms complex event logs into actionable insights.
+  descriptionEn: |
+    Event Log Analyzer helps IT professionals, administrators, and developers identify, analyze, and troubleshoot Windows Event Log issues.
+  publisher: "WPZStudio"
+  developer: "wuping2024@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.EventLogAnalyzer_v810h3yyd8p76"
+  subCategory: "Utilities"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.28062.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.870c7b63-e87b-40d9-b4f5-802bdce12f20"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.16377.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.3265f7f5-db85-4dfb-b5f9-2f9a68809da0"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.13800.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.924ad994-6959-4c90-b3e7-ad5e4d08e593"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.56043.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.e0ea7fd5-0ccc-481b-abf0-b8ff73d6d425"
+    - purpose: "Tile"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.55222.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.f7c6cc6e-0861-4596-bef7-b271d83c0f5c"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.44171.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.fe13a9b0-1fae-45f9-b5d2-8f3d52da0750"
+    - purpose: "Tile"
+      width: 620
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.16377.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.3265f7f5-db85-4dfb-b5f9-2f9a68809da0"
+    - purpose: "Screenshot"
+      width: 1920
+      height: 1033
+      url: "https://store-images.s-microsoft.com/image/apps.13800.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.924ad994-6959-4c90-b3e7-ad5e4d08e593"
+    - purpose: "Screenshot"
+      width: 1920
+      height: 1036
+      url: "https://store-images.s-microsoft.com/image/apps.43343.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.e77f5f8d-f506-4445-93d0-a7ee377e0135"
+    - purpose: "Screenshot"
+      width: 1912
+      height: 1032
+      url: "https://store-images.s-microsoft.com/image/apps.61469.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.6dfc7b2b-3e0a-46f5-bbb7-825dbeeb5c3f"
+    - purpose: "Screenshot"
+      width: 1916
+      height: 1030
+      url: "https://store-images.s-microsoft.com/image/apps.17790.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.d8df7680-6627-46f3-9e4a-ad26c910d4f4"
+
+- productId: "9PLV5F2XBP02"
+  slug: "file-zen"
+  name: "File Zen"
+  title: "File Zen"
+  category: "实用程序与工具"
+  price: "HK$11.00"
+  description: |
+    📖 应用简介
+    
+    FileZen 是一款优雅而强大的 Windows 桌面应用，专为解决文件混乱问题而设计。通过智能算法和自动化规则，让文件整理变得简单、快速、优雅。告别杂乱无章的文件夹，拥抱井然有序的数字生活。
+    
+    一键整理，智能分类，让文件管理回归本质。
+    
+     核心功能
+    
+    1. 一键智能整理
+    - **自动分类**：根据文件类型（文档、图片、视频、音频等）自动分类
+    - **智能识别**：支持 50+ 种常见文件格式
+    - **快速整理**：一键完成整个文件夹的整理工作
+    - **安全可靠**：移动文件而非复制，保持磁盘空间高效利用
+    
+    2. 自动规则引擎
+    - **自定义规则**：根据文件名、扩展名、大小等条件创建规则
+    - **自动执行**：文件夹监控，新文件自动按规则整理
+    - **灵活配置**：支持多条件组合，满足复杂整理需求
+    - **规则管理**：轻松启用、禁用或删除规则
+    
+    3. 重复文件查找
+    - **智能检测**：基于文件内容（MD5）精确识别重复文件
+    - **递归扫描**：支持扫描子文件夹，全面查找重复项
+    - **批量清理**：一键删除重复文件，释放磁盘空间
+    - **安全保护**：保留原始文件，仅删除重复副本
+    
+    4. 批量重命名
+    - **模式重命名**：支持前缀、后缀、替换等多种模式
+    - **序号编号**：自动添加递增序号
+    - **预览功能**：重命名前预览效果，避免错误
+    - **批量处理**：一次处理数百个文件
+  descriptionEn: |
+    File Zen is a file organization tool with auto classification, monitored rules, duplicate file detection, and batch renaming.
+  publisher: "WPZStudio"
+  developer: "wuping2024@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.FileZen_v810h3yyd8p76"
+  subCategory: "File managers"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.11989.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.22ff04d1-b378-4476-94b9-b93dfdcea8f0"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.11989.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.22ff04d1-b378-4476-94b9-b93dfdcea8f0"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.12030.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.0f280a5e-2646-41a6-99a9-dde883b6fede"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.36989.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.c8ecf9c4-8b00-45c0-931e-4a31f3350076"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.42402.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.1438e26c-cca2-4247-85f8-3e1ebdd65a3e"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.33002.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.8e9d1828-57af-4708-9ce8-e5a6548a0b0a"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.52997.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.3372d17c-345a-48e3-9269-01cd3ffc04d8"
+    - purpose: "Screenshot"
+      width: 1920
+      height: 1038
+      url: "https://store-images.s-microsoft.com/image/apps.12030.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.0f280a5e-2646-41a6-99a9-dde883b6fede"
+    - purpose: "Screenshot"
+      width: 1920
+      height: 948
+      url: "https://store-images.s-microsoft.com/image/apps.19372.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.a9b5e86b-aae1-49b5-ba62-7218ff6d5ba2"
+    - purpose: "Screenshot"
+      width: 1920
+      height: 998
+      url: "https://store-images.s-microsoft.com/image/apps.16467.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.a46dd921-4a21-4111-aefb-a0e0c38e02de"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.11989.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.22ff04d1-b378-4476-94b9-b93dfdcea8f0"
+
+- productId: "9N9JD6FJJ4KC"
+  slug: "firewall-log-analyzer"
+  name: "Firewall Log Analyzer"
+  title: "Firewall Log Analyzer"
+  category: "高效工作"
+  price: "HK$14.00"
+  description: |
+    Firewall Insight 是一款面向 Windows 的防火墙日志分析应用，支持大文件流式读取、自动字段识别和多维筛选，帮助用户快速理解 ALLOW/DROP 行为、流量来源与风险趋势。
+  descriptionEn: |
+    Firewall Insight is a Windows firewall log analyzer with streaming read, automatic `#Fields` parsing, and multi-dimensional filters to quickly understand ALLOW/DROP behavior, traffic sources, and risk trends.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.FirewallLogAnalyzer_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.49555.13536620826709790.9141fa88-2869-431d-b7c8-b609d180f418.c616bab8-52c9-40e5-9470-b6037459e1eb"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.49555.13536620826709790.9141fa88-2869-431d-b7c8-b609d180f418.c616bab8-52c9-40e5-9470-b6037459e1eb"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.1789.13536620826709790.9141fa88-2869-431d-b7c8-b609d180f418.57d50e08-1342-4b55-b8bc-edece155e620"
+  images:
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.49555.13536620826709790.9141fa88-2869-431d-b7c8-b609d180f418.c616bab8-52c9-40e5-9470-b6037459e1eb"
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.50933.13536620826709790.9141fa88-2869-431d-b7c8-b609d180f418.f3abf990-8d7c-4fe6-a3bc-4df00b930630"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.28039.13536620826709790.9141fa88-2869-431d-b7c8-b609d180f418.36093db1-90b5-403d-aa37-a9fe7bb0b6c7"
+    - purpose: "Screenshot"
+      width: 2240
+      height: 1294
+      url: "https://store-images.s-microsoft.com/image/apps.1789.13536620826709790.9141fa88-2869-431d-b7c8-b609d180f418.57d50e08-1342-4b55-b8bc-edece155e620"
+    - purpose: "Screenshot"
+      width: 1754
+      height: 1065
+      url: "https://store-images.s-microsoft.com/image/apps.41182.13536620826709790.9141fa88-2869-431d-b7c8-b609d180f418.6186e746-f5c5-49f8-96c6-0a43925c5e2c"
+    - purpose: "Screenshot"
+      width: 1543
+      height: 1185
+      url: "https://store-images.s-microsoft.com/image/apps.57614.13536620826709790.9141fa88-2869-431d-b7c8-b609d180f418.4e1b1d91-6fca-41f6-b834-3003dd6ae3dc"
+    - purpose: "Screenshot"
+      width: 1754
+      height: 1065
+      url: "https://store-images.s-microsoft.com/image/apps.44777.13536620826709790.9141fa88-2869-431d-b7c8-b609d180f418.2b5f9c46-6490-4f93-9693-b77ba34ed931"
+
+- productId: "9PND35LQZPNZ"
+  slug: "flyrss"
+  name: "FlyRSS"
+  title: "FlyRSS"
+  category: "实用程序与工具"
+  price: "HK$16.00"
+  description: |
+    FlyRSS 是一款 Windows 桌面 RSS 阅读器，把你关心的所有订阅源集中在一处，轻量、本地优先、键盘友好。告别算法推荐和广告，回到主动订阅的阅读方式。
+  descriptionEn: |
+    FlyRSS 是一款 Windows 桌面 RSS 阅读器，把你关心的所有订阅源集中在一处，轻量、本地优先、键盘友好。告别算法推荐和广告，回到主动订阅的阅读方式。
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.FlyRSS_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.3316.14350577273810086.d541cf3b-fda0-439f-b8d2-57cf6075a850.fafd1cfa-3c1f-44f5-adfc-c00038c86357"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.3316.14350577273810086.d541cf3b-fda0-439f-b8d2-57cf6075a850.fafd1cfa-3c1f-44f5-adfc-c00038c86357"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.839.14350577273810086.d541cf3b-fda0-439f-b8d2-57cf6075a850.98312a93-ef94-4dfd-8b43-79ca6ed5cc09"
+  images:
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.44069.14350577273810086.d541cf3b-fda0-439f-b8d2-57cf6075a850.eb8aae38-9a11-492c-ada3-3e52dfbb636b"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.46575.14350577273810086.d541cf3b-fda0-439f-b8d2-57cf6075a850.edb9e3b1-8b86-4d30-ad96-cb86e311c18d"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.3316.14350577273810086.d541cf3b-fda0-439f-b8d2-57cf6075a850.fafd1cfa-3c1f-44f5-adfc-c00038c86357"
+    - purpose: "Screenshot"
+      width: 1865
+      height: 1078
+      url: "https://store-images.s-microsoft.com/image/apps.29308.14350577273810086.d541cf3b-fda0-439f-b8d2-57cf6075a850.843cf7ba-2902-4683-9bd2-1cadd26b9caa"
+    - purpose: "Screenshot"
+      width: 1878
+      height: 1058
+      url: "https://store-images.s-microsoft.com/image/apps.839.14350577273810086.d541cf3b-fda0-439f-b8d2-57cf6075a850.98312a93-ef94-4dfd-8b43-79ca6ed5cc09"
+    - purpose: "Screenshot"
+      width: 1876
+      height: 1074
+      url: "https://store-images.s-microsoft.com/image/apps.17190.14350577273810086.d541cf3b-fda0-439f-b8d2-57cf6075a850.93617e9b-9131-4485-ad7b-54cd066b6b25"
+    - purpose: "Screenshot"
+      width: 1878
+      height: 1071
+      url: "https://store-images.s-microsoft.com/image/apps.34894.14350577273810086.d541cf3b-fda0-439f-b8d2-57cf6075a850.e06ada16-b8a4-4d52-a07d-c70f7931e4c5"
+
+- productId: "9NZNCFKJQ15P"
+  slug: "fun-mind-pro"
+  name: "Fun Mind Pro"
+  title: "Fun Mind Pro"
+  category: "高效工作"
+  price: "HK$20.00"
+  description: |
+    FunMind 是一款优雅高效的 Windows 脑图（思维导图）工具，帮助用户可视化管理思绪、整理笔记、规划项目与激发创意。界面简洁美观，操作流畅自然，支持多种专业布局与丰富的视觉样式。
+  descriptionEn: |
+    FunMind is an elegant and powerful mind mapping tool for Windows that helps users visually organize thoughts, take notes, plan projects, and spark creativity. Supports multiple professional layouts and rich visual styles.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.FunMindPro_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.59252.14477015747115128.6c14f1dd-fcfb-4b04-8394-718c68da2f86.78ce4b34-1bc3-4e90-9c3c-0fa3f6685bbb"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.59252.14477015747115128.6c14f1dd-fcfb-4b04-8394-718c68da2f86.78ce4b34-1bc3-4e90-9c3c-0fa3f6685bbb"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.45380.14477015747115128.6c14f1dd-fcfb-4b04-8394-718c68da2f86.3b176c1c-301a-40c1-9e84-ebfbd6c7f8ed"
+  images:
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.1993.14477015747115128.6c14f1dd-fcfb-4b04-8394-718c68da2f86.e1d0b907-ba75-48d8-a8f0-9f90cc191997"
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.10089.14477015747115128.6c14f1dd-fcfb-4b04-8394-718c68da2f86.57e12d01-9729-4497-8990-91a04fcd1557"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.59252.14477015747115128.6c14f1dd-fcfb-4b04-8394-718c68da2f86.78ce4b34-1bc3-4e90-9c3c-0fa3f6685bbb"
+    - purpose: "Screenshot"
+      width: 1508
+      height: 793
+      url: "https://store-images.s-microsoft.com/image/apps.45380.14477015747115128.6c14f1dd-fcfb-4b04-8394-718c68da2f86.3b176c1c-301a-40c1-9e84-ebfbd6c7f8ed"
+    - purpose: "Screenshot"
+      width: 1508
+      height: 793
+      url: "https://store-images.s-microsoft.com/image/apps.47171.14477015747115128.6c14f1dd-fcfb-4b04-8394-718c68da2f86.e4d5d8dc-b26b-4d0f-aed6-25c3c4d14a93"
+    - purpose: "Screenshot"
+      width: 1508
+      height: 793
+      url: "https://store-images.s-microsoft.com/image/apps.14069.14477015747115128.6c14f1dd-fcfb-4b04-8394-718c68da2f86.c46af15e-725f-40b3-9975-f3b779ec7de9"
+    - purpose: "Screenshot"
+      width: 1506
+      height: 761
+      url: "https://store-images.s-microsoft.com/image/apps.14530.14477015747115128.6c14f1dd-fcfb-4b04-8394-718c68da2f86.8e7da46a-1e8c-405b-a235-2637ea89209d"
+    - purpose: "Screenshot"
+      width: 1508
+      height: 793
+      url: "https://store-images.s-microsoft.com/image/apps.43525.14477015747115128.6c14f1dd-fcfb-4b04-8394-718c68da2f86.eddba8e6-0f95-4433-b39a-89a0f2faa8d8"
+
+- productId: "9NVJ6W004049"
+  slug: "global-meeting-scheduler"
+  name: "Global Meeting Scheduler"
+  title: "Global Meeting Scheduler"
+  category: "实用程序与工具"
+  price: "HK$18.00"
+  description: |
+    **Global Meeting Scheduler（全球会议调度器）** 是一款面向 Windows 桌面用户的多时区协作工具，集**世界时钟、时区转换器、在线会议调度器**于一身。它以一张 24 小时网格同时呈现多个城市的时间，鼠标悬停即可换算，点击即可生成跨时区会议，并通过 iCal、Google Calendar、Outlook、Yahoo Calendar 一键分享。
+  descriptionEn: |
+    **Global Meeting Scheduler** is a Windows desktop tool for anyone who lives or works across multiple time zones. It combines a **world clock, time zone converter, and meeting scheduler** into a single 24-hour grid. Hover to convert, click to schedule, share to any calendar in one tap.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.GlobalMeetingScheduler_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.6671.14398359263134534.c2ed8331-0e4b-43ad-afc0-41ae623fe5af.c9ce6b39-47c2-4945-af60-e25aea31626e"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.6671.14398359263134534.c2ed8331-0e4b-43ad-afc0-41ae623fe5af.c9ce6b39-47c2-4945-af60-e25aea31626e"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.30942.14398359263134534.c2ed8331-0e4b-43ad-afc0-41ae623fe5af.8003a5e7-1b95-4ed9-acb6-8f7a00d56a02"
+  images:
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.6671.14398359263134534.c2ed8331-0e4b-43ad-afc0-41ae623fe5af.c9ce6b39-47c2-4945-af60-e25aea31626e"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.51131.14398359263134534.c2ed8331-0e4b-43ad-afc0-41ae623fe5af.b99d3b56-ead5-4eff-8b41-6c9d111eb267"
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.41837.14398359263134534.c2ed8331-0e4b-43ad-afc0-41ae623fe5af.858b0ece-369b-4651-bd97-02103b9b32c9"
+    - purpose: "Screenshot"
+      width: 2238
+      height: 1328
+      url: "https://store-images.s-microsoft.com/image/apps.30942.14398359263134534.c2ed8331-0e4b-43ad-afc0-41ae623fe5af.8003a5e7-1b95-4ed9-acb6-8f7a00d56a02"
+    - purpose: "Screenshot"
+      width: 2205
+      height: 1276
+      url: "https://store-images.s-microsoft.com/image/apps.821.14398359263134534.c2ed8331-0e4b-43ad-afc0-41ae623fe5af.29e06a0f-6042-4fa7-80be-c19e3369c961"
+    - purpose: "Screenshot"
+      width: 2234
+      height: 1346
+      url: "https://store-images.s-microsoft.com/image/apps.54546.14398359263134534.c2ed8331-0e4b-43ad-afc0-41ae623fe5af.b972462c-0fc3-49a2-976e-aa00c695babc"
+    - purpose: "Screenshot"
+      width: 2238
+      height: 1357
+      url: "https://store-images.s-microsoft.com/image/apps.50809.14398359263134534.c2ed8331-0e4b-43ad-afc0-41ae623fe5af.64fdda50-a6e3-46f2-bae4-b119f227fe0e"
+
+- productId: "9MTPWC2WVH8R"
+  slug: "iis-log-analyzer"
+  name: "IIS Log Analyzer"
+  title: "IIS Log Analyzer"
+  category: "实用程序与工具"
+  price: "HK$21.00"
+  description: |
+    **IIS Log Analyzer** 是一款专为网站管理员、系统运维人员和安全专家设计的专业 IIS 日志分析工具。通过强大的可视化分析和智能威胁检测功能，帮助您深入了解网站性能、用户行为和安全状况。
+    
+    ## 🎨 核心功能特性
+    
+    ### 📈 **实时统计分析**
+    - **总请求数统计** - 实时监控网站访问量
+    - **独立IP分析** - 识别真实用户和访问模式
+    - **流量分布图表** - 可视化展示流量趋势
+    - **状态码分析** - 快速定位错误和异常
+    
+    ### ⚡ **性能监控与优化**
+    - **响应时间分析** - 平均、中位数、95%响应时间
+    - **慢请求识别** - 自动标记性能瓶颈
+    - **错误率监控** - 实时跟踪4xx/5xx错误
+    - **性能建议** - 智能生成优化建议
+    
+    ### 🔍 **IP地址深度分析**
+    - **访问行为分析** - 每个IP的详细访问模式
+    - **风险评分系统** - 智能评估IP风险等级
+    - **异常标记** - 自动识别高频访问、多UA等异常
+    - **24小时趋势** - 可视化访问时间分布
+    
+    ### 🌐 **流量来源分析**
+    - **来源分类** - 搜索引擎、社交媒体、直接访问
+    - **质量评估** - 跳出率、停留时间、转化率分析
+    - **ROI分析** - 不同来源的价值评估
+    - **优化建议** - 流量获取策略建议
+    
+    ### 🤖 **User-Agent智能检测**
+    - **爬虫识别** - 自动区分正常用户和爬虫
+    - **异常检测** - 识别可疑和恶意User-Agent
+    - **风险评级** - 四级风险评估体系
+    - **自定义规则** - 支持白名单和黑名单配置
+    
+    ### 🛡️ **安全威胁检测**
+    - **扫描器识别** - 检测对敏感路径的扫描行为
+    - **DDoS攻击检测** - 高频请求模式识别
+    - **注入攻击检测** - SQL注入、XSS等攻击尝试
+    - **暴力破解检测** - 登录失败模式分析
+    - **实时警报** - 严重威胁即时提醒
+    
+    ---
+    
+    ## 🎯 目标客户群体
+    
+    ### 🏢 **企业IT部门**
+    - **网站管理员** - 日常运维和性能监控
+    - **系统运维工程师** - 服务器健康状况监控
+    - **DevOps团队** - 持续集成和部署监控
+    
+    ### 🔒 **安全团队**
+    - **安全分析师** - 威胁检测和事件响应
+    - **SOC团队** - 安全运营中心监控
+    - **合规审计** - 安全合规性检查
+    
+    ### 💼 **服务提供商**
+    - **托管服务商** - 为客户提供增值服务
+    - **云服务提供商** - 监控和优化服务质量
+    - **安全服务公司** - 安全咨询和监控服务
+    
+    ---
+    
+    ## 💰 商业价值
+    
+    ### 📊 **量化收益**
+    - **运维效率提升 80%** - 自动化分析替代人工
+    - **安全事件响应速度提升 5倍** - 实时检测和预警
+    - **网站性能优化 30%** - 基于数据的优化建议
+    - **安全成本降低 50%** - 预防性安全措施
+    
+    ### 🎯 **业务影响**
+    - **用户体验改善** - 更快的响应时间和更少的错误
+    - **安全风险降低** - 主动防护和威胁检测
+    - **运营成本节约** - 减少人工分析和故障处理时间
+    - **合规性保障** - 满足安全审计和合规要求
+    
+    ---
+    
+    ## 🌟 产品优势
+    
+    ### 🚀 **技术领先**
+    - **现代化架构** - 基于Electron和React的跨平台应用
+    - **高性能处理** - 支持大文件和海量日志分析
+    - **智能算法** - 机器学习驱动的异常检测
+    - **实时分析** - 毫秒级响应的数据处理
+    
+    ### 🎨 **用户体验**
+    - **直观界面** - 专业设计的可视化界面
+    - **中英双语** - 支持国际化使用
+    - **一键操作** - 简单易用的操作流程
+    - **自定义配置** - 灵活的个性化设置
+    
+    ### 🔧 **部署简单**
+    - **即装即用** - 无需复杂配置
+    - **跨平台支持** - Windows、macOS、Linux
+    - **离线工作** - 无需网络连接
+    - **数据安全** - 本地处理，保护隐私
+    
+    ---
+    
+    ## 📈 使用场景
+    
+    ### 🔍 **日常运维监控**
+    > "每天早上打开 IIS Log Analyzer，5分钟内了解昨夜网站运行状况"
+    
+    - 快速健康检查
+    - 性能指标监控
+    - 异常事件识别
+    - 趋势分析
+    
+    ### 🚨 **安全事件响应**
+    > "收到安全警报后，立即使用工具分析攻击来源和影响范围"
+    
+    - 威胁检测和分析
+    - 攻击路径追踪
+    - 影响评估
+    - 应急响应
+  descriptionEn: |
+    IIS Log Analyzer provides visualization, threat detection, performance monitoring, and operational insights for IIS logs.
+  publisher: "WPZStudio"
+  developer: "wuping2024@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.IISLogAnalyzer_v810h3yyd8p76"
+  subCategory: "File managers"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.21902.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.6a146b07-6b35-4fc5-811d-cf3c2f5d85a9"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.64505.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.efe68786-1d98-404c-bd2f-0093978035d4"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.58621.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.1a5f0a9e-cf54-4fc0-a5fd-d771895966b4"
+  images:
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.55301.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.1b6c7e14-e11c-40c1-8a25-d1dd421099ae"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.55301.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.1b6c7e14-e11c-40c1-8a25-d1dd421099ae"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.62867.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.07aa7e8f-d9e3-4693-ae2e-be09c660f463"
+    - purpose: "Tile"
+      width: 310
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.64505.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.efe68786-1d98-404c-bd2f-0093978035d4"
+    - purpose: "Screenshot"
+      width: 1678
+      height: 946
+      url: "https://store-images.s-microsoft.com/image/apps.16967.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.623cdf13-1231-4039-985d-c4770883ef27"
+    - purpose: "Screenshot"
+      width: 1857
+      height: 1025
+      url: "https://store-images.s-microsoft.com/image/apps.55106.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.5521580a-fe71-4a28-a858-440fddd086ec"
+    - purpose: "Screenshot"
+      width: 1861
+      height: 1026
+      url: "https://store-images.s-microsoft.com/image/apps.50813.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.d17abec1-a805-4fd8-8c6b-7e4e10515e42"
+    - purpose: "Screenshot"
+      width: 1847
+      height: 1027
+      url: "https://store-images.s-microsoft.com/image/apps.19337.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.11ecf59e-8628-4e7a-90bb-6f280e05bf38"
+
+- productId: "9PJHFDPPH154"
+  slug: "image-utility"
+  name: "Image Utility"
+  title: "Image Utility"
+  category: "高效工作"
+  price: "HK$11.00"
+  description: |
+    Image Utility 是一款专为设计师、摄影师、内容创作者和企业用户打造的专业级图片处理桌面应用。在数字化时代，图片处理已成为日常工作中不可或缺的一环，但传统的图片处理软件往往功能复杂、学习成本高，或者功能单一、无法满足多样化需求。ImagePro 应运而生，致力于为用户提供一个简单易用、功能强大、高效快速的图片处理解决方案。
+  descriptionEn: |
+    Image Utility is a professional-grade desktop image processing app for designers, photographers, content creators, and business users.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.ImageUtility_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.52650.14282290831092529.0eee9266-2bc5-4656-a9d8-34e0e6dd41f1.40c79a52-fd6a-4509-a2f0-520cad7cc288"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.16377.14282290831092529.0eee9266-2bc5-4656-a9d8-34e0e6dd41f1.1adf3288-2c4e-4e38-bfbc-0bc02c0b544d"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.52505.14282290831092529.f7768518-864c-47d7-807d-2e3ddaaa93dd.0601c605-45eb-478c-9673-028df5d5150b"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.56043.14282290831092529.0eee9266-2bc5-4656-a9d8-34e0e6dd41f1.502d321d-de4d-460a-96e5-377169b7d2f1"
+    - purpose: "Tile"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.55222.14282290831092529.0eee9266-2bc5-4656-a9d8-34e0e6dd41f1.bbcd0bc1-7262-459f-a0dd-63cac790f62b"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.44171.14282290831092529.0eee9266-2bc5-4656-a9d8-34e0e6dd41f1.c4e50f4c-309e-4f04-b8d5-cd06472092ec"
+    - purpose: "Tile"
+      width: 620
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.16377.14282290831092529.0eee9266-2bc5-4656-a9d8-34e0e6dd41f1.1adf3288-2c4e-4e38-bfbc-0bc02c0b544d"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.52650.14282290831092529.0eee9266-2bc5-4656-a9d8-34e0e6dd41f1.40c79a52-fd6a-4509-a2f0-520cad7cc288"
+    - purpose: "Screenshot"
+      width: 1240
+      height: 933
+      url: "https://store-images.s-microsoft.com/image/apps.29738.14282290831092529.0eee9266-2bc5-4656-a9d8-34e0e6dd41f1.e630e989-fe69-44bb-8fee-5645202d5f26"
+    - purpose: "Screenshot"
+      width: 1241
+      height: 934
+      url: "https://store-images.s-microsoft.com/image/apps.6665.14282290831092529.0eee9266-2bc5-4656-a9d8-34e0e6dd41f1.9eb00ad5-202a-4c4b-bfc8-56f590bd9398"
+    - purpose: "Screenshot"
+      width: 1238
+      height: 896
+      url: "https://store-images.s-microsoft.com/image/apps.27702.14282290831092529.0eee9266-2bc5-4656-a9d8-34e0e6dd41f1.e2b5571f-f9ab-497f-b177-3812bc78a7f5"
+
+- productId: "9P78H83X39D8"
+  slug: "imgtotxt"
+  name: "ImgToTxt"
+  title: "ImgToTxt"
+  category: "高效工作"
+  price: "HK$12.00"
+  description: |
+    ImgToTxt 是一款面向 Windows 桌面的本地 OCR 工具，可将图片中的文字快速识别为可编辑文本。应用支持按钮选择与拖拽两种加图方式、6 语言界面实时切换、可选择文字模式与传统结果视图，适用于学习、办公和内容整理场景。
+  descriptionEn: |
+    ImgToTxt is a Windows desktop OCR app that extracts editable text from images quickly and privately. Supports button-based and drag-and-drop image import, real-time 6-language UI switching, selectable-text overlay mode, and a classic OCR result view.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.ImgToTxt_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.57089.14609124441104443.d772bac8-6c8a-4a95-bcf2-17de6c718dbd.bbfec068-e6d4-42d9-a2a0-5d96b73a41ad"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.57089.14609124441104443.d772bac8-6c8a-4a95-bcf2-17de6c718dbd.bbfec068-e6d4-42d9-a2a0-5d96b73a41ad"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.58789.14609124441104443.d772bac8-6c8a-4a95-bcf2-17de6c718dbd.fe3403f1-120c-4973-b330-7adf34bdc5fd"
+  images:
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.57089.14609124441104443.d772bac8-6c8a-4a95-bcf2-17de6c718dbd.bbfec068-e6d4-42d9-a2a0-5d96b73a41ad"
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.48213.14609124441104443.d772bac8-6c8a-4a95-bcf2-17de6c718dbd.427c8fa2-1764-4008-97ad-36ecad495d19"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.39652.14609124441104443.d772bac8-6c8a-4a95-bcf2-17de6c718dbd.0d88844d-e5a2-447a-b2cb-f9a0082f3ffd"
+    - purpose: "Screenshot"
+      width: 2226
+      height: 1312
+      url: "https://store-images.s-microsoft.com/image/apps.58789.14609124441104443.d772bac8-6c8a-4a95-bcf2-17de6c718dbd.fe3403f1-120c-4973-b330-7adf34bdc5fd"
+    - purpose: "Screenshot"
+      width: 1479
+      height: 817
+      url: "https://store-images.s-microsoft.com/image/apps.79.14609124441104443.d772bac8-6c8a-4a95-bcf2-17de6c718dbd.336de3ae-4c2e-48e9-98b5-04f55420e92a"
+
+- productId: "9N55SM71DZ97"
+  slug: "kidsmathpro"
+  name: "KidsMathPro"
+  title: "KidsMathPro"
+  category: "教育"
+  price: "HK$14.00"
+  description: |
+    KidsMathPro 是一款面向儿童的 Windows 数学学习应用，基于 Electron + TypeScript 开发。应用将“数学闯关 + 数值感知 + 比大小 + 温度认知”结合在一个多语言界面中，帮助孩子在游戏化练习中建立计算与生活数学能力。
+  descriptionEn: |
+    KidsMathPro is a Windows math-learning app for children with game-style arithmetic, number-sense practice, comparisons, and temperature learning.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.KidsMathPro_v810h3yyd8p76"
+  subCategory: "Early learning"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.59706.13969365834373374.3f576597-3ca6-4095-8789-89674de3c197.3902ce33-1926-48d8-8833-c0191a8694cd"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.59706.13969365834373374.3f576597-3ca6-4095-8789-89674de3c197.3902ce33-1926-48d8-8833-c0191a8694cd"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.39922.13969365834373374.3f576597-3ca6-4095-8789-89674de3c197.37f67bdc-eef9-4bd3-aca0-82110ab5a587"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.29370.13969365834373374.3f576597-3ca6-4095-8789-89674de3c197.3013a114-be0e-4a40-a103-0646dbc3c2c0"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.36436.13969365834373374.3f576597-3ca6-4095-8789-89674de3c197.0c2d8b8b-9730-4dfd-bcfe-e9ea9127e04a"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.21748.13969365834373374.3f576597-3ca6-4095-8789-89674de3c197.27db859b-b150-47f3-8f15-a35cd7d52231"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.15950.13969365834373374.3f576597-3ca6-4095-8789-89674de3c197.eb9226dd-377d-4870-9cb1-217b43c4bdda"
+    - purpose: "Screenshot"
+      width: 1678
+      height: 1228
+      url: "https://store-images.s-microsoft.com/image/apps.25382.13969365834373374.3f576597-3ca6-4095-8789-89674de3c197.fc2d7877-0b3a-4bf4-ba6c-ffd8dfc6985c"
+    - purpose: "Screenshot"
+      width: 1633
+      height: 1149
+      url: "https://store-images.s-microsoft.com/image/apps.27235.13969365834373374.3f576597-3ca6-4095-8789-89674de3c197.60ba3a14-6c36-430b-8507-bf1cd1ae6751"
+    - purpose: "Screenshot"
+      width: 2170
+      height: 1174
+      url: "https://store-images.s-microsoft.com/image/apps.63934.13969365834373374.3f576597-3ca6-4095-8789-89674de3c197.b9b2f525-9b61-491f-b42e-4e9a55345bce"
+    - purpose: "Screenshot"
+      width: 1648
+      height: 1180
+      url: "https://store-images.s-microsoft.com/image/apps.37921.13969365834373374.3f576597-3ca6-4095-8789-89674de3c197.42349705-26f7-427f-b15e-9b82cde1694d"
+
+- productId: "9MSQVQ43K9FB"
+  slug: "logdigger"
+  name: "LogDigger"
+  title: "LogDigger"
+  category: "高效工作"
+  price: "HK$18.00"
+  description: |
+    LogDigger 是一款面向开发、运维和测试团队的专业日志分析工具，专注于超大日志文件的高性能查看、过滤、标记和模式分析，帮助快速定位故障根因。
+  descriptionEn: |
+    LogDigger is a professional log analysis tool for developers, SRE, and QA teams with filtering, marking, and pattern analysis for huge log files.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.LogDigger_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.51667.13827302495581499.d33b3439-7c0f-4436-8f1f-a10c99766ea3.f4b3a6e0-773a-4bfc-8a04-3b907baf43a4"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.51667.13827302495581499.d33b3439-7c0f-4436-8f1f-a10c99766ea3.f4b3a6e0-773a-4bfc-8a04-3b907baf43a4"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.28796.13827302495581499.d33b3439-7c0f-4436-8f1f-a10c99766ea3.01a79547-ba7e-4807-bb1e-636554b1ab7c"
+  images:
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.51667.13827302495581499.d33b3439-7c0f-4436-8f1f-a10c99766ea3.f4b3a6e0-773a-4bfc-8a04-3b907baf43a4"
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.49222.13827302495581499.d33b3439-7c0f-4436-8f1f-a10c99766ea3.2a9a4e94-98f1-4edd-9fe7-4b8f32fac419"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.61043.13827302495581499.d33b3439-7c0f-4436-8f1f-a10c99766ea3.749cbae5-e28b-400e-a1e7-83cd2ef04f92"
+    - purpose: "Screenshot"
+      width: 2560
+      height: 1369
+      url: "https://store-images.s-microsoft.com/image/apps.28796.13827302495581499.d33b3439-7c0f-4436-8f1f-a10c99766ea3.01a79547-ba7e-4807-bb1e-636554b1ab7c"
+    - purpose: "Screenshot"
+      width: 2560
+      height: 1369
+      url: "https://store-images.s-microsoft.com/image/apps.52253.13827302495581499.d33b3439-7c0f-4436-8f1f-a10c99766ea3.14b6d45f-255d-40dc-8a68-3c57a3ad005d"
+    - purpose: "Screenshot"
+      width: 2552
+      height: 1308
+      url: "https://store-images.s-microsoft.com/image/apps.44112.13827302495581499.d33b3439-7c0f-4436-8f1f-a10c99766ea3.739bf5aa-a3d5-4d91-9f20-c0f56b76be07"
+
+- productId: "9P88TGMGMW20"
+  slug: "mdconvertor"
+  name: "MDConvertor"
+  title: "MDConvertor"
+  category: "高效工作"
+  price: "HK$18.00"
+  description: |
+    MDConvertor 是一款面向内容创作和知识管理的文档转 Markdown 工具。它支持常见办公文档、图片、音频与网页数据格式，帮助你快速获得结构化、可编辑、可复用的 Markdown 内容。
+  descriptionEn: |
+    MDConvertor is a document to Markdown converter built for content creation and knowledge management. Transforms common office files, images, audio, and web-friendly formats into clean, reusable Markdown.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.MDConvertor_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.29955.14091895303786487.ed329044-78c9-4e28-be9b-3a59be806c9e.0e302ba7-8806-457d-a9f8-c51891223651"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.29955.14091895303786487.ed329044-78c9-4e28-be9b-3a59be806c9e.0e302ba7-8806-457d-a9f8-c51891223651"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.54150.14091895303786487.ed329044-78c9-4e28-be9b-3a59be806c9e.3fd15a95-6e8a-464e-9fc5-adc631177d7a"
+  images:
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.29955.14091895303786487.ed329044-78c9-4e28-be9b-3a59be806c9e.0e302ba7-8806-457d-a9f8-c51891223651"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.26584.14091895303786487.ed329044-78c9-4e28-be9b-3a59be806c9e.67a920df-062e-47a1-8d53-37278f85e591"
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.34535.14091895303786487.ed329044-78c9-4e28-be9b-3a59be806c9e.a984e2fb-8b75-449b-908e-8f2ae5622f9a"
+    - purpose: "Screenshot"
+      width: 2229
+      height: 1355
+      url: "https://store-images.s-microsoft.com/image/apps.54150.14091895303786487.ed329044-78c9-4e28-be9b-3a59be806c9e.3fd15a95-6e8a-464e-9fc5-adc631177d7a"
+
+- productId: "9PKR5JPJXGJQ"
+  slug: "mediaconverterpro"
+  name: "MediaConverterPro"
+  title: "MediaConverterPro"
+  category: "照片与视频"
+  price: "HK$15.00"
+  description: |
+    通用视频转换工具是一款面向桌面平台的视频与音频格式转换应用，帮助用户在不同设备与播放环境之间快速完成格式适配。
+  descriptionEn: |
+    MediaConverterPro converts video and audio formats across devices and playback environments with a simple queue-driven workflow.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.MediaConverterPro_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.53923.14261962286223945.5ae4d6a1-abd6-4637-be62-39ad6c688ff1.dcdbc911-c622-4144-a5b0-1071026472a2"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.22934.14261962286223945.5ae4d6a1-abd6-4637-be62-39ad6c688ff1.c8e828b1-dd68-4bc3-a2a3-9c21d1208e29"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.3495.14261962286223945.5ae4d6a1-abd6-4637-be62-39ad6c688ff1.0a814646-8f0c-4ec6-aebb-260f0eddc41f"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.50157.14261962286223945.5ae4d6a1-abd6-4637-be62-39ad6c688ff1.f103886b-949b-4400-a9e7-6a8278d89913"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.3188.14261962286223945.5ae4d6a1-abd6-4637-be62-39ad6c688ff1.f9aabb10-8795-40a4-ba74-e78d2dc387c1"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.52042.14261962286223945.5ae4d6a1-abd6-4637-be62-39ad6c688ff1.e518d7fb-854a-4fa9-ab48-cad3ee6c7d0a"
+    - purpose: "Tile"
+      width: 310
+      height: 310
+      url: "https://store-images.s-microsoft.com/image/apps.22934.14261962286223945.5ae4d6a1-abd6-4637-be62-39ad6c688ff1.c8e828b1-dd68-4bc3-a2a3-9c21d1208e29"
+    - purpose: "Tile"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.26191.14261962286223945.5ae4d6a1-abd6-4637-be62-39ad6c688ff1.7015a98a-8646-426e-becb-35595aefbaff"
+    - purpose: "Tile"
+      width: 310
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.42359.14261962286223945.5ae4d6a1-abd6-4637-be62-39ad6c688ff1.30bd592b-50dd-423d-b219-1f8dbf14e9f0"
+    - purpose: "Screenshot"
+      width: 2240
+      height: 1294
+      url: "https://store-images.s-microsoft.com/image/apps.3495.14261962286223945.5ae4d6a1-abd6-4637-be62-39ad6c688ff1.0a814646-8f0c-4ec6-aebb-260f0eddc41f"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.53923.14261962286223945.5ae4d6a1-abd6-4637-be62-39ad6c688ff1.dcdbc911-c622-4144-a5b0-1071026472a2"
+
+- productId: "9NC9SFCFW0TH"
+  slug: "netdetectorpro"
+  name: "NetDetectorPro"
+  title: "NetDetectorPro"
+  category: "实用程序与工具"
+  price: "HK$18.00"
+  description: |
+    NetDetectorPro 是一款面向 Windows 的专业网络诊断应用，基于 Electron + React + TypeScript 构建。它将端口扫描、DNS 解析检测、路由追踪、TCP 握手分析、连通性测试、链路质量监测、吞吐测试与报告对比整合到同一个界面中，帮助开发者、运维工程师和网络管理员更快定位网络问题。
+  descriptionEn: |
+    NetDetectorPro combines port scanning, DNS diagnostics, traceroute, TCP handshake analysis, connectivity checks, and throughput testing.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.NetDetectorPro_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.50916.13571672827200306.c4e3931b-3e41-4d5c-8acc-a53b8a7db7e7.49be8338-d76c-4dbf-aa17-6b908be42825"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.50916.13571672827200306.c4e3931b-3e41-4d5c-8acc-a53b8a7db7e7.49be8338-d76c-4dbf-aa17-6b908be42825"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.33599.13571672827200306.c4e3931b-3e41-4d5c-8acc-a53b8a7db7e7.9609a914-7040-4913-9610-41347fdad9c0"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.55383.13571672827200306.c4e3931b-3e41-4d5c-8acc-a53b8a7db7e7.fbf3a1ad-843e-4a7d-8706-078d03116425"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.11477.13571672827200306.c4e3931b-3e41-4d5c-8acc-a53b8a7db7e7.0718ecc7-e420-43a5-9801-ce328ab2cf61"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.7268.13571672827200306.c4e3931b-3e41-4d5c-8acc-a53b8a7db7e7.d6b0bf02-5346-4a7f-a5d6-75844b286998"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.10346.13571672827200306.c4e3931b-3e41-4d5c-8acc-a53b8a7db7e7.10f0fe7e-36ae-4508-9774-3df189b1f3ed"
+    - purpose: "Screenshot"
+      width: 2240
+      height: 1264
+      url: "https://store-images.s-microsoft.com/image/apps.33599.13571672827200306.c4e3931b-3e41-4d5c-8acc-a53b8a7db7e7.9609a914-7040-4913-9610-41347fdad9c0"
+    - purpose: "Screenshot"
+      width: 2240
+      height: 1264
+      url: "https://store-images.s-microsoft.com/image/apps.22287.13571672827200306.c4e3931b-3e41-4d5c-8acc-a53b8a7db7e7.2e266da5-f6de-4697-ae95-5dce8c0b1e78"
+    - purpose: "Screenshot"
+      width: 2240
+      height: 1264
+      url: "https://store-images.s-microsoft.com/image/apps.14055.13571672827200306.c4e3931b-3e41-4d5c-8acc-a53b8a7db7e7.3a4cc0f2-5fcf-4e9d-8112-54032b7d42ae"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.50916.13571672827200306.c4e3931b-3e41-4d5c-8acc-a53b8a7db7e7.49be8338-d76c-4dbf-aa17-6b908be42825"
+
+- productId: "9N2CD305M7ZX"
+  slug: "nexzip"
+  name: "Nexzip"
+  title: "Nexzip"
+  category: "高效工作"
+  price: "HK$9.00"
+  description: |
+    NexZip 是一款简单易用、功能强大的 Windows 压缩解压工具。支持多种主流压缩格式，提供直观的拖放操作界面，让文件压缩和解压变得轻松简单。无论是日常办公、文件传输还是数据备份，NexZip 都是您的最佳选择。
+  descriptionEn: |
+    NexZip is a simple yet powerful compression and extraction tool supporting multiple archive formats with an intuitive drag-and-drop interface.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.Nexzip_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.63514.13959056723315569.dcd75cbe-9c2e-4a67-9f42-86b172c1ec79.396e25e5-0483-4da4-b605-d180ad32e15a"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.55796.13959056723315569.dcd75cbe-9c2e-4a67-9f42-86b172c1ec79.1d6a23b5-ae1d-4d71-8c71-3cf1c0f8be5e"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.38890.13959056723315569.dcd75cbe-9c2e-4a67-9f42-86b172c1ec79.572af938-ea06-43bb-86d7-b82cb16b0793"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.35900.13959056723315569.dcd75cbe-9c2e-4a67-9f42-86b172c1ec79.dfa3480a-9331-4e6c-90d5-3cf337f53335"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.62338.13959056723315569.dcd75cbe-9c2e-4a67-9f42-86b172c1ec79.f9c88d6f-1d20-492f-9aba-82df08d13ba2"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.56054.13959056723315569.dcd75cbe-9c2e-4a67-9f42-86b172c1ec79.6e1428db-02b9-4d87-8f76-74b942f75be9"
+    - purpose: "Tile"
+      width: 310
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.55796.13959056723315569.dcd75cbe-9c2e-4a67-9f42-86b172c1ec79.1d6a23b5-ae1d-4d71-8c71-3cf1c0f8be5e"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.63514.13959056723315569.dcd75cbe-9c2e-4a67-9f42-86b172c1ec79.396e25e5-0483-4da4-b605-d180ad32e15a"
+    - purpose: "Screenshot"
+      width: 1489
+      height: 977
+      url: "https://store-images.s-microsoft.com/image/apps.38890.13959056723315569.dcd75cbe-9c2e-4a67-9f42-86b172c1ec79.572af938-ea06-43bb-86d7-b82cb16b0793"
+
+- productId: "9NXHSNNDZ5N9"
+  slug: "pdfunifydivide"
+  name: "PDFUnifyDivide"
+  title: "PDFUnifyDivide"
+  category: "高效工作"
+  price: "HK$8.00"
+  description: |
+    PDF工具箱是一款专业、高效的PDF文件处理工具，专为Windows用户设计。无论您是需要将大型PDF文档分割成多个小文件，还是将多个PDF文件合并为一个完整文档，PDF工具箱都能轻松帮您完成。
+  descriptionEn: |
+    PDFUnifyDivide is a professional PDF processing tool for splitting large PDF documents or merging multiple PDF files.
+  publisher: "WPZStudio"
+  developer: "wuping2024@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.PDFUnifyDivide_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.13705.14429629024879018.b430dc0c-8e39-4241-9585-6f428f4f29f2.5a99f005-d0e1-417d-8119-216fd5c8a52e"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.59820.14429629024879018.b430dc0c-8e39-4241-9585-6f428f4f29f2.796c83bb-edd4-4de0-8e5d-18a7ac69299a"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.40844.14429629024879018.b430dc0c-8e39-4241-9585-6f428f4f29f2.81ddc046-d2ca-40ed-b9a5-12824e2b998a"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.32222.14429629024879018.b430dc0c-8e39-4241-9585-6f428f4f29f2.45dcffc4-2558-4ec5-be04-878ba0ba650b"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.23296.14429629024879018.b430dc0c-8e39-4241-9585-6f428f4f29f2.bf300117-2aad-42aa-bd76-95feed2ff87c"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.4897.14429629024879018.b430dc0c-8e39-4241-9585-6f428f4f29f2.98ac6b56-12c5-4229-92b9-ead074f5a9d6"
+    - purpose: "Tile"
+      width: 310
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.59820.14429629024879018.b430dc0c-8e39-4241-9585-6f428f4f29f2.796c83bb-edd4-4de0-8e5d-18a7ac69299a"
+    - purpose: "Screenshot"
+      width: 2200
+      height: 1227
+      url: "https://store-images.s-microsoft.com/image/apps.28802.14429629024879018.b430dc0c-8e39-4241-9585-6f428f4f29f2.4bbe9902-c96c-45f8-a419-c9f353f00154"
+    - purpose: "Screenshot"
+      width: 2216
+      height: 1249
+      url: "https://store-images.s-microsoft.com/image/apps.40844.14429629024879018.b430dc0c-8e39-4241-9585-6f428f4f29f2.81ddc046-d2ca-40ed-b9a5-12824e2b998a"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.13705.14429629024879018.b430dc0c-8e39-4241-9585-6f428f4f29f2.5a99f005-d0e1-417d-8119-216fd5c8a52e"
+
+- productId: "9N2G1LRXMCZ4"
+  slug: "petoclock"
+  name: "PetOClock"
+  title: "PetOClock"
+  category: "娱乐"
+  price: "HK$21.00"
+  description: |
+    PetOClock 是一款轻量、可爱的桌面宠物应用，为你的工作和学习桌面带来陪伴与提醒。它支持动态宠物展示、定时提醒、系统通知与多语言设置，适合日常办公、学习专注和健康习惯养成。
+  descriptionEn: |
+    PetOClock is a lightweight desktop pet app with animated interactions, scheduled reminders, system notifications, and multilingual support.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.PetOClock_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.3350.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.95b45407-e372-40b1-ae7a-1f8ddf6ff196"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.3350.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.95b45407-e372-40b1-ae7a-1f8ddf6ff196"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.61773.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.f44bacaf-3836-4b8f-93fa-8dbfc67aefc8"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.60979.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.4799d23d-6d5e-43a2-b026-5e1a86e4c1d6"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.47439.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.ae6d7102-a4de-4643-a52a-18d60404bd35"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.23678.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.2a7d4a77-85b6-483d-a87c-e8c6e1dfd5c9"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.41984.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.5238db82-d67a-4f9f-bcef-0fe9fb2dde25"
+    - purpose: "Screenshot"
+      width: 861
+      height: 679
+      url: "https://store-images.s-microsoft.com/image/apps.42714.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.39bb1f07-e8ed-41b8-900a-881625292329"
+    - purpose: "Screenshot"
+      width: 817
+      height: 700
+      url: "https://store-images.s-microsoft.com/image/apps.21965.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.65c4de8b-2ac0-4bb7-8c65-3731fd1438e3"
+    - purpose: "Screenshot"
+      width: 1420
+      height: 1236
+      url: "https://store-images.s-microsoft.com/image/apps.61773.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.f44bacaf-3836-4b8f-93fa-8dbfc67aefc8"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.3350.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.95b45407-e372-40b1-ae7a-1f8ddf6ff196"
+
+- productId: "9PMXWDT244FF"
+  slug: "phonics-master"
+  name: "Phonics Master"
+  title: "Phonics Master"
+  category: "教育"
+  price: "HK$18.00"
+  description: |
+    Phonics Master 是一款专为 6-15 岁儿童和青少年设计的英语自然拼读学习应用。通过科学的教学方法、游戏化的学习体验和智能的进度跟踪，帮助孩子轻松掌握英语发音规则，建立扎实的英语基础。
+    
+    
+    ## 适用人群
+    
+    ### 小学生（6-12岁）
+    - 英语启蒙阶段
+    - 建立发音基础
+    - 培养学习兴趣
+    
+    ### 初中生（13-15岁）
+    - 巩固发音规则
+    - 扩展词汇量
+    - 提高拼写能力
+    
+    ### 家长
+    - 监督孩子学习
+    - 查看学习报告
+    - 设置学习目标
+    
+    ### 教师
+    - 辅助课堂教学
+    - 布置课后作业
+    - 跟踪学生进度
+  descriptionEn: |
+    Phonics Master is an English phonics learning app for ages 6-15 with scientific teaching, gamified learning, and progress tracking.
+  publisher: "WPZStudio"
+  developer: "wuping2024@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.PhonicsMaster_v810h3yyd8p76"
+  subCategory: "Language"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.1542.14289137463972196.4669b448-07de-495a-8221-6ba15b44ba38.d88de922-bb8c-4f01-8032-a1137b10c179"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.16377.14289137463972196.e5badbb7-19b8-4ebf-8d36-dbdc21eaf6f3.5f02b18e-b0f0-410b-b854-5ad2999ad1db"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.49767.14289137463972196.e5badbb7-19b8-4ebf-8d36-dbdc21eaf6f3.77411db7-b9a0-4db1-a963-f96d6c407184"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.56043.14289137463972196.e5badbb7-19b8-4ebf-8d36-dbdc21eaf6f3.fb24fcf4-9a2e-46ed-b3a7-97877f5545dd"
+    - purpose: "Tile"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.55222.14289137463972196.e5badbb7-19b8-4ebf-8d36-dbdc21eaf6f3.2345fc7b-5c5b-4b55-973a-418e4e17e3f5"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.44171.14289137463972196.e5badbb7-19b8-4ebf-8d36-dbdc21eaf6f3.b9b4fb3e-93c8-420d-9c45-d32567e48365"
+    - purpose: "Tile"
+      width: 620
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.16377.14289137463972196.e5badbb7-19b8-4ebf-8d36-dbdc21eaf6f3.5f02b18e-b0f0-410b-b854-5ad2999ad1db"
+    - purpose: "Screenshot"
+      width: 1913
+      height: 1036
+      url: "https://store-images.s-microsoft.com/image/apps.1580.14289137463972196.e5badbb7-19b8-4ebf-8d36-dbdc21eaf6f3.be8c9f96-1bc0-44d4-95fd-c59a3b50ca99"
+    - purpose: "Screenshot"
+      width: 1920
+      height: 1015
+      url: "https://store-images.s-microsoft.com/image/apps.49767.14289137463972196.e5badbb7-19b8-4ebf-8d36-dbdc21eaf6f3.77411db7-b9a0-4db1-a963-f96d6c407184"
+    - purpose: "Screenshot"
+      width: 1911
+      height: 1039
+      url: "https://store-images.s-microsoft.com/image/apps.54580.14289137463972196.e5badbb7-19b8-4ebf-8d36-dbdc21eaf6f3.89deb9d0-fb92-4b14-bf31-4a25124b9162"
+    - purpose: "Screenshot"
+      width: 1920
+      height: 986
+      url: "https://store-images.s-microsoft.com/image/apps.64465.14289137463972196.e5badbb7-19b8-4ebf-8d36-dbdc21eaf6f3.489416b2-1195-4276-aafd-0de5d335a826"
+
+- productId: "9N55B01777XD"
+  slug: "quick-paste-pro"
+  name: "Quick Paste Pro"
+  title: "Quick Paste Pro"
+  category: "高效工作"
+  price: "HK$16.00"
+  description: |
+    剪贴板历史管理器是一款功能强大的 Windows 桌面应用，专为提高工作效率而设计。它能自动记录您复制的所有内容（文本、图片、文件），让您随时快速访问历史记录，再也不用担心重要内容被覆盖。
+  descriptionEn: |
+    Quick Paste Pro is a clipboard history manager that records copied text, images, and files for quick access anytime.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.QuickPastePro_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.23597.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.ce1337a8-d464-42a2-b79b-ed727fc5c7c2"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.49444.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.76558ce6-50c0-486f-a1e5-1df151e1db68"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.14842.13970028672913391.5f02792b-583a-4c7d-8a50-011a08e74707.6c51de16-7c9e-4dbc-9902-a795d892174c"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.36149.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.3a322c9c-2e05-4750-9f31-f32f4b2e76ee"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.37379.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.9277a3f5-6af5-46aa-a922-67f346bf64a5"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.57605.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.48d5d751-16c1-477c-bc6b-d762fe9ef28a"
+    - purpose: "Tile"
+      width: 310
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.49444.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.76558ce6-50c0-486f-a1e5-1df151e1db68"
+    - purpose: "Screenshot"
+      width: 1248
+      height: 972
+      url: "https://store-images.s-microsoft.com/image/apps.51231.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.ec7299b2-7651-42d6-aa5c-663e7b317494"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.23597.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.ce1337a8-d464-42a2-b79b-ed727fc5c7c2"
+    - purpose: "Screenshot"
+      width: 1248
+      height: 1050
+      url: "https://store-images.s-microsoft.com/image/apps.16057.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.17cf6b5d-4f6c-4084-ba97-7b5a59ddccfe"
+    - purpose: "Screenshot"
+      width: 1248
+      height: 1050
+      url: "https://store-images.s-microsoft.com/image/apps.10504.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.1838aae0-b6e7-4d44-b424-4c4c3b3cd3c1"
+
+- productId: "9NK7KC5HNTMQ"
+  slug: "rename-utility"
+  name: "Rename Utility"
+  title: "Rename Utility"
+  category: "高效工作"
+  price: "HK$8.00"
+  description: |
+    批量文件重命名工具是一款功能强大、操作简单的文件管理工具，帮助您快速、高效地重命名大量文件。无论是整理照片、管理文档，还是规范文件命名，这款工具都能让您的工作事半功倍。
+  descriptionEn: |
+    Rename Utility helps rename multiple files with rules, sequential numbering, preview, and batch processing.
+  publisher: "WPZStudio"
+  developer: "wuping2024@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.RenameUtility_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.35636.13661921829810243.6f93e1e8-7778-4a9a-91df-95ed8f6f558c.06ce06eb-a4d4-4b0a-8564-ca32d18039ac"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.39701.13661921829810243.6f93e1e8-7778-4a9a-91df-95ed8f6f558c.5a34377f-1b17-4320-b64e-825e6d9f4dcf"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.21354.13661921829810243.6f93e1e8-7778-4a9a-91df-95ed8f6f558c.12a90fc3-6b71-42ad-b863-eb2abfb1ff7e"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.60581.13661921829810243.6f93e1e8-7778-4a9a-91df-95ed8f6f558c.36647f95-a17e-4600-aab9-d0936cfc3223"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.21226.13661921829810243.6f93e1e8-7778-4a9a-91df-95ed8f6f558c.a1ef7935-f8f4-4664-9d64-019e94c36316"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.40192.13661921829810243.6f93e1e8-7778-4a9a-91df-95ed8f6f558c.abbbe20f-08df-4994-a5a6-124e941bd7a9"
+    - purpose: "Tile"
+      width: 310
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.39701.13661921829810243.6f93e1e8-7778-4a9a-91df-95ed8f6f558c.5a34377f-1b17-4320-b64e-825e6d9f4dcf"
+    - purpose: "Screenshot"
+      width: 1730
+      height: 1019
+      url: "https://store-images.s-microsoft.com/image/apps.52164.13661921829810243.6f93e1e8-7778-4a9a-91df-95ed8f6f558c.661e338e-9604-4279-9ab9-20a5de7fd99a"
+    - purpose: "Screenshot"
+      width: 1733
+      height: 1017
+      url: "https://store-images.s-microsoft.com/image/apps.21354.13661921829810243.6f93e1e8-7778-4a9a-91df-95ed8f6f558c.12a90fc3-6b71-42ad-b863-eb2abfb1ff7e"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.35636.13661921829810243.6f93e1e8-7778-4a9a-91df-95ed8f6f558c.06ce06eb-a4d4-4b0a-8564-ca32d18039ac"
+
+- productId: "9NG19CFMJ8MT"
+  slug: "sortease"
+  name: "SortEase"
+  title: "SortEase"
+  category: "高效工作"
+  price: "HK$19.00"
+  description: |
+    SortEase 是一款面向 Windows 的本地媒体与文档整理应用，聚焦“扫描、浏览、筛选、批量处理”四个核心环节。应用可扫描本地目录中的图片、视频与文档，构建索引后通过三栏界面进行高效管理。
+  descriptionEn: |
+    SortEase organizes local media and documents with scan, browse, filter, and batch-action workflows in a three-pane workspace.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.SortEase_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.50916.13588743790605220.39cb1228-ed93-4205-ba3c-ac7c9a72405c.922e3f7b-8d5b-4e21-97f8-e2b4804dd790"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.50916.13588743790605220.39cb1228-ed93-4205-ba3c-ac7c9a72405c.922e3f7b-8d5b-4e21-97f8-e2b4804dd790"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.60815.13588743790605220.39cb1228-ed93-4205-ba3c-ac7c9a72405c.4c5aa567-ad91-48dd-a58a-7715d273d23e"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.50491.13588743790605220.39cb1228-ed93-4205-ba3c-ac7c9a72405c.f0eff221-d5e1-49c5-a055-f05186c8e357"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.1284.13588743790605220.39cb1228-ed93-4205-ba3c-ac7c9a72405c.8663905a-8b85-42f6-8561-9e2e8c11d5f5"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.28770.13588743790605220.39cb1228-ed93-4205-ba3c-ac7c9a72405c.e5b35160-2e22-46d1-abf1-3a64bcf8e0d8"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.33106.13588743790605220.39cb1228-ed93-4205-ba3c-ac7c9a72405c.ebe75ca3-44d5-461f-8c71-813f87803230"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.50916.13588743790605220.39cb1228-ed93-4205-ba3c-ac7c9a72405c.922e3f7b-8d5b-4e21-97f8-e2b4804dd790"
+    - purpose: "Screenshot"
+      width: 2225
+      height: 1242
+      url: "https://store-images.s-microsoft.com/image/apps.60815.13588743790605220.39cb1228-ed93-4205-ba3c-ac7c9a72405c.4c5aa567-ad91-48dd-a58a-7715d273d23e"
+    - purpose: "Screenshot"
+      width: 2222
+      height: 1255
+      url: "https://store-images.s-microsoft.com/image/apps.5771.13588743790605220.39cb1228-ed93-4205-ba3c-ac7c9a72405c.5bded550-8b95-4780-836d-47f1b7d7b679"
+
+- productId: "9PJC2H3PXNFR"
+  slug: "terminalx"
+  name: "TerminalX"
+  title: "TerminalX"
+  category: "高效工作"
+  price: "HK$25.00"
+  description: |
+    TerminalX 是一款现代化的 SSH/SFTP 终端工具，专为开发者和系统管理员设计。它提供了强大的分屏功能、智能连接管理和直观的文件传输界面，让远程服务器管理变得更加高效和便捷。
+  descriptionEn: |
+    TerminalX is a modern SSH/SFTP terminal app with split-screen support, intelligent connection management, and file transfer tools.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.TerminalX_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.21979.14214543539071194.2dc129c3-1de2-404d-b1a1-7cb664058c36.f47710ac-ef16-4c3a-b154-e1bc6f432687"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.52032.14214543539071194.2dc129c3-1de2-404d-b1a1-7cb664058c36.dc3b6151-f2fb-4c27-97b6-03bdfff63836"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.37727.14214543539071194.1895c074-54c0-4b24-a9a2-ff52ca2c9e0d.54c7c6c5-4144-4716-bdb6-d3d307410e7f"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.7143.14214543539071194.d95b9c86-ae24-4cf2-8f80-38436743c49a.d619b493-71ff-4dc8-8645-2642c2a86c15"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.49036.14214543539071194.d95b9c86-ae24-4cf2-8f80-38436743c49a.f6915669-fdbb-4d45-86d7-d1429b2662ff"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.14969.14214543539071194.d95b9c86-ae24-4cf2-8f80-38436743c49a.6b9966d6-aa3d-462c-bcbc-419b02425b36"
+    - purpose: "Tile"
+      width: 310
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.52032.14214543539071194.2dc129c3-1de2-404d-b1a1-7cb664058c36.dc3b6151-f2fb-4c27-97b6-03bdfff63836"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.21979.14214543539071194.2dc129c3-1de2-404d-b1a1-7cb664058c36.f47710ac-ef16-4c3a-b154-e1bc6f432687"
+    - purpose: "Screenshot"
+      width: 1512
+      height: 1105
+      url: "https://store-images.s-microsoft.com/image/apps.1246.14214543539071194.2dc129c3-1de2-404d-b1a1-7cb664058c36.f08ca7cf-2689-427c-8147-d47f8528661b"
+    - purpose: "Screenshot"
+      width: 2240
+      height: 1294
+      url: "https://store-images.s-microsoft.com/image/apps.37727.14214543539071194.1895c074-54c0-4b24-a9a2-ff52ca2c9e0d.54c7c6c5-4144-4716-bdb6-d3d307410e7f"
+    - purpose: "Screenshot"
+      width: 2240
+      height: 1294
+      url: "https://store-images.s-microsoft.com/image/apps.25510.14214543539071194.1895c074-54c0-4b24-a9a2-ff52ca2c9e0d.3c0759fa-8fff-44fe-9b71-a6d46ccddf9a"
+
+- productId: "9PNN03SK42B3"
+  slug: "terraform-ops"
+  name: "Terraform Ops"
+  title: "Terraform Ops"
+  category: "实用程序与工具"
+  price: "HK$35.00"
+  description: |
+    Terraform Ops 是一个面向团队的 Terraform 桌面工作台，帮助用户更快、更稳、更可视化地交付基础设施。
+    
+    它将项目目录管理、云认证、Terraform 执行、资源变更展示、执行日志整合到一个界面中，让用户在 plan 到 apply 的流程中减少上下文切换。
+  descriptionEn: |
+    Terraform Ops is a desktop Terraform workspace for teams that want faster, safer, and more visible infrastructure delivery. Combines project setup, cloud authentication, Terraform execution, resource change visibility, and execution logs.
+  publisher: "WPZStudio"
+  developer: "wuping2024@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.TerraformOps_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.24176.14345464108170624.c8f42867-1e6f-41a0-bce6-870dc932868b.7aa4fbd6-6f65-479d-ba05-478e53e0a168"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.24176.14345464108170624.c8f42867-1e6f-41a0-bce6-870dc932868b.7aa4fbd6-6f65-479d-ba05-478e53e0a168"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.22681.14345464108170624.c8f42867-1e6f-41a0-bce6-870dc932868b.51c514a5-f074-4487-8bfd-43ec2abfdabc"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.55405.14345464108170624.c8f42867-1e6f-41a0-bce6-870dc932868b.feb2eada-4617-4445-8a15-ac754f05a8ab"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.4812.14345464108170624.c8f42867-1e6f-41a0-bce6-870dc932868b.b954a0a1-8d89-4d1b-bc1a-b583a2023354"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.35248.14345464108170624.c8f42867-1e6f-41a0-bce6-870dc932868b.45ec6ad6-3b6a-4963-b90c-198e8591c8b7"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.13900.14345464108170624.c8f42867-1e6f-41a0-bce6-870dc932868b.4bfab29c-74c5-4224-88c5-24f5a84736e3"
+    - purpose: "Screenshot"
+      width: 1300
+      height: 1200
+      url: "https://store-images.s-microsoft.com/image/apps.53053.14345464108170624.c8f42867-1e6f-41a0-bce6-870dc932868b.95d26c13-ec2a-4f0b-8fe8-917847d3a7d2"
+    - purpose: "Screenshot"
+      width: 1996
+      height: 1120
+      url: "https://store-images.s-microsoft.com/image/apps.22681.14345464108170624.c8f42867-1e6f-41a0-bce6-870dc932868b.51c514a5-f074-4487-8bfd-43ec2abfdabc"
+    - purpose: "Screenshot"
+      width: 1171
+      height: 495
+      url: "https://store-images.s-microsoft.com/image/apps.13372.14345464108170624.c8f42867-1e6f-41a0-bce6-870dc932868b.76a594f4-b41f-410f-9809-ee58fca120e7"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.24176.14345464108170624.c8f42867-1e6f-41a0-bce6-870dc932868b.7aa4fbd6-6f65-479d-ba05-478e53e0a168"
+
+- productId: "9N9Z4QZW389B"
+  slug: "tick-tock-learn"
+  name: "Tick Tock Learn"
+  title: "Tick Tock Learn"
+  category: "教育"
+  price: "HK$11.00"
+  description: |
+    滴答学时钟是一款专为3-10岁儿童设计的互动式时钟学习应用。通过生动有趣的动画、日常生活场景和趣味测验，帮助孩子轻松掌握看时钟的技能。应用采用寓教于乐的方式，让学习时间变得简单又有趣
+  descriptionEn: |
+    TickTockLearn is an interactive clock learning application for children aged 3-10. Through engaging animations, daily life scenarios, and fun quizzes, helps children master reading a clock in an educational and entertaining way.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.TickTockLearn_v810h3yyd8p76"
+  subCategory: "Early learning"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.8644.13527945267601751.74749bfc-6179-4a5a-a738-4ca2a3005da7.bc9e7224-1a6d-44df-81f6-99d3bea624f4"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.8644.13527945267601751.74749bfc-6179-4a5a-a738-4ca2a3005da7.bc9e7224-1a6d-44df-81f6-99d3bea624f4"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.45287.13527945267601751.74749bfc-6179-4a5a-a738-4ca2a3005da7.b3bb6c1a-5c61-45c7-9c6a-e4c848325353"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.3039.13527945267601751.74749bfc-6179-4a5a-a738-4ca2a3005da7.0d85a7a5-afa0-48d5-8705-fd89f8749ca0"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.45207.13527945267601751.74749bfc-6179-4a5a-a738-4ca2a3005da7.24d37356-92a6-42a1-a935-f07fa9131086"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.40032.13527945267601751.74749bfc-6179-4a5a-a738-4ca2a3005da7.1d721ff2-cdbd-42e1-8e49-cfe212557aa9"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.1709.13527945267601751.74749bfc-6179-4a5a-a738-4ca2a3005da7.cb3aaa4f-7afd-4d1a-b33e-25673ca543f9"
+    - purpose: "Screenshot"
+      width: 1332
+      height: 991
+      url: "https://store-images.s-microsoft.com/image/apps.45532.13527945267601751.74749bfc-6179-4a5a-a738-4ca2a3005da7.e7519563-d6d8-4e9f-924f-295e7c9eabb8"
+    - purpose: "Screenshot"
+      width: 1519
+      height: 980
+      url: "https://store-images.s-microsoft.com/image/apps.50176.13527945267601751.74749bfc-6179-4a5a-a738-4ca2a3005da7.c7913d01-63a2-4e64-88a2-55c46e940943"
+    - purpose: "Screenshot"
+      width: 1525
+      height: 983
+      url: "https://store-images.s-microsoft.com/image/apps.63268.13527945267601751.74749bfc-6179-4a5a-a738-4ca2a3005da7.1f576071-29ed-412b-9caf-a1f21e2d31fe"
+    - purpose: "Screenshot"
+      width: 1850
+      height: 966
+      url: "https://store-images.s-microsoft.com/image/apps.45287.13527945267601751.74749bfc-6179-4a5a-a738-4ca2a3005da7.b3bb6c1a-5c61-45c7-9c6a-e4c848325353"
+
+- productId: "9NTJPM70ZHPS"
+  slug: "todobell"
+  name: "ToDoBell"
+  title: "ToDoBell"
+  category: "高效工作"
+  price: "HK$28.00"
+  description: |
+    ToDoBell 是一款 Windows 桌面宠物时钟应用，把 Live2D 桌宠、翻页时钟、定时提醒和 Todo 待办提醒结合在一起。用户可以在桌面上保留一个轻量陪伴角色，并在重要时间收到带有待办详情的提醒。
+  descriptionEn: |
+    ToDoBell is a Windows desktop pet clock that combines a Live2D companion, flip clock, timed reminders, and Todo alerts. Keeps a lightweight companion on the desktop and shows detailed Todo reminders when scheduled items are due.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.ToDoBell_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.10729.14413081431091749.b9764a48-8056-4915-babb-dc6024f1af76.51e908d4-873d-4dae-91af-6b352e9ed4e0"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.10729.14413081431091749.b9764a48-8056-4915-babb-dc6024f1af76.51e908d4-873d-4dae-91af-6b352e9ed4e0"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.58024.14413081431091749.b9764a48-8056-4915-babb-dc6024f1af76.750cdf94-6b07-4d24-aeb8-9eab275989f4"
+  images:
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.10729.14413081431091749.b9764a48-8056-4915-babb-dc6024f1af76.51e908d4-873d-4dae-91af-6b352e9ed4e0"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.35304.14413081431091749.b9764a48-8056-4915-babb-dc6024f1af76.39dccf01-9bb0-448c-bf93-dcd111712d09"
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.14901.14413081431091749.b9764a48-8056-4915-babb-dc6024f1af76.f91c5d42-395a-4cb1-aa36-aa71fc8cd534"
+    - purpose: "Screenshot"
+      width: 921
+      height: 612
+      url: "https://store-images.s-microsoft.com/image/apps.43438.14413081431091749.b9764a48-8056-4915-babb-dc6024f1af76.41a8df0a-1b74-4a66-be8f-10c0840f5a19"
+    - purpose: "Screenshot"
+      width: 966
+      height: 642
+      url: "https://store-images.s-microsoft.com/image/apps.52771.14413081431091749.b9764a48-8056-4915-babb-dc6024f1af76.c0575b09-eec7-41d2-8608-fbd62109a2f4"
+    - purpose: "Screenshot"
+      width: 1142
+      height: 637
+      url: "https://store-images.s-microsoft.com/image/apps.16067.14413081431091749.b9764a48-8056-4915-babb-dc6024f1af76.7324235a-b7cf-459a-acc3-f8e3f623a4c8"
+    - purpose: "Screenshot"
+      width: 1616
+      height: 735
+      url: "https://store-images.s-microsoft.com/image/apps.58024.14413081431091749.b9764a48-8056-4915-babb-dc6024f1af76.750cdf94-6b07-4d24-aeb8-9eab275989f4"
+    - purpose: "Screenshot"
+      width: 1580
+      height: 734
+      url: "https://store-images.s-microsoft.com/image/apps.62585.14413081431091749.b9764a48-8056-4915-babb-dc6024f1af76.2621edf1-f51a-4b9b-bf3d-1592ddce6e29"
+
+- productId: "9NST4V4GGDTX"
+  slug: "typing-adventure"
+  name: "Typing Adventure"
+  title: "Typing Adventure"
+  category: "教育"
+  price: "HK$20.00"
+  description: |
+    Typing Learning Adventure turns keyboard practice into an exciting underwater battle! Players defend the seas by typing letters and words to defeat enemies. With 50+ levels, progressive difficulty, and a one-time purchase model, it's the perfect engaging typing tutor for beginners and children.
+    
+    🎮 What Makes It Special:
+    • Engaging Combat System: Type letters & words to fire cannons at incoming word-monsters
+    • Progressive Learning: Start with simple characters, advance to complex vocabulary
+    • Ocean Adventure: Journey through 50+ beautifully themed levels from coral reefs to deep trenches
+    • Smart Rewards: Earn points, build combos, and compete on leaderboards
+    
+    💡 Perfect For:
+    ✓ Children learning to type ✓ Students improving keyboard skills
+    ✓ Casual gamers seeking fun education ✓ Parents wanting screen time with value
+    
+    💰 Simple Pricing:
+    Try FREE for 24 hours, then one-time purchase for unlimited access - no ads, no subscriptions!
+  descriptionEn: |
+    Typing Adventure is an ocean-themed typing app that improves key familiarity, accuracy, and speed through progressive levels.
+  publisher: "WPZStudio"
+  developer: "wuping2024@msn.com"
+  publisherWebsiteUri: "https://github.com/copilot/c/1694c180-961c-4835-9286-4d326a041712"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.TypingAdventure_v810h3yyd8p76"
+  subCategory: "Early learning"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.12777.14357132255105741.a5728cbc-6a9c-45b0-8aed-9d6478eb5631.2419399c-af9c-4eec-804a-7d98f8521449"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.12777.14357132255105741.a5728cbc-6a9c-45b0-8aed-9d6478eb5631.2419399c-af9c-4eec-804a-7d98f8521449"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.50158.14357132255105741.a5728cbc-6a9c-45b0-8aed-9d6478eb5631.0ec11568-7341-485e-ba11-c533e57ee823"
+  images:
+    - purpose: "Logo"
+      width: 3072
+      height: 4608
+      url: "https://store-images.s-microsoft.com/image/apps.12777.14357132255105741.a5728cbc-6a9c-45b0-8aed-9d6478eb5631.2419399c-af9c-4eec-804a-7d98f8521449"
+    - purpose: "Tile"
+      width: 3072
+      height: 4608
+      url: "https://store-images.s-microsoft.com/image/apps.12777.14357132255105741.a5728cbc-6a9c-45b0-8aed-9d6478eb5631.2419399c-af9c-4eec-804a-7d98f8521449"
+    - purpose: "Screenshot"
+      width: 926
+      height: 963
+      url: "https://store-images.s-microsoft.com/image/apps.48632.14357132255105741.a5728cbc-6a9c-45b0-8aed-9d6478eb5631.5ffbaa28-f811-4f11-84c8-6edc4334d450"
+    - purpose: "Screenshot"
+      width: 1317
+      height: 877
+      url: "https://store-images.s-microsoft.com/image/apps.50158.14357132255105741.a5728cbc-6a9c-45b0-8aed-9d6478eb5631.0ec11568-7341-485e-ba11-c533e57ee823"
+    - purpose: "Screenshot"
+      width: 1182
+      height: 1027
+      url: "https://store-images.s-microsoft.com/image/apps.19209.14357132255105741.a5728cbc-6a9c-45b0-8aed-9d6478eb5631.d1cb5ca4-7ba8-4b85-a567-5e39d9e3f950"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.62466.14357132255105741.a5728cbc-6a9c-45b0-8aed-9d6478eb5631.b06401df-82c5-44a0-8d67-1faec653d6f3"
+
+- productId: "9NB6HFVD647D"
+  slug: "xlsdiff"
+  name: "XLSDiff"
+  title: "XLSDiff"
+  category: "高效工作"
+  price: "HK$15.00"
+  description: |
+    XLSDiff 是一款面向办公与数据分析场景的 Excel 对比工具，帮助用户快速找出两个工作表之间的差异，减少人工逐行核对时间，提高版本审阅效率。
+  descriptionEn: |
+    XLSDiff is an Excel comparison tool for office and data review workflows. Quickly identify differences between worksheets, reduce manual checking, and improve version review efficiency.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.XLSDiff_v810h3yyd8p76"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.30189.13523427922889625.76d26ca2-789c-4dbf-8bd9-dde566cb34f7.793afe78-4b55-471b-841f-865518135292"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.30189.13523427922889625.76d26ca2-789c-4dbf-8bd9-dde566cb34f7.793afe78-4b55-471b-841f-865518135292"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.45677.13523427922889625.76d26ca2-789c-4dbf-8bd9-dde566cb34f7.8a74ca97-0202-4636-a204-722f832b69ec"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.33314.13523427922889625.76d26ca2-789c-4dbf-8bd9-dde566cb34f7.87d71005-9fb7-47a3-aa37-9af20ce146c0"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.37654.13523427922889625.76d26ca2-789c-4dbf-8bd9-dde566cb34f7.12729c76-05ec-44fe-9d24-1fc74d1dee32"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.57101.13523427922889625.76d26ca2-789c-4dbf-8bd9-dde566cb34f7.1209a472-9405-4fc6-94e2-9b7af354b795"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.52325.13523427922889625.76d26ca2-789c-4dbf-8bd9-dde566cb34f7.c94d420f-6593-4012-b925-544fbc345aa7"
+    - purpose: "Screenshot"
+      width: 2239
+      height: 1323
+      url: "https://store-images.s-microsoft.com/image/apps.8905.13523427922889625.76d26ca2-789c-4dbf-8bd9-dde566cb34f7.a22d339c-4d16-4ec7-a9ce-09d01ba7c1d6"
+    - purpose: "Screenshot"
+      width: 2559
+      height: 1389
+      url: "https://store-images.s-microsoft.com/image/apps.45677.13523427922889625.76d26ca2-789c-4dbf-8bd9-dde566cb34f7.8a74ca97-0202-4636-a204-722f832b69ec"
+    - purpose: "Logo"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.30189.13523427922889625.76d26ca2-789c-4dbf-8bd9-dde566cb34f7.793afe78-4b55-471b-841f-865518135292"
+    - purpose: "Screenshot"
+      width: 2559
+      height: 1390
+      url: "https://store-images.s-microsoft.com/image/apps.31573.13523427922889625.76d26ca2-789c-4dbf-8bd9-dde566cb34f7.636f2676-5390-4a47-b4c3-e0591cc0d3f8"
+
+- productId: "9NBLGGH4NB61"
+  slug: ""
+  name: "宝贝识字"
+  title: "宝贝识字"
+  category: "教育"
+  price: "免费下载"
+  description: |
+    看图识字， 一个简单易用的App,可以让小孩子轻松认识周边事物，学习汉字和英文。内容会不断更新和丰富。
+    
+    
+    欢迎大家提供意见建议 QQ：2677915205
+  descriptionEn: |
+    看图识字， 一个简单易用的App,可以让小孩子轻松认识周边事物，学习汉字和英文。内容会不断更新和丰富。
+    
+    
+    欢迎大家提供意见建议 QQ：2677915205
+  publisher: "WPZStudio"
+  developer: "WPZStudio"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.24682D4437803_v810h3yyd8p76"
+  subCategory: "Early learning"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.35395.13510798887468410.32644e62-0e62-49d3-8c42-c2d156054871.e678bedf-b8d5-4983-b938-bf97551b5bd4"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.46557.13510798887468410.60f73b79-275e-4d6e-be20-6dcf611006eb.4d4f5ddc-0da2-4f0c-a2c7-856ef874e596"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.61631.13510798887468410.8ac17986-346b-449e-bb3c-170a2d4d08d3.310b9152-2ea2-4ff8-a6f3-9060cfbec0b7"
+    - purpose: "Tile"
+      width: 30
+      height: 30
+      url: "https://store-images.s-microsoft.com/image/apps.12199.13510798887468410.b6160e96-d888-4132-90d2-f968c350f7c8.a838e6a9-b2f8-4ed5-a101-94d5338da07d"
+    - purpose: "Screenshot"
+      width: 1440
+      height: 860
+      url: "https://store-images.s-microsoft.com/image/apps.35395.13510798887468410.32644e62-0e62-49d3-8c42-c2d156054871.e678bedf-b8d5-4983-b938-bf97551b5bd4"
+
+- productId: "9NNG75DPJV00"
+  slug: "wpz"
+  name: "宝贝识字WPZ"
+  title: "宝贝识字WPZ"
+  category: "教育"
+  price: "HK$14.00"
+  description: |
+    🌟 五大核心学习模块，全面启蒙
+    🔤 看图识字 - 通过生动形象的图片，让孩子轻松理解并记住汉字，告别死记硬背！
+    
+    📝 简单生字 - 从基础汉字开始，配有笔画练习，打好坚实的语文基础。
+    
+    🌍 英文单词 - 纯正发音的双语学习，让孩子从小培养英语语感。
+    
+    📜 玩转古诗 - 精选经典诗词，配以优美朗诵，在潜移默化中传承中华文化。
+    
+    ✍️ 识字测试 - 趣味互动测试，及时巩固所学知识。
+  descriptionEn: |
+    Baobei Literacy WPZ is an early-childhood Chinese literacy app with visual character learning, poem recitation, and interactive quizzes.
+  publisher: "WPZStudio"
+  developer: "wuping2024@msn.com"
+  publisherWebsiteUri: "https://gist.github.com/pudavidamai/d01b7919866d4b2e41fa6ede857033b7"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.WPZ_v810h3yyd8p76"
+  subCategory: "Early learning"
+  iconUrl: "https://store-images.s-microsoft.com/image/apps.26603.13743467805288223.5fe1d946-5e82-4e74-bf9f-c50428df5cd2.ee01a0a9-73df-4e29-9086-05085af48831"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.22450.13743467805288223.5fe1d946-5e82-4e74-bf9f-c50428df5cd2.3145cca9-dfe8-48aa-a2bf-5299cfe3aefa"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.64517.13743467805288223.5fe1d946-5e82-4e74-bf9f-c50428df5cd2.2c37f93c-1b3c-47cc-a222-9f4bdb8783ae"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.58689.13743467805288223.5fe1d946-5e82-4e74-bf9f-c50428df5cd2.53feabe7-8a49-474c-9c97-e267c0637aca"
+    - purpose: "Logo"
+      width: 75
+      height: 75
+      url: "https://store-images.s-microsoft.com/image/apps.47370.13743467805288223.5fe1d946-5e82-4e74-bf9f-c50428df5cd2.e4fa355d-d733-42ce-a9ff-2168d47e37c6"
+    - purpose: "Logo"
+      width: 100
+      height: 100
+      url: "https://store-images.s-microsoft.com/image/apps.3157.13743467805288223.5fe1d946-5e82-4e74-bf9f-c50428df5cd2.d55f7f78-3bc5-4057-ae08-e1e1f12e0210"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.2501.13743467805288223.5fe1d946-5e82-4e74-bf9f-c50428df5cd2.17d58f50-fd60-48f0-8217-6a2b6a664bed"
+    - purpose: "Tile"
+      width: 225
+      height: 225
+      url: "https://store-images.s-microsoft.com/image/apps.44582.13743467805288223.5fe1d946-5e82-4e74-bf9f-c50428df5cd2.b0a2045b-10f8-4ae5-9508-5f1cd8bf2880"
+    - purpose: "Tile"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.17202.13743467805288223.5fe1d946-5e82-4e74-bf9f-c50428df5cd2.6bfb0796-f9bf-4e0c-bf5f-ba73f84b4f15"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.58439.13743467805288223.5fe1d946-5e82-4e74-bf9f-c50428df5cd2.93688ebe-6361-4c57-a87e-c290d450e5fe"
+    - purpose: "Tile"
+      width: 66
+      height: 66
+      url: "https://store-images.s-microsoft.com/image/apps.34117.13743467805288223.5fe1d946-5e82-4e74-bf9f-c50428df5cd2.38b55e9b-fa7e-480c-affd-788c5d61f8ba"
+
+- productId: "9NW9Q3NGNVB3"
+  slug: ""
+  name: "证件照验证器"
+  title: "证件照验证器"
+  category: "实用程序与工具"
+  price: "HK$10.00"
+  description: |
+    证件照验证工具是一款专业的证件照片验证和编辑应用，帮助您快速检查照片是否符合各国证件照标准，并提供智能调整功能。无论是办理身份证、护照、签证，还是各类资格证书，本工具都能确保您的照片符合官方要求，避免因照片不合格而耽误办理进度。
+    
+    ✨ 核心特点
+    智能匹配 - 自动识别照片尺寸，推荐最匹配的证件类型
+    全面覆盖 - 支持15种常用证件照标准（中国9种 + 国际6种）
+    精准验证 - 基于官方标准，验证尺寸、背景色、头部比例等
+    快速调整 - 一键调整照片尺寸和更换背景色
+    详细建议 - 提供具体的修改建议和官方依据
+    离线使用 - 无需联网，保护您的隐私
+  descriptionEn: |
+    ID Photo Validator is a professional ID photo verification and processing application that helps users quickly check whether their photos meet various national ID photo standards for ID cards, passports, visas, and professional certificates.
+  publisher: "WPZStudio"
+  developer: "wuping2004@msn.com"
+  publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.196210F7E024D_v810h3yyd8p76"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.685.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.939fe456-5bcf-4d0e-ae40-f8b5ac3f63b8"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.51844.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.43d021c9-07a0-44e5-9186-09708e111a61"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.51975.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.f6a754cb-2891-4c28-ba33-9d42e408297c"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.33266.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.aa1005f0-3646-4420-abaf-c5a990e5b3dc"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.32961.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.fc338dd1-e20f-41f6-b644-9f6a919d0ede"
+    - purpose: "Tile"
+      width: 310
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.685.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.939fe456-5bcf-4d0e-ae40-f8b5ac3f63b8"
+    - purpose: "Screenshot"
+      width: 1912
+      height: 1034
+      url: "https://store-images.s-microsoft.com/image/apps.51844.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.43d021c9-07a0-44e5-9186-09708e111a61"
+    - purpose: "Screenshot"
+      width: 1223
+      height: 884
+      url: "https://store-images.s-microsoft.com/image/apps.38607.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.2ae5e25f-6ffa-4f93-af5c-85be91d6ad7b"
+
+- productId: "9NBLGGH4NLFP"
+  slug: ""
+  name: "车标 大全"
+  title: "车标 大全"
+  category: "书籍与参考"
+  price: "免费下载"
+  description: |
+    This app lists most car brand, and it is cool and helpful to recognize car brand
+  descriptionEn: |
+    This app lists most car brand, and it is cool and helpful to recognize car brand.
+  publisher: "WPZStudio"
+  developer: "WPZStudio"
+  publisherId: "26137630"
+  packageFamilyName: "10278WPZStudio.27347ECDC20C7_v810h3yyd8p76"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.659.13510798887473220.53fe8f98-992c-43e6-a96b-2ea1d1642980.e5cb5000-22b8-4fbb-bdbc-25be91c2d1d9"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.10307.13510798887473220.b5e82f2c-c667-4f08-9708-2676172bbdf0.faf7b63b-b84d-4a16-884a-04789c1a3004"
+  images:
+    - purpose: "Logo"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.36904.13510798887473220.067ac4f0-d0a6-4c71-9372-23c15487050f.a215923d-0cd3-41cd-91aa-75fa552b01e7"
+    - purpose: "Tile"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.1793.13510798887473220.09530013-16d3-4ccc-8fbc-3b549b0da628.9d27d87e-b415-4317-a579-81ee9169a198"
+    - purpose: "Tile"
+      width: 44
+      height: 44
+      url: "https://store-images.s-microsoft.com/image/apps.6316.13510798887473220.3ef36965-65b0-4386-9da3-fa1355b7a337.f37d97ef-4dfd-4273-a099-608e13a5edf4"
+    - purpose: "Tile"
+      width: 310
+      height: 310
+      url: "https://store-images.s-microsoft.com/image/apps.659.13510798887473220.53fe8f98-992c-43e6-a96b-2ea1d1642980.e5cb5000-22b8-4fbb-bdbc-25be91c2d1d9"
+    - purpose: "Tile"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.42267.13510798887473220.9e4a3a8f-aef1-4fe9-81d4-57b14cfe71dd.8e114419-8ca9-4e80-8539-9dcf41108fef"
+    - purpose: "Tile"
+      width: 310
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.20400.13510798887473220.3298951d-a1b3-4ba7-98bb-92a3f08e5137.5f21c9a6-b0ca-421e-9937-dd2d33ea1bc7"
+    - purpose: "Screenshot"
+      width: 1282
+      height: 1001
+      url: "https://store-images.s-microsoft.com/image/apps.10307.13510798887473220.b5e82f2c-c667-4f08-9708-2676172bbdf0.faf7b63b-b84d-4a16-884a-04789c1a3004"

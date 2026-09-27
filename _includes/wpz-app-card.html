@@ -1,0 +1,46 @@
+<!--
+  Renders one WPZ Studio app card. Designed to be used inside a Jekyll
+  Liquid for-loop over `site.data.wpz_apps`.
+
+  Usage:
+    {% for app in site.data.wpz_apps %}
+      {% include wpz-app-card.html app=app %};
+    {% endfor %}
+
+  The `lang` field controls which description shows. zh → description,
+  en → descriptionEn (fallback). All labels are taken from the Jekyll
+  page so this include is locale-neutral.
+-->
+<a class="wpz-app-card"
+   href="https://apps.microsoft.com/detail/{{ include.app.productId }}"
+   target="_blank" rel="noopener">
+  <div class="wpz-app-card-cover">
+    {% if include.app.iconUrl %}
+      <img src="{{ include.app.iconUrl }}"
+           alt="{{ include.app.name }}"
+           loading="lazy"
+           width="150"
+           height="150">
+    {% endif %}
+  </div>
+  <div class="wpz-app-card-body">
+    <div class="wpz-app-card-name">{{ include.app.name }}</div>
+    {% if include.app.category %}
+      <div class="wpz-app-card-category">{{ include.app.category }}</div>
+    {% endif %}
+    {% if include.app.price %}
+      <div class="wpz-app-card-price">{{ include.app.price }}</div>
+    {% endif %}
+    {% assign desc = include.app.description %}
+    {% if page.lang == 'en' and include.app.descriptionEn %}
+      {% assign desc = include.app.descriptionEn %}
+    {% endif %}
+    {% if desc %}
+      <div class="wpz-app-card-desc">{{ desc | strip_html | truncate: 120 }}</div>
+    {% endif %}
+    <div class="wpz-app-card-cta">
+      {% if page.lang == 'en' %}View details{% else %}查看详情{% endif %}
+      <span aria-hidden="true">→</span>
+    </div>
+  </div>
+</a>

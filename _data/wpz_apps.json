@@ -3004,5 +3004,773 @@
         "url": "https://store-images.s-microsoft.com/image/apps.10307.13510798887473220.b5e82f2c-c667-4f08-9708-2676172bbdf0.faf7b63b-b84d-4a16-884a-04789c1a3004"
       }
     ]
+  },
+  {
+    "productId": "9NR1ML5GR6VF",
+    "slug": "expression-fighter",
+    "name": "ExpressionFighter",
+    "title": "ExpressionFighter",
+    "category": "娱乐",
+    "subCategory": null,
+    "price": "HK$15.00",
+    "description": "Expression Fighter 是一款基于摄像头实时识别面部动作的对战游戏。玩家不需要手柄，直接通过微笑、张嘴、抬眉和甩头来完成攻击、防御与大招释放。",
+    "descriptionEn": "ExpressionFighter is a challenging fighting game where players defeat opponents by recognizing and matching expressions on screen.",
+    "shortDescription": null,
+    "publisher": "WPZStudio",
+    "developer": "wuping2004@msn.com",
+    "publisherWebsiteUri": "https://pudavidamai.github.io/wpzstudio/",
+    "supportUri": "mailto:wuping2004@msn.com",
+    "publisherId": "26137630",
+    "packageFamilyName": "10278WPZStudio.ExpressionFighter_v810h3yyd8p76",
+    "iconUrl": "https://store-images.s-microsoft.com/image/apps.14983.13758543978475358.07144af5-f678-4aef-a10d-2d0690acf764.6f584868-040c-4ec3-9491-e03f36a9a5b7",
+    "bannerUrl": null,
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.21863.13758543978475358.07144af5-f678-4aef-a10d-2d0690acf764.dcbad7e6-bca6-464b-95b2-1d7004f708ec",
+    "images": [
+      {
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.5662.13758543978475358.07144af5-f678-4aef-a10d-2d0690acf764.78a0bf43-16a5-485c-9f69-bbe5861078d8"
+      },
+      {
+        "purpose": "Logo",
+        "width": 300,
+        "height": 300,
+        "url": "https://store-images.s-microsoft.com/image/apps.14983.13758543978475358.07144af5-f678-4aef-a10d-2d0690acf764.6f584868-040c-4ec3-9491-e03f36a9a5b7"
+      },
+      {
+        "purpose": "Logo",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.19101.13758543978475358.07144af5-f678-4aef-a10d-2d0690acf764.983b0445-58fd-4c04-a1e8-c80be075d367"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1877,
+        "height": 1195,
+        "url": "https://store-images.s-microsoft.com/image/apps.21863.13758543978475358.07144af5-f678-4aef-a10d-2d0690acf764.dcbad7e6-bca6-464b-95b2-1d7004f708ec"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1865,
+        "height": 1189,
+        "url": "https://store-images.s-microsoft.com/image/apps.30076.13758543978475358.07144af5-f678-4aef-a10d-2d0690acf764.d9e1235d-0e70-445e-beba-eb95f2e75b80"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1865,
+        "height": 1189,
+        "url": "https://store-images.s-microsoft.com/image/apps.30076.13758543978475358.07144af5-f678-4aef-a10d-2d0690acf764.d9e1235d-0e70-445e-beba-eb95f2e75b80"
+      }
+    ]
+  },
+  {
+    "productId": "9N4JH1RKF4XW",
+    "slug": "slice-fruit",
+    "name": "Slice Fruit",
+    "title": "Slice Fruit",
+    "category": "娱乐",
+    "subCategory": null,
+    "price": "HK$8.00",
+    "description": "切水果是一款基于摄像头的体感切水果游戏，适用于 Windows 10/11 桌面端。打开游戏后，摄像头画面会变成你的实时“镜面战场”，水果从屏幕下方飞出，在空中划出抛物线。你只需在镜头前挥动手臂或手掌，划过水果即可完成切割并触发果汁特效。每局 60 秒，挑战你的极限得分。\n\n无需手柄、无需触屏、无需穿戴设备。一台带摄像头的电脑、一片相对干净的背景、一双手，就能立即开玩。",
+    "descriptionEn": "Slice Fruit is a classic fruit-slicing casual game. Swipe to slice flying fruits with smooth physics and combo scoring.",
+    "shortDescription": null,
+    "publisher": "WPZStudio",
+    "developer": "wuping2004@msn.com",
+    "publisherWebsiteUri": "https://pudavidamai.github.io/wpzstudio/",
+    "supportUri": "mailto:wuping2004@msn.com",
+    "publisherId": "26137630",
+    "packageFamilyName": "10278WPZStudio.SliceFruit_v810h3yyd8p76",
+    "iconUrl": "https://store-images.s-microsoft.com/image/apps.12889.13982419384545308.4cb29188-b7aa-4879-b940-aaf51cec9988.c5cab947-3582-4be9-b611-fee64d984400",
+    "bannerUrl": null,
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.47573.13982419384545308.4cb29188-b7aa-4879-b940-aaf51cec9988.1d570450-9a36-4939-9ee3-97e74f73799e",
+    "images": [
+      {
+        "purpose": "Logo",
+        "width": 300,
+        "height": 300,
+        "url": "https://store-images.s-microsoft.com/image/apps.12889.13982419384545308.4cb29188-b7aa-4879-b940-aaf51cec9988.c5cab947-3582-4be9-b611-fee64d984400"
+      },
+      {
+        "purpose": "Logo",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.15869.13982419384545308.4cb29188-b7aa-4879-b940-aaf51cec9988.551944d3-cd22-4336-95fb-c87e598f7886"
+      },
+      {
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.46061.13982419384545308.4cb29188-b7aa-4879-b940-aaf51cec9988.e2e7be75-9026-43d5-8b74-ecaf963a29f0"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2232,
+        "height": 1347,
+        "url": "https://store-images.s-microsoft.com/image/apps.47573.13982419384545308.4cb29188-b7aa-4879-b940-aaf51cec9988.1d570450-9a36-4939-9ee3-97e74f73799e"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1892,
+        "height": 1192,
+        "url": "https://store-images.s-microsoft.com/image/apps.41339.13982419384545308.4cb29188-b7aa-4879-b940-aaf51cec9988.4fd1edd8-8225-439a-b0a8-45fe507d534f"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1893,
+        "height": 1243,
+        "url": "https://store-images.s-microsoft.com/image/apps.12908.13982419384545308.4cb29188-b7aa-4879-b940-aaf51cec9988.7512b63e-5a7a-4282-8c0c-e0c4de5ebdda"
+      }
+    ]
+  },
+  {
+    "productId": "9N25C29D6RM6",
+    "slug": "mdeditor-pro",
+    "name": "MDEditorPro",
+    "title": "MDEditorPro",
+    "category": "高效工作",
+    "subCategory": null,
+    "price": "HK$25.00",
+    "description": "MD Editor Pro 是一款面向 Windows 的本地优先 Markdown 记事本，基于 CodeMirror 6 与 Electron 构建。支持多标签、文件树、大纲面板、快速切换、专注模式、日记、版本历史、Mermaid 图表、图片灯箱，6 种界面语言 × 6 套主题。所有数据存本机，零云端依赖。",
+    "descriptionEn": "MDEditorPro is a professional Markdown editor with live preview, multiple themes, tables, and code block highlighting.",
+    "shortDescription": null,
+    "publisher": "WPZStudio",
+    "developer": "wuping2004@msn.com",
+    "publisherWebsiteUri": "https://pudavidamai.github.io/wpzstudio/",
+    "supportUri": "mailto:wuping2004@msn.com",
+    "publisherId": "26137630",
+    "packageFamilyName": "10278WPZStudio.628920FCAC240_v810h3yyd8p76",
+    "iconUrl": "https://store-images.s-microsoft.com/image/apps.15363.13962809631614187.df9a0bbf-4be1-4c55-b0f2-6452e9cf7c35.6ca715b1-680e-46e8-b023-a39790b57261",
+    "bannerUrl": null,
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.49875.13962809631614187.df9a0bbf-4be1-4c55-b0f2-6452e9cf7c35.bf5cf15a-fb96-4e8d-ad37-b13f2d4fd00b",
+    "images": [
+      {
+        "purpose": "Logo",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.42255.13962809631614187.df9a0bbf-4be1-4c55-b0f2-6452e9cf7c35.2d24c87c-0391-4a4f-b008-71dcff7c906c"
+      },
+      {
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.61906.13962809631614187.df9a0bbf-4be1-4c55-b0f2-6452e9cf7c35.d923e384-e59c-4e1d-8b3d-c962bab20bba"
+      },
+      {
+        "purpose": "Logo",
+        "width": 300,
+        "height": 300,
+        "url": "https://store-images.s-microsoft.com/image/apps.15363.13962809631614187.df9a0bbf-4be1-4c55-b0f2-6452e9cf7c35.6ca715b1-680e-46e8-b023-a39790b57261"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1393,
+        "url": "https://store-images.s-microsoft.com/image/apps.49875.13962809631614187.df9a0bbf-4be1-4c55-b0f2-6452e9cf7c35.bf5cf15a-fb96-4e8d-ad37-b13f2d4fd00b"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2232,
+        "height": 1387,
+        "url": "https://store-images.s-microsoft.com/image/apps.61892.13962809631614187.df9a0bbf-4be1-4c55-b0f2-6452e9cf7c35.cd1c3a5e-4d6e-4290-9703-d0875aaa60f6"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1396,
+        "url": "https://store-images.s-microsoft.com/image/apps.57663.13962809631614187.df9a0bbf-4be1-4c55-b0f2-6452e9cf7c35.0b62e26e-39c5-456e-9a76-61f0b1e647cc"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1388,
+        "url": "https://store-images.s-microsoft.com/image/apps.53757.13962809631614187.df9a0bbf-4be1-4c55-b0f2-6452e9cf7c35.0b0ab073-ddc3-4c66-b69c-1b7870ffbab9"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2237,
+        "height": 1395,
+        "url": "https://store-images.s-microsoft.com/image/apps.9345.13962809631614187.df9a0bbf-4be1-4c55-b0f2-6452e9cf7c35.ca6e64c0-23ef-4f3d-b977-f4ec0deea84a"
+      }
+    ]
+  },
+  {
+    "productId": "9PDMK57CQ5T2",
+    "slug": "spiderview",
+    "name": "SpiderView",
+    "title": "SpiderView",
+    "category": "开发人员工具",
+    "subCategory": null,
+    "price": "HK$35.00",
+    "description": "SpiderView 是一款面向 Windows 的网站抓取与结构可视化工具。输入一个入口 URL 后，应用会按同站点范围进行广度优先抓取，将页面与链接关系绘制为节点图，并支持按勾选结果导出离线 HTML 或 Markdown 文档包。",
+    "descriptionEn": "SpiderView is a visual web crawler debugging tool with request recording, data extraction, workflow orchestration, and proxy debugging.",
+    "shortDescription": null,
+    "publisher": "WPZStudio",
+    "developer": "wuping2004@msn.com",
+    "publisherWebsiteUri": "https://pudavidamai.github.io/wpzstudio/",
+    "supportUri": "mailto:wuping2004@msn.com",
+    "publisherId": "26137630",
+    "packageFamilyName": "10278WPZStudio.SpiderView_v810h3yyd8p76",
+    "iconUrl": "https://store-images.s-microsoft.com/image/apps.10644.14151297732709123.0766afcf-6788-4317-a486-bb00071283d6.67958b14-29cb-4cb6-9bf4-86ae0c19ec44",
+    "bannerUrl": null,
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.59068.14151297732709123.0766afcf-6788-4317-a486-bb00071283d6.ff678a53-f33d-4da8-9db3-428a35a10a83",
+    "images": [
+      {
+        "purpose": "Logo",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.2019.14151297732709123.0766afcf-6788-4317-a486-bb00071283d6.3f7d74d1-3039-479e-8e2d-1991914f1a12"
+      },
+      {
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.61239.14151297732709123.0766afcf-6788-4317-a486-bb00071283d6.c1e340d4-0982-4365-9362-061f09af124f"
+      },
+      {
+        "purpose": "Logo",
+        "width": 300,
+        "height": 300,
+        "url": "https://store-images.s-microsoft.com/image/apps.10644.14151297732709123.0766afcf-6788-4317-a486-bb00071283d6.67958b14-29cb-4cb6-9bf4-86ae0c19ec44"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2232,
+        "height": 1390,
+        "url": "https://store-images.s-microsoft.com/image/apps.60579.14151297732709123.0766afcf-6788-4317-a486-bb00071283d6.75cce3dc-099e-44f9-a2d2-7fb2e534f0e6"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2234,
+        "height": 1390,
+        "url": "https://store-images.s-microsoft.com/image/apps.59068.14151297732709123.0766afcf-6788-4317-a486-bb00071283d6.ff678a53-f33d-4da8-9db3-428a35a10a83"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1491,
+        "height": 875,
+        "url": "https://store-images.s-microsoft.com/image/apps.22165.14151297732709123.0766afcf-6788-4317-a486-bb00071283d6.336458a0-080e-4372-b198-41066e9e80c2"
+      }
+    ]
+  },
+  {
+    "productId": "9PFCG0031J8V",
+    "slug": "face-attendance",
+    "name": "Face-Attendance",
+    "title": "Face-Attendance",
+    "category": "照片与视频",
+    "subCategory": null,
+    "price": "HK$18.00",
+    "description": "Face Attendance 是一款面向 Windows 的本地化人脸签到应用，适合小团队和单门店场景。\n应用采用离线识别架构，数据保存在本机，不依赖云服务，可快速部署并降低持续使用成本。",
+    "descriptionEn": "Face-Attendance is a local-first face recognition attendance tool that uses the webcam for automatic check-in/check-out.",
+    "shortDescription": null,
+    "publisher": "WPZStudio",
+    "developer": "wuping2004@msn.com",
+    "publisherWebsiteUri": "https://pudavidamai.github.io/wpzstudio/",
+    "supportUri": "mailto:wuping2004@msn.com",
+    "publisherId": "26137630",
+    "packageFamilyName": "10278WPZStudio.Face-Attendance_v810h3yyd8p76",
+    "iconUrl": "https://store-images.s-microsoft.com/image/apps.39366.14203179778099605.e7cd50a8-3b16-42ef-99dd-16e11a2b0b33.37206b7e-f954-43a4-ac9b-ff5cd85cdc1f",
+    "bannerUrl": null,
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.15680.14203179778099605.e7cd50a8-3b16-42ef-99dd-16e11a2b0b33.1c0a1e44-20a7-41e5-b3b1-1fbc213f0b19",
+    "images": [
+      {
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.22330.14203179778099605.e7cd50a8-3b16-42ef-99dd-16e11a2b0b33.fd7c6bd5-e45f-41cf-b54d-83efb0375487"
+      },
+      {
+        "purpose": "Logo",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.4779.14203179778099605.e7cd50a8-3b16-42ef-99dd-16e11a2b0b33.4d080fdc-2bdc-4216-b941-d7b3ca78b555"
+      },
+      {
+        "purpose": "Logo",
+        "width": 300,
+        "height": 300,
+        "url": "https://store-images.s-microsoft.com/image/apps.39366.14203179778099605.e7cd50a8-3b16-42ef-99dd-16e11a2b0b33.37206b7e-f954-43a4-ac9b-ff5cd85cdc1f"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1902,
+        "height": 1191,
+        "url": "https://store-images.s-microsoft.com/image/apps.15680.14203179778099605.e7cd50a8-3b16-42ef-99dd-16e11a2b0b33.1c0a1e44-20a7-41e5-b3b1-1fbc213f0b19"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1902,
+        "height": 1191,
+        "url": "https://store-images.s-microsoft.com/image/apps.59567.14203179778099605.e7cd50a8-3b16-42ef-99dd-16e11a2b0b33.41632113-4252-4d96-a6a7-ca737dff04bf"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1902,
+        "height": 1191,
+        "url": "https://store-images.s-microsoft.com/image/apps.1850.14203179778099605.e7cd50a8-3b16-42ef-99dd-16e11a2b0b33.f89354a0-f475-40a1-b24f-44c70b69d4cd"
+      }
+    ]
+  },
+  {
+    "productId": "9N1BX4C5MKH5",
+    "slug": "ragtail",
+    "name": "RAGTail",
+    "title": "RAGTail",
+    "category": "高效工作",
+    "subCategory": null,
+    "price": "HK$20.00",
+    "description": "RAGTail 是面向 Windows 的本地 AI 知识库应用，可将文档、网页内容与图片 OCR 建立为可检索的知识库，并通过 MCP 供 AI 助手使用。",
+    "descriptionEn": "RAGTail is a RAG debugging tool that visualizes chunking, retrieval results, and generation context for easier tuning.",
+    "shortDescription": null,
+    "publisher": "WPZStudio",
+    "developer": "wuping2004@msn.com",
+    "publisherWebsiteUri": "https://pudavidamai.github.io/wpzstudio/",
+    "supportUri": "mailto:wuping2004@msn.com",
+    "publisherId": "26137630",
+    "packageFamilyName": "10278WPZStudio.RAGTail_v810h3yyd8p76",
+    "iconUrl": "https://store-images.s-microsoft.com/image/apps.23015.13904311520065540.b1bdd98c-2d6c-407e-b536-3779274900eb.f1d3b64a-a884-427e-b1ee-2ed6a22f2ff5",
+    "bannerUrl": null,
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.22575.13904311520065540.b1bdd98c-2d6c-407e-b536-3779274900eb.2d809ed4-67a2-4b99-8398-c7bf266f33ba",
+    "images": [
+      {
+        "purpose": "Logo",
+        "width": 300,
+        "height": 300,
+        "url": "https://store-images.s-microsoft.com/image/apps.23015.13904311520065540.b1bdd98c-2d6c-407e-b536-3779274900eb.f1d3b64a-a884-427e-b1ee-2ed6a22f2ff5"
+      },
+      {
+        "purpose": "Logo",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.36381.13904311520065540.b1bdd98c-2d6c-407e-b536-3779274900eb.9b44b913-1c4c-4f76-9d0b-e1f60ff56886"
+      },
+      {
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.9065.13904311520065540.b1bdd98c-2d6c-407e-b536-3779274900eb.ccb5cee0-872f-40c7-8986-ea22d3ef6722"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1775,
+        "height": 1188,
+        "url": "https://store-images.s-microsoft.com/image/apps.38049.13904311520065540.b1bdd98c-2d6c-407e-b536-3779274900eb.59deda9f-24a6-41a6-aa9e-bc02e8c7a297"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1383,
+        "height": 1123,
+        "url": "https://store-images.s-microsoft.com/image/apps.47795.13904311520065540.b1bdd98c-2d6c-407e-b536-3779274900eb.2992969d-e8e1-44c5-8175-515d9b19749b"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2234,
+        "height": 1328,
+        "url": "https://store-images.s-microsoft.com/image/apps.60650.13904311520065540.b1bdd98c-2d6c-407e-b536-3779274900eb.ad222e1d-0a3c-46f7-a77b-466ff50fd68c"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1322,
+        "url": "https://store-images.s-microsoft.com/image/apps.22575.13904311520065540.b1bdd98c-2d6c-407e-b536-3779274900eb.2d809ed4-67a2-4b99-8398-c7bf266f33ba"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1325,
+        "url": "https://store-images.s-microsoft.com/image/apps.41479.13904311520065540.b1bdd98c-2d6c-407e-b536-3779274900eb.b0b7ed9d-f6c1-4d74-967d-5a21bbaae5df"
+      }
+    ]
+  },
+  {
+    "productId": "9NZLJ8XMM9C8",
+    "slug": "terraform-state-viewer",
+    "name": "TerraformStateViewer",
+    "title": "TerraformStateViewer",
+    "category": "开发人员工具",
+    "subCategory": "File managers",
+    "price": "HK$20.00",
+    "description": "Terraform State Viewer 是一款面向 Windows 的 Terraform 状态文件查看工具。应用以只读方式加载 .tfstate 文件，不会锁定写入流程，适合与 CI/CD、Terraform 命令或其他自动化程序并行使用。",
+    "descriptionEn": "TerraformStateViewer is a Terraform state file visualization tool supporting resource topology, dependencies, and diff comparisons.",
+    "shortDescription": null,
+    "publisher": "WPZStudio",
+    "developer": "wuping2004@msn.com",
+    "publisherWebsiteUri": "https://pudavidamai.github.io/wpzstudio/",
+    "supportUri": "mailto:wuping2004@msn.com",
+    "publisherId": "26137630",
+    "packageFamilyName": "10278WPZStudio.TerraformStateViewer_v810h3yyd8p76",
+    "iconUrl": "https://store-images.s-microsoft.com/image/apps.44884.14474167502081513.e9bd6ddc-b9ee-4698-9946-395224edf8c5.8c798ebd-518a-471f-bce5-096fa2ae51e4",
+    "bannerUrl": null,
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.51800.14474167502081513.e9bd6ddc-b9ee-4698-9946-395224edf8c5.d3aeefda-b8cf-4f5b-bcab-4d6730e5174c",
+    "images": [
+      {
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.5808.14474167502081513.e9bd6ddc-b9ee-4698-9946-395224edf8c5.a6d4a7a0-6c6b-4e91-af3b-890d958ea096"
+      },
+      {
+        "purpose": "Logo",
+        "width": 300,
+        "height": 300,
+        "url": "https://store-images.s-microsoft.com/image/apps.44884.14474167502081513.e9bd6ddc-b9ee-4698-9946-395224edf8c5.8c798ebd-518a-471f-bce5-096fa2ae51e4"
+      },
+      {
+        "purpose": "Logo",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.54755.14474167502081513.e9bd6ddc-b9ee-4698-9946-395224edf8c5.19f1efbe-f76e-44fe-aa5c-52cc3dce66d0"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2159,
+        "height": 1167,
+        "url": "https://store-images.s-microsoft.com/image/apps.36677.14474167502081513.e9bd6ddc-b9ee-4698-9946-395224edf8c5.cfbecf8d-a83c-4907-8d59-8f2af38aeb09"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2202,
+        "height": 1154,
+        "url": "https://store-images.s-microsoft.com/image/apps.51800.14474167502081513.e9bd6ddc-b9ee-4698-9946-395224edf8c5.d3aeefda-b8cf-4f5b-bcab-4d6730e5174c"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2159,
+        "height": 1167,
+        "url": "https://store-images.s-microsoft.com/image/apps.36677.14474167502081513.e9bd6ddc-b9ee-4698-9946-395224edf8c5.cfbecf8d-a83c-4907-8d59-8f2af38aeb09"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2172,
+        "height": 1230,
+        "url": "https://store-images.s-microsoft.com/image/apps.15298.14474167502081513.e9bd6ddc-b9ee-4698-9946-395224edf8c5.13b52a06-1be2-49ac-a3ef-9649c85c4c1c"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2150,
+        "height": 1279,
+        "url": "https://store-images.s-microsoft.com/image/apps.46802.14474167502081513.e9bd6ddc-b9ee-4698-9946-395224edf8c5.4eedbe87-3c00-4e7a-b20e-91fdf28ddb0e"
+      }
+    ]
+  },
+  {
+    "productId": "9N5V06ZXMFP5",
+    "slug": "chinese-learning",
+    "name": "ChineseLearning",
+    "title": "ChineseLearning",
+    "category": "教育",
+    "subCategory": null,
+    "price": "HK$18.00",
+    "description": "ChineseLearning 是一款纯本地运行的 Windows 中文学习应用，面向初学者、海外华裔子女以及网络受限和隐私敏感用户，提供离线可用的发音、汉字、听力与学习管理能力。",
+    "descriptionEn": "ChineseLearning is a Chinese learning app with pinyin, characters, vocabulary exercises and progress tracking for overseas learners.",
+    "shortDescription": null,
+    "publisher": "WPZStudio",
+    "developer": "wuping2004@msn.com",
+    "publisherWebsiteUri": "https://pudavidamai.github.io/wpzstudio/",
+    "supportUri": "mailto:wuping2004@msn.com",
+    "publisherId": "26137630",
+    "packageFamilyName": "10278WPZStudio.ChineseLearning_v810h3yyd8p76",
+    "iconUrl": "https://store-images.s-microsoft.com/image/apps.27216.14026592275663056.2647a229-c1fa-4155-ab67-086b57992848.0216d0e7-0e8f-4f3a-bb0a-04936d616c81",
+    "bannerUrl": null,
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.42945.14026592275663056.2647a229-c1fa-4155-ab67-086b57992848.27c521d7-441f-472f-8ca2-b3d32a5695dc",
+    "images": [
+      {
+        "purpose": "Logo",
+        "width": 300,
+        "height": 300,
+        "url": "https://store-images.s-microsoft.com/image/apps.27216.14026592275663056.2647a229-c1fa-4155-ab67-086b57992848.0216d0e7-0e8f-4f3a-bb0a-04936d616c81"
+      },
+      {
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.43237.14026592275663056.2647a229-c1fa-4155-ab67-086b57992848.fca42066-54c2-4c35-a167-d33e120eb645"
+      },
+      {
+        "purpose": "Logo",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.14430.14026592275663056.2647a229-c1fa-4155-ab67-086b57992848.b544784b-4668-4059-bfa5-b1cc5401ae4a"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2235,
+        "height": 1320,
+        "url": "https://store-images.s-microsoft.com/image/apps.17341.14026592275663056.2647a229-c1fa-4155-ab67-086b57992848.d2c58f09-5072-4fd3-a5f8-f90953326b2c"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1325,
+        "url": "https://store-images.s-microsoft.com/image/apps.42945.14026592275663056.2647a229-c1fa-4155-ab67-086b57992848.27c521d7-441f-472f-8ca2-b3d32a5695dc"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1325,
+        "url": "https://store-images.s-microsoft.com/image/apps.60216.14026592275663056.2647a229-c1fa-4155-ab67-086b57992848.ecf7a720-199a-4542-b4c9-8ba7214f8700"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1324,
+        "url": "https://store-images.s-microsoft.com/image/apps.26245.14026592275663056.2647a229-c1fa-4155-ab67-086b57992848.20273064-cc9e-4cfb-ae71-2458872daa41"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1328,
+        "url": "https://store-images.s-microsoft.com/image/apps.14440.14026592275663056.2647a229-c1fa-4155-ab67-086b57992848.9db35ae2-0fdc-4553-8b45-fc67b01cf52b"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2235,
+        "height": 1327,
+        "url": "https://store-images.s-microsoft.com/image/apps.36833.14026592275663056.2647a229-c1fa-4155-ab67-086b57992848.0ed4f095-2045-4d6f-9dbe-fdcc03149356"
+      }
+    ]
+  },
+  {
+    "productId": "9NHQ1CDF9KGD",
+    "slug": "airpen",
+    "name": "AirPen",
+    "title": "AirPen",
+    "category": "高效工作",
+    "subCategory": null,
+    "price": "HK$25.00",
+    "description": "AirPen 是一款面向 Windows 的手势互动绘画应用。用户通过摄像头识别手部动作，在画布中进行自由绘画或模板填色，适用于家庭、课堂与互动展示场景",
+    "descriptionEn": "AirPen is an in-air writing tool that uses the webcam to recognize gestures for writing in the air — useful for demos.",
+    "shortDescription": null,
+    "publisher": "WPZStudio",
+    "developer": "wuping2004@msn.com",
+    "publisherWebsiteUri": "https://pudavidamai.github.io/wpzstudio/",
+    "supportUri": "mailto:wuping2004@msn.com",
+    "publisherId": "26137630",
+    "packageFamilyName": "10278WPZStudio.AirPen_v810h3yyd8p76",
+    "iconUrl": "https://store-images.s-microsoft.com/image/apps.3857.13621462627810651.90b9708c-5609-435f-b644-8a42cde32e31.12433011-5b4c-4d93-a196-3390e8f29caa",
+    "bannerUrl": null,
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.35014.13621462627810651.90b9708c-5609-435f-b644-8a42cde32e31.c0fefe52-606f-43b7-adfd-c31915500521",
+    "images": [
+      {
+        "purpose": "Logo",
+        "width": 300,
+        "height": 300,
+        "url": "https://store-images.s-microsoft.com/image/apps.3857.13621462627810651.90b9708c-5609-435f-b644-8a42cde32e31.12433011-5b4c-4d93-a196-3390e8f29caa"
+      },
+      {
+        "purpose": "Logo",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.17941.13621462627810651.90b9708c-5609-435f-b644-8a42cde32e31.e8f99cf1-188b-475d-91b0-c25ddf71455b"
+      },
+      {
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.28845.13621462627810651.90b9708c-5609-435f-b644-8a42cde32e31.32cd27ee-52ca-4286-b4e9-3300e24b526a"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1898,
+        "height": 1243,
+        "url": "https://store-images.s-microsoft.com/image/apps.35014.13621462627810651.90b9708c-5609-435f-b644-8a42cde32e31.c0fefe52-606f-43b7-adfd-c31915500521"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1880,
+        "height": 1240,
+        "url": "https://store-images.s-microsoft.com/image/apps.18567.13621462627810651.90b9708c-5609-435f-b644-8a42cde32e31.0a9403c8-3e23-4dd7-a872-303797c22a6c"
+      }
+    ]
+  },
+  {
+    "productId": "9NLX7B91FBBV",
+    "slug": "chinese-poetry",
+    "name": "ChinesePoetry",
+    "title": "ChinesePoetry",
+    "category": "教育",
+    "subCategory": null,
+    "price": "免费",
+    "description": "ChinesePoetry（古诗词精选）是一款面向 Windows 桌面端的古诗词阅读与学习应用，基于 chinese-poetry 开源数据集，收录《唐诗三百首》《宋词三百首》等经典篇目。**完全离线运行**，无广告、无内购，一次安装终身可读。界面支持 6 种语言实时切换，适合海外华裔青少年与中文学习者使用。",
+    "descriptionEn": "ChinesePoetry is a curated collection of classic Chinese poems with original text, annotations, translations and author bios.",
+    "shortDescription": null,
+    "publisher": "WPZStudio",
+    "developer": "wuping2004@msn.com",
+    "publisherWebsiteUri": "https://pudavidamai.github.io/wpzstudio/",
+    "supportUri": "mailto:wuping2004@msn.com",
+    "publisherId": "26137630",
+    "packageFamilyName": "10278WPZStudio.ChinesePoetry_v810h3yyd8p76",
+    "iconUrl": "https://store-images.s-microsoft.com/image/apps.28083.13703274897366545.1535bb8a-40aa-4d6a-9d31-b8117394d2e9.eb2b166e-58df-4c82-acb8-752462563876",
+    "bannerUrl": null,
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.60097.13703274897366545.ff02803c-e840-402a-ad48-31afbcd37bfd.a7a87136-f576-4f2a-979f-d1350c504a13",
+    "images": [
+      {
+        "purpose": "Logo",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.14593.13703274897366545.ff02803c-e840-402a-ad48-31afbcd37bfd.1fab2a9e-feb7-4111-bef8-18ea50e04ffb"
+      },
+      {
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.32653.13703274897366545.1535bb8a-40aa-4d6a-9d31-b8117394d2e9.190c1d66-8206-4e61-ba21-88e770303f80"
+      },
+      {
+        "purpose": "Logo",
+        "width": 300,
+        "height": 300,
+        "url": "https://store-images.s-microsoft.com/image/apps.28083.13703274897366545.1535bb8a-40aa-4d6a-9d31-b8117394d2e9.eb2b166e-58df-4c82-acb8-752462563876"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1325,
+        "url": "https://store-images.s-microsoft.com/image/apps.60097.13703274897366545.ff02803c-e840-402a-ad48-31afbcd37bfd.a7a87136-f576-4f2a-979f-d1350c504a13"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2237,
+        "height": 1322,
+        "url": "https://store-images.s-microsoft.com/image/apps.22120.13703274897366545.1535bb8a-40aa-4d6a-9d31-b8117394d2e9.a6256c85-2875-4d63-a6a0-a77e6cec8cbc"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1325,
+        "url": "https://store-images.s-microsoft.com/image/apps.54062.13703274897366545.1535bb8a-40aa-4d6a-9d31-b8117394d2e9.d7cb8166-3287-4aa8-a953-50b286892613"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1320,
+        "url": "https://store-images.s-microsoft.com/image/apps.31568.13703274897366545.1535bb8a-40aa-4d6a-9d31-b8117394d2e9.b5dd482f-2e14-4f85-8f09-d0d94a111da7"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1325,
+        "url": "https://store-images.s-microsoft.com/image/apps.8619.13703274897366545.1535bb8a-40aa-4d6a-9d31-b8117394d2e9.4e968284-2ee6-4170-8853-7714ee1bad9b"
+      }
+    ]
+  },
+  {
+    "productId": "9PK5BV73SRCH",
+    "slug": "easyhar-viewer",
+    "name": "EasyHarViewer",
+    "title": "EasyHarViewer",
+    "category": "开发人员工具",
+    "subCategory": "File managers",
+    "price": "HK$12.00",
+    "description": "EasyHarViewer 是一款面向 Windows 的 HAR 日志分析工具，用于快速查看和排查 HTTP/S 请求。它提供类似浏览器 Network 面板的结构化视图，帮助你在离线场景中高效分析接口行为、性能瓶颈与错误响应。",
+    "descriptionEn": "EasyHarViewer is a HAR file analysis tool that visualizes HTTP request timing, responses, and dependencies.",
+    "shortDescription": null,
+    "publisher": "WPZStudio",
+    "developer": "wuping2004@msn.com",
+    "publisherWebsiteUri": "https://pudavidamai.github.io/wpzstudio/",
+    "supportUri": "mailto:wuping2004@msn.com",
+    "publisherId": "26137630",
+    "packageFamilyName": "10278WPZStudio.EasyHarViewer_v810h3yyd8p76",
+    "iconUrl": "https://store-images.s-microsoft.com/image/apps.53208.14268949665516066.31e25027-b001-46fa-afa0-ca40abc6ae93.0ae9daad-9f05-4283-bb5f-de5ca9eea85f",
+    "bannerUrl": null,
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.29238.14268949665516066.31e25027-b001-46fa-afa0-ca40abc6ae93.3abe99b7-b843-4204-999f-aff8da22399b",
+    "images": [
+      {
+        "purpose": "Logo",
+        "width": 300,
+        "height": 300,
+        "url": "https://store-images.s-microsoft.com/image/apps.53208.14268949665516066.31e25027-b001-46fa-afa0-ca40abc6ae93.0ae9daad-9f05-4283-bb5f-de5ca9eea85f"
+      },
+      {
+        "purpose": "Logo",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.43166.14268949665516066.31e25027-b001-46fa-afa0-ca40abc6ae93.23b9377c-071f-4dfd-9874-d7e7d2afb87c"
+      },
+      {
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.58335.14268949665516066.31e25027-b001-46fa-afa0-ca40abc6ae93.64527c57-9a65-40f4-bc0b-9a0563c6898a"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1773,
+        "height": 1181,
+        "url": "https://store-images.s-microsoft.com/image/apps.29238.14268949665516066.31e25027-b001-46fa-afa0-ca40abc6ae93.3abe99b7-b843-4204-999f-aff8da22399b"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1770,
+        "height": 1184,
+        "url": "https://store-images.s-microsoft.com/image/apps.39107.14268949665516066.31e25027-b001-46fa-afa0-ca40abc6ae93.111631c9-70ac-4ffa-be40-c1d9e1f69e70"
+      }
+    ]
+  },
+  {
+    "productId": "9NGCX3MM1SDC",
+    "slug": "nexnote",
+    "name": "NexNote",
+    "title": "NexNote",
+    "category": "高效工作",
+    "subCategory": "File managers",
+    "price": "HK$15.00",
+    "description": "NextNote 是一款 AI 原生的 Markdown 编辑器，专为 macOS、Windows 和 Linux 用户打造。它提供无干扰的写作环境，支持实时预览，兼容 CommonMark 和 GitHub 风格的 Markdown 规范，并内置 MCP（Model Context Protocol，模型上下文协议）服务器，让 AI Agent 可以读取你的笔记、触发命令、编排写作流程。",
+    "descriptionEn": "NexNote is a lightweight note-taking app with Markdown, tags, bidirectional links, and local full-text search.",
+    "shortDescription": null,
+    "publisher": "WPZStudio",
+    "developer": "wuping2004@msn.com",
+    "publisherWebsiteUri": "https://pudavidamai.github.io/wpzstudio/",
+    "supportUri": "mailto:wuping2004@msn.com",
+    "publisherId": "26137630",
+    "packageFamilyName": "10278WPZStudio.NexNote_v810h3yyd8p76",
+    "iconUrl": "https://store-images.s-microsoft.com/image/apps.39766.13647503012938940.180ddaf8-6e83-4433-a22d-9d749dfce3bd.e7016af9-ae75-454f-865a-b28c0a142511",
+    "bannerUrl": null,
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.41867.13647503012938940.180ddaf8-6e83-4433-a22d-9d749dfce3bd.8674e22d-6bdd-4da2-bec7-aff41be02a35",
+    "images": [
+      {
+        "purpose": "Logo",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.28919.13647503012938940.180ddaf8-6e83-4433-a22d-9d749dfce3bd.8e1412e7-780c-453d-bdea-8d5162b877ca"
+      },
+      {
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.35499.13647503012938940.180ddaf8-6e83-4433-a22d-9d749dfce3bd.7133df57-6717-4403-b432-eea7efcd9040"
+      },
+      {
+        "purpose": "Logo",
+        "width": 300,
+        "height": 300,
+        "url": "https://store-images.s-microsoft.com/image/apps.39766.13647503012938940.180ddaf8-6e83-4433-a22d-9d749dfce3bd.e7016af9-ae75-454f-865a-b28c0a142511"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2232,
+        "height": 1319,
+        "url": "https://store-images.s-microsoft.com/image/apps.38233.13647503012938940.180ddaf8-6e83-4433-a22d-9d749dfce3bd.9c1d28f3-749f-4952-98e9-9302e4fa76a4"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2229,
+        "height": 1319,
+        "url": "https://store-images.s-microsoft.com/image/apps.42485.13647503012938940.180ddaf8-6e83-4433-a22d-9d749dfce3bd.e69634a8-9a69-4ce4-a1dd-78da85f3caea"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2234,
+        "height": 1322,
+        "url": "https://store-images.s-microsoft.com/image/apps.5908.13647503012938940.180ddaf8-6e83-4433-a22d-9d749dfce3bd.e13e9ea0-a2bd-4f9b-bbdb-d1b7a9c25c37"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2237,
+        "height": 1331,
+        "url": "https://store-images.s-microsoft.com/image/apps.41867.13647503012938940.180ddaf8-6e83-4433-a22d-9d749dfce3bd.8674e22d-6bdd-4da2-bec7-aff41be02a35"
+      }
+    ]
   }
 ]

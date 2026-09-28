@@ -61,20 +61,39 @@ jobs:
           node tools/scripts/validate-pending.mjs
 
       - name: Skip when nothing valid
+        id: skip
         if: steps.validate.outputs.no_pending == 'true' || (steps.validate.outputs.added_count || '0') == '0'
         run: |
-          echo "No new apps to add — exiting."
-          # If pending file exists in the commit but had all-duplicate /
-          # all-invalid entries, remove it so the next push doesn't
-          # retrigger the workflow.
-          if [ -f tools/apps-seed-pending.txt ] && [ -n "$(git log -1 --format=%s -- tools/apps-seed-pending.txt 2>/dev/null)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          echo "No new apps to add — clearing pending file if it exists in this commit."
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          echo "push_failed=false" >> "$GITHUB_OUTPUT"
+          if [ -f tools/apps-seed-pending.txt ]; then
             git rm -f tools/apps-seed-pending.txt
-            git commit -m "chore: clear empty apps-seed-pending.txt" || true
-            git push || true
+            if git commit -m "chore: clear empty apps-seed-pending.txt"; then
+              if ! git push origin master; then
+                echo "::warning::git push failed (token lacks write permission?). Uploaded as artifact instead."
+                echo "push_failed=true" >> "$GITHUB_OUTPUT"
+              fi
+            fi
           fi
           exit 0
+
+      - name: Upload changes as artifact when skip-clear push failed
+        if: steps.skip.outputs.push_failed == 'true'
+        run: |
+          mkdir -p wpzstudio-changes/tools
+          git format-patch -1 HEAD --stdout > wpzstudio-changes/clear-pending.patch 2>/dev/null || true
+          cd wpzstudio-changes && zip -r ../catalog-update.zip . >/dev/null
+          echo "Skip-clear artifact ready."
+
+      - name: Upload artifact (skip-clear)
+        if: steps.skip.outputs.push_failed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-update-${{ github.run_id }}
+          path: catalog-update.zip
+          if-no-files-found: ignore
 
       - name: Run fetch-catalog (regenerates _data/)
         working-directory: tools
@@ -85,7 +104,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Commit new apps to master
+      - name: Commit and push new apps to master
+        id: commit
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Remove the pending file (default behavior; can be overridden
           # by running the workflow manually with clear_pending=false).
@@ -100,5 +122,39 @@ jobs:
           TITLES="${{ steps.validate.outputs.added_titles || '' }}"
           git commit -m "feat(catalog): add $COUNT new apps" \
                      -m "Added via apps-seed-pending.txt workflow." \
-                     -m "New apps:"$'\n'"$TITLES"
-          git push origin master
+                     -m "New apps:"$'\n'"$TITLES" || {
+                       echo "::warning::git commit failed (nothing to commit?). Continuing."
+                       echo "push_failed=false" >> "$GITHUB_OUTPUT"
+                       exit 0
+                     }
+          # Push is allowed to fail (e.g. GITHUB_TOKEN is read-only by
+          # default; the user must enable "Read and write permissions"
+          # in repo Settings → Actions → General). When push fails, the
+          # commit is still visible in the workflow's local checkout and
+          # can be retrieved via the artifact uploaded below.
+          if git push origin master; then
+            echo "push_failed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::git push failed (token lacks write permission?). Uploaded as artifact instead."
+            echo "push_failed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Upload changes as artifact when push failed
+        if: steps.commit.outputs.push_failed == 'true'
+        run: |
+          mkdir -p wpzstudio-changes/_data wpzstudio-changes/tools
+          cp _data/wpz_apps.json wpzstudio-changes/_data/ 2>/dev/null || true
+          cp _data/wpz_apps.yml  wpzstudio-changes/_data/ 2>/dev/null || true
+          cp tools/apps-seed.json wpzstudio-changes/tools/ 2>/dev/null || true
+          # Package the commit as a patch file for easy application
+          git format-patch -1 HEAD --stdout > wpzstudio-changes/change.patch 2>/dev/null || true
+          cd wpzstudio-changes && zip -r ../catalog-update.zip . >/dev/null
+          echo "Artifact ready. Download from this workflow run's summary page."
+
+      - name: Upload artifact
+        if: steps.commit.outputs.push_failed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-update-${{ github.run_id }}
+          path: catalog-update.zip
+          if-no-files-found: ignore

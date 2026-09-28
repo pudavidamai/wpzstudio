@@ -18,6 +18,7 @@
  */
 
 import fs from 'node:fs/promises'
+import fsSync from 'node:fs'
 import path from 'node:path'
 import { execFileSync } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
@@ -32,30 +33,15 @@ const PUBLISHER_ID = '26137630'   // WPZStudio's Partner Center ID
 const MARKET = 'CN'
 const LOCALE = 'zh-CN'
 
-function readEnvFile(path) {
-  // Parse a GitHub Actions $GITHUB_OUTPUT / $GITHUB_ENV format file.
-  try {
-    return Object.fromEntries(
-      require('node:fs').readFileSync(path, 'utf8')
-        .split('\n')
-        .filter(line => line.includes('='))
-        .map(line => {
-          const [k, ...rest] = line.split('=')
-          return [k.trim(), rest.join('=').replace(/^"|"$/g, '')]
-        })
-    )
-  } catch { return {} }
-}
-
 function appendOutput(key, value) {
   const out = process.env.GITHUB_OUTPUT
   if (!out) return
   // Multi-line values: GitHub uses heredoc form `key<<EOF\nvalue\nEOF`
   if (String(value).includes('\n')) {
     const delim = `EOF_${Math.random().toString(36).slice(2, 10)}`
-    require('node:fs').appendFileSync(out, `${key}<<${delim}\n${value}\n${delim}\n`)
+    fsSync.appendFileSync(out, `${key}<<${delim}\n${value}\n${delim}\n`)
   } else {
-    require('node:fs').appendFileSync(out, `${key}=${value}\n`)
+    fsSync.appendFileSync(out, `${key}=${value}\n`)
   }
 }
 

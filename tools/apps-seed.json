@@ -1,0 +1,542 @@
+[
+  {
+    "slug": "airbridge",
+    "name": "AirBridge",
+    "productId": "9PF1C6SGDNJ4",
+    "category": "高效工作",
+    "price": "HK$14.00",
+    "description": "AirBridge 是一个在同一局域网内实现桌面与手机快速互传的工具。用户打开网页或扫描二维码后即可自动连接，无需配对码，适合日常办公与跨设备协作。",
+    "descriptionEn": "AirBridge is a same-LAN transfer tool for fast sharing between desktop and phone. Open the URL or scan the QR code to auto-connect instantly.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.33931.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.4580e4e9-febd-4284-9e1f-ae7f60584a41"
+  },
+  {
+    "slug": "classprinter",
+    "name": "ClassPrinter",
+    "productId": "9PJK99TRWV5B",
+    "category": "实用程序与工具",
+    "price": "HK$16.00",
+    "description": "ClassPrinter 是一款本地优先的学生课表制作工具，专为 Windows 设计。录入课程、设置时间、一键导出高清 PNG / PDF 课表，方便直接打印、贴墙或分享给同学。所有数据保存在你的电脑，不上传任何信息。",
+    "descriptionEn": "ClassPrinter 是一款本地优先的学生课表制作工具，专为 Windows 设计。录入课程、设置时间、一键导出高清 PNG / PDF 课表，方便直接打印、贴墙或分享给同学。所有数据保存在你的电脑，不上传任何信息。",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.65287.14280757702903719.9553ce3e-bf5e-40b2-a942-9ded9bc4bbb8.bd8e56ae-b00c-4963-8016-ae04a73f64cd"
+  },
+  {
+    "slug": "color-lab",
+    "name": "Color Lab",
+    "productId": "9P2Q745TG8L8",
+    "category": "实用程序与工具",
+    "price": "HK$8.00",
+    "description": "Color Lab 是一款专为美术专业人士和艺术爱好者设计的专业调色应用。通过模拟真实颜料混合的物理特性，帮助用户精确调配出理想的颜色，并提供完整的颜色管理和配方保存功能。无论您是专业画家、设计师、美术学生还是艺术爱好者，Color Lab 都能成为您创作过程中不可或缺的调色助手。",
+    "descriptionEn": "Color Lab is a professional color mixing app that simulates real pigment mixing and provides color management and recipe saving features.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.8299.14553363046121507.a15e2ea3-bc69-4c35-bed0-738d5f35d443.d3788399-d6f4-4f8d-bb3c-89aa484693d8"
+  },
+  {
+    "slug": "datakitpro",
+    "name": "DataKitPro",
+    "productId": "9NL0QXN40F7C",
+    "category": "高效工作",
+    "price": "HK$8.00",
+    "description": "DataKitPro 是一款面向 Windows 的轻量级本地数据处理与分析工具，支持对常见结构化文件进行读取、检查、转换与导出。它适合日常办公数据处理、开发调试和批量数据整理场景，强调“本地运行、快速上手、格式兼容”",
+    "descriptionEn": "DataKitPro is a lightweight Windows desktop app for local data processing and analysis across common structured data formats.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.65448.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.d3e7b4b2-1565-4db3-a314-1ce7db5cfca6"
+  },
+  {
+    "slug": "deskassistor",
+    "name": "DeskAssistor",
+    "productId": "9MTF9XK1S627",
+    "category": "实用程序与工具",
+    "price": "HK$21.00",
+    "description": "DeskAssistor 是一款 Windows 桌面布局与工作区管理工具，可保存当前多应用窗口布局，并在需要时一键恢复与切换。",
+    "descriptionEn": "DeskAssistor is a Windows desktop layout and workspace manager that saves your current multi-app window arrangement and restores it in one click.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.14000.13814166367109996.f6e01fd7-7a86-488c-84f2-dd1a5ebfcb1d.d2868a4b-f1f6-49a4-8353-1115acfe76b8"
+  },
+  {
+    "slug": "deskframe",
+    "name": "DeskFrame",
+    "productId": "9PM827X4Q7J6",
+    "category": "照片与视频",
+    "price": "HK$35.00",
+    "description": "DeskFrame 是一款面向 Windows 优先、支持跨平台扩展的轻量级桌面录屏应用。它聚焦于低延迟和高可控性，尤其支持固定宽高的区域捕获，帮助用户直接生成可发布的视频素材。",
+    "descriptionEn": "DeskFrame is a lightweight desktop screen recorder (Windows-first, cross-platform ready) focused on low latency and precise capture control. Enables fixed-size capture areas for production-ready recording workflows.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.23929.14298137940792117.78f45817-89c0-4793-843e-380eab27c4d9.11b347c1-d86e-4f8e-b4de-d3570892749f"
+  },
+  {
+    "slug": "diffmirror",
+    "name": "DiffMirror",
+    "productId": "9NM8XM3SFH4R",
+    "category": "实用程序与工具",
+    "price": "HK$11.00",
+    "description": "DiffMirror 是一款面向 Windows 的数据差异对比工具，支持 CSV、TXT、JSON、XML、XLSX 等常见文件格式。它帮助你在两个数据源之间快速定位新增、删除和修改内容，适合需要高频核对数据的个人和团队。",
+    "descriptionEn": "DiffMirror 是一款面向 Windows 的数据差异对比工具，支持 CSV、TXT、JSON、XML、XLSX 等常见文件格式。它帮助你在两个数据源之间快速定位新增、删除和修改内容，适合需要高频核对数据的个人和团队。",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.59031.13691747076275492.0f654220-cca0-45a7-a856-935bf17414cc.80bf3b07-d071-4bd3-aedb-29f7821327cb"
+  },
+  {
+    "slug": "disk-space-cleaner-pro",
+    "name": "Disk Space Cleaner Pro",
+    "productId": "9NM72742FVD3",
+    "category": "高效工作",
+    "price": "HK$11.00",
+    "description": "SpaceCleaner 是一款专为 Windows 用户设计的智能磁盘清理工具。无需专业知识，一键即可安全释放 C 盘空间，让您的系统运行更流畅。通过智能分析和安全清理技术，帮助您轻松管理磁盘空间，优化系统性能。\n\n主要核心功能 \n\n- 智能磁盘分析\n\n- 安全清理中心\n\n- 大文件定位器\n\n- 智能优化建议\n\n- 文件夹迁移",
+    "descriptionEn": "Disk Space Cleaner Pro analyzes disk usage, cleans temporary files and caches, locates large files, and provides storage optimization recommendations.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.62237.13693256489172012.f4799ca0-3f1d-49fd-b870-a4e8ea9566fd.a508079a-f8c3-4d8c-aaab-8d96d01df3bc"
+  },
+  {
+    "slug": "easygit",
+    "name": "EasyGit",
+    "productId": "9N41RC0DDFX4",
+    "category": "高效工作",
+    "price": "HK$18.00",
+    "description": "EasyGit 是一款面向 Windows 的 Git 可视化客户端，帮助开发者快速完成提交历史查看、暂存区管理、远端同步与恢复操作。",
+    "descriptionEn": "EasyGit is a Windows-first visual Git client that streamlines commit history review, staging workflows, remote sync, and safe recovery operations.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.4374.13991975057211079.d935d413-b23d-44f1-8c79-aa0221782ad8.6d50f097-04fb-4513-9fae-7b4a5205676c"
+  },
+  {
+    "slug": "easymd",
+    "name": "EasyMD",
+    "productId": "9NWK7BC2KKV4",
+    "category": "实用程序与工具",
+    "price": "HK$12.00",
+    "description": "EaseMd 是一款面向 Windows 平台的轻量级 Markdown 编辑器，支持实时预览、文件管理、表格编辑和导出功能，帮助用户高效编辑和预览 Markdown 文档。",
+    "descriptionEn": "EaseMd is a lightweight Markdown editor for Windows with real-time preview, file management, table editing, and export capabilities, helping users efficiently edit and preview Markdown documents.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.46854.14443982180150251.2bbf566e-198f-40b5-8b34-6257752743d7.265081ef-29ed-44e1-88a5-6c6750b2a750"
+  },
+  {
+    "slug": "easyprob",
+    "name": "EasyProb",
+    "productId": "9PN5HX4R298B",
+    "category": "高效工作",
+    "price": "HK$15.00",
+    "description": "EasyProb 是一款面向 Windows 平台的轻量级本地健康监控应用，让你随时掌握服务/API 的运行状态与可用率，无需注册、无需云端、完全离线。所有数据存在本机 SQLite。",
+    "descriptionEn": "EasyProb 是一款面向 Windows 平台的轻量级本地健康监控应用，让你随时掌握服务/API 的运行状态与可用率，无需注册、无需云端、完全离线。所有数据存在本机 SQLite。",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.23820.14355199120139673.54409845-ac97-4976-ae45-b22a6c353451.a6aac5c8-8677-4764-8125-66124b618ea0"
+  },
+  {
+    "slug": "event-log-analyzer",
+    "name": "Event Log Analyzer",
+    "productId": "9PDG51WW56TB",
+    "category": "开发人员工具",
+    "price": "HK$7.00",
+    "description": "EventLog Analyzer is a powerful, intelligent Windows Event Log analysis tool designed to help IT professionals, system administrators, and developers quickly identify, analyze, and troubleshoot system issues. With advanced pattern recognition, interactive visualizations, and multi-language support, it transforms complex event logs into actionable insights.",
+    "descriptionEn": "Event Log Analyzer helps IT professionals, administrators, and developers identify, analyze, and troubleshoot Windows Event Log issues.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.28062.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.870c7b63-e87b-40d9-b4f5-802bdce12f20"
+  },
+  {
+    "slug": "file-zen",
+    "name": "File Zen",
+    "productId": "9PLV5F2XBP02",
+    "category": "实用程序与工具",
+    "price": "HK$11.00",
+    "description": "📖 应用简介\n\nFileZen 是一款优雅而强大的 Windows 桌面应用，专为解决文件混乱问题而设计。通过智能算法和自动化规则，让文件整理变得简单、快速、优雅。告别杂乱无章的文件夹，拥抱井然有序的数字生活。\n\n一键整理，智能分类，让文件管理回归本质。\n\n 核心功能\n\n1. 一键智能整理\n- **自动分类**：根据文件类型（文档、图片、视频、音频等）自动分类\n- **智能识别**：支持 50+ 种常见文件格式\n- **快速整理**：一键完成整个文件夹的整理工作\n- **安全可靠**：移动文件而非复制，保持磁盘空间高效利用\n\n2. 自动规则引擎\n- **自定义规则**：根据文件名、扩展名、大小等条件创建规则\n- **自动执行**：文件夹监控，新文件自动按规则整理\n- **灵活配置**：支持多条件组合，满足复杂整理需求\n- **规则管理**：轻松启用、禁用或删除规则\n\n3. 重复文件查找\n- **智能检测**：基于文件内容（MD5）精确识别重复文件\n- **递归扫描**：支持扫描子文件夹，全面查找重复项\n- **批量清理**：一键删除重复文件，释放磁盘空间\n- **安全保护**：保留原始文件，仅删除重复副本\n\n4. 批量重命名\n- **模式重命名**：支持前缀、后缀、替换等多种模式\n- **序号编号**：自动添加递增序号\n- **预览功能**：重命名前预览效果，避免错误\n- **批量处理**：一次处理数百个文件",
+    "descriptionEn": "File Zen is a file organization tool with auto classification, monitored rules, duplicate file detection, and batch renaming.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.11989.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.22ff04d1-b378-4476-94b9-b93dfdcea8f0"
+  },
+  {
+    "slug": "firewall-log-analyzer",
+    "name": "Firewall Log Analyzer",
+    "productId": "9N9JD6FJJ4KC",
+    "category": "高效工作",
+    "price": "HK$14.00",
+    "description": "Firewall Insight 是一款面向 Windows 的防火墙日志分析应用，支持大文件流式读取、自动字段识别和多维筛选，帮助用户快速理解 ALLOW/DROP 行为、流量来源与风险趋势。",
+    "descriptionEn": "Firewall Insight is a Windows firewall log analyzer with streaming read, automatic `#Fields` parsing, and multi-dimensional filters to quickly understand ALLOW/DROP behavior, traffic sources, and risk trends.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.49555.13536620826709790.9141fa88-2869-431d-b7c8-b609d180f418.c616bab8-52c9-40e5-9470-b6037459e1eb"
+  },
+  {
+    "slug": "flyrss",
+    "name": "FlyRSS",
+    "productId": "9PND35LQZPNZ",
+    "category": "实用程序与工具",
+    "price": "HK$16.00",
+    "description": "FlyRSS 是一款 Windows 桌面 RSS 阅读器，把你关心的所有订阅源集中在一处，轻量、本地优先、键盘友好。告别算法推荐和广告，回到主动订阅的阅读方式。",
+    "descriptionEn": "FlyRSS 是一款 Windows 桌面 RSS 阅读器，把你关心的所有订阅源集中在一处，轻量、本地优先、键盘友好。告别算法推荐和广告，回到主动订阅的阅读方式。",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.3316.14350577273810086.d541cf3b-fda0-439f-b8d2-57cf6075a850.fafd1cfa-3c1f-44f5-adfc-c00038c86357"
+  },
+  {
+    "slug": "fun-mind-pro",
+    "name": "Fun Mind Pro",
+    "productId": "9NZNCFKJQ15P",
+    "category": "高效工作",
+    "price": "HK$20.00",
+    "description": "FunMind 是一款优雅高效的 Windows 脑图（思维导图）工具，帮助用户可视化管理思绪、整理笔记、规划项目与激发创意。界面简洁美观，操作流畅自然，支持多种专业布局与丰富的视觉样式。",
+    "descriptionEn": "FunMind is an elegant and powerful mind mapping tool for Windows that helps users visually organize thoughts, take notes, plan projects, and spark creativity. Supports multiple professional layouts and rich visual styles.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.59252.14477015747115128.6c14f1dd-fcfb-4b04-8394-718c68da2f86.78ce4b34-1bc3-4e90-9c3c-0fa3f6685bbb"
+  },
+  {
+    "slug": "global-meeting-scheduler",
+    "name": "Global Meeting Scheduler",
+    "productId": "9NVJ6W004049",
+    "category": "实用程序与工具",
+    "price": "HK$18.00",
+    "description": "**Global Meeting Scheduler（全球会议调度器）** 是一款面向 Windows 桌面用户的多时区协作工具，集**世界时钟、时区转换器、在线会议调度器**于一身。它以一张 24 小时网格同时呈现多个城市的时间，鼠标悬停即可换算，点击即可生成跨时区会议，并通过 iCal、Google Calendar、Outlook、Yahoo Calendar 一键分享。",
+    "descriptionEn": "**Global Meeting Scheduler** is a Windows desktop tool for anyone who lives or works across multiple time zones. It combines a **world clock, time zone converter, and meeting scheduler** into a single 24-hour grid. Hover to convert, click to schedule, share to any calendar in one tap.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.6671.14398359263134534.c2ed8331-0e4b-43ad-afc0-41ae623fe5af.c9ce6b39-47c2-4945-af60-e25aea31626e"
+  },
+  {
+    "slug": "iis-log-analyzer",
+    "name": "IIS Log Analyzer",
+    "productId": "9MTPWC2WVH8R",
+    "category": "实用程序与工具",
+    "price": "HK$21.00",
+    "description": "**IIS Log Analyzer** 是一款专为网站管理员、系统运维人员和安全专家设计的专业 IIS 日志分析工具。通过强大的可视化分析和智能威胁检测功能，帮助您深入了解网站性能、用户行为和安全状况。\n\n## 🎨 核心功能特性\n\n### 📈 **实时统计分析**\n- **总请求数统计** - 实时监控网站访问量\n- **独立IP分析** - 识别真实用户和访问模式\n- **流量分布图表** - 可视化展示流量趋势\n- **状态码分析** - 快速定位错误和异常\n\n### ⚡ **性能监控与优化**\n- **响应时间分析** - 平均、中位数、95%响应时间\n- **慢请求识别** - 自动标记性能瓶颈\n- **错误率监控** - 实时跟踪4xx/5xx错误\n- **性能建议** - 智能生成优化建议\n\n### 🔍 **IP地址深度分析**\n- **访问行为分析** - 每个IP的详细访问模式\n- **风险评分系统** - 智能评估IP风险等级\n- **异常标记** - 自动识别高频访问、多UA等异常\n- **24小时趋势** - 可视化访问时间分布\n\n### 🌐 **流量来源分析**\n- **来源分类** - 搜索引擎、社交媒体、直接访问\n- **质量评估** - 跳出率、停留时间、转化率分析\n- **ROI分析** - 不同来源的价值评估\n- **优化建议** - 流量获取策略建议\n\n### 🤖 **User-Agent智能检测**\n- **爬虫识别** - 自动区分正常用户和爬虫\n- **异常检测** - 识别可疑和恶意User-Agent\n- **风险评级** - 四级风险评估体系\n- **自定义规则** - 支持白名单和黑名单配置\n\n### 🛡️ **安全威胁检测**\n- **扫描器识别** - 检测对敏感路径的扫描行为\n- **DDoS攻击检测** - 高频请求模式识别\n- **注入攻击检测** - SQL注入、XSS等攻击尝试\n- **暴力破解检测** - 登录失败模式分析\n- **实时警报** - 严重威胁即时提醒\n\n---\n\n## 🎯 目标客户群体\n\n### 🏢 **企业IT部门**\n- **网站管理员** - 日常运维和性能监控\n- **系统运维工程师** - 服务器健康状况监控\n- **DevOps团队** - 持续集成和部署监控\n\n### 🔒 **安全团队**\n- **安全分析师** - 威胁检测和事件响应\n- **SOC团队** - 安全运营中心监控\n- **合规审计** - 安全合规性检查\n\n### 💼 **服务提供商**\n- **托管服务商** - 为客户提供增值服务\n- **云服务提供商** - 监控和优化服务质量\n- **安全服务公司** - 安全咨询和监控服务\n\n---\n\n## 💰 商业价值\n\n### 📊 **量化收益**\n- **运维效率提升 80%** - 自动化分析替代人工\n- **安全事件响应速度提升 5倍** - 实时检测和预警\n- **网站性能优化 30%** - 基于数据的优化建议\n- **安全成本降低 50%** - 预防性安全措施\n\n### 🎯 **业务影响**\n- **用户体验改善** - 更快的响应时间和更少的错误\n- **安全风险降低** - 主动防护和威胁检测\n- **运营成本节约** - 减少人工分析和故障处理时间\n- **合规性保障** - 满足安全审计和合规要求\n\n---\n\n## 🌟 产品优势\n\n### 🚀 **技术领先**\n- **现代化架构** - 基于Electron和React的跨平台应用\n- **高性能处理** - 支持大文件和海量日志分析\n- **智能算法** - 机器学习驱动的异常检测\n- **实时分析** - 毫秒级响应的数据处理\n\n### 🎨 **用户体验**\n- **直观界面** - 专业设计的可视化界面\n- **中英双语** - 支持国际化使用\n- **一键操作** - 简单易用的操作流程\n- **自定义配置** - 灵活的个性化设置\n\n### 🔧 **部署简单**\n- **即装即用** - 无需复杂配置\n- **跨平台支持** - Windows、macOS、Linux\n- **离线工作** - 无需网络连接\n- **数据安全** - 本地处理，保护隐私\n\n---\n\n## 📈 使用场景\n\n### 🔍 **日常运维监控**\n> \"每天早上打开 IIS Log Analyzer，5分钟内了解昨夜网站运行状况\"\n\n- 快速健康检查\n- 性能指标监控\n- 异常事件识别\n- 趋势分析\n\n### 🚨 **安全事件响应**\n> \"收到安全警报后，立即使用工具分析攻击来源和影响范围\"\n\n- 威胁检测和分析\n- 攻击路径追踪\n- 影响评估\n- 应急响应",
+    "descriptionEn": "IIS Log Analyzer provides visualization, threat detection, performance monitoring, and operational insights for IIS logs.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.21902.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.6a146b07-6b35-4fc5-811d-cf3c2f5d85a9"
+  },
+  {
+    "slug": "image-utility",
+    "name": "Image Utility",
+    "productId": "9PJHFDPPH154",
+    "category": "高效工作",
+    "price": "HK$11.00",
+    "description": "Image Utility 是一款专为设计师、摄影师、内容创作者和企业用户打造的专业级图片处理桌面应用。在数字化时代，图片处理已成为日常工作中不可或缺的一环，但传统的图片处理软件往往功能复杂、学习成本高，或者功能单一、无法满足多样化需求。ImagePro 应运而生，致力于为用户提供一个简单易用、功能强大、高效快速的图片处理解决方案。",
+    "descriptionEn": "Image Utility is a professional-grade desktop image processing app for designers, photographers, content creators, and business users.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.52650.14282290831092529.0eee9266-2bc5-4656-a9d8-34e0e6dd41f1.40c79a52-fd6a-4509-a2f0-520cad7cc288"
+  },
+  {
+    "slug": "imgtotxt",
+    "name": "ImgToTxt",
+    "productId": "9P78H83X39D8",
+    "category": "高效工作",
+    "price": "HK$12.00",
+    "description": "ImgToTxt 是一款面向 Windows 桌面的本地 OCR 工具，可将图片中的文字快速识别为可编辑文本。应用支持按钮选择与拖拽两种加图方式、6 语言界面实时切换、可选择文字模式与传统结果视图，适用于学习、办公和内容整理场景。",
+    "descriptionEn": "ImgToTxt is a Windows desktop OCR app that extracts editable text from images quickly and privately. Supports button-based and drag-and-drop image import, real-time 6-language UI switching, selectable-text overlay mode, and a classic OCR result view.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.57089.14609124441104443.d772bac8-6c8a-4a95-bcf2-17de6c718dbd.bbfec068-e6d4-42d9-a2a0-5d96b73a41ad"
+  },
+  {
+    "slug": "kidsmathpro",
+    "name": "KidsMathPro",
+    "productId": "9N55SM71DZ97",
+    "category": "教育",
+    "price": "HK$14.00",
+    "description": "KidsMathPro 是一款面向儿童的 Windows 数学学习应用，基于 Electron + TypeScript 开发。应用将“数学闯关 + 数值感知 + 比大小 + 温度认知”结合在一个多语言界面中，帮助孩子在游戏化练习中建立计算与生活数学能力。",
+    "descriptionEn": "KidsMathPro is a Windows math-learning app for children with game-style arithmetic, number-sense practice, comparisons, and temperature learning.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.59706.13969365834373374.3f576597-3ca6-4095-8789-89674de3c197.3902ce33-1926-48d8-8833-c0191a8694cd"
+  },
+  {
+    "slug": "logdigger",
+    "name": "LogDigger",
+    "productId": "9MSQVQ43K9FB",
+    "category": "高效工作",
+    "price": "HK$18.00",
+    "description": "LogDigger 是一款面向开发、运维和测试团队的专业日志分析工具，专注于超大日志文件的高性能查看、过滤、标记和模式分析，帮助快速定位故障根因。",
+    "descriptionEn": "LogDigger is a professional log analysis tool for developers, SRE, and QA teams with filtering, marking, and pattern analysis for huge log files.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.51667.13827302495581499.d33b3439-7c0f-4436-8f1f-a10c99766ea3.f4b3a6e0-773a-4bfc-8a04-3b907baf43a4"
+  },
+  {
+    "slug": "mdconvertor",
+    "name": "MDConvertor",
+    "productId": "9P88TGMGMW20",
+    "category": "高效工作",
+    "price": "HK$18.00",
+    "description": "MDConvertor 是一款面向内容创作和知识管理的文档转 Markdown 工具。它支持常见办公文档、图片、音频与网页数据格式，帮助你快速获得结构化、可编辑、可复用的 Markdown 内容。",
+    "descriptionEn": "MDConvertor is a document to Markdown converter built for content creation and knowledge management. Transforms common office files, images, audio, and web-friendly formats into clean, reusable Markdown.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.29955.14091895303786487.ed329044-78c9-4e28-be9b-3a59be806c9e.0e302ba7-8806-457d-a9f8-c51891223651"
+  },
+  {
+    "slug": "mediaconverterpro",
+    "name": "MediaConverterPro",
+    "productId": "9PKR5JPJXGJQ",
+    "category": "照片与视频",
+    "price": "HK$15.00",
+    "description": "通用视频转换工具是一款面向桌面平台的视频与音频格式转换应用，帮助用户在不同设备与播放环境之间快速完成格式适配。",
+    "descriptionEn": "MediaConverterPro converts video and audio formats across devices and playback environments with a simple queue-driven workflow.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.53923.14261962286223945.5ae4d6a1-abd6-4637-be62-39ad6c688ff1.dcdbc911-c622-4144-a5b0-1071026472a2"
+  },
+  {
+    "slug": "netdetectorpro",
+    "name": "NetDetectorPro",
+    "productId": "9NC9SFCFW0TH",
+    "category": "实用程序与工具",
+    "price": "HK$18.00",
+    "description": "NetDetectorPro 是一款面向 Windows 的专业网络诊断应用，基于 Electron + React + TypeScript 构建。它将端口扫描、DNS 解析检测、路由追踪、TCP 握手分析、连通性测试、链路质量监测、吞吐测试与报告对比整合到同一个界面中，帮助开发者、运维工程师和网络管理员更快定位网络问题。",
+    "descriptionEn": "NetDetectorPro combines port scanning, DNS diagnostics, traceroute, TCP handshake analysis, connectivity checks, and throughput testing.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.50916.13571672827200306.c4e3931b-3e41-4d5c-8acc-a53b8a7db7e7.49be8338-d76c-4dbf-aa17-6b908be42825"
+  },
+  {
+    "slug": "nexzip",
+    "name": "Nexzip",
+    "productId": "9N2CD305M7ZX",
+    "category": "高效工作",
+    "price": "HK$9.00",
+    "description": "NexZip 是一款简单易用、功能强大的 Windows 压缩解压工具。支持多种主流压缩格式，提供直观的拖放操作界面，让文件压缩和解压变得轻松简单。无论是日常办公、文件传输还是数据备份，NexZip 都是您的最佳选择。",
+    "descriptionEn": "NexZip is a simple yet powerful compression and extraction tool supporting multiple archive formats with an intuitive drag-and-drop interface.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.63514.13959056723315569.dcd75cbe-9c2e-4a67-9f42-86b172c1ec79.396e25e5-0483-4da4-b605-d180ad32e15a"
+  },
+  {
+    "slug": "pdfunifydivide",
+    "name": "PDFUnifyDivide",
+    "productId": "9NXHSNNDZ5N9",
+    "category": "高效工作",
+    "price": "HK$8.00",
+    "description": "PDF工具箱是一款专业、高效的PDF文件处理工具，专为Windows用户设计。无论您是需要将大型PDF文档分割成多个小文件，还是将多个PDF文件合并为一个完整文档，PDF工具箱都能轻松帮您完成。",
+    "descriptionEn": "PDFUnifyDivide is a professional PDF processing tool for splitting large PDF documents or merging multiple PDF files.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.13705.14429629024879018.b430dc0c-8e39-4241-9585-6f428f4f29f2.5a99f005-d0e1-417d-8119-216fd5c8a52e"
+  },
+  {
+    "slug": "petoclock",
+    "name": "PetOClock",
+    "productId": "9N2G1LRXMCZ4",
+    "category": "娱乐",
+    "price": "HK$21.00",
+    "description": "PetOClock 是一款轻量、可爱的桌面宠物应用，为你的工作和学习桌面带来陪伴与提醒。它支持动态宠物展示、定时提醒、系统通知与多语言设置，适合日常办公、学习专注和健康习惯养成。",
+    "descriptionEn": "PetOClock is a lightweight desktop pet app with animated interactions, scheduled reminders, system notifications, and multilingual support.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.3350.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.95b45407-e372-40b1-ae7a-1f8ddf6ff196"
+  },
+  {
+    "slug": "phonics-master",
+    "name": "Phonics Master",
+    "productId": "9PMXWDT244FF",
+    "category": "教育",
+    "price": "HK$18.00",
+    "description": "Phonics Master 是一款专为 6-15 岁儿童和青少年设计的英语自然拼读学习应用。通过科学的教学方法、游戏化的学习体验和智能的进度跟踪，帮助孩子轻松掌握英语发音规则，建立扎实的英语基础。\n\n\n## 适用人群\n\n### 小学生（6-12岁）\n- 英语启蒙阶段\n- 建立发音基础\n- 培养学习兴趣\n\n### 初中生（13-15岁）\n- 巩固发音规则\n- 扩展词汇量\n- 提高拼写能力\n\n### 家长\n- 监督孩子学习\n- 查看学习报告\n- 设置学习目标\n\n### 教师\n- 辅助课堂教学\n- 布置课后作业\n- 跟踪学生进度",
+    "descriptionEn": "Phonics Master is an English phonics learning app for ages 6-15 with scientific teaching, gamified learning, and progress tracking.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.1542.14289137463972196.4669b448-07de-495a-8221-6ba15b44ba38.d88de922-bb8c-4f01-8032-a1137b10c179"
+  },
+  {
+    "slug": "quick-paste-pro",
+    "name": "Quick Paste Pro",
+    "productId": "9N55B01777XD",
+    "category": "高效工作",
+    "price": "HK$16.00",
+    "description": "剪贴板历史管理器是一款功能强大的 Windows 桌面应用，专为提高工作效率而设计。它能自动记录您复制的所有内容（文本、图片、文件），让您随时快速访问历史记录，再也不用担心重要内容被覆盖。",
+    "descriptionEn": "Quick Paste Pro is a clipboard history manager that records copied text, images, and files for quick access anytime.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.23597.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.ce1337a8-d464-42a2-b79b-ed727fc5c7c2"
+  },
+  {
+    "slug": "rename-utility",
+    "name": "Rename Utility",
+    "productId": "9NK7KC5HNTMQ",
+    "category": "高效工作",
+    "price": "HK$8.00",
+    "description": "批量文件重命名工具是一款功能强大、操作简单的文件管理工具，帮助您快速、高效地重命名大量文件。无论是整理照片、管理文档，还是规范文件命名，这款工具都能让您的工作事半功倍。",
+    "descriptionEn": "Rename Utility helps rename multiple files with rules, sequential numbering, preview, and batch processing.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.35636.13661921829810243.6f93e1e8-7778-4a9a-91df-95ed8f6f558c.06ce06eb-a4d4-4b0a-8564-ca32d18039ac"
+  },
+  {
+    "slug": "sortease",
+    "name": "SortEase",
+    "productId": "9NG19CFMJ8MT",
+    "category": "高效工作",
+    "price": "HK$19.00",
+    "description": "SortEase 是一款面向 Windows 的本地媒体与文档整理应用，聚焦“扫描、浏览、筛选、批量处理”四个核心环节。应用可扫描本地目录中的图片、视频与文档，构建索引后通过三栏界面进行高效管理。",
+    "descriptionEn": "SortEase organizes local media and documents with scan, browse, filter, and batch-action workflows in a three-pane workspace.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.50916.13588743790605220.39cb1228-ed93-4205-ba3c-ac7c9a72405c.922e3f7b-8d5b-4e21-97f8-e2b4804dd790"
+  },
+  {
+    "slug": "terminalx",
+    "name": "TerminalX",
+    "productId": "9PJC2H3PXNFR",
+    "category": "高效工作",
+    "price": "HK$25.00",
+    "description": "TerminalX 是一款现代化的 SSH/SFTP 终端工具，专为开发者和系统管理员设计。它提供了强大的分屏功能、智能连接管理和直观的文件传输界面，让远程服务器管理变得更加高效和便捷。",
+    "descriptionEn": "TerminalX is a modern SSH/SFTP terminal app with split-screen support, intelligent connection management, and file transfer tools.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.21979.14214543539071194.2dc129c3-1de2-404d-b1a1-7cb664058c36.f47710ac-ef16-4c3a-b154-e1bc6f432687"
+  },
+  {
+    "slug": "terraform-ops",
+    "name": "Terraform Ops",
+    "productId": "9PNN03SK42B3",
+    "category": "实用程序与工具",
+    "price": "HK$35.00",
+    "description": "Terraform Ops 是一个面向团队的 Terraform 桌面工作台，帮助用户更快、更稳、更可视化地交付基础设施。\n\n它将项目目录管理、云认证、Terraform 执行、资源变更展示、执行日志整合到一个界面中，让用户在 plan 到 apply 的流程中减少上下文切换。",
+    "descriptionEn": "Terraform Ops is a desktop Terraform workspace for teams that want faster, safer, and more visible infrastructure delivery. Combines project setup, cloud authentication, Terraform execution, resource change visibility, and execution logs.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.24176.14345464108170624.c8f42867-1e6f-41a0-bce6-870dc932868b.7aa4fbd6-6f65-479d-ba05-478e53e0a168"
+  },
+  {
+    "slug": "tick-tock-learn",
+    "name": "Tick Tock Learn",
+    "productId": "9N9Z4QZW389B",
+    "category": "教育",
+    "price": "HK$11.00",
+    "description": "滴答学时钟是一款专为3-10岁儿童设计的互动式时钟学习应用。通过生动有趣的动画、日常生活场景和趣味测验，帮助孩子轻松掌握看时钟的技能。应用采用寓教于乐的方式，让学习时间变得简单又有趣",
+    "descriptionEn": "TickTockLearn is an interactive clock learning application for children aged 3-10. Through engaging animations, daily life scenarios, and fun quizzes, helps children master reading a clock in an educational and entertaining way.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.8644.13527945267601751.74749bfc-6179-4a5a-a738-4ca2a3005da7.bc9e7224-1a6d-44df-81f6-99d3bea624f4"
+  },
+  {
+    "slug": "todobell",
+    "name": "ToDoBell",
+    "productId": "9NTJPM70ZHPS",
+    "category": "高效工作",
+    "price": "HK$28.00",
+    "description": "ToDoBell 是一款 Windows 桌面宠物时钟应用，把 Live2D 桌宠、翻页时钟、定时提醒和 Todo 待办提醒结合在一起。用户可以在桌面上保留一个轻量陪伴角色，并在重要时间收到带有待办详情的提醒。",
+    "descriptionEn": "ToDoBell is a Windows desktop pet clock that combines a Live2D companion, flip clock, timed reminders, and Todo alerts. Keeps a lightweight companion on the desktop and shows detailed Todo reminders when scheduled items are due.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.10729.14413081431091749.b9764a48-8056-4915-babb-dc6024f1af76.51e908d4-873d-4dae-91af-6b352e9ed4e0"
+  },
+  {
+    "slug": "typing-adventure",
+    "name": "Typing Adventure",
+    "productId": "9NST4V4GGDTX",
+    "category": "教育",
+    "price": "HK$20.00",
+    "description": "Typing Learning Adventure turns keyboard practice into an exciting underwater battle! Players defend the seas by typing letters and words to defeat enemies. With 50+ levels, progressive difficulty, and a one-time purchase model, it's the perfect engaging typing tutor for beginners and children.\n\n🎮 What Makes It Special:\n• Engaging Combat System: Type letters & words to fire cannons at incoming word-monsters\n• Progressive Learning: Start with simple characters, advance to complex vocabulary\n• Ocean Adventure: Journey through 50+ beautifully themed levels from coral reefs to deep trenches\n• Smart Rewards: Earn points, build combos, and compete on leaderboards\n\n💡 Perfect For:\n✓ Children learning to type ✓ Students improving keyboard skills\n✓ Casual gamers seeking fun education ✓ Parents wanting screen time with value\n\n💰 Simple Pricing:\nTry FREE for 24 hours, then one-time purchase for unlimited access - no ads, no subscriptions!",
+    "descriptionEn": "Typing Adventure is an ocean-themed typing app that improves key familiarity, accuracy, and speed through progressive levels.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.12777.14357132255105741.a5728cbc-6a9c-45b0-8aed-9d6478eb5631.2419399c-af9c-4eec-804a-7d98f8521449"
+  },
+  {
+    "slug": "xlsdiff",
+    "name": "XLSDiff",
+    "productId": "9NB6HFVD647D",
+    "category": "高效工作",
+    "price": "HK$15.00",
+    "description": "XLSDiff 是一款面向办公与数据分析场景的 Excel 对比工具，帮助用户快速找出两个工作表之间的差异，减少人工逐行核对时间，提高版本审阅效率。",
+    "descriptionEn": "XLSDiff is an Excel comparison tool for office and data review workflows. Quickly identify differences between worksheets, reduce manual checking, and improve version review efficiency.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.30189.13523427922889625.76d26ca2-789c-4dbf-8bd9-dde566cb34f7.793afe78-4b55-471b-841f-865518135292"
+  },
+  {
+    "slug": "",
+    "name": "宝贝识字",
+    "productId": "9NBLGGH4NB61",
+    "category": "教育",
+    "price": "免费下载",
+    "description": "看图识字， 一个简单易用的App,可以让小孩子轻松认识周边事物，学习汉字和英文。内容会不断更新和丰富。\r\n\r\n\r\n欢迎大家提供意见建议 QQ：2677915205",
+    "descriptionEn": "看图识字， 一个简单易用的App,可以让小孩子轻松认识周边事物，学习汉字和英文。内容会不断更新和丰富。\r\n\r\n\r\n欢迎大家提供意见建议 QQ：2677915205",
+    "fallbackCover": ""
+  },
+  {
+    "slug": "wpz",
+    "name": "宝贝识字WPZ",
+    "productId": "9NNG75DPJV00",
+    "category": "教育",
+    "price": "HK$14.00",
+    "description": "🌟 五大核心学习模块，全面启蒙\n🔤 看图识字 - 通过生动形象的图片，让孩子轻松理解并记住汉字，告别死记硬背！\n\n📝 简单生字 - 从基础汉字开始，配有笔画练习，打好坚实的语文基础。\n\n🌍 英文单词 - 纯正发音的双语学习，让孩子从小培养英语语感。\n\n📜 玩转古诗 - 精选经典诗词，配以优美朗诵，在潜移默化中传承中华文化。\n\n✍️ 识字测试 - 趣味互动测试，及时巩固所学知识。",
+    "descriptionEn": "Baobei Literacy WPZ is an early-childhood Chinese literacy app with visual character learning, poem recitation, and interactive quizzes.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.26603.13743467805288223.5fe1d946-5e82-4e74-bf9f-c50428df5cd2.ee01a0a9-73df-4e29-9086-05085af48831"
+  },
+  {
+    "slug": "",
+    "name": "证件照验证器",
+    "productId": "9NW9Q3NGNVB3",
+    "category": "实用程序与工具",
+    "price": "HK$10.00",
+    "description": "证件照验证工具是一款专业的证件照片验证和编辑应用，帮助您快速检查照片是否符合各国证件照标准，并提供智能调整功能。无论是办理身份证、护照、签证，还是各类资格证书，本工具都能确保您的照片符合官方要求，避免因照片不合格而耽误办理进度。\n\n✨ 核心特点\n智能匹配 - 自动识别照片尺寸，推荐最匹配的证件类型\n全面覆盖 - 支持15种常用证件照标准（中国9种 + 国际6种）\n精准验证 - 基于官方标准，验证尺寸、背景色、头部比例等\n快速调整 - 一键调整照片尺寸和更换背景色\n详细建议 - 提供具体的修改建议和官方依据\n离线使用 - 无需联网，保护您的隐私",
+    "descriptionEn": "ID Photo Validator is a professional ID photo verification and processing application that helps users quickly check whether their photos meet various national ID photo standards for ID cards, passports, visas, and professional certificates.",
+    "fallbackCover": ""
+  },
+  {
+    "slug": "",
+    "name": "车标 大全",
+    "productId": "9NBLGGH4NLFP",
+    "category": "书籍与参考",
+    "price": "免费下载",
+    "description": "This app lists most car brand, and it is cool and helpful to recognize car brand",
+    "descriptionEn": "This app lists most car brand, and it is cool and helpful to recognize car brand.",
+    "fallbackCover": ""
+  },
+  {
+    "slug": "expression-fighter",
+    "name": "ExpressionFighter",
+    "productId": "9nr1ml5gr6vf",
+    "category": "娱乐",
+    "price": "HK$15.00",
+    "description": "ExpressionFighter 是一款富有挑战性的格斗游戏，玩家通过识别和匹配屏幕上的表情来击败对手。",
+    "descriptionEn": "ExpressionFighter is a challenging fighting game where players defeat opponents by recognizing and matching expressions on screen.",
+    "fallbackCover": ""
+  },
+  {
+    "slug": "slice-fruit",
+    "name": "Slice Fruit",
+    "productId": "9n4jh1rkf4xw",
+    "category": "娱乐",
+    "price": "HK$8.00",
+    "description": "Slice Fruit 是一款经典的切水果休闲游戏。滑动手指切割飞出的水果，体验流畅的物理效果和连击得分。",
+    "descriptionEn": "Slice Fruit is a classic fruit-slicing casual game. Swipe to slice flying fruits with smooth physics and combo scoring.",
+    "fallbackCover": ""
+  },
+  {
+    "slug": "mdeditor-pro",
+    "name": "MDEditorPro",
+    "productId": "9n25c29d6rm6",
+    "category": "高效工作",
+    "price": "HK$25.00",
+    "description": "MDEditorPro 是一款专业的 Markdown 编辑器，支持实时预览、多种主题、表格与代码块高亮，适合写作与技术文档。",
+    "descriptionEn": "MDEditorPro is a professional Markdown editor with live preview, multiple themes, tables, and code block highlighting.",
+    "fallbackCover": ""
+  },
+  {
+    "slug": "spiderview",
+    "name": "SpiderView",
+    "productId": "9pdmk57cq5t2",
+    "category": "开发人员工具",
+    "price": "HK$35.00",
+    "description": "SpiderView 是一款可视化的爬虫调试工具，提供请求录制、数据提取、流程编排与代理调试功能。",
+    "descriptionEn": "SpiderView is a visual web crawler debugging tool with request recording, data extraction, workflow orchestration, and proxy debugging.",
+    "fallbackCover": ""
+  },
+  {
+    "slug": "face-attendance",
+    "name": "Face-Attendance",
+    "productId": "9pfcg0031j8v",
+    "category": "照片与视频",
+    "price": "HK$18.00",
+    "description": "Face-Attendance 是一款本地优先的人脸识别考勤工具，使用摄像头自动签到签退，所有数据存储在本机。",
+    "descriptionEn": "Face-Attendance is a local-first face recognition attendance tool that uses the webcam for automatic check-in/check-out.",
+    "fallbackCover": ""
+  },
+  {
+    "slug": "ragtail",
+    "name": "RAGTail",
+    "productId": "9n1bx4c5mkh5",
+    "category": "高效工作",
+    "price": "HK$20.00",
+    "description": "RAGTail 是一款 RAG 检索增强生成调试工具，可视化追踪文档切块、检索结果与生成上下文，便于调优。",
+    "descriptionEn": "RAGTail is a RAG debugging tool that visualizes chunking, retrieval results, and generation context for easier tuning.",
+    "fallbackCover": ""
+  },
+  {
+    "slug": "terraform-state-viewer",
+    "name": "TerraformStateViewer",
+    "productId": "9nzlj8xmm9c8",
+    "category": "开发人员工具",
+    "price": "HK$20.00",
+    "description": "TerraformStateViewer 是一款 Terraform state 文件可视化工具，支持资源拓扑、依赖关系与变更对比。",
+    "descriptionEn": "TerraformStateViewer is a Terraform state file visualization tool supporting resource topology, dependencies, and diff comparisons.",
+    "fallbackCover": ""
+  },
+  {
+    "slug": "chinese-learning",
+    "name": "ChineseLearning",
+    "productId": "9n5v06zxmfp5",
+    "category": "教育",
+    "price": "HK$18.00",
+    "description": "ChineseLearning 是一款中文学习应用，提供拼音、汉字、词语分级练习与进度跟踪，适合海外学习者。",
+    "descriptionEn": "ChineseLearning is a Chinese learning app with pinyin, characters, vocabulary exercises and progress tracking for overseas learners.",
+    "fallbackCover": ""
+  },
+  {
+    "slug": "airpen",
+    "name": "AirPen",
+    "productId": "9nhq1cdf9kgd",
+    "category": "高效工作",
+    "price": "HK$25.00",
+    "description": "AirPen 是一款空中书写工具，利用摄像头识别手势在空中写字，方便演示与无屏幕环境下的记录。",
+    "descriptionEn": "AirPen is an in-air writing tool that uses the webcam to recognize gestures for writing in the air — useful for demos.",
+    "fallbackCover": ""
+  },
+  {
+    "slug": "chinese-poetry",
+    "name": "ChinesePoetry",
+    "productId": "9nlx7b91fbbv",
+    "category": "教育",
+    "price": "免费",
+    "description": "ChinesePoetry 收录经典中国古诗词，提供原文、注释、译文与作者介绍，支持收藏与检索。",
+    "descriptionEn": "ChinesePoetry is a curated collection of classic Chinese poems with original text, annotations, translations and author bios.",
+    "fallbackCover": ""
+  },
+  {
+    "slug": "easyhar-viewer",
+    "name": "EasyHarViewer",
+    "productId": "9pk5bv73srch",
+    "category": "开发人员工具",
+    "price": "HK$12.00",
+    "description": "EasyHarViewer 是一款 HAR 文件分析工具，可视化展示 HTTP 请求耗时、响应与依赖关系。",
+    "descriptionEn": "EasyHarViewer is a HAR file analysis tool that visualizes HTTP request timing, responses, and dependencies.",
+    "fallbackCover": ""
+  },
+  {
+    "slug": "nexnote",
+    "name": "NexNote",
+    "productId": "9ngcx3mm1sdc",
+    "category": "高效工作",
+    "price": "HK$15.00",
+    "description": "NexNote 是一款轻量笔记应用，支持 Markdown、标签、双向链接与本地全文搜索。",
+    "descriptionEn": "NexNote is a lightweight note-taking app with Markdown, tags, bidirectional links, and local full-text search.",
+    "fallbackCover": ""
+  }
+]

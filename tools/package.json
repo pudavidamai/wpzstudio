@@ -1,0 +1,8 @@
+{
+  "name": "wpzstudio-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node fetch-catalog.mjs"
+  }
+}

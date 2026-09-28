@@ -1,0 +1,102 @@
+name: sync-catalog
+
+# Weekly cron: fetch the latest Microsoft DisplayCatalog data for each known
+# productId in tools/apps-seed.json, write updated wpz_apps.{json,yml} into
+# this same repo's _data/ directory, and open a PR if anything changed.
+#
+# Manual trigger: Actions tab → "sync-catalog" → "Run workflow"
+# Setup required (one-time):
+#   Repo Settings → Actions → General → Workflow permissions →
+#     "Allow GitHub Actions to create and approve pull requests" ✅
+#   No additional secrets needed — GITHUB_TOKEN is auto-provisioned.
+
+on:
+  schedule:
+    # Mondays 03:00 UTC (= 11:00 Asia/Shanghai)
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write        # push branch to this repo
+  pull-requests: write   # open PR
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout (full history, needed for diff)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install dependencies
+        working-directory: tools
+        run: pnpm install --frozen-lockfile
+
+      - name: Run fetch-catalog
+        working-directory: tools
+        run: node fetch-catalog.mjs
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet -- _data/wpz_apps.json _data/wpz_apps.yml; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No catalog changes."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --stat -- _data/wpz_apps.json _data/wpz_apps.yml
+          fi
+
+      - name: Skip when no changes
+        if: steps.diff.outputs.changed != 'true'
+        run: |
+          echo "No catalog changes detected — nothing to commit."
+          exit 0
+
+      - name: Configure git author
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Create branch, commit, push
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="auto/sync-catalog-$(date -u +%Y%m%d-%H%M%S)"
+          git checkout -b "$BRANCH"
+          git add _data/wpz_apps.json _data/wpz_apps.yml
+          DIFFSTAT=$(git diff --cached --stat -- _data/wpz_apps.json _data/wpz_apps.yml | tail -1)
+          git commit -m "sync: refresh Microsoft Store catalog (auto)" \
+                     -m "Weekly run: ${DIFFSTAT}" \
+                     -m "Triggered by workflow run ${GITHUB_RUN_ID}."
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$BRANCH"
+          echo "BRANCH=$BRANCH" >> "$GITHUB_ENV"
+
+      - name: Open PR
+        if: steps.diff.outputs.changed == 'true' && env.BRANCH != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ env.BRANCH }}
+        run: |
+          gh pr create \
+            --repo "$GITHUB_REPOSITORY" \
+            --base master \
+            --head "$BRANCH" \
+            --title "sync: refresh Microsoft Store catalog (auto)" \
+            --body "Automated weekly sync via [sync-catalog workflow](https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}).
+
+          Please review the diff for any new products, price changes, or removed apps before merging."

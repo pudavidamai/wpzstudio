@@ -295,29 +295,112 @@ wide: true
     }
 
     // Truncate a markdown-rendered HTML string to roughly N visible chars,
-    // but only at a paragraph/list-item boundary so we don't cut tags in
-    // half. If the first paragraph is too short, falls through to a
-    // second one (or a hard cut with ellipsis) until we hit the limit.
-    function truncateHtml(html, maxChars) {
-      if (!html) return "";
-      if (html.length <= maxChars * 2) return html;
+        // measured by CJK + non-space Latin density (since a "char" in HTML
+        // is weighted differently for Chinese vs Latin text). The limit
+        // is anchored at paragraph / list-item boundaries so we never cut
+        // a tag or mid-sentence.
+        function truncateHtml(html, maxVisibleChars) {
+          if (!html) return "";
 
-      // Walk top-level blocks (top-level <p>, <ul>, <h4-6>) and
-      // concatenate them until we exceed maxChars*1.5 of HTML. This
-      // gives a richer preview than stopping at the first block.
-      const tagRegex = /<(p|ul|h[4-6])[\s>][^]*?<\/\1>/g;
-      let combined = "";
-      let m;
-      while ((m = tagRegex.exec(html)) !== null) {
-        if (combined.length + m[0].length > maxChars * 1.5 && combined.length > 0) break;
-        combined += m[0];
+          const tagRegex = /<(p|ul|h[4-6])[\s>][^]*?<\/\1>/g;
+          const blocks = [];
+          let m;
+          while ((m = tagRegex.exec(html)) !== null) {
+            const visibleText = m[0].replace(/<[^>]+>/g, "");
+            blocks.push({ html: m[0], weight: visibleTextWeight(visibleText) });
+          }
+          if (blocks.length === 0) return html;
+
+          // Special case: any single block over the limit gets hard-truncated
+          // at a sentence boundary. This catches both "one big paragraph"
+          // AND "first paragraph too long, rest would also be too long" cases.
+          if (blocks[0].weight > maxVisibleChars) {
+            return truncateSingleParagraph(blocks[0].html, maxVisibleChars);
+          }
+
+          // Normal case: walk top-level blocks (paragraph / list / heading)
+          // and accumulate until we exceed the limit. Cap at 3 blocks so
+          // the preview never balloons, and force-include the second block
+          // when the first was a tiny "📖 应用简介" header.
+          let combined = "";
+          let totalWeight = 0;
+          const maxBlocks = 3;
+          for (let i = 0; i < blocks.length && i < maxBlocks; i++) {
+            if (combined && totalWeight + blocks[i].weight > maxVisibleChars) break;
+            combined += blocks[i].html;
+            totalWeight += blocks[i].weight;
+          }
+          if (combined.length > 0 && totalWeight < maxVisibleChars * 0.4 && blocks.length > 1) {
+            const next = blocks[Math.min(1, blocks.length - 1)];
+            combined += next.html;
+            totalWeight += next.weight;
+          }
+          return combined;
+        }
+
+    // Split one <p>...</p> at the sentence boundary closest to
+    // maxVisibleChars visible chars. Falls back to a hard cut at a
+    // word/character boundary if no good sentence break exists.
+    function truncateSingleParagraph(html, maxVisibleChars) {
+      // Find the opening tag and closing </p>.
+      const openMatch = html.match(/^<p[^>]*>/);
+      const openTag = openMatch ? openMatch[0] : "<p>";
+      const bodyStart = openTag.length;
+      const closeIdx = html.lastIndexOf("</p>");
+      if (closeIdx <= bodyStart) return html;
+      const body = html.slice(bodyStart, closeIdx);
+
+      // Walk visible chars and stop at the nearest sentence end
+      // (. ! ? 。 ！ ？ ; ; followed by whitespace) at or before the
+      // limit. Avoid splitting inside an inline tag.
+      let visibleCount = 0;
+      let lastBoundary = -1;
+      let inTag = false;
+      for (let i = 0; i < body.length; i++) {
+        const c = body[i];
+        if (c === "<") inTag = true;
+        else if (c === ">") inTag = false;
+        if (!inTag) {
+          const isCJK = /[\u4e00-\u9fff]/.test(c);
+          const isLatin = /[A-Za-z0-9]/.test(c);
+          if (isCJK || isLatin) {
+            visibleCount += 1;
+            if (/[.!?;:。！？；]\s*$/.test(body.slice(Math.max(0, i - 3), i + 1)) &&
+                visibleCount >= maxVisibleChars * 0.7) {
+              lastBoundary = i + 1;
+            }
+            if (visibleCount > maxVisibleChars) {
+              if (lastBoundary > 0) break;
+              // No sentence boundary found — fall through to hard cut.
+              break;
+            }
+        }
+        }
       }
-      if (combined.length > 0) {
-        return combined;
+
+      let cutAt;
+      if (lastBoundary > 0 && lastBoundary < body.length) {
+        cutAt = lastBoundary;
+      } else {
+        // Hard cut at the first whitespace after the limit so we don't
+        // chop a word in half.
+        const hardCut = body.indexOf(" ", bodyStart + maxVisibleChars);
+        cutAt = hardCut > 0 ? hardCut : body.length;
       }
-      // Fallback: hard cut, strip any half-open tag.
-      const cut = html.slice(0, Math.floor(maxChars * 1.5));
-      return cut.replace(/<[^>]*$/, "") + "…";
+      return openTag + body.slice(0, cutAt) + "…</p>";
+    }
+
+    // Approximate visual weight of a string: count CJK characters as 1
+    // each (they take ~1em in width), and Latin runs as 1 per
+    // visible character (so "Hello, world." weights ~13, matching
+    // its rendered width). Whitespace-only and pure-punctuation
+    // strings weight ~0.
+    function visibleTextWeight(text) {
+      const t = String(text || "");
+      const cjk = (t.match(/[\u4e00-\u9fff\u3400-\u4dbf]/g) || []).length;
+      // For Latin text, weight per non-space character (so "Hello, world." = 12)
+      const latinNonSpace = (t.replace(/[\u4e00-\u9fff\u3400-\u4dbf\s]/g, "").match(/\S/g) || []).length;
+      return cjk + latinNonSpace;
     }
 
   function buildPalette(name) {
@@ -389,16 +472,17 @@ wide: true
   function renderAppDescription(app) {
     const full = renderMarkdown(getAppDescription(app));
     if (!full) return "";
-    // Mobile keeps descriptions compact (≈90 visible chars); desktop
-    // shows the first paragraph fully and offers an expander for the rest.
+    // Visible character limits per breakpoint:
+    //   - desktop: ≈ 90 visible chars (CJK or Latin)
+    //   - mobile:  ≈ 60 visible chars
+    // These keep every card roughly the same height regardless of
+    // whether the description is Chinese (~80 chars/paragraph) or
+    // English (~30 words/paragraph).
     const isMobile = isMobileViewport();
-    const limit = isMobile ? 90 : 160;
-    if (full.length <= limit * 1.6) return full;
+    const limit = isMobile ? 60 : 90;
+    const fullWeight = visibleTextWeight(full.replace(/<[^>]+>/g, ""));
+    if (fullWeight <= limit) return full;
     const truncated = truncateHtml(full, limit);
-    // Render truncated + toggle button. The toggle restores the full
-    // description by replacing the card body's text node only — no
-    // re-render of the grid (which would lose any in-progress card
-    // hover/transition state).
     return `
       <div class="app-desc-wrap" data-collapsed="true">
         <div class="app-desc app-desc-truncated">${truncated}</div>

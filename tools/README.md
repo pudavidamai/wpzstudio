@@ -67,13 +67,53 @@ with `WPZSTUDIO_ROOT=/path/to/jekyll-root`.
 
 ## Automated sync
 
-`.github/workflows/sync-catalog.yml` runs this script on a weekly cron
-(Monday 03:00 UTC) and opens a PR if the catalog changed. See the
-workflow file for the setup steps (GitHub Actions permission:
-"Allow GitHub Actions to create and approve pull requests").
+Two workflows in `.github/workflows/`:
 
-For manual dispatch: from the GitHub UI → "Run workflow", or via CLI:
+- `sync-catalog.yml` — runs `node tools/fetch-catalog.mjs` on a weekly
+  cron (Monday 03:00 UTC = Beijing 11:00). Refreshes price/title/
+  description/icon from Microsoft DisplayCatalog for any productIds
+  already in the seed. No seed mutation.
+
+- `add-apps.yml` — runs `node tools/scripts/validate-pending.mjs` when
+  `tools/apps-seed-pending.txt` is added or modified on the repo. See
+  "Adding a new app (zero-touch)" below.
+
+Both workflows commit directly to `master`, which triggers GitHub Pages
+to rebuild and deploy.
+
+### One-time setup (required for both)
+
+Repo Settings → Actions → General → Workflow permissions:
+- ✅ "Read and write permissions"
+- (Optional) ✅ "Allow GitHub Actions to create and approve pull
+  requests" — only needed if you also want workflows to open PRs.
+
+## Adding a new app (zero-touch)
+
+1. From the Microsoft Store URL of your new app, copy the 12-character
+   productId (e.g. `9N55B01777XD`).
+2. Append it to `tools/apps-seed-pending.txt`, one per line. Optional
+   custom-name and inline comments:
+
+   ```
+   # Comments start with '#' — one per line
+   9N55B01777XD                       # Quick Paste Pro
+   9P2Q745TG8L8 = My Cool App         # explicit override
+   9PF1C6SGDNJ4
+   ```
+3. `git add tools/apps-seed-pending.txt && git commit -m 'add: new app(s)' && git push`
+4. The `add-apps` workflow validates each productId against Microsoft
+   DisplayCatalog, rejects anything that isn't published by WPZStudio
+   (publisherId `26137630`) or already in the seed, then appends new
+   entries to `tools/apps-seed.json`, regenerates
+   `_data/wpz_apps.{json,yml}` via `fetch-catalog.mjs`, removes
+   `apps-seed-pending.txt`, and commits everything to `master`.
+
+You should see the new app on https://pudavidamai.github.io/wpzstudio/
+within ~2 minutes of the push.
+
+For manual dispatch (re-runs without re-pushing the file):
 
 ```bash
-gh workflow run sync-catalog.yml -R pudavidamai/wpzstudio
+gh workflow run add-apps.yml -R pudavidamai/wpzstudio
 ```

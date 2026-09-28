@@ -1,0 +1,104 @@
+name: add-apps
+
+# Triggered when tools/apps-seed-pending.txt is added/modified.
+# Reads productIds from the file (one per line, '#'-comments OK),
+# validates each via Microsoft DisplayCatalog, dedupes against
+# tools/apps-seed.json, appends new entries, regenerates
+# _data/wpz_apps.{json,yml} via fetch-catalog, then auto-commits
+# to master (GitHub Pages will rebuild and deploy on push).
+#
+# Workflow permissions required (one-time repo setting):
+#   Settings → Actions → General → Workflow permissions:
+#     "Read and write permissions" ✅
+
+on:
+  push:
+    paths:
+      - 'tools/apps-seed-pending.txt'
+  workflow_dispatch:
+    inputs:
+      clear_pending:
+        description: 'Clear pending file after run (default: true)'
+        required: false
+        default: 'true'
+
+permissions:
+  contents: write
+
+jobs:
+  add-apps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout (full history)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install dependencies
+        working-directory: tools
+        run: pnpm install --frozen-lockfile
+
+      - name: Validate pending productIds
+        id: validate
+        run: |
+          if [ ! -f tools/apps-seed-pending.txt ]; then
+            echo "no_pending=true" >> "$GITHUB_OUTPUT"
+            echo "tools/apps-seed-pending.txt not in commit; nothing to do."
+            exit 0
+          fi
+          echo "no_pending=false" >> "$GITHUB_OUTPUT"
+          node tools/scripts/validate-pending.mjs
+
+      - name: Skip when nothing valid
+        if: steps.validate.outputs.no_pending == 'true' || (steps.validate.outputs.added_count || '0') == '0'
+        run: |
+          echo "No new apps to add — exiting."
+          # If pending file exists in the commit but had all-duplicate /
+          # all-invalid entries, remove it so the next push doesn't
+          # retrigger the workflow.
+          if [ -f tools/apps-seed-pending.txt ] && [ -n "$(git log -1 --format=%s -- tools/apps-seed-pending.txt 2>/dev/null)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git rm -f tools/apps-seed-pending.txt
+            git commit -m "chore: clear empty apps-seed-pending.txt" || true
+            git push || true
+          fi
+          exit 0
+
+      - name: Run fetch-catalog (regenerates _data/)
+        working-directory: tools
+        run: node fetch-catalog.mjs
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit new apps to master
+        run: |
+          # Remove the pending file (default behavior; can be overridden
+          # by running the workflow manually with clear_pending=false).
+          if [ "${{ github.event_name }}" == "push" ] || [ "${{ inputs.clear_pending }}" != "false" ]; then
+            git rm -f tools/apps-seed-pending.txt
+          fi
+          git add tools/apps-seed.json _data/wpz_apps.json _data/wpz_apps.yml
+          if [ -f tools/apps-seed-pending.txt ] && git ls-files --error-unmatch tools/apps-seed-pending.txt >/dev/null 2>&1; then
+            git add tools/apps-seed-pending.txt
+          fi
+          COUNT="${{ steps.validate.outputs.added_count || '0' }}"
+          TITLES="${{ steps.validate.outputs.added_titles || '' }}"
+          git commit -m "feat(catalog): add $COUNT new apps" \
+                     -m "Added via apps-seed-pending.txt workflow." \
+                     -m "New apps:"$'\n'"$TITLES"
+          git push origin master

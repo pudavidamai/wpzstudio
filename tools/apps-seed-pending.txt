@@ -1,0 +1,4 @@
+# Test batch: all should be rejected/skipped
+9WZDNCRFJ3PT                  # Microsoft Windows Media Player (wrong publisher)
+not-a-real-id                 # malformed
+9N55B01777XD                  # Quick Paste Pro - already in seed (dup)

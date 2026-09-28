@@ -7,6 +7,7 @@ wide: true
 <section class="home-hero">
   <h1 data-i18n-home="hero.title">WPZ Studio 应用列表</h1>
   <p data-i18n-home="hero.subtitle">专注实用工具、学习教育与效率提升，持续发布面向全球用户的桌面应用。</p>
+  <div class="hero-stats" id="heroStats" aria-label="统计数据"></div>
 </section>
 
 <section class="home-intro" id="zhIntro">
@@ -187,11 +188,8 @@ wide: true
   }
 
   function formatCount(value) {
-    if (currentLang === "en") {
-      return value + " " + t("toolbar.countUnit");
-    }
-
-    return value + " " + t("toolbar.countUnit");
+    const unit = t("toolbar.countUnit");
+    return `<strong>${value}</strong> ${unit}`;
   }
 
   function buildStoreSearchLink(name) {
@@ -219,14 +217,108 @@ wide: true
     return compactName.slice(0, 2).toUpperCase();
   }
 
+  function escapeHtml(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
   function escapeSvgText(value) {
-    return String(value || "")
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/\"/g, "&quot;")
-      .replace(/'/g, "&#39;");
+    return escapeHtml(value);
   }
+
+    // Tiny markdown → HTML for app descriptions. Handles only what
+    // Microsoft's DisplayCatalog descriptions actually contain:
+    //   - **bold** / *italic*
+    //   - # / ## / ### headings (alone or preceding a list)
+    //   - - / * unordered list items
+    //   - blank-line paragraph breaks
+    // Everything else (emoji, CJK punctuation, URLs) is passed through.
+    function renderMarkdown(input) {
+      const raw = String(input || "").trim();
+      if (!raw) return "";
+      // Escape HTML up front — we re-introduce only our own tags below.
+      let html = escapeHtml(raw);
+
+      // Split on blank lines → blocks. Each block is either a heading,
+      // a list, or a paragraph.
+      const blocks = html.split(/\n\s*\n/);
+      const rendered = blocks.map((block) => {
+        const lines = block.split("\n").filter((l) => l.trim() !== "");
+        if (lines.length === 0) return "";
+        const firstLine = lines[0].trim();
+
+        // Heading: # / ## / ### (the whole block is the heading when
+        // it's a single line; when followed by list items we still
+        // treat the heading as a separate block).
+        const heading = firstLine.match(/^(#{1,3})\s+(.+)$/);
+        if (heading) {
+          const level = heading[1].length + 2; // map to <h4>/<h5>/<h6>
+          const headingHtml = `<h${level}>${inlineFormat(heading[2])}</h${level}>`;
+          const rest = lines.slice(1);
+          if (rest.length === 0) return headingHtml;
+          // The remaining lines of this block form a sub-block.
+          const restBlock = rest.join("\n");
+          return headingHtml + renderMarkdown(restBlock);
+        }
+
+        // Unordered list: every line starts with - or *
+        const isList = lines.every((l) => /^\s*[-*]\s+/.test(l));
+        if (isList) {
+          const items = lines
+            .map((l) => `<li>${inlineFormat(l.replace(/^\s*[-*]\s+/, ""))}</li>`)
+            .join("");
+          return `<ul>${items}</ul>`;
+        }
+
+        // Paragraph: join lines with single space, then inline-format.
+        return `<p>${inlineFormat(lines.join(" "))}</p>`;
+      });
+      return rendered.filter(Boolean).join("");
+    }
+
+    function inlineFormat(text) {
+      let t = text;
+      // **bold** first so *italic* doesn't consume it.
+      t = t.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+      // *italic* — match a single * not preceded/followed by another *.
+      t = t.replace(/(^|[^*\w])\*([^*\n]+?)\*(?!\*)/g, "$1<em>$2</em>");
+      // Plain URLs → <a>
+      t = t.replace(
+        /(https?:\/\/[^\s<]+)/g,
+        (m) => `<a href="${m}" target="_blank" rel="noopener noreferrer">${m}</a>`
+      );
+      return t;
+    }
+
+    // Truncate a markdown-rendered HTML string to roughly N visible chars,
+    // but only at a paragraph/list-item boundary so we don't cut tags in
+    // half. If the first paragraph is too short, falls through to a
+    // second one (or a hard cut with ellipsis) until we hit the limit.
+    function truncateHtml(html, maxChars) {
+      if (!html) return "";
+      if (html.length <= maxChars * 2) return html;
+
+      // Walk top-level blocks (top-level <p>, <ul>, <h4-6>) and
+      // concatenate them until we exceed maxChars*1.5 of HTML. This
+      // gives a richer preview than stopping at the first block.
+      const tagRegex = /<(p|ul|h[4-6])[\s>][^]*?<\/\1>/g;
+      let combined = "";
+      let m;
+      while ((m = tagRegex.exec(html)) !== null) {
+        if (combined.length + m[0].length > maxChars * 1.5 && combined.length > 0) break;
+        combined += m[0];
+      }
+      if (combined.length > 0) {
+        return combined;
+      }
+      // Fallback: hard cut, strip any half-open tag.
+      const cut = html.slice(0, Math.floor(maxChars * 1.5));
+      return cut.replace(/<[^>]*$/, "") + "…";
+    }
 
   function buildPalette(name) {
     const palettes = [
@@ -286,6 +378,66 @@ wide: true
       || /^hk\$\s*0+(\.0+)?$/.test(text)
       || /^\$\s*0+(\.0+)?$/.test(text)
       || /^0+(\.0+)?$/.test(text);
+  }
+
+  function isMobileViewport() {
+    return typeof window !== "undefined" && window.matchMedia
+      ? window.matchMedia("(max-width: 700px)").matches
+      : false;
+  }
+
+  function renderAppDescription(app) {
+    const full = renderMarkdown(getAppDescription(app));
+    if (!full) return "";
+    // Mobile keeps descriptions compact (≈90 visible chars); desktop
+    // shows the first paragraph fully and offers an expander for the rest.
+    const isMobile = isMobileViewport();
+    const limit = isMobile ? 90 : 160;
+    if (full.length <= limit * 1.6) return full;
+    const truncated = truncateHtml(full, limit);
+    // Render truncated + toggle button. The toggle restores the full
+    // description by replacing the card body's text node only — no
+    // re-render of the grid (which would lose any in-progress card
+    // hover/transition state).
+    return `
+      <div class="app-desc-wrap" data-collapsed="true">
+        <div class="app-desc app-desc-truncated">${truncated}</div>
+        <div class="app-desc app-desc-full" hidden>${full}</div>
+        <button type="button" class="app-desc-toggle" data-i18n-card="desc.expand">${currentLang === "en" ? "Show more" : "展开全部 ↓"}</button>
+      </div>
+    `;
+  }
+
+  function attachDescToggle(cardEl) {
+    const wrap = cardEl.querySelector(".app-desc-wrap");
+    if (!wrap) return;
+    const btn = wrap.querySelector(".app-desc-toggle");
+    const collapsed = wrap.querySelector(".app-desc-truncated");
+    const full = wrap.querySelector(".app-desc-full");
+    if (!btn || !collapsed || !full) return;
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      const isCollapsed = wrap.getAttribute("data-collapsed") === "true";
+      wrap.setAttribute("data-collapsed", isCollapsed ? "false" : "true");
+      collapsed.hidden = isCollapsed;
+      full.hidden = !isCollapsed;
+      btn.textContent = isCollapsed
+        ? (currentLang === "en" ? "Show less ↑" : "收起 ↑")
+        : (currentLang === "en" ? "Show more" : "展开全部 ↓");
+    });
+  }
+
+  function renderHeroStats() {
+    const statsEl = document.getElementById("heroStats");
+    if (!statsEl) return;
+    const categorySet = new Set(visibleApps.map((a) => a.category).filter(Boolean));
+    const labels = currentLang === "en"
+      ? { apps: "apps", categories: "categories" }
+      : { apps: "款应用", categories: "个分类" };
+    statsEl.innerHTML = `
+      <span class="hero-stat-chip"><strong>${visibleApps.length}</strong>${labels.apps}</span>
+      <span class="hero-stat-chip"><strong>${categorySet.size}</strong>${labels.categories}</span>
+    `;
   }
 
   function sanitizeApps(appList) {
@@ -372,7 +524,7 @@ wide: true
 
     const sortedApps = sortApps(filteredApps, sortType);
 
-    appCount.textContent = formatCount(sortedApps.length);
+    appCount.innerHTML = formatCount(sortedApps.length);
 
     if (sortedApps.length === 0) {
       appGrid.innerHTML = `
@@ -388,27 +540,44 @@ wide: true
       .map((app) => {
         const fallbackCover = buildCoverImage(app);
         const primaryCover = app.image || fallbackCover;
+        const free = isFreePrice(app.price);
+        const descHtml = renderAppDescription(app);
 
         return `
           <article class="app-card">
             <a class="app-cover" href="${app.link}" target="_blank" rel="noopener noreferrer">
-              <img class="app-cover-image" src="${primaryCover}" data-fallback="${fallbackCover}" alt="${app.name} ${t("card.coverAltSuffix")}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=this.dataset.fallback;" />
+              <img class="app-cover-image" src="${primaryCover}" data-fallback="${fallbackCover}" alt="${escapeHtml(app.name)} ${t("card.coverAltSuffix")}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=this.dataset.fallback;" />
+              <div class="app-cover-overlay">
+                <span class="app-cover-cta">${t("card.detail")}</span>
+              </div>
             </a>
-            <h3><a class="app-title-link" href="${app.link}" target="_blank" rel="noopener noreferrer">${app.name}</a></h3>
-            <p class="app-meta">${categoryLabel(app.category)}</p>
-            <p class="app-price">${app.price}</p>
-            <p class="app-desc">${getAppDescription(app)}</p>
-            <a href="${app.link}" target="_blank" rel="noopener noreferrer">${t("card.detail")}</a>
+            <div class="app-card-header">
+              <h3><a class="app-title-link" href="${app.link}" target="_blank" rel="noopener noreferrer">${escapeHtml(app.name)}</a></h3>
+              <span class="app-category-badge">${escapeHtml(categoryLabel(app.category))}</span>
+            </div>
+            <div class="app-meta-row">
+              <p class="app-price ${free ? "is-free" : ""}">${escapeHtml(free ? (currentLang === "en" ? "Free" : "免费") : app.price)}</p>
+              <span class="app-rating" aria-hidden="true">★ ★ ★ ★ ☆</span>
+            </div>
+            ${descHtml}
+            <div class="app-card-footer">
+              <a class="app-cta" href="${app.link}" target="_blank" rel="noopener noreferrer">${t("card.detail")}</a>
+              <span class="app-productid">${escapeHtml(app.productId || "")}</span>
+            </div>
           </article>
         `;
       })
       .join("");
+
+    // Wire description expand/collapse buttons after render.
+    appGrid.querySelectorAll(".app-card").forEach(attachDescToggle);
   }
 
   function applyHomeLanguage(lang) {
     currentLang = lang === "zh" ? "zh" : "en";
     updateStaticText();
     renderCategoryOptions();
+    renderHeroStats();
     renderApps();
   }
 

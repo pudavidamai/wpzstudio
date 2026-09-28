@@ -1,4 +1,0 @@
-# Test 2: all-reject batch (after fix)
-9WZDNCRFJ3PT                  # wrong publisher
-not-a-real-id
-9N55B01777XD                  # already in seed

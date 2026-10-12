@@ -702,7 +702,7 @@
   category: "实用程序与工具"
   price: "HK$16.00"
   description: |
-    FlyRSS 是一款 Windows 桌面 RSS 阅读器，把你关心的所有订阅源集中在一处，轻量、本地优先、键盘友好。告别算法推荐和广告，回到主动订阅的阅读方式。
+    FlyRSS 是一款 Windows 桌面 RSS 阅读器，，把你关心的所有订阅源集中在一处，轻量、本地优先、键盘友好。支持MCP，轻松Agent集成，告别算法推荐和广告，回到主动订阅的阅读方式。
   descriptionEn: |
     FlyRSS 是一款 Windows 桌面 RSS 阅读器，把你关心的所有订阅源集中在一处，轻量、本地优先、键盘友好。告别算法推荐和广告，回到主动订阅的阅读方式。
   publisher: "WPZStudio"

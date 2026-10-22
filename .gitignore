@@ -11,3 +11,6 @@ node_modules/
 # but tools/package.json is committed (needed for Actions).
 /package.json
 /package-lock.json
+
+# Local sync diff-report artifact (tools/scripts/sync-report.mjs --json)
+tools/wpz-sync-diff.json

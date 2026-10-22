@@ -22,10 +22,38 @@ is effectively a deploy.
 
 ```bash
 # From the wpzstudio repo root:
-pnpm --dir tools sync         # requires pnpm
+pnpm --dir tools sync         # regenerate _data AND print the sync diff report
+pnpm --dir tools report       # just diff the current _data against git HEAD (no fetch)
+pnpm --dir tools seed:add 9PCLL2BP6V0D   # append a productId to apps-seed-pending.txt
+
 # Or directly:
 node tools/fetch-catalog.mjs
+node tools/scripts/sync-report.mjs [--fetch] [--json] [--quiet]
 ```
+
+`sync` now runs `fetch-catalog.mjs` (regenerate `_data/wpz_apps.{json,yml}`
+from Microsoft DisplayCatalog) **then** `sync-report.mjs`, which compares the
+freshly-written `_data/wpz_apps.json` against the committed copy (`git HEAD`)
+and prints an at-a-glance diff:
+
+```
+→ 54→55   (+1 new, -0 removed, 2 changed, 0 dead)
+New products:
+  + Quick Paste Pro (9N55B01777XD)  [实用程序与工具]  免费下载
+Changed products:
+  ~ AirBridge (9PF1C6SGDNJ4): price "HK$14.00" → "HK$15.00"
+```
+
+Use that output to decide whether the sync is clean, and to quote the real
+numbers in the commit message. `--json` also writes the structured diff to
+`tools/wpz-sync-diff.json` (gitignored). `--before <git-ref>` / `--after <path>`
+let you diff arbitrary snapshots.
+
+> The site renders the catalog from `site.data.wpz_apps` (the Jekyll
+> `_data/wpz_apps.yml`). `index.html` only contains a `{% for %}` loop over it
+> — there is no hardcoded `apps` array to hand-edit anymore, and the localized
+> README files are prose only (no product tables). A "sync" is therefore just
+> regenerate `_data` → commit `_data/wpz_apps.{json,yml}` → push.
 
 The script writes into `../_data/` by default. Override the output target
 with `WPZSTUDIO_ROOT=/path/to/jekyll-root`.

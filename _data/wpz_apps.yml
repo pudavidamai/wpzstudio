@@ -702,7 +702,7 @@
   category: "实用程序与工具"
   price: "HK$16.00"
   description: |
-    FlyRSS 是一款 Windows 桌面 RSS 阅读器，把你关心的所有订阅源集中在一处，轻量、本地优先、键盘友好。告别算法推荐和广告，回到主动订阅的阅读方式。
+    FlyRSS 是一款 Windows 桌面 RSS 阅读器，，把你关心的所有订阅源集中在一处，轻量、本地优先、键盘友好。支持MCP，轻松Agent集成，告别算法推荐和广告，回到主动订阅的阅读方式。
   descriptionEn: |
     FlyRSS 是一款 Windows 桌面 RSS 阅读器，把你关心的所有订阅源集中在一处，轻量、本地优先、键盘友好。告别算法推荐和广告，回到主动订阅的阅读方式。
   publisher: "WPZStudio"
@@ -1449,29 +1449,25 @@
   publisherId: "26137630"
   packageFamilyName: "10278WPZStudio.PetOClock_v810h3yyd8p76"
   iconUrl: "https://store-images.s-microsoft.com/image/apps.3350.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.95b45407-e372-40b1-ae7a-1f8ddf6ff196"
-  bannerUrl: "https://store-images.s-microsoft.com/image/apps.3350.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.95b45407-e372-40b1-ae7a-1f8ddf6ff196"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.16377.13957386300917177.fbcbb660-d5af-4c86-b7e2-b17eda54d9ca.bd2a88ef-ebb2-45eb-86d3-168cc47591fa"
   heroUrl: "https://store-images.s-microsoft.com/image/apps.61773.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.f44bacaf-3836-4b8f-93fa-8dbfc67aefc8"
   images:
     - purpose: "Logo"
       width: 50
       height: 50
-      url: "https://store-images.s-microsoft.com/image/apps.60979.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.4799d23d-6d5e-43a2-b026-5e1a86e4c1d6"
+      url: "https://store-images.s-microsoft.com/image/apps.56043.13957386300917177.fbcbb660-d5af-4c86-b7e2-b17eda54d9ca.818b4820-a1b9-4881-9b10-77a94fd90da4"
     - purpose: "Tile"
-      width: 150
-      height: 150
-      url: "https://store-images.s-microsoft.com/image/apps.47439.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.ae6d7102-a4de-4643-a52a-18d60404bd35"
+      width: 300
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.55222.13957386300917177.fbcbb660-d5af-4c86-b7e2-b17eda54d9ca.a2644897-4c62-491f-b563-9b03ea990cf9"
     - purpose: "Tile"
       width: 44
       height: 44
-      url: "https://store-images.s-microsoft.com/image/apps.23678.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.2a7d4a77-85b6-483d-a87c-e8c6e1dfd5c9"
+      url: "https://store-images.s-microsoft.com/image/apps.44171.13957386300917177.fbcbb660-d5af-4c86-b7e2-b17eda54d9ca.3c50460f-b59c-410b-85ec-63e4f1a8de08"
     - purpose: "Tile"
-      width: 150
-      height: 150
-      url: "https://store-images.s-microsoft.com/image/apps.41984.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.5238db82-d67a-4f9f-bcef-0fe9fb2dde25"
-    - purpose: "Screenshot"
-      width: 861
-      height: 679
-      url: "https://store-images.s-microsoft.com/image/apps.42714.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.39bb1f07-e8ed-41b8-900a-881625292329"
+      width: 620
+      height: 300
+      url: "https://store-images.s-microsoft.com/image/apps.16377.13957386300917177.fbcbb660-d5af-4c86-b7e2-b17eda54d9ca.bd2a88ef-ebb2-45eb-86d3-168cc47591fa"
     - purpose: "Screenshot"
       width: 817
       height: 700
@@ -1484,6 +1480,10 @@
       width: 300
       height: 300
       url: "https://store-images.s-microsoft.com/image/apps.3350.13957386300917177.7ee0c5c3-837d-4590-9ffd-4b4810312666.95b45407-e372-40b1-ae7a-1f8ddf6ff196"
+    - purpose: "Screenshot"
+      width: 762
+      height: 667
+      url: "https://store-images.s-microsoft.com/image/apps.57224.13957386300917177.84ab7dba-e928-4697-9b1b-2c578f81d35f.d51d6398-9332-46f0-8518-d32bca2d36bf"
 
 - productId: "9PMXWDT244FF"
   slug: "phonics-master"

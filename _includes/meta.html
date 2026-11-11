@@ -12,6 +12,13 @@
     {% endif %}
     <meta name="author" content="{{ site.name }}" />
 
+    <!-- Favicon: the WPZ Studio corner mark, same geometry as the app badge. -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/wpz-mark-32.png' | relative_url }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/wpz-mark-16.png' | relative_url }}" />
+    <link rel="icon" type="image/svg+xml" href="{{ '/images/wpzstudio-mark.svg' | relative_url }}" />
+    <link rel="alternate icon" type="image/x-icon" href="{{ '/images/favicon.ico' | relative_url }}" />
+    <link rel="apple-touch-icon" href="{{ '/images/wpz-mark-256.png' | relative_url }}" />
+
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="twitter:title" content="{{ page.title }}" />

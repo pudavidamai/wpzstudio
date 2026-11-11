@@ -14,3 +14,7 @@ node_modules/
 
 # Local sync diff-report artifact (tools/scripts/sync-report.mjs --json)
 tools/wpz-sync-diff.json
+
+# Local publisher-enumeration cache (tools/scripts/fetch-publisher-markets.mjs).
+# Regenerate with: npm --dir tools run publisher:fetch
+tools/.publisher-markets.json

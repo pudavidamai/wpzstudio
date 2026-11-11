@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="wpzMarkTitle">
+  <title id="wpzMarkTitle">WPZ Studio</title>
+  <defs>
+    <linearGradient id="wpzTile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1C8CF5"/>
+      <stop offset="1" stop-color="#0FB7A7"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#wpzTile)"/>
+  <path d="M11 25 L19 45 L32 30 L45 45 L53 25" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M41 24 H53 V36" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M27.5 53 H36.5 L32 46 Z" fill="#FF8A3D"/>
+</svg>

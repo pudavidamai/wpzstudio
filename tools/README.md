@@ -60,6 +60,24 @@ with `WPZSTUDIO_ROOT=/path/to/jekyll-root`.
 
 ## Adding a new app
 
+The publisher listing is the source of truth, so the common path is a full
+rebuild rather than a hand edit:
+
+```bash
+cd tools
+npm run publisher:fetch   # -> .publisher-markets.json (CN/US/HK, ownership-gated)
+npm run seed:rebuild      # -> rebuilds apps-seed.json from that dump
+npm run sync              # -> fetch-catalog.mjs + sync-report
+```
+
+`build-seed-from-publisher.mjs` unions the listing with the current seed, so a
+product the storefront listing omits (free / trial-only listings) is kept
+rather than dropped. Duplicate normalized titles are collapsed to the newest
+release, and the icon for a listing-omitted product is recovered from
+DisplayCatalog.
+
+To add a single app by hand instead:
+
 1. Open Partner Center → product detail, copy the 12-char productId from
    the URL.
 2. Append an entry to `tools/apps-seed.json`:
@@ -70,7 +88,7 @@ with `WPZSTUDIO_ROOT=/path/to/jekyll-root`.
      "name": "MyNewApp",
      "productId": "9XXXXXXXXXXX",
      "category": "高效工作",
-     "price": "HK$15.00",
+     "price": "¥15.00",
      "description": "中文描述…",
      "descriptionEn": "English description…",
      "fallbackCover": ""
@@ -88,10 +106,28 @@ with `WPZSTUDIO_ROOT=/path/to/jekyll-root`.
 | `name` | Display name on the Jekyll site (also used as the slug source). |
 | `slug` | Reserved for future per-app page routes. |
 | `category` | Used directly (zh category). Falls back to DisplayCatalog `Properties.Category` if empty. |
-| `price` | **Used as-is** unless the value is empty, missing, or `"待同步"` — in which case DisplayCatalog's `DisplaySkuAvailabilities[].Sku.MarketProperties[].Price` is consulted (CNY preferred). |
+| `price` | **Used as-is** unless the value is empty, missing, or `"待同步"` — in which case DisplayCatalog's `DisplaySkuAvailabilities[].Sku.MarketProperties[].Price` is consulted (CNY preferred). The CN storefront amount is the source of truth: `¥15.00`, never `HK$15.00` over a CN number. |
 | `description` | Used as-is. Falls back to DisplayCatalog `LocalizedProperties[0].ProductDescription` if empty. |
 | `descriptionEn` | Used as-is (no fallback). Optional. |
 | `fallbackCover` | Used only if DisplayCatalog returns no Logo ≥ 200px. |
+
+## Verification
+
+```bash
+cd tools
+npm run doctor                       # 10 catalog-integrity checks
+node scripts/verify-render.mjs       # one card per catalog entry
+```
+
+`doctor.mjs` fails when the seed and `_data` disagree, when a product is
+duplicated, when a price is a placeholder, when the front-end filters free
+apps out of the grid, when a category lacks a zh or en label, or when a
+referenced asset is missing.
+
+`verify-render.mjs` evaluates the `{% for app in site.data.wpz_apps %}` loop
+against `_data/wpz_apps.json` and pushes the result through the page's own
+`sanitizeApps()`, so it proves the visitor sees exactly one card per catalog
+entry — free apps included.
 
 ## Automated sync
 

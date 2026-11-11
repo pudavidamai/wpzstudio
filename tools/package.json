@@ -6,7 +6,10 @@
     "sync": "node fetch-catalog.mjs && node scripts/sync-report.mjs --json",
     "sync:quiet": "node fetch-catalog.mjs && node scripts/sync-report.mjs --quiet",
     "report": "node scripts/sync-report.mjs",
+    "doctor": "node scripts/doctor.mjs",
     "seed:add": "node scripts/seed-pending-add.mjs",
-    "seed:add:dry": "node scripts/seed-pending-add.mjs --dry-run"
+    "seed:add:dry": "node scripts/seed-pending-add.mjs --dry-run",
+    "publisher:fetch": "node scripts/fetch-publisher-markets.mjs",
+    "seed:rebuild": "node scripts/build-seed-from-publisher.mjs --markets ./.publisher-markets.json --seed ./apps-seed.json --out ./apps-seed.json"
   }
 }

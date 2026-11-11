@@ -33,6 +33,10 @@ virtual-DOM makes scraping lossy (see the companion skill's pitfalls).
 The catalog is data-driven; nobody hand-edits the product list:
 
 ```
+publisher API  ──fetch-publisher-markets.mjs──►  .publisher-markets.json
+     │                                                   │
+     │            build-seed-from-publisher.mjs          │
+     ▼                                                   ▼
 apps-seed.json  ──fetch-catalog.mjs (v7.0 DisplayCatalog)──►  _data/wpz_apps.yml + .json
      ▲                                                                  │
      │ validate-pending.mjs (adds new ids)                             ▼
@@ -40,17 +44,39 @@ apps-seed.json  ──fetch-catalog.mjs (v7.0 DisplayCatalog)──►  _data/wp
 apps-seed-pending.txt ──add-apps.yml──► commits to master ──►  rendered site
 ```
 
-- `tools/apps-seed.json` — productId registry (the set to sync). ~54 entries.
+- `tools/apps-seed.json` — productId registry (the set to sync). ~72 entries.
 - `tools/fetch-catalog.mjs` — regenerate `_data/wpz_apps.{json,yml}` from seed + DisplayCatalog.
+- `tools/scripts/fetch-publisher-markets.mjs` — enumerate the publisher's full
+  catalog per market (CN / US / HK) from the Store's publisher-search endpoint,
+  then gate every id on DisplayCatalog `PublisherId == 26137630`.
+- `tools/scripts/build-seed-from-publisher.mjs` — rebuild the seed from that
+  dump: union with the current seed, dedupe by normalized title (newest
+  release wins), copy zh/en descriptions and the CN price, recover the icon
+  from DisplayCatalog for products the storefront listing omits.
+- `tools/scripts/doctor.mjs` — catalog integrity gate (10 checks).
+- `tools/scripts/verify-render.mjs` — proves the Liquid loop + front-end JS
+  render exactly one card per catalog entry (free apps included).
 - `tools/scripts/sync-report.mjs` — diff working `_data` vs `git HEAD`; prints `N→M (+new/-removed/changed/dead)`.
 - `tools/scripts/seed-pending-add.mjs` — append a productId to `apps-seed-pending.txt` (validated, de-duped).
 - `tools/scripts/validate-pending.mjs` — (CI) validate pending ids against DisplayCatalog + PublisherId, append to `apps-seed.json`.
 - `.github/workflows/sync-catalog.yml` — weekly cron + dispatch: fetch-catalog → open a **PR** if `_data` changed.
-- `.github/workflows/add-apps.yml` — push touching `apps-seed-pending.txt`: validate → seed → fetch-catalog → commit to **master**.
+- `.github/workflows/add-apps.yml` — push touching `tools/apps-seed-pending.txt`: validate → seed → fetch-catalog → commit to **master**.
 
 `index.html` renders `site.data.wpz_apps` via `{%- for app in site.data.wpz_apps -%}`;
 it has no hardcoded `apps` array. The `README.*` files are prose only (no
 product tables). Neither is edited during a catalog sync.
+
+## Local verification
+
+```bash
+cd tools
+npm run doctor        # 10 catalog-integrity checks
+node scripts/verify-render.mjs   # one card per catalog entry
+```
+
+Both gates are mutation-tested: reintroducing the old free-app filter, dropping
+a seed row, placeholder pricing, a missing asset, a missing category label and
+a wrong Liquid data key each make them exit non-zero.
 
 ## Required Outputs
 
@@ -67,17 +93,27 @@ After a sync:
 2. Prefer DisplayCatalog values for `title` / icon / `price`; keep hand-curated
    seed `category` (the site uses 简体 vocabulary) unless clearly wrong.
 3. Site category vocabulary (reuse, don't invent): `高效工作 / 实用程序与工具 /
-   开发人员工具 / 教育 / 娱乐 / 照片与视频`.
+   开发人员工具 / 教育 / 娱乐 / 照片与视频 / 书籍与参考`.
 4. Category is locale-localized. Use `market=CN&locale=zh-CN`. HK (`生產力`) and
    US (`Productivity`) labels are the same category in another locale — not a change.
-5. Currency label ≠ price: site `HK$14.00` vs store `¥14.00` with equal digits is
-   a label difference, not a price diff. Only a digit shift is real.
+5. **Price source is the CN market** (`market=CN`), rendered verbatim —
+   `¥14.00`, `免费下载`. The site is zh-CN targeted, so the CN storefront
+   amount is the one the visitor compares against. Do NOT hardcode a currency
+   symbol, and do NOT reuse another market's digits under a different symbol:
+   AirBridge is `¥14.00` in CN but `HK$15.00` in HK, so a mislabelled amount
+   is a real price change, not a label difference.
 6. `"Free"` / `"免费下载"` / `"Included"` are equivalent — not a diff; keep local style.
+   Zero-priced products are rendered with the 简体 `免费下载` label and ARE
+   shown as cards — the front-end must never filter them out silently.
 7. Preserve the bilingual pattern (`description` zh, `descriptionEn` en).
 8. Keep product names aligned with the live listing unless a documented
    localization choice says otherwise.
-9. A sync commit touches only `_data/*` (and `apps-seed.json` / `apps-seed-pending.txt`
-   when adding an app) — never unrelated layout/styling.
+9. Duplicate normalized titles mean the same app under two productIds — keep
+   the newest release, drop the older id.
+10. A product missing from the storefront listing is NOT dead: free/trial-only
+    listings are omitted there. Keep it and recover its icon from DisplayCatalog.
+11. A sync commit touches only `_data/*` (and `apps-seed.json` /
+    `apps-seed-pending.txt` when adding an app) — never unrelated layout/styling.
 
 ## Execution
 

@@ -42,7 +42,8 @@ wide: true
   // canonical productId; below we re-emit it in the historical inline
   // `{name, category, price, desc, descEn, image, link}` shape so the rest
   // of this file's filter / sort / render code (lines 38+) stays untouched.
-  // Free apps (HK$0) are still filtered out by `sanitizeApps()` further down.
+  // Free apps are NOT filtered out — they render with a green 免费 badge and
+  // are included in the visible count.
   const apps = [
     {%- for app in site.data.wpz_apps -%}
       {
@@ -136,7 +137,8 @@ wide: true
       "开发人员工具": "开发人员工具",
       "教育": "教育",
       "娱乐": "娱乐",
-      "照片与视频": "照片与视频"
+      "照片与视频": "照片与视频",
+      "书籍与参考": "书籍与参考"
     },
     en: {
       "高效工作": "Productivity",
@@ -144,7 +146,8 @@ wide: true
       "开发人员工具": "Developer tools",
       "教育": "Education",
       "娱乐": "Entertainment",
-      "照片与视频": "Photo & video"
+      "照片与视频": "Photo & video",
+      "书籍与参考": "Books & reference"
     }
   };
 
@@ -529,10 +532,10 @@ wide: true
     const result = [];
 
     appList.forEach((app) => {
-      if (isFreePrice(app.price)) {
-        return;
-      }
-
+      // NOTE: free apps are NOT filtered out. A previous version dropped every
+      // zero-priced product here, which silently removed both the card and
+      // its count from the grid — the site then advertised "N 款应用" while the
+      // catalog held more. Free products are shown with a green 免费 badge.
       const key = normalizeName(app.name);
       if (!key || seenNames.has(key)) {
         return;

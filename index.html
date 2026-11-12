@@ -636,6 +636,35 @@ wide: true
     });
   }
 
+  // Cards reveal once as they enter the viewport. Later filter/sort renders
+  // appear immediately so typing in the search box never feels delayed.
+  const revealObserver = "IntersectionObserver" in window
+    ? new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      }, { rootMargin: "0px 0px -40px 0px", threshold: 0.05 })
+    : null;
+  let hasRevealedOnce = false;
+
+  function revealCards(animate) {
+    const cards = appGrid.querySelectorAll(".app-card");
+    if (revealObserver) revealObserver.disconnect();
+
+    cards.forEach((card, index) => {
+      if (!animate) {
+        card.classList.add("is-visible");
+        card.style.removeProperty("--reveal-delay");
+        return;
+      }
+      card.style.setProperty("--reveal-delay", `${Math.min(index % 12, 11) * 45}ms`);
+      if (revealObserver) revealObserver.observe(card);
+      else card.classList.add("is-visible");
+    });
+  }
+
   function renderHeroStats() {
     const statsEl = document.getElementById("heroStats");
     if (!statsEl) return;
@@ -782,6 +811,8 @@ wide: true
     // Wire description expand/collapse buttons after render.
     appGrid.querySelectorAll(".app-card").forEach(attachDescToggle);
     prepareCoverImages();
+    revealCards(!hasRevealedOnce);
+    hasRevealedOnce = true;
   }
 
   function applyHomeLanguage(lang) {

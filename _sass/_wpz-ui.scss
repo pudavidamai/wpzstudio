@@ -83,6 +83,8 @@
   --dur-fast: 120ms;
   --dur-base: 200ms;
   --dur-slow: 320ms;
+  --dur-enter: 640ms;
+  --dur-reveal: 520ms;
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --z-sticky: 200;
 }
@@ -601,6 +603,70 @@ footer {
 }
 
 // -------------------------------------------------------------------------
+// Motion — one deliberate entrance per section, plus restrained micro-states
+// -------------------------------------------------------------------------
+
+@keyframes wpz-rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes wpz-card-in {
+  from { opacity: 0; transform: translateY(18px) scale(0.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.hero-eyebrow,
+.home-hero h1,
+.home-hero > p:not(.hero-eyebrow),
+.hero-stats,
+.home-intro,
+.app-toolbar {
+  animation-name: wpz-rise;
+  animation-duration: var(--dur-enter);
+  animation-timing-function: var(--ease-out);
+  animation-fill-mode: backwards;
+}
+
+.hero-eyebrow { animation-delay: 60ms; }
+.home-hero h1 { animation-delay: 130ms; }
+.home-hero > p:not(.hero-eyebrow) { animation-delay: 210ms; }
+.hero-stats { animation-delay: 290ms; }
+.home-intro { animation-delay: 360ms; }
+.app-toolbar { animation-delay: 420ms; }
+
+.hero-stat-chip,
+.lang-switch-btn,
+.app-cta {
+  transition:
+    transform var(--dur-fast) var(--ease-out),
+    background-color var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+}
+
+.hero-stat-chip:hover,
+.lang-switch-btn:hover,
+.app-cta:hover {
+  transform: translateY(-2px);
+}
+
+.app-card {
+  // Revealed by IntersectionObserver; the animation ends at the natural
+  // transform state so the existing hover lift still works afterwards.
+  opacity: 0;
+
+  &.is-visible {
+    opacity: 1;
+    animation-name: wpz-card-in;
+    animation-duration: var(--dur-reveal);
+    animation-timing-function: var(--ease-out);
+    animation-delay: var(--reveal-delay, 0ms);
+    animation-fill-mode: backwards;
+  }
+}
+
+// -------------------------------------------------------------------------
 // Responsive / motion
 // -------------------------------------------------------------------------
 
@@ -622,5 +688,17 @@ footer {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+
+  .hero-eyebrow,
+  .home-hero h1,
+  .home-hero > p:not(.hero-eyebrow),
+  .hero-stats,
+  .home-intro,
+  .app-toolbar,
+  .app-card {
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
   }
 }

@@ -102,7 +102,6 @@ function extractFunction(name) {
 const helpers = [
   extractFunction('isFreePrice'),
   extractFunction('normalizeName'),
-  extractFunction('buildStoreDetailLink'),
   extractFunction('sanitizeApps'),
 ].join('\n\n')
 
@@ -156,8 +155,9 @@ if (freeEntries.length !== visibleFree.length) {
 
 // ---- 5. every card has a working store link ----------------------------
 
-// buildStoreDetailLink() appends `?hl=zh-CN&gl=CN` to the base link, so the
-// final URL carries a query string.
+// The base link is `https://apps.microsoft.com/detail/<productId>`; locale
+// params (`?hl=…&gl=…`) are appended at render time by localizedStoreLink()
+// based on the active UI language, so here we only assert the base is valid.
 const badLinks = visible.filter(
   (a) => !/^https:\/\/apps\.microsoft\.com\/detail\/[A-Za-z0-9]+(\?.*)?$/.test(a.link)
 )

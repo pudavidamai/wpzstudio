@@ -360,6 +360,16 @@
     "fallbackCover": "https://store-images.s-microsoft.com/image/apps.51667.13827302495581499.d33b3439-7c0f-4436-8f1f-a10c99766ea3.f4b3a6e0-773a-4bfc-8a04-3b907baf43a4"
   },
   {
+    "slug": "md-editor-pro",
+    "name": "MD Editor Pro",
+    "productId": "9MZJ41VVQRT0",
+    "category": "实用程序与工具",
+    "price": "¥16.00",
+    "description": "MD Editor Pro 是一款面向 Windows 的本地优先 Markdown 记事本，基于 CodeMirror 6 与 Electron 构建。支持多标签、文件树、大纲面板、快速切换、专注模式、日记、版本历史、Mermaid 图表、图片灯箱，6 种界面语言 × 6 套主题。所有数据存本机，零云端依赖。",
+    "descriptionEn": "MD Editor Pro is a local-first Markdown notepad for Windows, built on CodeMirror 6 and Electron. It supports multi-tab editing, file tree, outline panel, quick switcher, focus mode, daily notes, version history, Mermaid diagrams, image lightbox, 6 UI languages × 6 themes. All data stays on your device — zero cloud dependency.",
+    "fallbackCover": "https://store-images.s-microsoft.com/image/apps.15363.13873988617710557.d41755ba-216c-4d31-9753-cda267c4c77f.cddad128-d260-4bc9-9862-f02ab6b35906"
+  },
+  {
     "slug": "mdconvertor",
     "name": "MDConvertor",
     "productId": "9P88TGMGMW20",

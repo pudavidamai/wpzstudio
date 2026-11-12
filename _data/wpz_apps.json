@@ -2328,6 +2328,77 @@
     ]
   },
   {
+    "productId": "9MZJ41VVQRT0",
+    "slug": "md-editor-pro",
+    "name": "MD Editor Pro",
+    "title": "MD Editor Pro",
+    "category": "实用程序与工具",
+    "subCategory": "File managers",
+    "price": "¥16.00",
+    "description": "MD Editor Pro 是一款面向 Windows 的本地优先 Markdown 记事本，基于 CodeMirror 6 与 Electron 构建。支持多标签、文件树、大纲面板、快速切换、专注模式、日记、版本历史、Mermaid 图表、图片灯箱，6 种界面语言 × 6 套主题。所有数据存本机，零云端依赖。",
+    "descriptionEn": "MD Editor Pro is a local-first Markdown notepad for Windows, built on CodeMirror 6 and Electron. It supports multi-tab editing, file tree, outline panel, quick switcher, focus mode, daily notes, version history, Mermaid diagrams, image lightbox, 6 UI languages × 6 themes. All data stays on your device — zero cloud dependency.",
+    "shortDescription": null,
+    "publisher": "WPZStudio",
+    "developer": "wuping2004@msn.com",
+    "publisherWebsiteUri": "https://pudavidamai.github.io/wpzstudio/",
+    "supportUri": null,
+    "publisherId": "26137630",
+    "packageFamilyName": "10278WPZStudio.MDEditorPro_v810h3yyd8p76",
+    "iconUrl": "https://store-images.s-microsoft.com/image/apps.15363.13873988617710557.d41755ba-216c-4d31-9753-cda267c4c77f.cddad128-d260-4bc9-9862-f02ab6b35906",
+    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.15363.13873988617710557.d41755ba-216c-4d31-9753-cda267c4c77f.cddad128-d260-4bc9-9862-f02ab6b35906",
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.19101.13873988617710557.d41755ba-216c-4d31-9753-cda267c4c77f.e2bda641-de13-4403-90b8-9a2ba78ec58c",
+    "images": [
+      {
+        "purpose": "Logo",
+        "width": 300,
+        "height": 300,
+        "url": "https://store-images.s-microsoft.com/image/apps.15363.13873988617710557.d41755ba-216c-4d31-9753-cda267c4c77f.cddad128-d260-4bc9-9862-f02ab6b35906"
+      },
+      {
+        "purpose": "Logo",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.42255.13873988617710557.d41755ba-216c-4d31-9753-cda267c4c77f.35ea1d6f-97b1-45d1-9dc4-84a3b5c614f9"
+      },
+      {
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.61906.13873988617710557.d41755ba-216c-4d31-9753-cda267c4c77f.afa00932-6e38-4002-8f00-bf4f1101254c"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1303,
+        "url": "https://store-images.s-microsoft.com/image/apps.19101.13873988617710557.d41755ba-216c-4d31-9753-cda267c4c77f.e2bda641-de13-4403-90b8-9a2ba78ec58c"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1346,
+        "url": "https://store-images.s-microsoft.com/image/apps.7623.13873988617710557.d41755ba-216c-4d31-9753-cda267c4c77f.dd610348-abd0-4e87-9a6a-a3eba15fa01e"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2234,
+        "height": 1352,
+        "url": "https://store-images.s-microsoft.com/image/apps.18352.13873988617710557.d41755ba-216c-4d31-9753-cda267c4c77f.a07f6cb1-6aae-4e05-afe6-9e8fe274d259"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1292,
+        "url": "https://store-images.s-microsoft.com/image/apps.55328.13873988617710557.d41755ba-216c-4d31-9753-cda267c4c77f.c7a2c84f-5eeb-42d9-aab7-d60bf4eceeb9"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1330,
+        "url": "https://store-images.s-microsoft.com/image/apps.8848.13873988617710557.d41755ba-216c-4d31-9753-cda267c4c77f.0d7f60aa-3b4b-417d-b973-7b78a4204a23"
+      }
+    ]
+  },
+  {
     "productId": "9P88TGMGMW20",
     "slug": "mdconvertor",
     "name": "MDConvertor",

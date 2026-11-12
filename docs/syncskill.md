@@ -40,7 +40,7 @@ publisher API  ──fetch-publisher-markets.mjs──►  .publisher-markets.js
 apps-seed.json  ──fetch-catalog.mjs (v7.0 DisplayCatalog)──►  _data/wpz_apps.yml + .json
      ▲                                                                  │
      │ validate-pending.mjs (adds new ids)                             ▼
-     │                                                        index.html {% for %}
+     │                                                        index.html Liquid loop
 apps-seed-pending.txt ──add-apps.yml──► commits to master ──►  rendered site
 ```
 
@@ -62,9 +62,18 @@ apps-seed-pending.txt ──add-apps.yml──► commits to master ──►  r
 - `.github/workflows/sync-catalog.yml` — weekly cron + dispatch: fetch-catalog → open a **PR** if `_data` changed.
 - `.github/workflows/add-apps.yml` — push touching `tools/apps-seed-pending.txt`: validate → seed → fetch-catalog → commit to **master**.
 
-`index.html` renders `site.data.wpz_apps` via `{%- for app in site.data.wpz_apps -%}`;
-it has no hardcoded `apps` array. The `README.*` files are prose only (no
-product tables). Neither is edited during a catalog sync.
+`index.html` renders `site.data.wpz_apps` through a Liquid `for` loop over
+`site.data.wpz_apps`; it has no hardcoded `apps` array. The `README.*` files
+are prose only (no product tables). Neither is edited during a catalog sync.
+
+> Markdown files in this site are rendered by Jekyll, so a literal Liquid tag
+> in prose is parsed as a real tag and **breaks the Pages build**
+> ("Liquid syntax error (line N): Expected id but found end_of_string").
+> Describe such examples in words instead of writing the braces.
+>
+> GitHub Pages builds with `liquid.error_mode: strict`, so a Liquid error is
+> fatal there, while a plain local `jekyll build` only warns. Reproduce the
+> Pages behaviour locally with `--config _config.yml,tools/_config.strict.yml`.
 
 ## Local verification
 

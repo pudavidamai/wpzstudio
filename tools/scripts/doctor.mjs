@@ -208,6 +208,43 @@ check('every seed productId is present in _data', () => {
   return `${seed.length} matched`
 })
 
+// 11. no stray Liquid TAGS in the Markdown files Jekyll renders
+// GitHub Pages builds with `liquid.error_mode: strict`, so a literal
+// `{% ... %}` in prose is a FATAL Liquid error there, while a plain local
+// `jekyll build` only warns and ships a broken page. That gap let a
+// Liquid tag in docs/syncskill.md pass locally and fail the Pages deploy.
+// `{{ ... }}` output is fine — only tags are the problem.
+check('no stray Liquid tags in rendered Markdown', () => {
+  const excluded = new Set(['tools', 'node_modules', '_site', '.git', 'vendor'])
+  const offenders = []
+  const walk = (dir) => {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (excluded.has(entry.name)) continue
+      const full = path.join(dir, entry.name)
+      if (entry.isDirectory()) {
+        walk(full)
+      } else if (entry.name.endsWith('.md')) {
+        const text = readText(full)
+        // a Liquid TAG: {% ... %} (but not {% raw %} blocks, which are legal)
+        const stripped = text.replace(/\{%[\s\S]*?%\}/g, (m) =>
+          /\{%\s*(raw|endraw|comment)\s*%\}/.test(m) ? '' : m
+        )
+        for (const m of stripped.matchAll(/\{%[^%]*%\}/g)) {
+          offenders.push(`${path.relative(ROOT, full)}: ${m[0].slice(0, 60)}`)
+        }
+      }
+    }
+  }
+  walk(ROOT)
+  if (offenders.length) {
+    throw new Error(
+      `${offenders.length} stray Liquid tag(s) — GitHub Pages builds with ` +
+        `liquid.error_mode: strict and will FAIL: ${offenders.join(' | ')}`
+    )
+  }
+  return 'none'
+})
+
 console.log('')
 if (warnings.length) {
   console.log(`${warnings.length} warning(s):`)

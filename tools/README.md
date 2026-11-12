@@ -50,7 +50,7 @@ numbers in the commit message. `--json` also writes the structured diff to
 let you diff arbitrary snapshots.
 
 > The site renders the catalog from `site.data.wpz_apps` (the Jekyll
-> `_data/wpz_apps.yml`). `index.html` only contains a `{% for %}` loop over it
+> `_data/wpz_apps.yml`). `index.html` only contains a Liquid `for` loop over it
 > — there is no hardcoded `apps` array to hand-edit anymore, and the localized
 > README files are prose only (no product tables). A "sync" is therefore just
 > regenerate `_data` → commit `_data/wpz_apps.{json,yml}` → push.
@@ -124,10 +124,10 @@ duplicated, when a price is a placeholder, when the front-end filters free
 apps out of the grid, when a category lacks a zh or en label, or when a
 referenced asset is missing.
 
-`verify-render.mjs` evaluates the `{% for app in site.data.wpz_apps %}` loop
-against `_data/wpz_apps.json` and pushes the result through the page's own
-`sanitizeApps()`, so it proves the visitor sees exactly one card per catalog
-entry — free apps included.
+`verify-render.mjs` evaluates the Liquid `for` loop over
+`site.data.wpz_apps` against `_data/wpz_apps.json` and pushes the result
+through the page's own `sanitizeApps()`, so it proves the visitor sees exactly
+one card per catalog entry — free apps included.
 
 ## Automated sync
 

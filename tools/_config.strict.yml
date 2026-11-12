@@ -1,0 +1,12 @@
+# Strict-Liquid build config, mirroring what GitHub Pages does.
+#
+#   jekyll build --config _config.yml,tools/_config.strict.yml
+#
+# GitHub Pages sets `liquid.error_mode: strict`, so a Liquid syntax error is
+# FATAL there, while a plain local `jekyll build` only warns and produces a
+# broken page. That difference let a literal Liquid tag in a Markdown file
+# pass the local build and fail the Pages deploy.
+#
+# Use this config for any build that is meant to match production.
+liquid:
+  error_mode: strict

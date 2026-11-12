@@ -1,0 +1,56 @@
+name: verify-catalog
+
+# Runs the catalog integrity gates on every push to master and on demand.
+#
+# These are the same checks a developer runs locally:
+#   npm --dir tools run doctor              -> 11 catalog-integrity checks
+#   node tools/scripts/verify-render.mjs    -> one card per catalog entry
+#
+# They are cheap, need no Microsoft Store access, and catch the failure
+# modes that silently shipped before:
+#   - the front-end filtering free apps out of the grid (the site then
+#     advertised fewer apps than the catalog held)
+#   - a stray Liquid tag in rendered Markdown, which GitHub Pages treats as
+#     a FATAL error (liquid.error_mode: strict) while a local build only
+#     warns
+#   - a seed/_data count mismatch, placeholder pricing, a duplicate product,
+#     a missing asset or a category without a zh+en label
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run catalog integrity checks
+        run: node tools/scripts/doctor.mjs
+
+      - name: Verify every catalog entry renders as a card
+        run: node tools/scripts/verify-render.mjs
+
+      - name: Strict-Liquid build (matches GitHub Pages error_mode)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: false
+      - name: Install Jekyll
+        run: gem install github-pages -v 232 --no-document
+      - name: Build with strict Liquid
+        run: bundle exec jekyll build --config _config.yml,tools/_config.strict.yml
+        env:
+          JEKYLL_ENV: production

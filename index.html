@@ -72,6 +72,7 @@ wide: true
         price: {{ app.price | default: '' | jsonify }},
         desc: {{ app.description | default: '' | jsonify }},
         descEn: {{ app.descriptionEn | default: '' | jsonify }},
+        descI18n: {{ site.data.wpz_apps_i18n[app.productId] | jsonify }},
         image: {{ app.iconUrl | default: '' | jsonify }},
         productId: {{ app.productId | default: '' | jsonify }},
         link: "https://apps.microsoft.com/detail/{{ app.productId }}"
@@ -419,13 +420,18 @@ wide: true
   }
 
   function getAppDescription(app) {
-    // The catalog only carries Chinese and English descriptions. Chinese is
-    // shown for the zh locale; every other locale falls back to English.
+    // Chinese shows the native description; English shows descriptionEn.
+    // ja/ko/de/fr use their machine-translated description (descI18n),
+    // falling back to English, then Chinese, if a translation is missing.
     if (currentLang === "zh") {
       return app.desc;
     }
+    if (currentLang === "en") {
+      return app.descEn || app.desc;
+    }
 
-    return app.descEn || app.desc;
+    const i18n = app.descI18n || {};
+    return i18n[currentLang] || app.descEn || app.desc;
   }
 
   function updateStaticText() {

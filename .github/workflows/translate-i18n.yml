@@ -1,0 +1,55 @@
+name: translate-i18n
+
+# Generates localized (ja/ko/de/fr) product descriptions from the Chinese
+# `description` field and stores them in `_data/wpz_apps_i18n.json`. The script
+# (`tools/translate-i18n.mjs`) is resumable and skips already-translated apps,
+# so this can run daily without duplicating work; only newly-added products are
+# translated. Runs on the GitHub runner, whose IP has a fresh MyMemory quota
+# (the free tier is per-IP, daily).
+#
+# Manual trigger: Actions tab → "translate-i18n" → "Run workflow"
+
+on:
+  schedule:
+    # Daily 04:30 UTC (= 12:30 Asia/Shanghai)
+    - cron: '30 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write        # push directly to master (auto-deploys via Pages)
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate localized descriptions
+        # Resumable; continue even if the free API's daily quota is hit so any
+        # partial progress is still committed below.
+        continue-on-error: true
+        run: node tools/translate-i18n.mjs
+
+      - name: Commit and deploy if changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- _data/wpz_apps_i18n.json; then
+            echo "No new translations to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/wpz_apps_i18n.json
+          git commit -m "i18n: refresh localized product descriptions (auto)" \
+                     -m "Triggered by workflow run ${GITHUB_RUN_ID}."
+          git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:master

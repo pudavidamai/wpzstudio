@@ -5,6 +5,7 @@ wide: true
 ---
 
 <section class="home-hero">
+  <p class="hero-eyebrow"><span class="hero-eyebrow-dot" aria-hidden="true"></span>WPZ Studio · Windows Apps</p>
   <h1 data-i18n-home="hero.title">WPZ Studio 应用列表</h1>
   <p data-i18n-home="hero.subtitle">专注实用工具、学习教育与效率提升，持续发布面向全球用户的桌面应用。</p>
   <div class="hero-stats" id="heroStats" aria-label="统计数据"></div>
@@ -53,6 +54,7 @@ wide: true
         desc: {{ app.description | default: '' | jsonify }},
         descEn: {{ app.descriptionEn | default: '' | jsonify }},
         image: {{ app.iconUrl | default: '' | jsonify }},
+        productId: {{ app.productId | default: '' | jsonify }},
         link: "https://apps.microsoft.com/detail/{{ app.productId }}"
       }{% unless forloop.last %},{% endunless %}
     {%- endfor -%}

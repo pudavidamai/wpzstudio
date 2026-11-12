@@ -458,6 +458,7 @@ nav {
   border-radius: var(--radius-lg);
   background: var(--surface);
   box-shadow: var(--shadow-sm);
+  overflow: hidden;
   transition:
     transform var(--dur-base) var(--ease-out),
     box-shadow var(--dur-base) var(--ease-out),
@@ -469,10 +470,35 @@ nav {
     box-shadow: var(--shadow-lg);
   }
 
+  // Every product icon is normalised to the same square, then centred in an
+  // identical tile. The source artwork's own padding no longer changes the
+  // apparent logo size from card to card.
   .app-cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
+    aspect-ratio: 16 / 9;
     border-bottom: 1px solid var(--border);
-    background: var(--bg-subtle);
+    background:
+      radial-gradient(circle at 18% 14%, rgba(255, 255, 255, 0.22), transparent 44%),
+      radial-gradient(circle at 82% 86%, rgba(255, 255, 255, 0.1), transparent 40%),
+      linear-gradient(135deg, var(--cover-from, var(--brand-blue)), var(--cover-to, var(--brand-teal)));
+  }
+
+  .app-cover-image {
+    width: 124px;
+    max-width: 42%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: var(--radius-md);
+    box-shadow: 0 14px 30px -14px rgba(2, 12, 27, 0.7);
+  }
+
+  &:hover .app-cover-image {
+    transform: translateY(-2px) scale(1.03);
   }
 
   .app-card-header {

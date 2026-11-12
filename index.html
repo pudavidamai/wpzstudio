@@ -86,7 +86,8 @@ wide: true
   const appToolbar = document.getElementById("appToolbar");
   const appGrid = document.getElementById("appGrid");
   const appCount = document.getElementById("appCount");
-  let currentLang = window.__wpzLang === "zh" ? "zh" : "en";
+  const VALID_LANGS = ["zh", "en", "ja", "ko", "de", "fr"];
+  let currentLang = VALID_LANGS.includes(window.__wpzLang) ? window.__wpzLang : "en";
 
   const homeText = {
     zh: {
@@ -116,12 +117,19 @@ wide: true
       },
       card: {
         detail: "查看详情",
-        coverAltSuffix: "产品封面"
+        coverAltSuffix: "产品封面",
+        descExpand: "展开全部 ↓",
+        descCollapse: "收起 ↑",
+        free: "免费"
       },
       support: {
         title: "需要帮助或反馈？",
         detail: "遇到问题、有建议或想了解更多，欢迎随时联系我们。",
         cta: "联系支持"
+      },
+      stats: {
+        apps: "款应用",
+        categories: "个分类"
       }
     },
     en: {
@@ -151,12 +159,187 @@ wide: true
       },
       card: {
         detail: "View details",
-        coverAltSuffix: "app cover"
+        coverAltSuffix: "app cover",
+        descExpand: "Show more ↓",
+        descCollapse: "Show less ↑",
+        free: "Free"
       },
       support: {
         title: "Need help or have feedback?",
         detail: "Questions, suggestions, or simply want to know more? Get in touch anytime.",
         cta: "Contact support"
+      },
+      stats: {
+        apps: "apps",
+        categories: "categories"
+      }
+    },
+    ja: {
+      hero: {
+        title: "WPZ Studio アプリ一覧",
+        subtitle: "生産性、学習、実用ツールに注力し、世界中のデスクトップユーザー向けにアプリを提供しています。"
+      },
+      intro: {
+        lead: "WPZ Studio へようこそ。私たちは、信頼できる使いやすいソフトウェアを開発する独立スタジオです。",
+        detail: "下の一覧からすべてのアプリを確認し、カテゴリで絞り込み、カードを開くと Microsoft Store の詳細が表示されます。"
+      },
+      toolbar: {
+        category: "カテゴリ",
+        keyword: "キーワード",
+        sort: "並び替え",
+        sortAsc: "名前 A-Z",
+        sortDesc: "名前 Z-A",
+        reset: "リセット",
+        all: "すべてのカテゴリ",
+        searchPlaceholder: "アプリ名または説明で検索",
+        countUnit: "個のアプリ",
+        ariaLabel: "アプリフィルターツールバー"
+      },
+      empty: {
+        title: "一致するアプリがありません",
+        detail: "別のキーワードやカテゴリをお試しいただくか、「リセット」をクリックしてください。"
+      },
+      card: {
+        detail: "詳細を見る",
+        coverAltSuffix: "アプリの表紙",
+        descExpand: "もっと見る ↓",
+        descCollapse: "折りたたむ ↑",
+        free: "無料"
+      },
+      support: {
+        title: "ヘルプが必要ですか、ご意見はありますか？",
+        detail: "ご質問、ご提案、または詳細を知りたい場合は、いつでもお問い合わせください。",
+        cta: "サポートに問い合わせ"
+      },
+      stats: {
+        apps: "アプリ",
+        categories: "カテゴリ"
+      }
+    },
+    ko: {
+      hero: {
+        title: "WPZ Studio 앱 목록",
+        subtitle: "생산성, 학습, 실용 도구에 집중하여 전 세계 데스크톱 사용자를 위한 앱을 제공합니다."
+      },
+      intro: {
+        lead: "WPZ Studio에 오신 것을 환영합니다. 우리는 신뢰할 수 있고 사용하기 쉬운 소프트웨어를 만드는 독립 스튜디오입니다.",
+        detail: "아래에서 모든 앱을 살펴보고, 카테고리별로 필터링한 뒤 카드를 열어 Microsoft Store 세부 정보를 확인하세요."
+      },
+      toolbar: {
+        category: "카테고리",
+        keyword: "검색어",
+        sort: "정렬",
+        sortAsc: "이름 A-Z",
+        sortDesc: "이름 Z-A",
+        reset: "초기화",
+        all: "모든 카테고리",
+        searchPlaceholder: "앱 이름 또는 설명으로 검색",
+        countUnit: "개의 앱",
+        ariaLabel: "앱 필터 도구 모음"
+      },
+      empty: {
+        title: "일치하는 앱이 없습니다",
+        detail: "다른 검색어나 카테고리를 시도하거나 '초기화'를 클릭하세요."
+      },
+      card: {
+        detail: "자세히 보기",
+        coverAltSuffix: "앱 표지",
+        descExpand: "더 보기 ↓",
+        descCollapse: "접기 ↑",
+        free: "무료"
+      },
+      support: {
+        title: "도움이 필요하시거나 피드백이 있으신가요?",
+        detail: "질문, 제안, 또는 더 알고 싶으신가요? 언제든 연락 주세요.",
+        cta: "지원에 문의"
+      },
+      stats: {
+        apps: "앱",
+        categories: "카테고리"
+      }
+    },
+    de: {
+      hero: {
+        title: "WPZ Studio App-Übersicht",
+        subtitle: "Fokus auf Produktivität, Lernen und praktische Hilfsmittel für Desktop-Nutzer weltweit."
+      },
+      intro: {
+        lead: "Willkommen bei WPZ Studio. Wir sind ein unabhängiges Studio, das zuverlässige und benutzerfreundliche Software entwickelt.",
+        detail: "Stöbern Sie unten durch alle Apps, filtern Sie nach Kategorie und öffnen Sie eine Karte für Details im Microsoft Store."
+      },
+      toolbar: {
+        category: "Kategorie",
+        keyword: "Schlüsselwort",
+        sort: "Sortieren",
+        sortAsc: "Name A-Z",
+        sortDesc: "Name Z-A",
+        reset: "Zurücksetzen",
+        all: "Alle Kategorien",
+        searchPlaceholder: "Nach App-Name oder Beschreibung suchen",
+        countUnit: "Apps",
+        ariaLabel: "App-Filterwerkzeugleiste"
+      },
+      empty: {
+        title: "Keine passenden Apps",
+        detail: "Versuchen Sie ein anderes Schlüsselwort oder eine andere Kategorie oder klicken Sie auf Zurücksetzen."
+      },
+      card: {
+        detail: "Details ansehen",
+        coverAltSuffix: "App-Cover",
+        descExpand: "Mehr anzeigen ↓",
+        descCollapse: "Weniger anzeigen ↑",
+        free: "Kostenlos"
+      },
+      support: {
+        title: "Brauchen Sie Hilfe oder haben Feedback?",
+        detail: "Fragen, Vorschläge oder einfach mehr wissen? Kontaktieren Sie uns jederzeit.",
+        cta: "Support kontaktieren"
+      },
+      stats: {
+        apps: "Apps",
+        categories: "Kategorien"
+      }
+    },
+    fr: {
+      hero: {
+        title: "Catalogue d'applications WPZ Studio",
+        subtitle: "Axé sur la productivité, l'apprentissage et les utilitaires pratiques pour les utilisateurs de bureau du monde entier."
+      },
+      intro: {
+        lead: "Bienvenue chez WPZ Studio. Nous sommes un studio indépendant créant des logiciels fiables et faciles à utiliser.",
+        detail: "Parcourez toutes les applications ci-dessous, filtrez par catégorie et ouvrez une carte pour voir les détails sur le Microsoft Store."
+      },
+      toolbar: {
+        category: "Catégorie",
+        keyword: "Mot-clé",
+        sort: "Trier",
+        sortAsc: "Nom A-Z",
+        sortDesc: "Nom Z-A",
+        reset: "Réinitialiser",
+        all: "Toutes les catégories",
+        searchPlaceholder: "Rechercher par nom ou description",
+        countUnit: "applications",
+        ariaLabel: "Barre d'outils de filtrage des applications"
+      },
+      empty: {
+        title: "Aucune application correspondante",
+        detail: "Essayez un autre mot-clé ou une autre catégorie, ou cliquez sur Réinitialiser."
+      },
+      card: {
+        detail: "Voir les détails",
+        coverAltSuffix: "couverture d'appli",
+        descExpand: "Afficher plus ↓",
+        descCollapse: "Afficher moins ↑",
+        free: "Gratuit"
+      },
+      support: {
+        title: "Besoin d'aide ou un avis à partager ?",
+        detail: "Des questions, des suggestions ou simplement envie d'en savoir plus ? Contactez-nous à tout moment.",
+        cta: "Contacter le support"
+      },
+      stats: {
+        apps: "applis",
+        categories: "catégories"
       }
     }
   };
@@ -179,6 +362,42 @@ wide: true
       "娱乐": "Entertainment",
       "照片与视频": "Photo & video",
       "书籍与参考": "Books & reference"
+    },
+    ja: {
+      "高效工作": "生産性",
+      "实用程序与工具": "ユーティリティとツール",
+      "开发人员工具": "開発者ツール",
+      "教育": "教育",
+      "娱乐": "エンターテインメント",
+      "照片与视频": "写真とビデオ",
+      "书籍与参考": "本と参考資料"
+    },
+    ko: {
+      "高效工作": "생산성",
+      "实用程序与工具": "유틸리티 및 도구",
+      "开发人员工具": "개발자 도구",
+      "教育": "교육",
+      "娱乐": "엔터테인먼트",
+      "照片与视频": "사진 및 비디오",
+      "书籍与参考": "도서 및 참고 자료"
+    },
+    de: {
+      "高效工作": "Produktivität",
+      "实用程序与工具": "Dienstprogramme & Tools",
+      "开发人员工具": "Entwicklertools",
+      "教育": "Bildung",
+      "娱乐": "Unterhaltung",
+      "照片与视频": "Foto & video",
+      "书籍与参考": "Bücher & Nachschlagewerke"
+    },
+    fr: {
+      "高效工作": "Productivité",
+      "实用程序与工具": "Utilitaires et outils",
+      "开发人员工具": "Outils de développement",
+      "教育": "Éducation",
+      "娱乐": "Divertissement",
+      "照片与视频": "Photo et vidéo",
+      "书籍与参考": "Livres et référence"
     }
   };
 
@@ -200,11 +419,13 @@ wide: true
   }
 
   function getAppDescription(app) {
-    if (currentLang === "en" && app.descEn) {
-      return app.descEn;
+    // The catalog only carries Chinese and English descriptions. Chinese is
+    // shown for the zh locale; every other locale falls back to English.
+    if (currentLang === "zh") {
+      return app.desc;
     }
 
-    return app.desc;
+    return app.descEn || app.desc;
   }
 
   function updateStaticText() {
@@ -230,14 +451,29 @@ wide: true
     return "https://apps.microsoft.com/search?query=" + encodeURIComponent(name + " WPZStudio");
   }
 
-  function buildStoreDetailLink(app) {
-    const baseLink = String(app.link || "").trim();
-    if (!baseLink) {
-      return buildStoreSearchLink(app.name);
-    }
+  // Microsoft Store host/locale parameters per UI language. When a language
+  // has no dedicated Store locale, we fall back to the English Store link.
+  const storeLocaleMap = {
+    zh: { hl: "zh-CN", gl: "CN" },
+    en: { hl: "en-US", gl: "US" },
+    ja: { hl: "ja-JP", gl: "JP" },
+    ko: { hl: "ko-KR", gl: "KR" },
+    de: { hl: "de-DE", gl: "DE" },
+    fr: { hl: "fr-FR", gl: "FR" }
+  };
 
+  function storeLocaleForLang(lang) {
+    return storeLocaleMap[lang] || storeLocaleMap.en;
+  }
+
+  // Append the locale params that render a Microsoft Store page in the
+  // visitor's language. Falls back to the English Store link when the
+  // selected language has no dedicated Store mapping.
+  function localizedStoreLink(baseLink) {
+    if (!baseLink) return "";
+    const { hl, gl } = storeLocaleForLang(currentLang);
     const separator = baseLink.includes("?") ? "&" : "?";
-    return baseLink + separator + "hl=zh-CN&gl=CN";
+    return baseLink + separator + "hl=" + hl + "&gl=" + gl;
   }
 
   function buildInitials(name) {
@@ -526,7 +762,7 @@ wide: true
       <div class="app-desc-wrap" data-collapsed="true">
         <div class="app-desc app-desc-truncated">${truncated}</div>
         <div class="app-desc app-desc-full" hidden>${full}</div>
-        <button type="button" class="app-desc-toggle" data-i18n-card="desc.expand">${currentLang === "en" ? "Show more" : "展开全部 ↓"}</button>
+        <button type="button" class="app-desc-toggle">${t("card.descExpand")}</button>
       </div>
     `;
   }
@@ -545,8 +781,8 @@ wide: true
       collapsed.hidden = isCollapsed;
       full.hidden = !isCollapsed;
       btn.textContent = isCollapsed
-        ? (currentLang === "en" ? "Show less ↑" : "收起 ↑")
-        : (currentLang === "en" ? "Show more" : "展开全部 ↓");
+        ? t("card.descCollapse")
+        : t("card.descExpand");
     });
   }
 
@@ -703,12 +939,9 @@ wide: true
     const statsEl = document.getElementById("heroStats");
     if (!statsEl) return;
     const categorySet = new Set(visibleApps.map((a) => a.category).filter(Boolean));
-    const labels = currentLang === "en"
-      ? { apps: "apps", categories: "categories" }
-      : { apps: "款应用", categories: "个分类" };
     statsEl.innerHTML = `
-      <span class="hero-stat-chip"><strong>${visibleApps.length}</strong>${labels.apps}</span>
-      <span class="hero-stat-chip"><strong>${categorySet.size}</strong>${labels.categories}</span>
+      <span class="hero-stat-chip"><strong>${visibleApps.length}</strong> ${t("stats.apps")}</span>
+      <span class="hero-stat-chip"><strong>${categorySet.size}</strong> ${t("stats.categories")}</span>
     `;
   }
 
@@ -730,7 +963,9 @@ wide: true
       result.push({
         ...app,
         image: String(app.image || "").trim(),
-        link: buildStoreDetailLink(app)
+        // Store locale params (hl/gl) are appended at render time based on
+        // the active UI language, so the link stays a clean base URL here.
+        link: String(app.link || "").trim() || buildStoreSearchLink(app.name)
       });
     });
 
@@ -815,26 +1050,28 @@ wide: true
         const free = isFreePrice(app.price);
         const descHtml = renderAppDescription(app);
         const [coverFrom, coverTo] = buildPalette(app.name);
+        // Localize the Microsoft Store link to the active UI language.
+        const detailLink = localizedStoreLink(app.link);
 
         return `
           <article class="app-card">
-            <a class="app-cover" href="${app.link}" target="_blank" rel="noopener noreferrer" style="--cover-from:${coverFrom};--cover-to:${coverTo}">
+            <a class="app-cover" href="${detailLink}" target="_blank" rel="noopener noreferrer" style="--cover-from:${coverFrom};--cover-to:${coverTo}">
               <img class="app-cover-image" src="${primaryCover}" data-fallback="${fallbackCover}" alt="${escapeHtml(app.name)} ${t("card.coverAltSuffix")}" loading="lazy" decoding="async" crossorigin="anonymous" onerror="this.onerror=null;this.src=this.dataset.fallback;" />
               <div class="app-cover-overlay">
                 <span class="app-cover-cta">${t("card.detail")}</span>
               </div>
             </a>
             <div class="app-card-header">
-              <h3><a class="app-title-link" href="${app.link}" target="_blank" rel="noopener noreferrer">${escapeHtml(app.name)}</a></h3>
+              <h3><a class="app-title-link" href="${detailLink}" target="_blank" rel="noopener noreferrer">${escapeHtml(app.name)}</a></h3>
               <span class="app-category-badge">${escapeHtml(categoryLabel(app.category))}</span>
             </div>
             <div class="app-meta-row">
-              <p class="app-price ${free ? "is-free" : ""}">${escapeHtml(free ? (currentLang === "en" ? "Free" : "免费") : app.price)}</p>
+              <p class="app-price ${free ? "is-free" : ""}">${escapeHtml(free ? t("card.free") : app.price)}</p>
               <span class="app-rating" aria-hidden="true">★ ★ ★ ★ ☆</span>
             </div>
             ${descHtml}
             <div class="app-card-footer">
-              <a class="app-cta" href="${app.link}" target="_blank" rel="noopener noreferrer">${t("card.detail")}</a>
+              <a class="app-cta" href="${detailLink}" target="_blank" rel="noopener noreferrer">${t("card.detail")}</a>
               <span class="app-productid">${escapeHtml(app.productId || "")}</span>
             </div>
           </article>
@@ -850,7 +1087,7 @@ wide: true
   }
 
   function applyHomeLanguage(lang) {
-    currentLang = lang === "zh" ? "zh" : "en";
+    currentLang = VALID_LANGS.includes(lang) ? lang : "en";
     updateStaticText();
     renderCategoryOptions();
     renderHeroStats();

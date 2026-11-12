@@ -27,10 +27,14 @@
           <nav>
             <a href="{{ '/' | relative_url }}" data-i18n-global="nav.home">Home</a>
             <a href="{{ '/about/' | relative_url }}" data-i18n-global="nav.about">About</a>
-            <span class="lang-switch" aria-label="Language switcher">
-              <button type="button" class="lang-switch-btn" data-lang-option="zh">中</button>
-              <button type="button" class="lang-switch-btn" data-lang-option="en">EN</button>
-            </span>
+            <select id="langSelect" class="lang-select" aria-label="Language">
+              <option value="zh">中文</option>
+              <option value="en">English</option>
+              <option value="ja">日本語</option>
+              <option value="ko">한국어</option>
+              <option value="de">Deutsch</option>
+              <option value="fr">Français</option>
+            </select>
             <button type="button" class="theme-toggle" aria-label="Switch to dark theme" title="Switch to dark theme" aria-pressed="false">
               <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z" />
@@ -61,28 +65,68 @@
     <script>
       (function() {
         const storageKey = "wpz-lang";
+        // The six supported UI languages. Order here is the dropdown order.
+        const SUPPORTED_LANGS = ["zh", "en", "ja", "ko", "de", "fr"];
         const globalText = {
           zh: {
             "nav.home": "首页",
             "nav.about": "关于",
-            "site.description": "欢迎来到 WPZ Studio。我们是一家独立开发工作室，专注打造好用、可靠、学习成本低的软件产品。"
+            "site.description": "欢迎来到 WPZ Studio。我们是一家独立开发工作室，专注打造好用、可靠、学习成本低的软件产品。",
+            "page.indexTitle": "WPZ Studio 应用列表"
           },
           en: {
             "nav.home": "Home",
             "nav.about": "About",
-            "site.description": "Welcome to WPZ Studio, an independent development studio dedicated to crafting engaging and effective desktop applications."
+            "site.description": "Welcome to WPZ Studio, an independent development studio dedicated to crafting engaging and effective desktop applications.",
+            "page.indexTitle": "WPZ Studio App Catalog"
+          },
+          ja: {
+            "nav.home": "ホーム",
+            "nav.about": "紹介",
+            "site.description": "WPZ Studio へようこそ。私たちは、使いやすく信頼できるソフトウェアを開発する独立スタジオです。",
+            "page.indexTitle": "WPZ Studio アプリ一覧"
+          },
+          ko: {
+            "nav.home": "홈",
+            "nav.about": "정보",
+            "site.description": "WPZ Studio에 오신 것을 환영합니다. 우리는 사용하기 쉽고 신뢰할 수 있는 소프트웨어를 만드는 독립 스튜디오입니다.",
+            "page.indexTitle": "WPZ Studio 앱 목록"
+          },
+          de: {
+            "nav.home": "Start",
+            "nav.about": "Über",
+            "site.description": "Willkommen bei WPZ Studio, einem unabhängigen Entwicklerstudio für zuverlässige und benutzerfreundliche Desktop-Anwendungen.",
+            "page.indexTitle": "WPZ Studio App-Übersicht"
+          },
+          fr: {
+            "nav.home": "Accueil",
+            "nav.about": "À propos",
+            "site.description": "Bienvenue chez WPZ Studio, un studio de développement indépendant dédié à la création d'applications de bureau attrayantes et efficaces.",
+            "page.indexTitle": "Catalogue d'applications WPZ Studio"
           }
         };
 
+        function isHomePage() {
+          const p = window.location.pathname;
+          return p === "/" || p === "" || p === "/index.html" || p.endsWith("/index.html");
+        }
+
+        // Pick the language to boot with: an explicit saved choice wins, then we
+        // match the browser/OS primary language, and finally fall back to English
+        // when nothing we support is detected.
         function resolveInitialLang() {
           const savedLang = window.localStorage.getItem(storageKey);
-          if (savedLang === "zh" || savedLang === "en") {
+          if (SUPPORTED_LANGS.includes(savedLang)) {
             return savedLang;
           }
 
-          return navigator.language && navigator.language.toLowerCase().startsWith("zh")
-            ? "zh"
-            : "en";
+          const navLang = navigator.language ? navigator.language.toLowerCase() : "";
+          const primary = navLang.split("-")[0];
+          if (SUPPORTED_LANGS.includes(primary)) {
+            return primary;
+          }
+
+          return "en";
         }
 
         function applyGlobalI18n(lang) {
@@ -97,35 +141,41 @@
           });
         }
 
-        function updateButtons(lang) {
-          const buttons = document.querySelectorAll(".lang-switch-btn");
-          buttons.forEach((button) => {
-            const isActive = button.getAttribute("data-lang-option") === lang;
-            button.classList.toggle("is-active", isActive);
-            button.setAttribute("aria-pressed", isActive ? "true" : "false");
-          });
+        function langAttrFor(lang) {
+          if (lang === "zh") return "zh-CN";
+          if (lang === "ja") return "ja";
+          if (lang === "ko") return "ko";
+          if (lang === "de") return "de";
+          if (lang === "fr") return "fr";
+          return "en";
         }
 
         function setLang(lang) {
-          const nextLang = lang === "zh" ? "zh" : "en";
+          const nextLang = SUPPORTED_LANGS.includes(lang) ? lang : "en";
           window.__wpzLang = nextLang;
-          document.documentElement.lang = nextLang === "zh" ? "zh-CN" : "en";
+          document.documentElement.lang = langAttrFor(nextLang);
           window.localStorage.setItem(storageKey, nextLang);
           applyGlobalI18n(nextLang);
-          updateButtons(nextLang);
+
+          const langSelect = document.getElementById("langSelect");
+          if (langSelect) {
+            langSelect.value = nextLang;
+          }
+
+          if (isHomePage()) {
+            const dict = globalText[nextLang] || globalText.en;
+            document.title = (dict["page.indexTitle"] || "WPZ Studio") + " - WPZ Studio";
+          }
+
           window.dispatchEvent(new CustomEvent("wpz:lang-change", { detail: { lang: nextLang } }));
         }
 
-        document.addEventListener("click", (event) => {
-          const target = event.target;
-          if (!(target instanceof HTMLElement)) {
-            return;
-          }
-
-          if (target.matches(".lang-switch-btn")) {
-            setLang(target.getAttribute("data-lang-option"));
-          }
-        });
+        const langSelect = document.getElementById("langSelect");
+        if (langSelect) {
+          langSelect.addEventListener("change", (event) => {
+            setLang(event.target.value);
+          });
+        }
 
         setLang(resolveInitialLang());
       })();

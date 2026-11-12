@@ -486,7 +486,12 @@ wide: true
     const isMobile = isMobileViewport();
     const limit = isMobile ? 60 : 90;
     const fullWeight = visibleTextWeight(full.replace(/<[^>]+>/g, ""));
-    if (fullWeight <= limit) return full;
+    // Short descriptions used to be returned as bare HTML, which skipped the
+    // .app-desc-wrap inset and made their text sit flush against the card edge.
+    // Keep one structure for every card so left/right margins always match.
+    if (fullWeight <= limit) {
+      return `<div class="app-desc-wrap"><div class="app-desc">${full}</div></div>`;
+    }
     const truncated = truncateHtml(full, limit);
     return `
       <div class="app-desc-wrap" data-collapsed="true">

@@ -50,7 +50,10 @@ jobs:
           bundler-cache: false
       - name: Install Jekyll
         run: gem install github-pages -v 232 --no-document
+      # This repo intentionally has no Gemfile (GitHub Pages builds from its
+      # own pinned runtime), so `bundle exec` fails with "Could not locate
+      # Gemfile". Use the Jekyll binary installed by `gem install` above.
       - name: Build with strict Liquid
-        run: bundle exec jekyll build --config _config.yml,tools/_config.strict.yml
+        run: jekyll build --config _config.yml,tools/_config.strict.yml
         env:
           JEKYLL_ENV: production

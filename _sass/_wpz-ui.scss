@@ -127,6 +127,18 @@
   }
 }
 
+// A theme flip repaints the whole document at once. Left running, the
+// 73+ card shadow/border transitions and the two backdrop-filter layers
+// re-rasterise on every animation frame and the toggle feels laggy. The
+// `theme-switching` class is added for the one frame the palette changes,
+// so the new colours land in a single paint instead of a stuttering tween.
+html.theme-switching,
+html.theme-switching *,
+html.theme-switching *::before,
+html.theme-switching *::after {
+  transition: none !important;
+}
+
 // -------------------------------------------------------------------------
 // Base
 // -------------------------------------------------------------------------
@@ -302,6 +314,10 @@ nav {
       stroke-width: 1.8;
       stroke-linecap: round;
       stroke-linejoin: round;
+    }
+
+    &:active {
+      transform: translateY(0) scale(0.94);
     }
 
     &.is-active {

@@ -159,13 +159,48 @@
           });
         }
 
+        // Handle for the pending "transitions back on" frame, so rapid
+        // toggling cannot restore transitions before the last paint lands.
+        let themeRestoreFrame = 0;
+
         function setTheme(theme, persist) {
           const nextTheme = theme === "dark" ? "dark" : "light";
-          document.documentElement.setAttribute("data-theme", nextTheme);
+          const root = document.documentElement;
+
+          // Clicking the already-active option must not touch the DOM at all.
+          if (root.getAttribute("data-theme") === nextTheme) {
+            updateThemeButtons(nextTheme);
+            return;
+          }
+
+          // Changing a root custom property invalidates every element that
+          // inherits it. With transitions enabled here, all 73 cards would
+          // animate their shadow / border at once and the backdrop-filter
+          // layers would re-blur every frame — that is the visible stutter.
+          // Freeze transitions for the single frame the palette flips, then
+          // let the normal hover transitions resume.
+          if (themeRestoreFrame) {
+            window.cancelAnimationFrame(themeRestoreFrame);
+          }
+          root.classList.add("theme-switching");
+          root.setAttribute("data-theme", nextTheme);
           if (persist) {
             window.localStorage.setItem(themeStorageKey, nextTheme);
           }
           updateThemeButtons(nextTheme);
+
+          const restoreTransitions = function () {
+            themeRestoreFrame = 0;
+            root.classList.remove("theme-switching");
+          };
+          if (window.requestAnimationFrame) {
+            themeRestoreFrame = window.requestAnimationFrame(function () {
+              themeRestoreFrame = window.requestAnimationFrame(restoreTransitions);
+            });
+          } else {
+            restoreTransitions();
+          }
+
           window.dispatchEvent(new CustomEvent("wpz:theme-change", { detail: { theme: nextTheme } }));
         }
 

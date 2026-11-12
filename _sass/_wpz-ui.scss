@@ -3,6 +3,8 @@
 // Every colour / space / type / motion value below comes from a token.
 
 :root {
+  color-scheme: light;
+
   // Primitive brand values (never used directly by components)
   --brand-blue: #1c8cf5;
   --brand-teal: #0fb7a7;
@@ -89,28 +91,39 @@
   --z-sticky: 200;
 }
 
+// Dark palette is shared by the explicit `data-theme="dark"` choice and the
+// system preference fallback (only when the visitor has not chosen a theme).
+@mixin wpz-dark-tokens {
+  color-scheme: dark;
+  --bg: #0b1220;
+  --bg-subtle: #111c2e;
+  --surface: #142238;
+  --surface-2: #182a43;
+  --header-bg: rgba(11, 18, 32, 0.88);
+  --overlay: rgba(2, 8, 18, 0.7);
+  --border: #263852;
+  --border-strong: #3a5577;
+  --text: #e9f1fb;
+  --text-muted: #a9b9cd;
+  --text-faint: #8b9cb2;
+  --accent: #58adff;
+  --accent-hover: #8cc9ff;
+  --accent-subtle: rgba(88, 173, 255, 0.14);
+  --accent-contrast: #061426;
+  --success: #4ade80;
+  --success-subtle: rgba(74, 222, 128, 0.14);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px -12px rgba(0, 0, 0, 0.65);
+  --shadow-lg: 0 18px 38px -18px rgba(0, 0, 0, 0.75);
+}
+
+:root[data-theme="dark"] {
+  @include wpz-dark-tokens;
+}
+
 @media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0b1220;
-    --bg-subtle: #111c2e;
-    --surface: #142238;
-    --surface-2: #182a43;
-    --header-bg: rgba(11, 18, 32, 0.88);
-    --overlay: rgba(2, 8, 18, 0.7);
-    --border: #263852;
-    --border-strong: #3a5577;
-    --text: #e9f1fb;
-    --text-muted: #a9b9cd;
-    --text-faint: #8b9cb2;
-    --accent: #58adff;
-    --accent-hover: #8cc9ff;
-    --accent-subtle: rgba(88, 173, 255, 0.14);
-    --accent-contrast: #061426;
-    --success: #4ade80;
-    --success-subtle: rgba(74, 222, 128, 0.14);
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 8px 24px -12px rgba(0, 0, 0, 0.65);
-    --shadow-lg: 0 18px 38px -18px rgba(0, 0, 0, 0.75);
+  :root:not([data-theme]) {
+    @include wpz-dark-tokens;
   }
 }
 
@@ -247,6 +260,49 @@ nav {
     background: var(--surface);
     color: var(--text-muted);
     font-size: var(--text-xs);
+
+    &.is-active {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: var(--accent-contrast);
+    }
+  }
+
+  .theme-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    margin-left: var(--space-2);
+  }
+
+  .theme-switch-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-1);
+    min-width: 32px;
+    min-height: 32px;
+    padding: 0 var(--space-2);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-full);
+    background: var(--surface);
+    color: var(--text-muted);
+    font-size: var(--text-xs);
+
+    &:focus-visible {
+      outline: 2px solid var(--focus-ring);
+      outline-offset: 2px;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
 
     &.is-active {
       border-color: var(--accent);
@@ -761,6 +817,7 @@ footer {
 
 .hero-stat-chip,
 .lang-switch-btn,
+.theme-switch-btn,
 .app-cta {
   transition:
     transform var(--dur-fast) var(--ease-out),
@@ -771,6 +828,7 @@ footer {
 
 .hero-stat-chip:hover,
 .lang-switch-btn:hover,
+.theme-switch-btn:hover,
 .app-cta:hover {
   transform: translateY(-2px);
 }

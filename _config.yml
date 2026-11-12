@@ -90,3 +90,11 @@ exclude:
   - package-lock.json
   - pnpm-lock.yaml
   - pnpm-workspace.yaml
+  # `bundler-cache: true` installs gems into vendor/bundle INSIDE the repo,
+  # and Jekyll scans the whole tree as site content. Without this exclusion
+  # the build dies on the gem templates:
+  #   Error: could not read file .../vendor/bundle/.../site_template/_posts/
+  #   0000-00-00-welcome-to-jekyll.markdown.erb: Invalid date
+  - vendor
+  - .bundle
+  - .jekyll-cache

@@ -733,6 +733,83 @@ wide: true
       || /^0+(\.0+)?$/.test(text);
   }
 
+  // ---- Localized currency display -------------------------------------------
+  // Every priced app in the catalog is listed in CNY (¥). We convert to the
+  // visitor's currency using a fixed snapshot of the CNY exchange rate captured
+  // on 2026-11-12. Rates are intentionally frozen (no live lookup): 1 CNY = N
+  // units of the target currency below.
+  const EXCHANGE_RATES = {
+    CNY: 1,
+    USD: 0.149572,
+    EUR: 0.134661,
+    JPY: 23.840624,
+    KRW: 200.400802
+  };
+
+  // UI language -> display currency.
+  const LANG_CURRENCY = {
+    zh: "CNY",
+    en: "USD",
+    ja: "JPY",
+    ko: "KRW",
+    de: "EUR",
+    fr: "EUR"
+  };
+
+  // UI language -> BCP-47 locale used for currency formatting (symbol + grouping).
+  const LANG_LOCALE = {
+    zh: "zh-CN",
+    en: "en-US",
+    ja: "ja-JP",
+    ko: "ko-KR",
+    de: "de-DE",
+    fr: "fr-FR"
+  };
+
+  // Pull the numeric amount out of a raw catalog price string (e.g. "¥14.00").
+  // Returns null for free apps (no numeric price).
+  function parsePriceAmount(price) {
+    const raw = String(price || "").trim();
+    if (isFreePrice(raw)) return null;
+    const match = raw.replace(/,/g, "").match(/\d+(?:\.\d+)?/);
+    return match ? parseFloat(match[0]) : null;
+  }
+
+  // Convert a CNY amount into the target currency and format it for the active
+  // UI language via Intl.NumberFormat (handles symbol, grouping, and the fact
+  // that JPY/KRW have no minor units). Falls back to the original string when
+  // something unexpected is encountered.
+  function formatPrice(price, lang) {
+    if (isFreePrice(String(price || ""))) {
+      return t("card.free");
+    }
+
+    const amountCNY = parsePriceAmount(price);
+    if (amountCNY === null || Number.isNaN(amountCNY)) {
+      return String(price || "");
+    }
+
+    const currency = LANG_CURRENCY[lang] || "CNY";
+    const locale = LANG_LOCALE[lang] || "zh-CN";
+
+    let amount = amountCNY;
+    if (currency !== "CNY") {
+      const rate = EXCHANGE_RATES[currency];
+      if (!rate) return String(price || "");
+      amount = amountCNY * rate;
+    }
+
+    try {
+      return new Intl.NumberFormat(locale, {
+        style: "currency",
+        currency: currency,
+        maximumFractionDigits: currency === "JPY" || currency === "KRW" ? 0 : 2
+      }).format(amount);
+    } catch (error) {
+      return String(price || "");
+    }
+  }
+
   function isMobileViewport() {
     return typeof window !== "undefined" && window.matchMedia
       ? window.matchMedia("(max-width: 700px)").matches
@@ -1066,7 +1143,7 @@ wide: true
               <span class="app-category-badge">${escapeHtml(categoryLabel(app.category))}</span>
             </div>
             <div class="app-meta-row">
-              <p class="app-price ${free ? "is-free" : ""}">${escapeHtml(free ? t("card.free") : app.price)}</p>
+              <p class="app-price ${free ? "is-free" : ""}">${escapeHtml(formatPrice(app.price, currentLang))}</p>
               <span class="app-rating" aria-hidden="true">★ ★ ★ ★ ☆</span>
             </div>
             ${descHtml}

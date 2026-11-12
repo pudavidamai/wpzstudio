@@ -531,7 +531,7 @@ nav {
   }
 
   .app-meta-row {
-    margin: var(--space-2) var(--space-5) var(--space-3);
+    margin: var(--space-2) var(--space-5) var(--space-2);
   }
 
   .app-price {
@@ -549,18 +549,27 @@ nav {
   // The placeholder star row was never real review data — hide it visually.
   .app-rating { display: none; }
 
+  // One flex item owns both the description and its toggle, so the button
+  // aligns with the text above it and absorbs the card's spare height.
+  .app-desc-wrap {
+    flex: 1 1 auto;
+    margin: 0 var(--space-5);
+  }
+
   .app-desc {
-    margin-left: var(--space-5);
-    margin-right: var(--space-5);
+    margin: 0;
     color: var(--text-muted);
     font-size: var(--text-sm);
   }
 
-  .app-desc-toggle { color: var(--accent); }
+  .app-desc-toggle {
+    margin-top: var(--space-2);
+    color: var(--accent);
+  }
 
   .app-card-footer {
-    margin: var(--space-4) 0 0;
-    padding: var(--space-3) var(--space-5);
+    margin-top: auto;
+    padding: var(--space-4) var(--space-5);
     border-top: 1px solid var(--border);
     background: var(--surface-2);
   }

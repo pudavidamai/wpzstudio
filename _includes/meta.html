@@ -19,6 +19,11 @@
     <link rel="alternate icon" type="image/x-icon" href="{{ '/images/favicon.ico' | relative_url }}" />
     <link rel="apple-touch-icon" href="{{ '/images/wpz-mark-256.png' | relative_url }}" />
 
+    <!-- Social previews use the same WPZ Studio mark as the site and favicon. -->
+    <meta property="og:image" content="{{ '/images/wpz-mark-512.png' | absolute_url }}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="{{ '/images/wpz-mark-512.png' | absolute_url }}" />
+
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="twitter:title" content="{{ page.title }}" />

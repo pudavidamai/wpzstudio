@@ -50,8 +50,9 @@ apps-seed-pending.txt ──add-apps.yml──► commits to master ──►  r
   catalog per market (CN / US / HK) from the Store's publisher-search endpoint,
   then gate every id on DisplayCatalog `PublisherId == 26137630`.
 - `tools/scripts/build-seed-from-publisher.mjs` — rebuild the seed from that
-  dump: union with the current seed, dedupe by normalized title (newest
-  release wins), copy zh/en descriptions and the CN price, recover the icon
+  dump: union with the current seed, dedupe by product identity (same
+  normalized title AND package family name; newest release wins), copy zh/en
+  descriptions and the CN price, recover the icon
   from DisplayCatalog for products the storefront listing omits.
 - `tools/scripts/doctor.mjs` — catalog integrity gate (10 checks).
 - `tools/scripts/verify-render.mjs` — proves the Liquid loop + front-end JS
@@ -117,8 +118,12 @@ After a sync:
 7. Preserve the bilingual pattern (`description` zh, `descriptionEn` en).
 8. Keep product names aligned with the live listing unless a documented
    localization choice says otherwise.
-9. Duplicate normalized titles mean the same app under two productIds — keep
-   the newest release, drop the older id.
+9. Only collapse entries that share a normalized title AND the same package
+   family name. Different productIds with different package family names are
+   distinct live products even if their store copy is identical — keep them
+   all (e.g. an app re-published under a new identity while the old listing
+   stays live). When they are true re-listings of the same app, keep the
+   newest release and drop the older id.
 10. A product missing from the storefront listing is NOT dead: free/trial-only
     listings are omitted there. Keep it and recover its icon from DisplayCatalog.
 11. A sync commit touches only `_data/*` (and `apps-seed.json` /

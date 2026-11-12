@@ -129,11 +129,22 @@ for (const s of oldSeed) {
 const displayOf = (id) => CN[id] || US[id] || HK[id] || null
 const titleOf = (id) => seedById.get(id)?.name || displayOf(id)?.title || id
 
-// ---- 2. dedup by normalized title, keep the newest release --------------
+// ---- 2. dedup by product identity, keep the newest release --------------
+// productId is the canonical identity. Two distinct productIds with
+// different package family names are two different published products even
+// when their titles and descriptions match (an app re-published under a new
+// identity while the old listing stays live and priced). Collapse only when
+// both the normalized title AND a non-empty package family name match —
+// those are re-listings of the same app surfaced across markets.
 const clusters = new Map()
 for (const c of candidates.values()) {
-  const key = norm(titleOf(c.id))
-  if (!key) continue
+  const pfns = (displayOf(c.id)?.packageFamilyNames || [])
+    .map((p) => String(p).toLowerCase())
+    .sort()
+  if (!pfns.length) continue // free/trial-only listings: keep individually
+  const titleKey = norm(titleOf(c.id))
+  if (!titleKey) continue
+  const key = `${titleKey}|${pfns.join(',')}`
   if (!clusters.has(key)) clusters.set(key, [])
   clusters.get(key).push(c.id)
 }
@@ -240,7 +251,7 @@ fs.mkdirSync(path.dirname(path.resolve(args.out)), { recursive: true })
 fs.writeFileSync(args.out, JSON.stringify(out, null, 2), 'utf8')
 
 console.log(`[build-seed] entries: ${oldSeed.length} -> ${out.length}`)
-console.log(`[build-seed] dropped duplicate-title ids: ${dropped.length}`)
+console.log(`[build-seed] dropped duplicate-identity ids: ${dropped.length}`)
 for (const d of dropped) console.log(`  - ${d.title} (${d.id}) kept ${d.kept}`)
 console.log(`[build-seed] new/price-changed: ${changes.length}`)
 for (const c of changes) console.log(`  ${c}`)

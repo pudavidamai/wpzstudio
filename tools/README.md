@@ -72,9 +72,10 @@ npm run sync              # -> fetch-catalog.mjs + sync-report
 
 `build-seed-from-publisher.mjs` unions the listing with the current seed, so a
 product the storefront listing omits (free / trial-only listings) is kept
-rather than dropped. Duplicate normalized titles are collapsed to the newest
-release, and the icon for a listing-omitted product is recovered from
-DisplayCatalog.
+rather than dropped. Only re-listings of the same app (same normalized title
+AND package family name) are collapsed to the newest release — distinct
+productIds with different package family names all stay in the catalog. The
+icon for a listing-omitted product is recovered from DisplayCatalog.
 
 To add a single app by hand instead:
 

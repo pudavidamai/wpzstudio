@@ -37,12 +37,16 @@ freshly-written `_data/wpz_apps.json` against the committed copy (`git HEAD`)
 and prints an at-a-glance diff:
 
 ```
-→ 54→55   (+1 new, -0 removed, 2 changed, 0 dead)
+→ 72→73   (+1 new, -0 removed, 0 changed, 0 dead)
 New products:
-  + Quick Paste Pro (9N55B01777XD)  [实用程序与工具]  免费下载
+  + MeshForge (9N85SFLW79JF)  [开发人员工具]  ¥18.00
 Changed products:
-  ~ AirBridge (9PF1C6SGDNJ4): price "HK$14.00" → "HK$15.00"
+  ~ AirBridge (9PF1C6SGDNJ4): price "¥14.00" → "¥15.00"
 ```
+
+> Prices come from the **CN** storefront and are rendered verbatim. The
+> labels are `¥` for CN and `HK$` for HK; the old bug was shipping CN
+> amounts under an `HK$` label.
 
 Use that output to decide whether the sync is clean, and to quote the real
 numbers in the commit message. `--json` also writes the structured diff to

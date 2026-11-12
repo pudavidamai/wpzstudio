@@ -103,7 +103,50 @@ check('no duplicate productId / name / slug', () => {
   return 'unique'
 })
 
-// 3. required fields
+// 3. no two listings are the same app published twice
+// The store keeps a listing alive when an app is re-published under a new
+// identity. Those pairs share a title AND a description but have different
+// productIds and package family names, so they are legitimately two
+// products. What is NOT legitimate is the same package family (or the same
+// title + description) appearing under two productIds, which is a stale
+// duplicate of one app.
+//
+// The seed carries no packageFamilyName (it is a minimal registry), so the
+// package-family half of this check reads _data, which is the normalized
+// DisplayCatalog output.
+check('no duplicated app identity (title+description or package family)', () => {
+  const byPfn = new Map()
+  const byContent = new Map()
+  for (const e of data) {
+    const pfn = String(e.packageFamilyName || '').trim().toLowerCase()
+    if (pfn) {
+      if (!byPfn.has(pfn)) byPfn.set(pfn, [])
+      byPfn.get(pfn).push(e.productId)
+    }
+    const title = String(e.name || '').trim().toLowerCase()
+    const desc = String(e.description || '').trim().toLowerCase()
+    if (title && desc) {
+      const key = `${title}::${desc}`
+      if (!byContent.has(key)) byContent.set(key, [])
+      byContent.get(key).push(e.productId)
+    }
+  }
+  const dupPfn = [...byPfn.entries()].filter(([, ids]) => ids.length > 1)
+  const dupContent = [...byContent.entries()].filter(([, ids]) => ids.length > 1)
+  if (dupPfn.length || dupContent.length) {
+    const parts = []
+    if (dupPfn.length) {
+      parts.push(`same package family: ${dupPfn.map(([p, ids]) => `${p} -> ${ids.join('/')}`).join('; ')}`)
+    }
+    if (dupContent.length) {
+      parts.push(`same title+description: ${dupContent.map(([, ids]) => ids.join('/')).join('; ')}`)
+    }
+    throw new Error(parts.join(' | '))
+  }
+  return `${data.length} distinct apps`
+})
+
+// 4. required fields
 check('every entry has the required fields', () => {
   const required = ['productId', 'name', 'category', 'price', 'description', 'descriptionEn', 'fallbackCover']
   const missing = []

@@ -44,7 +44,7 @@ apps-seed.json  ──fetch-catalog.mjs (v7.0 DisplayCatalog)──►  _data/wp
 apps-seed-pending.txt ──add-apps.yml──► commits to master ──►  rendered site
 ```
 
-- `tools/apps-seed.json` — productId registry (the set to sync). ~72 entries.
+- `tools/apps-seed.json` — productId registry (the set to sync). ~73 entries.
 - `tools/fetch-catalog.mjs` — regenerate `_data/wpz_apps.{json,yml}` from seed + DisplayCatalog.
 - `tools/scripts/fetch-publisher-markets.mjs` — enumerate the publisher's full
   catalog per market (CN / US / HK) from the Store's publisher-search endpoint,

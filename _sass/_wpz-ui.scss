@@ -61,8 +61,11 @@
   --font-display: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-  --text-hero: clamp(2.125rem, 1.5rem + 3vw, 3.75rem);
-  --text-h1: clamp(1.5rem, 1.25rem + 1vw, 2.25rem);
+  // NOTE: libsass (GitHub Pages) cannot evaluate mixed-unit arithmetic such
+  // as `1rem + 3vw` inside clamp(); use a single fluid unit per argument.
+  --text-hero: clamp(2.125rem, 4vw, 3.75rem);
+  --text-h1: clamp(1.5rem, 3vw, 2.25rem);
+  --hero-pad: clamp(24px, 4vw, 56px);
   --text-card: 1.0625rem;
   --text-body: 1rem;
   --text-sm: 0.875rem;
@@ -123,14 +126,15 @@ body {
   line-height: var(--leading-normal);
 }
 
+// calc() (not min()): libsass cannot evaluate `100% - 2rem` inside min().
 .container {
-  width: min(100% - 2rem, 760px);
-  max-width: none;
+  width: calc(100% - 2rem);
+  max-width: 760px;
   padding: 0;
 }
 
 .container-wide {
-  width: min(100% - 2rem, 1200px);
+  max-width: 1200px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -196,7 +200,7 @@ a {
 .site-info { min-width: 0; }
 
 .site-name {
-  font-size: clamp(1.125rem, 1rem + 0.5vw, 1.5rem);
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.15;
@@ -257,7 +261,7 @@ nav {
 .home-hero {
   isolation: isolate;
   margin-bottom: var(--space-7);
-  padding: clamp(var(--space-6), 4vw, var(--space-10));
+  padding: var(--hero-pad);
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: var(--radius-lg);
   background:

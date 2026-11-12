@@ -280,21 +280,16 @@ nav {
     }
   }
 
-  .theme-switch {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-1);
-    margin-left: var(--space-2);
-  }
-
-  .theme-switch-btn {
+  // Single icon toggle (dark-light-theme skill): the moon is shown in light
+  // mode ("go dark"), the sun in dark mode ("go light"). theme.js keeps the
+  // aria-label / aria-pressed / title in sync and in both languages.
+  .theme-toggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: var(--space-1);
-    min-width: 32px;
-    min-height: 32px;
-    padding: 0 var(--space-2);
+    width: 34px;
+    height: 34px;
+    padding: 0;
     border: 1px solid var(--border-strong);
     border-radius: var(--radius-full);
     background: var(--surface);
@@ -306,26 +301,24 @@ nav {
       outline-offset: 2px;
     }
 
+    // Only one icon is visible; the switch is the icon itself.
+    .theme-icon-sun { display: none; }
+
     svg {
-      width: 16px;
-      height: 16px;
+      width: 17px;
+      height: 17px;
       fill: none;
       stroke: currentColor;
       stroke-width: 1.8;
       stroke-linecap: round;
       stroke-linejoin: round;
     }
-
-    &:active {
-      transform: translateY(0) scale(0.94);
-    }
-
-    &.is-active {
-      border-color: var(--accent);
-      background: var(--accent);
-      color: var(--accent-contrast);
-    }
   }
+}
+
+:root[data-theme="dark"] nav .theme-toggle {
+  .theme-icon-moon { display: none; }
+  .theme-icon-sun { display: block; }
 }
 
 // -------------------------------------------------------------------------
@@ -833,7 +826,7 @@ footer {
 
 .hero-stat-chip,
 .lang-switch-btn,
-.theme-switch-btn,
+.theme-toggle,
 .app-cta {
   transition:
     transform var(--dur-fast) var(--ease-out),
@@ -844,9 +837,13 @@ footer {
 
 .hero-stat-chip:hover,
 .lang-switch-btn:hover,
-.theme-switch-btn:hover,
+.theme-toggle:hover,
 .app-cta:hover {
   transform: translateY(-2px);
+}
+
+.theme-toggle:active {
+  transform: translateY(0) scale(0.94);
 }
 
 .app-card {
@@ -899,4 +896,24 @@ footer {
     animation: none !important;
     transform: none !important;
   }
+}
+
+// dark-light-theme skill: printed pages stay light even in dark mode.
+@media print {
+  :root[data-theme="dark"] {
+    color-scheme: light;
+    --bg: #ffffff;
+    --bg-subtle: #f4f7fb;
+    --surface: #ffffff;
+    --surface-2: #f9fbfe;
+    --border: #dfe7f1;
+    --border-strong: #c3d1e3;
+    --text: #0a1729;
+    --text-muted: #475569;
+    --text-faint: #64748b;
+    --accent: #126fe0;
+    --accent-subtle: #e8f2ff;
+  }
+
+  .theme-toggle { display: none !important; }
 }

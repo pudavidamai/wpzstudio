@@ -14,25 +14,25 @@
   publisherId: "26137630"
   packageFamilyName: "10278WPZStudio.AirBridge_v810h3yyd8p76"
   iconUrl: "https://store-images.s-microsoft.com/image/apps.33931.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.4580e4e9-febd-4284-9e1f-ae7f60584a41"
-  bannerUrl: "https://store-images.s-microsoft.com/image/apps.16377.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.c3d30178-c723-466f-b0f3-c3b99037aca4"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.45761.14213993284764627.8029acfd-8f08-49b7-9528-49e86aa4cb7e.8b7d6b76-eb0c-4c82-8e64-927070b5025d"
   heroUrl: "https://store-images.s-microsoft.com/image/apps.11228.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.1cddee8c-2ac5-4290-9b84-dbc8262f95fe"
   images:
     - purpose: "Logo"
       width: 50
       height: 50
-      url: "https://store-images.s-microsoft.com/image/apps.56043.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.e3c52572-54a9-4cb5-a3ec-e77dca0332e8"
+      url: "https://store-images.s-microsoft.com/image/apps.26668.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.911d3b94-ee5c-4c46-a825-b4e8b75d89f4"
     - purpose: "Tile"
-      width: 300
-      height: 300
-      url: "https://store-images.s-microsoft.com/image/apps.55222.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.b1ee61d5-7b6d-46c8-b309-e539cfc911e3"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.39823.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.4c271a1c-f5e9-439f-a8a9-fbf0f9e77c95"
     - purpose: "Tile"
       width: 44
       height: 44
-      url: "https://store-images.s-microsoft.com/image/apps.44171.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.2aa5164d-1810-4edf-8cc9-7962147b805b"
+      url: "https://store-images.s-microsoft.com/image/apps.42488.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.bbfc9656-f972-4eab-812c-e7c52aec3849"
     - purpose: "Tile"
-      width: 620
-      height: 300
-      url: "https://store-images.s-microsoft.com/image/apps.16377.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.c3d30178-c723-466f-b0f3-c3b99037aca4"
+      width: 310
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.45761.14213993284764627.8029acfd-8f08-49b7-9528-49e86aa4cb7e.8b7d6b76-eb0c-4c82-8e64-927070b5025d"
     - purpose: "Screenshot"
       width: 1036
       height: 1213
@@ -897,51 +897,47 @@
   category: "开发人员工具"
   price: "¥7.00"
   description: |
-    EventLog Analyzer is a powerful, intelligent Windows Event Log analysis tool designed to help IT professionals, system administrators, and developers quickly identify, analyze, and troubleshoot system issues. With advanced pattern recognition, interactive visualizations, and multi-language support, it transforms complex event logs into actionable insights.
+    EventLog Analyzer 是一款 Windows 桌面端的事件日志分析工具，帮助系统管理员、运维人员与开发者把分散、难读的 Windows 事件日志转化为可行动的排查线索。它可以直接扫描本机系统、应用程序和安全日志，也可以导入 `.evtx` / `.evt` 文件或 CSV 导出文件，通过多标签工作区、统计概览、智能洞察、时间线与提供者图表快速定位高频错误和异常模式。全部分析在本地完成，日志内容不会上传到任何服务器。
   descriptionEn: |
     EventLog Analyzer is a powerful, intelligent Windows Event Log analysis tool designed to help IT professionals, system administrators, and developers quickly identify, analyze, and troubleshoot system issues. With advanced pattern recognition, interactive visualizations, and multi-language support, it transforms complex event logs into actionable insights.
   publisher: "WPZStudio"
-  developer: "wuping2024@msn.com"
+  developer: "wuping2004@msn.com"
   publisherWebsiteUri: "https://pudavidamai.github.io/wpzstudio/"
   publisherId: "26137630"
   packageFamilyName: "10278WPZStudio.EventLogAnalyzer_v810h3yyd8p76"
   subCategory: "Utilities"
   iconUrl: "https://store-images.s-microsoft.com/image/apps.28062.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.870c7b63-e87b-40d9-b4f5-802bdce12f20"
-  bannerUrl: "https://store-images.s-microsoft.com/image/apps.16377.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.3265f7f5-db85-4dfb-b5f9-2f9a68809da0"
-  heroUrl: "https://store-images.s-microsoft.com/image/apps.13800.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.924ad994-6959-4c90-b3e7-ad5e4d08e593"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.28062.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.870c7b63-e87b-40d9-b4f5-802bdce12f20"
+  heroUrl: "https://store-images.s-microsoft.com/image/apps.30726.14150480481743391.d3f90f89-cd17-4727-8f59-ba54bc4a02a9.425fe626-2f2c-4d74-86e5-432f4f5906a2"
   images:
     - purpose: "Logo"
-      width: 50
-      height: 50
-      url: "https://store-images.s-microsoft.com/image/apps.56043.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.e0ea7fd5-0ccc-481b-abf0-b8ff73d6d425"
-    - purpose: "Tile"
       width: 300
       height: 300
-      url: "https://store-images.s-microsoft.com/image/apps.55222.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.f7c6cc6e-0861-4596-bef7-b271d83c0f5c"
-    - purpose: "Tile"
-      width: 44
-      height: 44
-      url: "https://store-images.s-microsoft.com/image/apps.44171.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.fe13a9b0-1fae-45f9-b5d2-8f3d52da0750"
-    - purpose: "Tile"
-      width: 620
-      height: 300
-      url: "https://store-images.s-microsoft.com/image/apps.16377.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.3265f7f5-db85-4dfb-b5f9-2f9a68809da0"
+      url: "https://store-images.s-microsoft.com/image/apps.28062.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.870c7b63-e87b-40d9-b4f5-802bdce12f20"
+    - purpose: "Logo"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.19271.14150480481743391.d3f90f89-cd17-4727-8f59-ba54bc4a02a9.7010f752-bc97-4165-926c-5a24054e9d40"
+    - purpose: "Logo"
+      width: 150
+      height: 150
+      url: "https://store-images.s-microsoft.com/image/apps.42934.14150480481743391.d3f90f89-cd17-4727-8f59-ba54bc4a02a9.9e7f032c-e386-41f5-87ed-57a60e232b10"
     - purpose: "Screenshot"
-      width: 1920
-      height: 1033
-      url: "https://store-images.s-microsoft.com/image/apps.13800.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.924ad994-6959-4c90-b3e7-ad5e4d08e593"
+      width: 2238
+      height: 1325
+      url: "https://store-images.s-microsoft.com/image/apps.30726.14150480481743391.d3f90f89-cd17-4727-8f59-ba54bc4a02a9.425fe626-2f2c-4d74-86e5-432f4f5906a2"
     - purpose: "Screenshot"
-      width: 1920
-      height: 1036
-      url: "https://store-images.s-microsoft.com/image/apps.43343.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.e77f5f8d-f506-4445-93d0-a7ee377e0135"
+      width: 2238
+      height: 1328
+      url: "https://store-images.s-microsoft.com/image/apps.42105.14150480481743391.d3f90f89-cd17-4727-8f59-ba54bc4a02a9.f81fe41f-468d-4a52-b9a3-ada47b416d64"
     - purpose: "Screenshot"
-      width: 1912
-      height: 1032
-      url: "https://store-images.s-microsoft.com/image/apps.61469.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.6dfc7b2b-3e0a-46f5-bbb7-825dbeeb5c3f"
+      width: 1223
+      height: 1199
+      url: "https://store-images.s-microsoft.com/image/apps.41476.14150480481743391.d3f90f89-cd17-4727-8f59-ba54bc4a02a9.5af2a6ad-771a-423c-9d4b-51471798b2a3"
     - purpose: "Screenshot"
-      width: 1916
-      height: 1030
-      url: "https://store-images.s-microsoft.com/image/apps.17790.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.d8df7680-6627-46f3-9e4a-ad26c910d4f4"
+      width: 2238
+      height: 1322
+      url: "https://store-images.s-microsoft.com/image/apps.6403.14150480481743391.d3f90f89-cd17-4727-8f59-ba54bc4a02a9.d2703d90-c776-4da8-8df7-47c702521069"
 
 - productId: "9NR1ML5GR6VF"
   slug: "expression-fighter"
@@ -1100,7 +1096,7 @@
   packageFamilyName: "10278WPZStudio.FileZen_v810h3yyd8p76"
   subCategory: "File managers"
   iconUrl: "https://store-images.s-microsoft.com/image/apps.11989.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.22ff04d1-b378-4476-94b9-b93dfdcea8f0"
-  bannerUrl: "https://store-images.s-microsoft.com/image/apps.11989.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.22ff04d1-b378-4476-94b9-b93dfdcea8f0"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.2329.14310683400824225.13dd415f-36ba-4b71-bd33-bfa4261204ab.84dfbfe8-3f29-42bd-8763-aa63b75fd8ee"
   heroUrl: "https://store-images.s-microsoft.com/image/apps.12030.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.0f280a5e-2646-41a6-99a9-dde883b6fede"
   images:
     - purpose: "Logo"
@@ -1116,9 +1112,9 @@
       height: 44
       url: "https://store-images.s-microsoft.com/image/apps.33002.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.8e9d1828-57af-4708-9ce8-e5a6548a0b0a"
     - purpose: "Tile"
-      width: 150
+      width: 310
       height: 150
-      url: "https://store-images.s-microsoft.com/image/apps.52997.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.3372d17c-345a-48e3-9269-01cd3ffc04d8"
+      url: "https://store-images.s-microsoft.com/image/apps.2329.14310683400824225.13dd415f-36ba-4b71-bd33-bfa4261204ab.84dfbfe8-3f29-42bd-8763-aa63b75fd8ee"
     - purpose: "Screenshot"
       width: 1920
       height: 1038
@@ -1523,25 +1519,33 @@
   packageFamilyName: "10278WPZStudio.IISLogAnalyzer_v810h3yyd8p76"
   subCategory: "File managers"
   iconUrl: "https://store-images.s-microsoft.com/image/apps.21902.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.6a146b07-6b35-4fc5-811d-cf3c2f5d85a9"
-  bannerUrl: "https://store-images.s-microsoft.com/image/apps.64505.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.efe68786-1d98-404c-bd2f-0093978035d4"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.45723.13808261622744260.9d847916-1adc-4ff4-8dda-e3bd5d4b903a.5e28775e-cf80-415c-8f79-d44c4b63f9f7"
   heroUrl: "https://store-images.s-microsoft.com/image/apps.58621.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.1a5f0a9e-cf54-4fc0-a5fd-d771895966b4"
   images:
     - purpose: "Logo"
-      width: 150
-      height: 150
-      url: "https://store-images.s-microsoft.com/image/apps.55301.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.1b6c7e14-e11c-40c1-8a25-d1dd421099ae"
+      width: 50
+      height: 50
+      url: "https://store-images.s-microsoft.com/image/apps.42980.13808261622744260.9d847916-1adc-4ff4-8dda-e3bd5d4b903a.e8c198fe-54dd-49ad-a597-e4f4f491173d"
     - purpose: "Tile"
       width: 150
       height: 150
-      url: "https://store-images.s-microsoft.com/image/apps.55301.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.1b6c7e14-e11c-40c1-8a25-d1dd421099ae"
+      url: "https://store-images.s-microsoft.com/image/apps.17172.13808261622744260.9d847916-1adc-4ff4-8dda-e3bd5d4b903a.64eed5d9-7952-4ead-96e4-1c076279d004"
     - purpose: "Tile"
       width: 44
       height: 44
-      url: "https://store-images.s-microsoft.com/image/apps.62867.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.07aa7e8f-d9e3-4693-ae2e-be09c660f463"
+      url: "https://store-images.s-microsoft.com/image/apps.63561.13808261622744260.9d847916-1adc-4ff4-8dda-e3bd5d4b903a.d6f44248-83db-4b9b-bd32-479d3bc5dd30"
+    - purpose: "Tile"
+      width: 310
+      height: 310
+      url: "https://store-images.s-microsoft.com/image/apps.45723.13808261622744260.9d847916-1adc-4ff4-8dda-e3bd5d4b903a.5e28775e-cf80-415c-8f79-d44c4b63f9f7"
+    - purpose: "Tile"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.38078.13808261622744260.9d847916-1adc-4ff4-8dda-e3bd5d4b903a.8039334c-c264-4cd0-84f7-7e1175f4209c"
     - purpose: "Tile"
       width: 310
       height: 150
-      url: "https://store-images.s-microsoft.com/image/apps.64505.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.efe68786-1d98-404c-bd2f-0093978035d4"
+      url: "https://store-images.s-microsoft.com/image/apps.29581.13808261622744260.9d847916-1adc-4ff4-8dda-e3bd5d4b903a.56f46159-5531-4a56-af76-b2edd381b6ce"
     - purpose: "Screenshot"
       width: 1678
       height: 946
@@ -1550,14 +1554,6 @@
       width: 1857
       height: 1025
       url: "https://store-images.s-microsoft.com/image/apps.55106.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.5521580a-fe71-4a28-a858-440fddd086ec"
-    - purpose: "Screenshot"
-      width: 1861
-      height: 1026
-      url: "https://store-images.s-microsoft.com/image/apps.50813.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.d17abec1-a805-4fd8-8c6b-7e4e10515e42"
-    - purpose: "Screenshot"
-      width: 1847
-      height: 1027
-      url: "https://store-images.s-microsoft.com/image/apps.19337.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.11ecf59e-8628-4e7a-90bb-6f280e05bf38"
 
 - productId: "9PJHFDPPH154"
   slug: "image-utility"
@@ -3058,7 +3054,7 @@
   publisherId: "26137630"
   packageFamilyName: "10278WPZStudio.TerminalX_v810h3yyd8p76"
   iconUrl: "https://store-images.s-microsoft.com/image/apps.21979.14214543539071194.2dc129c3-1de2-404d-b1a1-7cb664058c36.f47710ac-ef16-4c3a-b154-e1bc6f432687"
-  bannerUrl: "https://store-images.s-microsoft.com/image/apps.52032.14214543539071194.2dc129c3-1de2-404d-b1a1-7cb664058c36.dc3b6151-f2fb-4c27-97b6-03bdfff63836"
+  bannerUrl: "https://store-images.s-microsoft.com/image/apps.64041.14214543539071194.0efccdde-f4be-48b0-9783-9a6aa068885a.32adc06e-2700-4dcb-89a9-6f9260c29fe1"
   heroUrl: "https://store-images.s-microsoft.com/image/apps.37727.14214543539071194.1895c074-54c0-4b24-a9a2-ff52ca2c9e0d.54c7c6c5-4144-4716-bdb6-d3d307410e7f"
   images:
     - purpose: "Logo"
@@ -3075,6 +3071,14 @@
       url: "https://store-images.s-microsoft.com/image/apps.14969.14214543539071194.d95b9c86-ae24-4cf2-8f80-38436743c49a.6b9966d6-aa3d-462c-bcbc-419b02425b36"
     - purpose: "Tile"
       width: 310
+      height: 310
+      url: "https://store-images.s-microsoft.com/image/apps.64041.14214543539071194.0efccdde-f4be-48b0-9783-9a6aa068885a.32adc06e-2700-4dcb-89a9-6f9260c29fe1"
+    - purpose: "Tile"
+      width: 71
+      height: 71
+      url: "https://store-images.s-microsoft.com/image/apps.23103.14214543539071194.0efccdde-f4be-48b0-9783-9a6aa068885a.f7aa8f5c-4164-4b6d-b7d9-8457013dad4b"
+    - purpose: "Tile"
+      width: 310
       height: 150
       url: "https://store-images.s-microsoft.com/image/apps.52032.14214543539071194.2dc129c3-1de2-404d-b1a1-7cb664058c36.dc3b6151-f2fb-4c27-97b6-03bdfff63836"
     - purpose: "Logo"
@@ -3085,14 +3089,6 @@
       width: 1512
       height: 1105
       url: "https://store-images.s-microsoft.com/image/apps.1246.14214543539071194.2dc129c3-1de2-404d-b1a1-7cb664058c36.f08ca7cf-2689-427c-8147-d47f8528661b"
-    - purpose: "Screenshot"
-      width: 2240
-      height: 1294
-      url: "https://store-images.s-microsoft.com/image/apps.37727.14214543539071194.1895c074-54c0-4b24-a9a2-ff52ca2c9e0d.54c7c6c5-4144-4716-bdb6-d3d307410e7f"
-    - purpose: "Screenshot"
-      width: 2240
-      height: 1294
-      url: "https://store-images.s-microsoft.com/image/apps.25510.14214543539071194.1895c074-54c0-4b24-a9a2-ff52ca2c9e0d.3c0759fa-8fff-44fe-9b71-a6d46ccddf9a"
 
 - productId: "9PNN03SK42B3"
   slug: "terraform-ops"

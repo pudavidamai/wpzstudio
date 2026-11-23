@@ -17,32 +17,32 @@
     "publisherId": "26137630",
     "packageFamilyName": "10278WPZStudio.AirBridge_v810h3yyd8p76",
     "iconUrl": "https://store-images.s-microsoft.com/image/apps.33931.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.4580e4e9-febd-4284-9e1f-ae7f60584a41",
-    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.16377.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.c3d30178-c723-466f-b0f3-c3b99037aca4",
+    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.45761.14213993284764627.8029acfd-8f08-49b7-9528-49e86aa4cb7e.8b7d6b76-eb0c-4c82-8e64-927070b5025d",
     "heroUrl": "https://store-images.s-microsoft.com/image/apps.11228.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.1cddee8c-2ac5-4290-9b84-dbc8262f95fe",
     "images": [
       {
         "purpose": "Logo",
         "width": 50,
         "height": 50,
-        "url": "https://store-images.s-microsoft.com/image/apps.56043.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.e3c52572-54a9-4cb5-a3ec-e77dca0332e8"
+        "url": "https://store-images.s-microsoft.com/image/apps.26668.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.911d3b94-ee5c-4c46-a825-b4e8b75d89f4"
       },
       {
         "purpose": "Tile",
-        "width": 300,
-        "height": 300,
-        "url": "https://store-images.s-microsoft.com/image/apps.55222.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.b1ee61d5-7b6d-46c8-b309-e539cfc911e3"
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.39823.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.4c271a1c-f5e9-439f-a8a9-fbf0f9e77c95"
       },
       {
         "purpose": "Tile",
         "width": 44,
         "height": 44,
-        "url": "https://store-images.s-microsoft.com/image/apps.44171.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.2aa5164d-1810-4edf-8cc9-7962147b805b"
+        "url": "https://store-images.s-microsoft.com/image/apps.42488.14213993284764627.dd1dd217-da7b-45f7-8714-1911020850f2.bbfc9656-f972-4eab-812c-e7c52aec3849"
       },
       {
         "purpose": "Tile",
-        "width": 620,
-        "height": 300,
-        "url": "https://store-images.s-microsoft.com/image/apps.16377.14213993284764627.b2035eb8-3d49-4f09-8927-226f2ba7810e.c3d30178-c723-466f-b0f3-c3b99037aca4"
+        "width": 310,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.45761.14213993284764627.8029acfd-8f08-49b7-9528-49e86aa4cb7e.8b7d6b76-eb0c-4c82-8e64-927070b5025d"
       },
       {
         "purpose": "Screenshot",
@@ -503,7 +503,7 @@
     "category": "高效工作",
     "subCategory": null,
     "price": "¥8.00",
-    "description": "DataKitPro 是一款面向 Windows 的轻量级本地数据处理与分析工具，支持对常见结构化文件进行读取、检查、转换与导出。它适合日常办公数据处理、开发调试和批量数据整理场景，强调“本地运行、快速上手、格式兼容”",
+    "description": "**DataKitPro** 是一款面向 Windows 的本地离线数据表比对工具，附带 18 种格式化与编解码小工具。把两个 CSV / Excel / JSON / XML 文件或两段粘贴的表格文本放进来，按关键列找出新增、删除、修改与相同的行，并导出可交付的差异报告。全部处理在本机完成，文件不上传、不写入磁盘。",
     "descriptionEn": "DataKitPro is a lightweight Windows desktop app for local data processing and analysis. It helps users read, inspect, normalize, and export common structured data formats with a fast, practical workflow.",
     "shortDescription": null,
     "publisher": "WPZStudio",
@@ -514,7 +514,7 @@
     "packageFamilyName": "10278WPZStudio.DataKitPro_v810h3yyd8p76",
     "iconUrl": "https://store-images.s-microsoft.com/image/apps.65448.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.d3e7b4b2-1565-4db3-a314-1ce7db5cfca6",
     "bannerUrl": "https://store-images.s-microsoft.com/image/apps.65448.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.d3e7b4b2-1565-4db3-a314-1ce7db5cfca6",
-    "heroUrl": "https://store-images.s-microsoft.com/image/apps.19311.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.39477094-cade-4de0-9d31-7a15b6331a77",
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.46687.13721510430646582.c5c80cb5-e309-40e8-92cd-481f389ec659.bbc7d081-00ee-4fc4-84b2-704538b238d3",
     "images": [
       {
         "purpose": "Logo",
@@ -536,27 +536,27 @@
       },
       {
         "purpose": "Screenshot",
-        "width": 2240,
-        "height": 1294,
-        "url": "https://store-images.s-microsoft.com/image/apps.19311.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.39477094-cade-4de0-9d31-7a15b6331a77"
+        "width": 2238,
+        "height": 1322,
+        "url": "https://store-images.s-microsoft.com/image/apps.46687.13721510430646582.c5c80cb5-e309-40e8-92cd-481f389ec659.bbc7d081-00ee-4fc4-84b2-704538b238d3"
       },
       {
         "purpose": "Screenshot",
-        "width": 2240,
-        "height": 1294,
-        "url": "https://store-images.s-microsoft.com/image/apps.64638.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.ea29564d-1f08-42e3-ab11-a7128ff5edbd"
+        "width": 2238,
+        "height": 1322,
+        "url": "https://store-images.s-microsoft.com/image/apps.4055.13721510430646582.c5c80cb5-e309-40e8-92cd-481f389ec659.ef946c06-45c5-4d1d-a6cc-8177ba31f26b"
       },
       {
         "purpose": "Screenshot",
-        "width": 2240,
-        "height": 1294,
-        "url": "https://store-images.s-microsoft.com/image/apps.50705.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.55f4f726-8886-45bc-b9f5-cc725f2bfbcc"
+        "width": 2210,
+        "height": 1327,
+        "url": "https://store-images.s-microsoft.com/image/apps.43026.13721510430646582.c5c80cb5-e309-40e8-92cd-481f389ec659.314a8399-978e-4acc-b1fc-e6f1357f998f"
       },
       {
         "purpose": "Screenshot",
-        "width": 2240,
-        "height": 1294,
-        "url": "https://store-images.s-microsoft.com/image/apps.36472.13721510430646582.44dcdf5c-5ec7-4cdd-9029-89cf499e37e8.56a7b217-dd12-4c40-8ff4-bff11f6f79e4"
+        "width": 2238,
+        "height": 1325,
+        "url": "https://store-images.s-microsoft.com/image/apps.21022.13721510430646582.c5c80cb5-e309-40e8-92cd-481f389ec659.5d56bacc-fc8d-4d64-97a2-dc2ba7df215c"
       }
     ]
   },
@@ -1200,72 +1200,60 @@
     "category": "开发人员工具",
     "subCategory": "Utilities",
     "price": "¥7.00",
-    "description": "EventLog Analyzer is a powerful, intelligent Windows Event Log analysis tool designed to help IT professionals, system administrators, and developers quickly identify, analyze, and troubleshoot system issues. With advanced pattern recognition, interactive visualizations, and multi-language support, it transforms complex event logs into actionable insights.",
+    "description": "EventLog Analyzer 是一款 Windows 桌面端的事件日志分析工具，帮助系统管理员、运维人员与开发者把分散、难读的 Windows 事件日志转化为可行动的排查线索。它可以直接扫描本机系统、应用程序和安全日志，也可以导入 `.evtx` / `.evt` 文件或 CSV 导出文件，通过多标签工作区、统计概览、智能洞察、时间线与提供者图表快速定位高频错误和异常模式。全部分析在本地完成，日志内容不会上传到任何服务器。",
     "descriptionEn": "EventLog Analyzer is a powerful, intelligent Windows Event Log analysis tool designed to help IT professionals, system administrators, and developers quickly identify, analyze, and troubleshoot system issues. With advanced pattern recognition, interactive visualizations, and multi-language support, it transforms complex event logs into actionable insights.",
     "shortDescription": null,
     "publisher": "WPZStudio",
-    "developer": "wuping2024@msn.com",
+    "developer": "wuping2004@msn.com",
     "publisherWebsiteUri": "https://pudavidamai.github.io/wpzstudio/",
     "supportUri": "mailto:wuping2004@msn.com",
     "publisherId": "26137630",
     "packageFamilyName": "10278WPZStudio.EventLogAnalyzer_v810h3yyd8p76",
     "iconUrl": "https://store-images.s-microsoft.com/image/apps.28062.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.870c7b63-e87b-40d9-b4f5-802bdce12f20",
-    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.16377.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.3265f7f5-db85-4dfb-b5f9-2f9a68809da0",
-    "heroUrl": "https://store-images.s-microsoft.com/image/apps.13800.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.924ad994-6959-4c90-b3e7-ad5e4d08e593",
+    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.28062.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.870c7b63-e87b-40d9-b4f5-802bdce12f20",
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.30726.14150480481743391.d3f90f89-cd17-4727-8f59-ba54bc4a02a9.425fe626-2f2c-4d74-86e5-432f4f5906a2",
     "images": [
-      {
-        "purpose": "Logo",
-        "width": 50,
-        "height": 50,
-        "url": "https://store-images.s-microsoft.com/image/apps.56043.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.e0ea7fd5-0ccc-481b-abf0-b8ff73d6d425"
-      },
-      {
-        "purpose": "Tile",
-        "width": 300,
-        "height": 300,
-        "url": "https://store-images.s-microsoft.com/image/apps.55222.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.f7c6cc6e-0861-4596-bef7-b271d83c0f5c"
-      },
-      {
-        "purpose": "Tile",
-        "width": 44,
-        "height": 44,
-        "url": "https://store-images.s-microsoft.com/image/apps.44171.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.fe13a9b0-1fae-45f9-b5d2-8f3d52da0750"
-      },
-      {
-        "purpose": "Tile",
-        "width": 620,
-        "height": 300,
-        "url": "https://store-images.s-microsoft.com/image/apps.16377.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.3265f7f5-db85-4dfb-b5f9-2f9a68809da0"
-      },
-      {
-        "purpose": "Screenshot",
-        "width": 1920,
-        "height": 1033,
-        "url": "https://store-images.s-microsoft.com/image/apps.13800.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.924ad994-6959-4c90-b3e7-ad5e4d08e593"
-      },
-      {
-        "purpose": "Screenshot",
-        "width": 1920,
-        "height": 1036,
-        "url": "https://store-images.s-microsoft.com/image/apps.43343.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.e77f5f8d-f506-4445-93d0-a7ee377e0135"
-      },
-      {
-        "purpose": "Screenshot",
-        "width": 1912,
-        "height": 1032,
-        "url": "https://store-images.s-microsoft.com/image/apps.61469.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.6dfc7b2b-3e0a-46f5-bbb7-825dbeeb5c3f"
-      },
-      {
-        "purpose": "Screenshot",
-        "width": 1916,
-        "height": 1030,
-        "url": "https://store-images.s-microsoft.com/image/apps.17790.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.d8df7680-6627-46f3-9e4a-ad26c910d4f4"
-      },
       {
         "purpose": "Logo",
         "width": 300,
         "height": 300,
         "url": "https://store-images.s-microsoft.com/image/apps.28062.14150480481743391.da255c04-83a6-465b-a82b-23fd76e152d0.870c7b63-e87b-40d9-b4f5-802bdce12f20"
+      },
+      {
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.19271.14150480481743391.d3f90f89-cd17-4727-8f59-ba54bc4a02a9.7010f752-bc97-4165-926c-5a24054e9d40"
+      },
+      {
+        "purpose": "Logo",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.42934.14150480481743391.d3f90f89-cd17-4727-8f59-ba54bc4a02a9.9e7f032c-e386-41f5-87ed-57a60e232b10"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1325,
+        "url": "https://store-images.s-microsoft.com/image/apps.30726.14150480481743391.d3f90f89-cd17-4727-8f59-ba54bc4a02a9.425fe626-2f2c-4d74-86e5-432f4f5906a2"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1328,
+        "url": "https://store-images.s-microsoft.com/image/apps.42105.14150480481743391.d3f90f89-cd17-4727-8f59-ba54bc4a02a9.f81fe41f-468d-4a52-b9a3-ada47b416d64"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 1223,
+        "height": 1199,
+        "url": "https://store-images.s-microsoft.com/image/apps.41476.14150480481743391.d3f90f89-cd17-4727-8f59-ba54bc4a02a9.5af2a6ad-771a-423c-9d4b-51471798b2a3"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2238,
+        "height": 1322,
+        "url": "https://store-images.s-microsoft.com/image/apps.6403.14150480481743391.d3f90f89-cd17-4727-8f59-ba54bc4a02a9.d2703d90-c776-4da8-8df7-47c702521069"
       }
     ]
   },
@@ -1405,7 +1393,7 @@
     "publisherId": "26137630",
     "packageFamilyName": "10278WPZStudio.FileZen_v810h3yyd8p76",
     "iconUrl": "https://store-images.s-microsoft.com/image/apps.11989.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.22ff04d1-b378-4476-94b9-b93dfdcea8f0",
-    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.11989.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.22ff04d1-b378-4476-94b9-b93dfdcea8f0",
+    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.2329.14310683400824225.13dd415f-36ba-4b71-bd33-bfa4261204ab.84dfbfe8-3f29-42bd-8763-aa63b75fd8ee",
     "heroUrl": "https://store-images.s-microsoft.com/image/apps.12030.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.0f280a5e-2646-41a6-99a9-dde883b6fede",
     "images": [
       {
@@ -1428,9 +1416,9 @@
       },
       {
         "purpose": "Tile",
-        "width": 150,
+        "width": 310,
         "height": 150,
-        "url": "https://store-images.s-microsoft.com/image/apps.52997.14310683400824225.e0d9e1db-a476-41ab-871d-ebb77d80d10e.3372d17c-345a-48e3-9269-01cd3ffc04d8"
+        "url": "https://store-images.s-microsoft.com/image/apps.2329.14310683400824225.13dd415f-36ba-4b71-bd33-bfa4261204ab.84dfbfe8-3f29-42bd-8763-aa63b75fd8ee"
       },
       {
         "purpose": "Screenshot",
@@ -1801,32 +1789,44 @@
     "publisherId": "26137630",
     "packageFamilyName": "10278WPZStudio.IISLogAnalyzer_v810h3yyd8p76",
     "iconUrl": "https://store-images.s-microsoft.com/image/apps.21902.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.6a146b07-6b35-4fc5-811d-cf3c2f5d85a9",
-    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.64505.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.efe68786-1d98-404c-bd2f-0093978035d4",
+    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.45723.13808261622744260.9d847916-1adc-4ff4-8dda-e3bd5d4b903a.5e28775e-cf80-415c-8f79-d44c4b63f9f7",
     "heroUrl": "https://store-images.s-microsoft.com/image/apps.58621.13808261622744260.e23ac03d-f273-46dd-b4e8-36dfea1aa7bf.1a5f0a9e-cf54-4fc0-a5fd-d771895966b4",
     "images": [
       {
         "purpose": "Logo",
-        "width": 150,
-        "height": 150,
-        "url": "https://store-images.s-microsoft.com/image/apps.55301.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.1b6c7e14-e11c-40c1-8a25-d1dd421099ae"
+        "width": 50,
+        "height": 50,
+        "url": "https://store-images.s-microsoft.com/image/apps.42980.13808261622744260.9d847916-1adc-4ff4-8dda-e3bd5d4b903a.e8c198fe-54dd-49ad-a597-e4f4f491173d"
       },
       {
         "purpose": "Tile",
         "width": 150,
         "height": 150,
-        "url": "https://store-images.s-microsoft.com/image/apps.55301.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.1b6c7e14-e11c-40c1-8a25-d1dd421099ae"
+        "url": "https://store-images.s-microsoft.com/image/apps.17172.13808261622744260.9d847916-1adc-4ff4-8dda-e3bd5d4b903a.64eed5d9-7952-4ead-96e4-1c076279d004"
       },
       {
         "purpose": "Tile",
         "width": 44,
         "height": 44,
-        "url": "https://store-images.s-microsoft.com/image/apps.62867.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.07aa7e8f-d9e3-4693-ae2e-be09c660f463"
+        "url": "https://store-images.s-microsoft.com/image/apps.63561.13808261622744260.9d847916-1adc-4ff4-8dda-e3bd5d4b903a.d6f44248-83db-4b9b-bd32-479d3bc5dd30"
+      },
+      {
+        "purpose": "Tile",
+        "width": 310,
+        "height": 310,
+        "url": "https://store-images.s-microsoft.com/image/apps.45723.13808261622744260.9d847916-1adc-4ff4-8dda-e3bd5d4b903a.5e28775e-cf80-415c-8f79-d44c4b63f9f7"
+      },
+      {
+        "purpose": "Tile",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.38078.13808261622744260.9d847916-1adc-4ff4-8dda-e3bd5d4b903a.8039334c-c264-4cd0-84f7-7e1175f4209c"
       },
       {
         "purpose": "Tile",
         "width": 310,
         "height": 150,
-        "url": "https://store-images.s-microsoft.com/image/apps.64505.13808261622744260.91bba824-3cc5-431f-a4e8-e5b14f6a1257.efe68786-1d98-404c-bd2f-0093978035d4"
+        "url": "https://store-images.s-microsoft.com/image/apps.29581.13808261622744260.9d847916-1adc-4ff4-8dda-e3bd5d4b903a.56f46159-5531-4a56-af76-b2edd381b6ce"
       },
       {
         "purpose": "Screenshot",
@@ -3187,7 +3187,7 @@
     "category": "高效工作",
     "subCategory": null,
     "price": "¥16.00",
-    "description": "剪贴板历史管理器是一款功能强大的 Windows 桌面应用，专为提高工作效率而设计。它能自动记录您复制的所有内容（文本、图片、文件），让您随时快速访问历史记录，再也不用担心重要内容被覆盖。",
+    "description": "Quick Paste Pro 是一款基于 Rust + Tauri 2 打造的 Windows 剪贴板历史管理器与截图工具。安装包仅约 5 MB，冷启动低于 500 ms，常驻内存约 30 MB。它自动记录你复制过的文本、图片、文件与链接，并让你在任意应用中一键找回——比传统剪贴板工具更快、更轻、更注重隐私。",
     "descriptionEn": "Clipboard History Manager is a powerful Windows desktop application designed to boost productivity. It automatically records everything you copy (text, images, files), allowing you to quickly access your history anytime. Never worry about important content being overwritten again.",
     "shortDescription": null,
     "publisher": "WPZStudio",
@@ -3197,38 +3197,44 @@
     "publisherId": "26137630",
     "packageFamilyName": "10278WPZStudio.QuickPastePro_v810h3yyd8p76",
     "iconUrl": "https://store-images.s-microsoft.com/image/apps.23597.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.ce1337a8-d464-42a2-b79b-ed727fc5c7c2",
-    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.49444.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.76558ce6-50c0-486f-a1e5-1df151e1db68",
-    "heroUrl": "https://store-images.s-microsoft.com/image/apps.14842.13970028672913391.5f02792b-583a-4c7d-8a50-011a08e74707.6c51de16-7c9e-4dbc-9902-a795d892174c",
+    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.14635.13970028672913391.652fc893-df72-4cff-8cac-4d4d027946c9.3ffccd3c-f185-4a45-9f37-9b658318a0d1",
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.37861.13970028672913391.652fc893-df72-4cff-8cac-4d4d027946c9.a04520ee-5418-4e85-867f-1986e1a12c2f",
     "images": [
       {
         "purpose": "Logo",
         "width": 50,
         "height": 50,
-        "url": "https://store-images.s-microsoft.com/image/apps.36149.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.3a322c9c-2e05-4750-9f31-f32f4b2e76ee"
+        "url": "https://store-images.s-microsoft.com/image/apps.29145.13970028672913391.652fc893-df72-4cff-8cac-4d4d027946c9.b2e2121a-6de4-40cd-87a4-affe99b7bacb"
       },
       {
         "purpose": "Tile",
         "width": 150,
         "height": 150,
-        "url": "https://store-images.s-microsoft.com/image/apps.37379.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.9277a3f5-6af5-46aa-a922-67f346bf64a5"
+        "url": "https://store-images.s-microsoft.com/image/apps.29317.13970028672913391.652fc893-df72-4cff-8cac-4d4d027946c9.4d2f6939-aca9-4856-aba3-404a4c197512"
       },
       {
         "purpose": "Tile",
         "width": 44,
         "height": 44,
-        "url": "https://store-images.s-microsoft.com/image/apps.57605.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.48d5d751-16c1-477c-bc6b-d762fe9ef28a"
+        "url": "https://store-images.s-microsoft.com/image/apps.4668.13970028672913391.652fc893-df72-4cff-8cac-4d4d027946c9.1522bc82-697c-4916-b0ee-57d041c42c2a"
       },
       {
         "purpose": "Tile",
         "width": 310,
-        "height": 150,
-        "url": "https://store-images.s-microsoft.com/image/apps.49444.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.76558ce6-50c0-486f-a1e5-1df151e1db68"
+        "height": 310,
+        "url": "https://store-images.s-microsoft.com/image/apps.14635.13970028672913391.652fc893-df72-4cff-8cac-4d4d027946c9.3ffccd3c-f185-4a45-9f37-9b658318a0d1"
       },
       {
-        "purpose": "Screenshot",
-        "width": 1248,
-        "height": 972,
-        "url": "https://store-images.s-microsoft.com/image/apps.51231.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.ec7299b2-7651-42d6-aa5c-663e7b317494"
+        "purpose": "Tile",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.43603.13970028672913391.652fc893-df72-4cff-8cac-4d4d027946c9.a3d07f85-61b4-4b3e-b9de-ac0a6f408530"
+      },
+      {
+        "purpose": "Tile",
+        "width": 150,
+        "height": 150,
+        "url": "https://store-images.s-microsoft.com/image/apps.36742.13970028672913391.652fc893-df72-4cff-8cac-4d4d027946c9.97a24b3a-625e-48c0-a183-51ac51cdfbdc"
       },
       {
         "purpose": "Logo",
@@ -3244,27 +3250,21 @@
       },
       {
         "purpose": "Screenshot",
-        "width": 1248,
-        "height": 1050,
-        "url": "https://store-images.s-microsoft.com/image/apps.10504.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.1838aae0-b6e7-4d44-b424-4c4c3b3cd3c1"
+        "width": 2225,
+        "height": 1281,
+        "url": "https://store-images.s-microsoft.com/image/apps.37861.13970028672913391.652fc893-df72-4cff-8cac-4d4d027946c9.a04520ee-5418-4e85-867f-1986e1a12c2f"
       },
       {
         "purpose": "Screenshot",
-        "width": 1248,
-        "height": 1050,
-        "url": "https://store-images.s-microsoft.com/image/apps.58777.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.86a8122c-f206-45c1-bd79-fd5721080d36"
+        "width": 1199,
+        "height": 896,
+        "url": "https://store-images.s-microsoft.com/image/apps.47570.13970028672913391.652fc893-df72-4cff-8cac-4d4d027946c9.a9a010aa-afc6-43ac-9afb-dcc1e37ee43f"
       },
       {
         "purpose": "Screenshot",
-        "width": 1248,
-        "height": 972,
-        "url": "https://store-images.s-microsoft.com/image/apps.9742.13970028672913391.14fc4d7a-d481-452d-b7a0-60fc57edebcd.3ac8c1c6-1214-42e2-bcea-0c09e7c79996"
-      },
-      {
-        "purpose": "Screenshot",
-        "width": 2237,
-        "height": 1256,
-        "url": "https://store-images.s-microsoft.com/image/apps.14842.13970028672913391.5f02792b-583a-4c7d-8a50-011a08e74707.6c51de16-7c9e-4dbc-9902-a795d892174c"
+        "width": 1211,
+        "height": 900,
+        "url": "https://store-images.s-microsoft.com/image/apps.34878.13970028672913391.652fc893-df72-4cff-8cac-4d4d027946c9.bf342483-3c8e-495f-b739-5f692e2f1707"
       }
     ]
   },
@@ -3906,7 +3906,7 @@
     "publisherId": "26137630",
     "packageFamilyName": "10278WPZStudio.TerminalX_v810h3yyd8p76",
     "iconUrl": "https://store-images.s-microsoft.com/image/apps.21979.14214543539071194.2dc129c3-1de2-404d-b1a1-7cb664058c36.f47710ac-ef16-4c3a-b154-e1bc6f432687",
-    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.52032.14214543539071194.2dc129c3-1de2-404d-b1a1-7cb664058c36.dc3b6151-f2fb-4c27-97b6-03bdfff63836",
+    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.64041.14214543539071194.0efccdde-f4be-48b0-9783-9a6aa068885a.32adc06e-2700-4dcb-89a9-6f9260c29fe1",
     "heroUrl": "https://store-images.s-microsoft.com/image/apps.37727.14214543539071194.1895c074-54c0-4b24-a9a2-ff52ca2c9e0d.54c7c6c5-4144-4716-bdb6-d3d307410e7f",
     "images": [
       {
@@ -3926,6 +3926,18 @@
         "width": 44,
         "height": 44,
         "url": "https://store-images.s-microsoft.com/image/apps.14969.14214543539071194.d95b9c86-ae24-4cf2-8f80-38436743c49a.6b9966d6-aa3d-462c-bcbc-419b02425b36"
+      },
+      {
+        "purpose": "Tile",
+        "width": 310,
+        "height": 310,
+        "url": "https://store-images.s-microsoft.com/image/apps.64041.14214543539071194.0efccdde-f4be-48b0-9783-9a6aa068885a.32adc06e-2700-4dcb-89a9-6f9260c29fe1"
+      },
+      {
+        "purpose": "Tile",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.23103.14214543539071194.0efccdde-f4be-48b0-9783-9a6aa068885a.f7aa8f5c-4164-4b6d-b7d9-8457013dad4b"
       },
       {
         "purpose": "Tile",
@@ -4832,7 +4844,7 @@
     "category": "实用程序与工具",
     "subCategory": null,
     "price": "¥10.00",
-    "description": "证件照验证工具是一款专业的证件照片验证和编辑应用，帮助您快速检查照片是否符合各国证件照标准，并提供智能调整功能。无论是办理身份证、护照、签证，还是各类资格证书，本工具都能确保您的照片符合官方要求，避免因照片不合格而耽误办理进度。\n\n✨ 核心特点\n智能匹配 - 自动识别照片尺寸，推荐最匹配的证件类型\n全面覆盖 - 支持15种常用证件照标准（中国9种 + 国际6种）\n精准验证 - 基于官方标准，验证尺寸、背景色、头部比例等\n快速调整 - 一键调整照片尺寸和更换背景色\n详细建议 - 提供具体的修改建议和官方依据\n离线使用 - 无需联网，保护您的隐私",
+    "description": "PhotoValidator 是一款面向证件照门店、摄影工作室和报名材料办理人员的 Windows 桌面工具。它在本地完成证件照的技术预审、头部几何检测、按目标 KB/DPI 导出、批量名单出片、现场拍摄引导与印品校色。照片、名单和校准图都只留在用户的电脑上，不上传服务器。",
     "descriptionEn": "ID Photo Validator (PhotoValidator) is a professional ID photo verification and processing application that helps users quickly check whether their photos meet various national ID photo standards. Whether you're applying for an ID card, passport, visa, or professional certificates, this tool ensures your photos comply with official requirements, avoiding delays due to non-compliant photos.",
     "shortDescription": null,
     "publisher": "WPZStudio",
@@ -4841,45 +4853,63 @@
     "supportUri": "mailto:wuping2004@msn.com",
     "publisherId": "26137630",
     "packageFamilyName": "10278WPZStudio.196210F7E024D_v810h3yyd8p76",
-    "iconUrl": "https://store-images.s-microsoft.com/image/apps.33266.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.aa1005f0-3646-4420-abaf-c5a990e5b3dc",
-    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.685.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.939fe456-5bcf-4d0e-ae40-f8b5ac3f63b8",
-    "heroUrl": "https://store-images.s-microsoft.com/image/apps.51844.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.43d021c9-07a0-44e5-9186-09708e111a61",
+    "iconUrl": "https://store-images.s-microsoft.com/image/apps.31292.14448941086176368.151ad661-b7aa-4a89-8089-3342e2823b2a.bde3443f-8fa3-46d0-a035-c13eecb0571f",
+    "bannerUrl": "https://store-images.s-microsoft.com/image/apps.33266.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.aa1005f0-3646-4420-abaf-c5a990e5b3dc",
+    "heroUrl": "https://store-images.s-microsoft.com/image/apps.14603.14448941086176368.151ad661-b7aa-4a89-8089-3342e2823b2a.72aba1ce-f911-4ff5-a3ef-2fbba3e9427e",
     "images": [
       {
         "purpose": "Logo",
-        "width": 50,
-        "height": 50,
-        "url": "https://store-images.s-microsoft.com/image/apps.51975.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.f6a754cb-2891-4c28-ba33-9d42e408297c"
+        "width": 300,
+        "height": 300,
+        "url": "https://store-images.s-microsoft.com/image/apps.31292.14448941086176368.151ad661-b7aa-4a89-8089-3342e2823b2a.bde3443f-8fa3-46d0-a035-c13eecb0571f"
       },
       {
-        "purpose": "Tile",
+        "purpose": "Logo",
         "width": 150,
         "height": 150,
         "url": "https://store-images.s-microsoft.com/image/apps.33266.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.aa1005f0-3646-4420-abaf-c5a990e5b3dc"
       },
       {
-        "purpose": "Tile",
-        "width": 44,
-        "height": 44,
-        "url": "https://store-images.s-microsoft.com/image/apps.32961.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.fc338dd1-e20f-41f6-b644-9f6a919d0ede"
-      },
-      {
-        "purpose": "Tile",
-        "width": 310,
-        "height": 150,
-        "url": "https://store-images.s-microsoft.com/image/apps.685.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.939fe456-5bcf-4d0e-ae40-f8b5ac3f63b8"
+        "purpose": "Logo",
+        "width": 71,
+        "height": 71,
+        "url": "https://store-images.s-microsoft.com/image/apps.20709.14448941086176368.151ad661-b7aa-4a89-8089-3342e2823b2a.aba3a5b0-7616-4b59-9921-854773fbeaa4"
       },
       {
         "purpose": "Screenshot",
-        "width": 1912,
-        "height": 1034,
-        "url": "https://store-images.s-microsoft.com/image/apps.51844.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.43d021c9-07a0-44e5-9186-09708e111a61"
+        "width": 2240,
+        "height": 1294,
+        "url": "https://store-images.s-microsoft.com/image/apps.14603.14448941086176368.151ad661-b7aa-4a89-8089-3342e2823b2a.72aba1ce-f911-4ff5-a3ef-2fbba3e9427e"
       },
       {
         "purpose": "Screenshot",
-        "width": 1223,
-        "height": 884,
-        "url": "https://store-images.s-microsoft.com/image/apps.38607.14448941086176368.66122f9b-ab5f-4573-830c-05e70b0ef8c7.2ae5e25f-6ffa-4f93-af5c-85be91d6ad7b"
+        "width": 2240,
+        "height": 1294,
+        "url": "https://store-images.s-microsoft.com/image/apps.30028.14448941086176368.151ad661-b7aa-4a89-8089-3342e2823b2a.ab9a9c10-40c5-4ecf-8890-3e189a15fc97"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2240,
+        "height": 1294,
+        "url": "https://store-images.s-microsoft.com/image/apps.56214.14448941086176368.151ad661-b7aa-4a89-8089-3342e2823b2a.e50b4929-b51d-406a-981a-2800df954086"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2240,
+        "height": 1294,
+        "url": "https://store-images.s-microsoft.com/image/apps.37919.14448941086176368.151ad661-b7aa-4a89-8089-3342e2823b2a.5c8adaef-3b75-4004-bb83-78b8bb47ef0a"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2240,
+        "height": 1294,
+        "url": "https://store-images.s-microsoft.com/image/apps.22162.14448941086176368.151ad661-b7aa-4a89-8089-3342e2823b2a.bda238b2-cbc2-4739-8799-ae8ad0e41cbf"
+      },
+      {
+        "purpose": "Screenshot",
+        "width": 2213,
+        "height": 1331,
+        "url": "https://store-images.s-microsoft.com/image/apps.47455.14448941086176368.151ad661-b7aa-4a89-8089-3342e2823b2a.1a273fd3-b327-4a01-9cbb-7f1bfde19415"
       }
     ]
   },
